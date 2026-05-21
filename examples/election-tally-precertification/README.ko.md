@@ -1,10 +1,11 @@
 # 선거 집계 사전인증 봉인 키트 (Election Tally Pre-Certification Seal Kit)
 
-*한국어 번역 — 영어 원본은 [README.md](README.md) 참조*
+*한국어 번역 — 원본 영어 버전은 [README.md](README.md) 참조*
 
-카운티 선거관리위원회, 주(州) 선거 당국, 그리고 선거 무결성 감시자들이
-인증의 정확한 순간에 집계에 대한 Bitcoin 앵커링된 위변조 방지 봉인을
-공표하고자 할 때 사용할 수 있는 즉시 사용 가능한 myriam-kit 예시입니다.
+카운티 선거관리위원회(county boards of canvassers), 주(州) 선거 당국, 그리고
+선거 무결성 감시자들이 인증의 정확한 순간에 집계에 대한 Bitcoin 앵커링된
+위변조 방지(tamper-evident) 봉인을 공표하고자 할 때 사용할 수 있는 즉시
+사용 가능한 myriam-kit 예시입니다.
 
 [issue #4](https://github.com/CrunchyJohnHaven/myriam-kit/issues/4)를 **종결합니다**.
 
@@ -170,7 +171,7 @@
 
 ## 본 키트를 사용하지 **말아야** 할 때
 
-- **위험 한도 감사(risk-limiting audits), 수작업 재검표, 선거 후 감사의
+- **위험 한도 감사(risk-limiting audits, RLA), 수작업 재검표, 선거 후 감사의
   대체물로 사용하지 마십시오.** 본 키트는 *부가적*이지, 대체물이 아닙니다.
 - **인증 공직자가 실제 의사결정자가 아닌 경우에 사용하지 마십시오**(거짓
   귀속을 생성합니다).
@@ -204,7 +205,7 @@ python3 build/verify.py
 
 - **주 선거관리위원회(State Boards of Elections) / EAC 인증.** 본 키트는
   공식 인증 문서와 함께 공표됩니다. 법정 인증을 대체하지 않습니다.
-- **위험 한도 감사(Risk-limiting audits).** FACT 05의 CVR 해시는 RLA 도구가
+- **위험 한도 감사(Risk-limiting audits, RLA).** FACT 05의 CVR 해시는 RLA 도구가
   소비하는 것과 동일한 해시입니다. 봉인은 감사된 CVR을 인증된 합계와
   결속합니다.
 - **재검표 절차.** 주(州) 법률 아래에서 촉발된 재검표는 새로운(다른
@@ -221,7 +222,7 @@ python3 build/verify.py
 
 - 주 선거법에 따른 법정 인증
 - EAC 투표 시스템 인증
-- 위험 한도 감사 / 수작업 재검표
+- 위험 한도 감사(RLA) / 수작업 재검표
 - 재검표 절차 및 선거 후 감사
 - 법원 명령 또는 선거 이의(election-contest) 소송
 
