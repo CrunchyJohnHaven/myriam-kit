@@ -1,0 +1,102 @@
+FACT 08 — SIGNING PRINCIPAL (FICTIONAL)
+
+  Issuing Authority:      Department of Finance and Public Works,
+                          Fictional Municipality of Anywhere (FICTIONAL)
+  Jurisdiction:           Fictional Municipality of Anywhere,
+                          FICTIONAL_STATE, FICTIONAL_COUNTRY
+  Statutory basis:        Fictional Municipal Finance Code §401–§412
+                          (authority to attest and publish quarterly
+                          execution reports)
+  Attestation timestamp:  2026-07-15T10:00:00Z (FICTIONAL — moment of
+                          sealing, immediately after Q2 close and
+                          treasurer's sign-off)
+  Attestation type:       Quarterly Public Spending Attestation
+                          (FY2026 Q2)
+
+PRIMARY SIGNATORY (PUBLIC-OFFICE ROLE)
+
+  [Fictional Name], Chief Financial Officer (CFO), Fictional Municipality
+  of Anywhere
+  Statutory role:         Designated under Municipal Finance Code §401(b)
+                          as the responsible principal for quarterly
+                          expenditure attestation
+  Statutory accountability:
+                          Subject to Municipal Code of Ethics §101
+                          (conflict-of-interest disclosure obligations)
+                          and to the criminal-misstatement provisions
+                          of Municipal Finance Code §412 (knowingly
+                          false attestation is a criminal offense
+                          carrying personal liability)
+  Cryptographic key:      (a real attestation would include a PGP
+                          public-key fingerprint or government-issued
+                          digital signature certificate fingerprint here;
+                          omitted in this fictional example)
+
+CO-SIGNATORIES (REQUIRED UNDER STATUTORY DUAL-CONTROL)
+
+  [Fictional Name], Treasurer, Fictional Municipality of Anywhere
+  Statutory role:         Disbursement countersign under §407
+  Cryptographic key:      (omitted — fictional example)
+
+  [Fictional Name], Director of Internal Audit, Fictional Municipality
+  of Anywhere
+  Role:                   Independent-control attestation that the
+                          quarterly close was performed without override
+                          of internal controls of which the Director is
+                          aware as of the attestation timestamp; this is
+                          NOT a substantive audit opinion, only a
+                          control-process attestation
+  Cryptographic key:      (omitted — fictional example)
+
+WHAT EACH SIGNATORY IS PERSONALLY ATTESTING TO
+
+  CFO attests:           That to the CFO's knowledge as of the
+                         attestation timestamp, FACT 03 (appropriations),
+                         FACT 04 (transactions), and FACT 05 (document
+                         hashes) accurately reflect the records of the
+                         Department of Finance and Public Works for
+                         FY2026 Q2.
+
+  Treasurer attests:     That FACT 04 disbursements have been issued
+                         from authorized treasury accounts under the
+                         statutory dual-control regime.
+
+  Director of Internal Audit attests:
+                         That no override of internal controls during
+                         the quarterly close has come to the Director's
+                         attention as of the attestation timestamp.
+                         (This is a negative attestation about a process,
+                         not a positive opinion about substance.)
+
+NONE of these signatures attest to:
+
+  - The lawfulness, fairness, or non-corrupt nature of any underlying
+    transaction in FACT 04
+  - The accuracy of the supporting documents whose hashes appear in
+    FACT 05 (those hashes only attest to bytewise identity, not to
+    content truthfulness)
+  - The completeness of the companion disclosures in FACT 07 beyond
+    what was known to the signatories at the attestation timestamp
+  - Any judgment about value-for-money, market-price reasonableness,
+    or qualitative outcome of any sealed expenditure
+
+WHAT THIS SECTION SHOULD NOT INCLUDE (and does not, here):
+
+  - Personal contact information for signatories
+  - Home addresses or other locating information for signatories
+  - Information about signatories' family members or private finances
+  - Information about the signatories' personal banking, beneficial
+    ownership of any entity, or private investments
+
+Public officials in named public-office roles ARE properly identified
+in this fact (it is the load-bearing accountability hook of the seal),
+but private information about those officials in their private
+capacities is NOT.
+
+This fact asserts only the signing-principal identification fields for
+the fictional attestation as declared. It does not assert any of those
+fields about any real public official, finance authority, or
+jurisdiction. The criminal-misstatement provisions referenced apply
+ONLY in a real attestation by a real official under real statutory
+authority; this fictional example imposes no such accountability on any
+real person.
