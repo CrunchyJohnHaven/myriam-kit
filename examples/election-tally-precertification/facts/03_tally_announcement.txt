@@ -1,0 +1,45 @@
+FACT 03 — CERTIFIED TALLY (FICTIONAL)
+
+The Fictional County Board of Canvassers (FACT 02) certifies the
+following vote totals as the official result of the 2026-11-03 General
+Election, computed from the canonical cast-vote-record (CVR) file whose
+hash appears in FACT 05:
+
+CONTEST: U.S. SENATE
+  Candidate A (FICTIONAL PARTY 1):              184,237
+  Candidate B (FICTIONAL PARTY 2):              176,109
+  Candidate C (FICTIONAL PARTY 3):                3,481
+  Write-in (FICTIONAL):                              47
+  Over-votes:                                       182
+  Under-votes:                                    8,341
+  Total ballots cast in contest:                372,397
+
+CONTEST: GOVERNOR
+  Candidate D (FICTIONAL PARTY 1):              188,422
+  Candidate E (FICTIONAL PARTY 2):              175,308
+  Write-in:                                          61
+  Over-votes:                                       143
+  Under-votes:                                    8,463
+  Total ballots cast in contest:                372,397
+
+CONTEST: BALLOT MEASURE 1 (FICTIONAL)
+  YES:                                          203,144
+  NO:                                           162,891
+  Over-votes:                                        88
+  Under-votes:                                    6,274
+  Total ballots cast in contest:                372,397
+
+TOTAL BALLOTS CAST IN ELECTION:                 372,397
+
+This fact is the LOAD-BEARING content of the seal. Each integer above
+is what the Board of Canvassers certifies as the official count at the
+moment of certification (FACT 02 timestamp). Any later silent revision
+to any of these integers would produce a different SHA-256 of this fact
+file, a different Merkle root for this publication, and would fail
+verification against the Bitcoin-committed root.
+
+This fact asserts only the certified totals as recorded for the
+fictional election at the fictional certification moment. It does not
+assert that the underlying election was free of fraud, that no voters
+were suppressed, that the tabulation equipment counted ballots
+correctly, or that any specific candidate was the "true" winner.

@@ -1,0 +1,49 @@
+FACT 08 — SIGNING PRINCIPAL (FICTIONAL)
+
+  Certifying Authority:   Fictional County Board of Canvassers
+  Jurisdiction:           Fictional County, FICTIONAL_STATE
+  Statutory basis:        Fictional Election Code §123.45 + §234.56
+  Certification timestamp: 2026-11-17T14:23:00 EST (FICTIONAL)
+  Certification vote:     Unanimous 3-0 in favor of certification
+
+PRIMARY SIGNATORY
+
+  Dr. [Fictional Name], Chair, Board of Canvassers (Republican)
+  Public official acting in official capacity per statutory appointment
+  Cryptographic key:      (a real attestation would include a PGP
+                          public key fingerprint here; omitted in this
+                          example because no real person exists)
+
+CO-SIGNATORIES
+
+  Dr. [Fictional Name], Vice-Chair (Democrat)
+  Dr. [Fictional Name], Secretary (Independent)
+
+In a real attestation, the signing principals section should include:
+
+  - Each signatory's legal name, party affiliation (where state law
+    requires partisan balance on canvass boards), and statutory role
+  - Each signatory's cryptographic key fingerprint OR a sealed
+    chain-of-custody attestation that the signatory was personally
+    present at the certification meeting
+  - The state-mandated form-of-certification language (typically
+    statutory; the exact text varies by state)
+
+The signing principal section SHOULD NOT include:
+
+  - Personal contact information for signatories
+  - Home addresses or other locating information
+  - Identifying information about signatories' family members
+  - Any information that would create a personal-safety risk for the
+    certifying officials, who in many jurisdictions face documented
+    intimidation or threats
+
+If a signatory is willing to be named on the public seal, naming them
+is appropriate (public office, public role, public certification act).
+If they decline to be named, the seal can still be valid with the
+chair-only signature; the kit refuses to compel naming of unwilling
+officials.
+
+This fact asserts only the signing principal identification fields for
+the fictional certification as declared. It does not assert any of
+those fields about any real election official or jurisdiction.

@@ -1,0 +1,20 @@
+FACT 01 — EXAMPLE NOTICE
+
+This publication is an EXAMPLE demonstration of how a county or precinct
+elections authority can use myriam-kit to seal a tally pre-certification
+attestation. The jurisdiction, election date, candidates, vote totals,
+equipment serials, and certifying officials are ALL FICTIONAL.
+
+The purpose: show the SHAPE of a real precinct tally pre-certification
+seal. A real attestation would replace each fact body with the actual
+elements of the actual election.
+
+This kit is intended to compose with — not replace — existing election
+infrastructure (state Boards of Elections, EAC certification processes,
+risk-limiting audits, recount procedures). The MYRIAM seal provides
+Bitcoin-anchored tamper-evidence on top of whatever certification
+process the jurisdiction already runs.
+
+This fact asserts only that the publication is an example, not a real
+tally pre-certification. No real election is hereby certified. No real
+official is hereby named.

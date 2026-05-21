@@ -1,0 +1,54 @@
+FACT 05 — EQUIPMENT AND AUDIT-TRAIL MANIFEST (FICTIONAL)
+
+TABULATION EQUIPMENT INVENTORY
+
+  Tabulator model:          FictVote-9000 (FICTIONAL VENDOR)
+  EAC certification:        FICT-EAC-2024-018 (FICTIONAL)
+  Firmware version:         v3.14.2-r1 (FICTIONAL)
+  Firmware binary SHA-256:  a1b2c3d4e5f6789abcdef0123456789abcdef0123456789abcdef0123456789ab
+  Number of units deployed: 47 (matched to precinct deployment manifest)
+  Per-unit serial numbers:  (sealed separately at audit; aggregate hash here:)
+                            db14e2c98d2fdaf9a6dec2c25fcfa7bd14f0c8b9e7e6e4d3c2b1a09876543210f
+
+AUDIT-TRAIL ARTIFACT HASHES (SHA-256 of full file contents, not bodies)
+
+  Cast-Vote-Record (CVR) export, canonical:
+    SHA-256: cbb671235d5bb13d9f81a91a8661fa648e59e84f6ba0fb126356993066f065a0
+    Size:    412 MB
+    Format:  EAC CDF v2.0 JSON
+
+  Ballot-image archive (CVR cross-reference):
+    SHA-256: 89a72e41fa212f6520115739df2d79f366e132c4714c0d60ae87540555195893
+    Size:    87.2 GB (372,397 PNG images, one per ballot)
+    Access:  controlled-access pursuant to state public-records law
+
+  Tabulator log archive (per-unit transaction logs):
+    SHA-256: 03c23f853b396b0df96070f20cd904ec27881e3f6390c55aedc9550c8a2d79f2
+    Size:    2.4 GB
+
+  Chain-of-custody log (custodian events from tabulator-startup to canvass):
+    SHA-256: 0a22e596cc4e1e2992e14f8749de4bce304c1190a820337d17e29fea0e6f4d9d
+    Total custody events logged: 1,847
+    Custodian roles (no individual names sealed):
+      - Poll workers (28 events)
+      - Precinct judges (124 events)
+      - County election staff (1,402 events)
+      - Sheriff's deputies (transport, 142 events)
+      - Bipartisan observers (151 events)
+
+  Signature-match policy document in effect for this election:
+    SHA-256: 5c4821d81b2aa72015f6f85235317c7092ab509e164cbdb3933f54769444bfd3
+    Citation: Fictional County Election Policy 2026-04, §7 (FICTIONAL)
+
+A regulator, auditor, recount officer, or court can request any of the
+above artifacts. Re-hashing the received artifact with SHA-256 and
+comparing to the row above verifies that the artifact received matches
+the artifact that existed at certification time. Any post-certification
+modification of any of these artifacts produces a different hash than
+the sealed one and is publicly detectable.
+
+This fact asserts only the equipment inventory and audit-trail
+artifact hashes at the moment of certification. It does not assert that
+the equipment counted ballots correctly, that the firmware was free of
+defects, or that the audit-trail artifacts capture all relevant events
+that occurred during the election.

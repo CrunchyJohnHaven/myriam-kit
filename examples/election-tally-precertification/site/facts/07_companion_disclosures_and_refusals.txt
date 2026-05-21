@@ -1,0 +1,60 @@
+FACT 07 — COMPANION DISCLOSURES AND REFUSAL RECORD (FICTIONAL)
+
+Per the MYRIAM kit's "constraint-first" design principle, this fact
+records what the kit explicitly refused to seal and any companion
+disclosures that the certifying authority is obliged to publish along
+with the tally so that selective omission is detectable.
+
+COMPANION DISCLOSURES (sealed alongside the tally so the tally cannot
+be read in isolation)
+
+  C1. PENDING LITIGATION
+      No pending pre-certification litigation against this election at
+      certification moment. (FICTIONAL)
+
+  C2. POST-COUNT ANOMALIES UNDER REVIEW
+      None at certification moment. (FICTIONAL — a real attestation
+      would name specific anomalies, e.g. precinct X with unusual
+      under-vote pattern, ballot drop-box Y with chain-of-custody
+      irregularity.)
+
+  C3. EXCLUDED COHORTS
+      No cohorts excluded from the certified count beyond those
+      enumerated in FACT 04 (provisional rejections, mail-ballot
+      rejections, late UOCAVA). No "set-aside" cohorts.
+
+  C4. DISSENTING BOARD MEMBERS
+      The certification vote of the Board of Canvassers (FACT 02) was
+      3-0 unanimous. No dissenting opinions filed. (FICTIONAL — a real
+      attestation would name dissenters and seal their dissent text
+      hash here, NOT to silence dissent but to make it part of the
+      permanent public record.)
+
+REFUSAL RECORD — patterns the kit refused to seal
+
+The kit does NOT seal the following types of facts, even if requested
+by the certifying authority:
+
+  R1. Individual voter identification or voting choices
+  R2. Per-ballot signature-match decisions (PII)
+  R3. Precinct-level results for precincts where N < 50 ballots
+      (small-cell PII risk)
+  R4. Tallies before all ballots are counted (partial-count seals
+      create false certainty)
+  R5. Provisional or conditional certifications ("if X then Y")
+  R6. Sealing at request of any party other than the official
+      certifying authority for this jurisdiction
+  R7. Counts that exclude pending-litigation cohorts without explicit
+      disclosure in C3 above
+
+If during certification any request matching R1-R7 was made and
+refused, that refusal would be documented as a sealed fact:
+  "Refusal #N: party X requested sealing of [pattern]; the kit
+  refused per refusal-rule R[m]."
+
+  Refusals this certification: NONE. (FICTIONAL)
+
+This fact asserts only the companion-disclosure status and any
+refusal record at the moment of certification. It does not assert that
+the refusal-rule list is exhaustive of all PII patterns or that all
+companion disclosures have been identified by the certifying authority.

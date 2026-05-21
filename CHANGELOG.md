@@ -3,6 +3,23 @@
 All notable changes to this project documented here. Format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [0.3.0] — 2026-05-21
+
+### Added
+
+- Sixth worked-example kit: `examples/election-tally-precertification/`
+  for county boards of canvassers / election authorities. Anchors
+  certified tallies at the certification moment so silent
+  post-certification revisions become publicly detectable. 8 facts,
+  root `89f3c8ec96a0e261d0c50f9c9824005e70110dbf5a99e0d33ec01ce37c59f8d4`.
+- Closes [issue #4](https://github.com/CrunchyJohnHaven/myriam-kit/issues/4).
+- Produced via Karpathy-style autoresearch on three prompt variants
+  (imitation / first-principles / constraint-first) — constraint-first
+  won the weighted rubric. Methodology documented in calc/
+  (AUTORESEARCH_v0.md, AUTORESEARCH_RESULTS_v0.md, PROMPT_LIBRARY_v0.md).
+- Parent README badge updated to "6 worked examples"
+- index.html updated to surface the new example
+
 ## [0.2.0] — 2026-05-21
 
 ### Added

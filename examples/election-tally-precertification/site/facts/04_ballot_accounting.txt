@@ -1,0 +1,47 @@
+FACT 04 — BALLOT ACCOUNTING AND RECONCILIATION (FICTIONAL)
+
+  Total ballots cast (matches FACT 03):                    372,397
+
+  By mode:
+    In-person on election day:                             198,442
+    Early in-person voting:                                 87,123
+    Mail / absentee ballots received and accepted:          82,901
+    Provisional ballots cast:                                4,231
+    Military / overseas (UOCAVA) ballots received:           1,847
+                                                          ---------
+    Subtotal:                                              374,544
+
+  Less:
+    Provisional ballots rejected (and reasons):             -1,422
+      - Voter not registered in jurisdiction:                  883
+      - ID requirement not satisfied within cure period:       312
+      - Already voted (duplicate):                             227
+    Mail ballots rejected (and reasons):                      -725
+      - Signature mismatch (after cure period):                412
+      - Late receipt (after statutory deadline):               241
+      - Envelope missing or unsigned:                           72
+                                                          ---------
+    Total rejected:                                         -2,147
+
+  Net ballots tabulated (matches FACT 03):                 372,397
+
+Registered voter denominator at close of registration:     487,213
+Turnout rate:                                              76.43%
+
+Custody-log hash (separate sealed audit-trail manifest in FACT 05):
+  See FACT 05.
+
+This reconciliation prevents the "we found another box" failure mode by
+fixing the cast-vs-tabulated-vs-rejected arithmetic at the certification
+moment. Any post-certification claim that the ballot universe was
+different from the above is publicly diffable against the sealed bytes.
+
+The rejection reasons are aggregated by category at the jurisdiction
+level. No individual voter's rejection is identifiable from these
+aggregates (precinct-level rejection counts are NOT sealed here to
+avoid creating small-cell PII risks in low-turnout precincts).
+
+This fact asserts only the ballot-accounting totals as reconciled at
+certification. It does not assert that any individual rejection was
+correct, that the rejection categories are exhaustive, or that no
+rejection-pattern bias exists.

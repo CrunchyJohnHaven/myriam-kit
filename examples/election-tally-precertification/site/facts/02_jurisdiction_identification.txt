@@ -1,0 +1,27 @@
+FACT 02 — JURISDICTION IDENTIFICATION (FICTIONAL)
+
+  Jurisdiction:           Fictional County, FICTIONAL_STATE (FICTIONAL)
+  Election type:          General Election (FICTIONAL)
+  Election date:          2026-11-03 (FICTIONAL)
+  Certification timestamp: 2026-11-17T14:23:00 EST (FICTIONAL — moment
+                          this attestation is sealed)
+  Certifying authority:   Fictional County Board of Canvassers
+  Certifying officials:   Dr. [Fictional Name], Chair (Republican)
+                          Dr. [Fictional Name], Vice-Chair (Democrat)
+                          Dr. [Fictional Name], Secretary (Independent)
+  Statutory basis for certification: Fictional Election Code §123.45
+                          (FICTIONAL — a real attestation would cite the
+                          actual state statute under which certification
+                          is being performed)
+  EAC jurisdiction code:  FICT-9999 (FICTIONAL)
+
+This fact binds the entire sealed publication to a named, accountable
+public body acting in official capacity. Naming the certifying officials
+is not a violation of the refusal-gate (they are public officials in
+their public roles, not private third parties); the seal makes their
+certification publicly verifiable.
+
+This fact asserts only the identity of the certifying authority and
+the temporal/legal context of certification for the fictional election.
+It does not assert that any real election or jurisdiction exists, nor
+that the fictional certification reflects any actual electoral process.

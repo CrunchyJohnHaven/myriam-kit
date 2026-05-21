@@ -1,7 +1,7 @@
 # myriam-kit
 
 [![License: CC0-1.0](https://img.shields.io/badge/license-CC0_1.0-lightgrey.svg)](LICENSE)
-[![Examples: 5](https://img.shields.io/badge/worked_examples-5-blue.svg)](#worked-examples)
+[![Examples: 6](https://img.shields.io/badge/worked_examples-6-blue.svg)](#worked-examples)
 [![Verifier: browser](https://img.shields.io/badge/verifier-browser_+_python-green.svg)](lib/verify.html)
 [![Bitcoin: anchored](https://img.shields.io/badge/bitcoin-OTS_anchored-orange.svg)](https://opentimestamps.org)
 [![IPFS: pinned](https://img.shields.io/badge/ipfs-pinned-65c2cb.svg)](https://ipfs.tech)
@@ -96,7 +96,7 @@ Three options, in order of accessibility:
 
 ## Worked examples
 
-Five production-grade example kits ship with the toolkit. Each is
+Six production-grade example kits ship with the toolkit. Each is
 sealed, OTS-stamped, IPFS-pinned, and includes an adoption README
 explaining when to fork it for a real-world case and what failure
 modes it defends against.
@@ -117,6 +117,10 @@ modes it defends against.
   for research groups, anchoring the (data, pipeline, expected
   output) triple BEFORE analysis to make p-hacking and HARKing
   publicly detectable.
+- [`examples/election-tally-precertification/`](examples/election-tally-precertification/) —
+  for county boards of canvassers and election authorities, anchoring
+  certified tallies at the moment of certification so silent
+  post-certification revisions become publicly detectable.
 
 Read one of these before writing your own. The closest match to your
 use case is usually the right starting fork.

@@ -1,0 +1,56 @@
+FACT 06 — THRESHOLDS AND TRIGGERS AT CERTIFICATION (FICTIONAL)
+
+This fact records the legal rules in effect for this election at the
+moment of certification. Sealing the rules as they were applied prevents
+post-hoc redefinition (e.g., "the recount trigger threshold was always
+X%" when it was actually Y%).
+
+SIGNATURE-MATCH POLICY (applied to mail and absentee ballots)
+
+  Policy version:           Fictional County Election Policy 2026-04 §7
+  Policy SHA-256:           5c4821d81b2aa72015f6f85235317c7092ab509e164cbdb3933f54769444bfd3
+                            (matches policy hash in FACT 05)
+  Threshold-of-rejection:   2 of 3 random signature samples must show
+                            "no match" before rejection
+  Cure period:              7 days post-election
+  Aggregate rejection rate this election: 0.50% (412 of 82,901 mail
+                            ballots rejected for signature mismatch)
+
+AUTOMATIC RECOUNT TRIGGERS (statutory, jurisdiction-specific)
+
+  Statutory trigger threshold: vote margin ≤ 0.50% OR ≤ 500 votes,
+                            whichever is GREATER
+  Statutory basis:          Fictional Election Code §234.56 (FICTIONAL)
+
+  Actual margins this election:
+    U.S. Senate (Cand A vs Cand B):    +8,128 (2.18% margin)  → NO automatic recount
+    Governor (Cand D vs Cand E):       +13,114 (3.52% margin) → NO automatic recount
+    Ballot Measure 1 (Yes vs No):      +40,253 (10.81% margin)→ NO automatic recount
+
+RISK-LIMITING AUDIT (RLA) STATE AT CERTIFICATION
+
+  RLA scheduled:            Yes — per state statute, 2026-11-22 to 2026-11-24
+  RLA seed (commitment to randomness, public):
+                            7f3e91b25c8a4d6f0e1b2c3d4e5f60718293a4b5c6d7e8f90123456789abcdef
+                            (one-way commitment; seed reveal is in a
+                            separate sealed publication post-RLA-completion)
+  RLA risk limit:           5% (per state regulation)
+  RLA estimated sample size:1,247 ballots (calculated pre-RLA)
+
+CHALLENGED-BALLOT DISPOSITION
+
+  Total ballots challenged during canvass: 12 (each by an observer)
+  Disposition of challenges: 8 sustained (excluded from count), 4
+                            overruled (included in count)
+  No individual challenge details sealed (PII risk; per refusal-gate)
+
+This fact asserts only the legal-and-procedural state at the moment of
+certification. It does not assert that the thresholds or triggers
+applied are themselves fair, that the policies are constitutional, or
+that the RLA will produce a valid risk-limiting result.
+
+CRITICAL NOTE: if any of the policies above change post-certification
+(e.g., a court order reduces the recount-trigger threshold), that change
+will be DETECTABLE as a deviation from this sealed snapshot. A new
+sealed publication should document the change with reference to this
+one by Merkle root.
