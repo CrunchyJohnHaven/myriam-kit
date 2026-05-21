@@ -1,0 +1,24 @@
+FACT 03 — HYPOTHESIS (FICTIONAL)
+
+PRIMARY HYPOTHESIS
+
+  Treatment with FICT-X-7 at 50 mg orally once daily for 12 weeks will
+  produce a statistically significant reduction in the primary endpoint
+  (defined in FACT 05) compared to placebo, at the alpha = 0.05 level,
+  in the modified intent-to-treat population.
+
+NULL HYPOTHESIS (formally stated for clarity)
+
+  H0: μ_treatment − μ_placebo = 0 on the primary endpoint
+  H1: μ_treatment − μ_placebo ≠ 0 on the primary endpoint
+
+EFFECT SIZE OF INTEREST
+
+  The trial is powered to detect a between-group difference of 0.4
+  standardized units on the primary endpoint, which the sponsor
+  considers the minimum clinically meaningful difference.
+
+This fact asserts only that the above is the trial's pre-registered
+hypothesis. It does not assert that the hypothesis is true, that the
+effect size is achievable, or that the chosen primary endpoint
+captures clinical meaningfulness.

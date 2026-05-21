@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MYRIAM verifier (browser-side)</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: ui-monospace, "SFMono-Regular", "Menlo", "Monaco", monospace;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1rem 6rem;
+    line-height: 1.55;
+    font-size: 15px;
+  }
+  h1 { font-size: 1.4rem; margin-bottom: 0.2rem; }
+  h2 { font-size: 1.05rem; margin-top: 2rem; border-bottom: 1px solid currentColor; padding-bottom: 0.2rem; }
+  .sub { opacity: 0.7; margin-top: 0; }
+  input[type="text"] {
+    width: 100%; padding: 0.5rem; font-family: inherit; font-size: 14px;
+    box-sizing: border-box; border: 1px solid currentColor;
+    background: transparent; color: inherit;
+  }
+  button {
+    padding: 0.5rem 1rem; font-family: inherit; font-size: 14px;
+    border: 1px solid currentColor; background: transparent; color: inherit;
+    cursor: pointer; margin-top: 0.5rem;
+  }
+  button:hover { background: rgba(127,127,127,0.1); }
+  button:disabled { opacity: 0.5; cursor: not-allowed; }
+  .log {
+    border: 1px solid currentColor; padding: 0.6rem 0.8rem; margin: 1rem 0;
+    font-size: 0.82rem; min-height: 4rem; white-space: pre-wrap; word-break: break-all;
+    max-height: 30rem; overflow-y: auto;
+  }
+  .ok { color: #1a8d1a; }
+  .fail { color: #b00020; }
+  .info { opacity: 0.7; }
+  details { margin: 1rem 0; }
+  summary { cursor: pointer; opacity: 0.8; font-size: 0.85rem; }
+  code { font-size: 0.85rem; word-break: break-all; }
+  .examples a { font-size: 0.85rem; display: block; opacity: 0.8; }
+</style>
+</head>
+<body>
+
+<h1>MYRIAM verifier</h1>
+<p class="sub">Browser-side cryptographic verification &middot; no install, no backend, no telemetry</p>
+
+<p>
+Paste a MYRIAM publication URL (e.g. <code>https://disclosure.host</code>)
+or an IPFS gateway URL (e.g. <code>https://ipfs.io/ipfs/&lt;CID&gt;/</code>)
+and click <strong>Verify</strong>. This page will:
+</p>
+
+<ol>
+  <li>Fetch the published Merkle root from <code>&lt;URL&gt;/merkle_root.txt</code>.</li>
+  <li>Fetch the leaf-hash list from <code>&lt;URL&gt;/build/leaf_hashes.txt</code>.</li>
+  <li>Fetch each fact file from <code>&lt;URL&gt;/facts/&lt;filename&gt;</code>.</li>
+  <li>Recompute per-fact SHA-256 using your browser's
+      <code>crypto.subtle.digest</code>.</li>
+  <li>Recompute the Bitcoin-style Merkle root over those leaves.</li>
+  <li>Compare to the published root.</li>
+</ol>
+
+<p>
+No data leaves your browser. The OpenTimestamps Bitcoin attestation
+must still be verified externally (see <strong>Step 7</strong> below)
+because the OTS protocol requires reaching a Bitcoin node or calendar
+server, which is out of scope for a self-contained browser verifier.
+</p>
+
+<h2>Verify</h2>
+
+<label for="url">Publication URL:</label>
+<input type="text" id="url" placeholder="https://disclosure.host  or  https://ipfs.io/ipfs/bafybei.../" autocomplete="off">
+
+<div class="examples">
+<p style="margin-top:0.5rem;opacity:0.7;font-size:0.8rem;">Examples (click to populate):</p>
+<a href="#" onclick="document.getElementById('url').value='https://disclosure.host';return false;">https://disclosure.host</a>
+<a href="#" onclick="document.getElementById('url').value='https://bafybeigvu3h7sawwwtlmsqnfjune42ghapnrelocca444to7e2l4lfmwfa.ipfs.dweb.link/';return false;">MYRIAM v0 via IPFS dweb.link</a>
+<a href="#" onclick="document.getElementById('url').value='https://ipfs.io/ipfs/bafybeicttjbu2edwz4cekdtrvydfomhu2lgrsudppheiea5twjzs23e3su/';return false;">AI model card example via ipfs.io</a>
+</div>
+
+<button id="verify" onclick="verifyPub()">Verify</button>
+<button id="clear" onclick="document.getElementById('log').textContent='';">Clear log</button>
+
+<h2>Verification log</h2>
+<div class="log" id="log"></div>
+
+<details>
+<summary>How this works (and how to verify the verifier itself)</summary>
+<p>
+This page uses only browser-native APIs:
+<code>fetch</code>, <code>crypto.subtle.digest</code>, and DOM
+manipulation. The entire verifier is in a single HTML file. To audit it:
+</p>
+<ol>
+  <li><strong>View source</strong>: in your browser, right-click → View
+      Source (or <code>Cmd-U</code>). The Merkle and SHA-256 code is
+      under 100 lines.</li>
+  <li><strong>Compare hashing</strong>: hash the same input with
+      <code>shasum -a 256</code> on the command line. Browser
+      <code>crypto.subtle.digest("SHA-256", ...)</code> must produce
+      the same bytes for any input.</li>
+  <li><strong>Cross-check Merkle</strong>: the algorithm is in
+      <a href="../docs/SPEC.md#3-merkle-root">SPEC §3</a>.
+      Both Python (<code>build.py</code>) and this JavaScript MUST
+      reproduce identical roots for the same leaves.</li>
+</ol>
+<p>
+If you don't trust this verifier, run <code>../lib/verify.py</code>
+(the Python verifier in this kit). Or read the SPEC and write your own —
+it's about 30 lines of code.
+</p>
+</details>
+
+<details>
+<summary>Step 7: how to also verify the Bitcoin commitment</summary>
+<p>
+The browser cannot verify the OpenTimestamps receipt against Bitcoin
+directly (no built-in Bitcoin client; OTS calendar protocols require
+non-browser-friendly request paths). To complete the cryptographic
+verification:
+</p>
+<pre>
+brew install opentimestamps-client
+curl -O &lt;URL&gt;/merkle_root.txt
+curl -O &lt;URL&gt;/merkle_root.txt.ots
+ots verify merkle_root.txt.ots</pre>
+<p>
+If the receipt's pending-attestation status has upgraded to a full
+Bitcoin attestation, this confirms the Merkle root was committed to
+Bitcoin at or before the time of the referenced block.
+</p>
+</details>
+
+<script>
+// === Helpers ===========================================================
+
+const logEl = document.getElementById("log");
+
+function log(msg, cls) {
+  const span = document.createElement("span");
+  if (cls) span.className = cls;
+  span.textContent = msg + "\n";
+  logEl.appendChild(span);
+  logEl.scrollTop = logEl.scrollHeight;
+}
+
+function logOK(msg) { log("OK    " + msg, "ok"); }
+function logFail(msg) { log("FAIL  " + msg, "fail"); }
+function logInfo(msg) { log("      " + msg, "info"); }
+
+function bytesToHex(buf) {
+  return Array.from(new Uint8Array(buf))
+    .map(b => b.toString(16).padStart(2, "0"))
+    .join("");
+}
+
+function hexToBytes(hex) {
+  const out = new Uint8Array(hex.length / 2);
+  for (let i = 0; i < out.length; i++) {
+    out[i] = parseInt(hex.substr(i * 2, 2), 16);
+  }
+  return out;
+}
+
+async function sha256(buf) {
+  return await crypto.subtle.digest("SHA-256", buf);
+}
+
+// Bitcoin-style Merkle root: pair-hash, duplicate-last-on-odd.
+async function merkleRoot(leaves) {
+  if (leaves.length === 0) throw new Error("empty leaf set");
+  let level = leaves.slice();
+  while (level.length > 1) {
+    if (level.length % 2 === 1) level.push(level[level.length - 1]);
+    const next = [];
+    for (let i = 0; i < level.length; i += 2) {
+      const concat = new Uint8Array(64);
+      concat.set(new Uint8Array(level[i]), 0);
+      concat.set(new Uint8Array(level[i + 1]), 32);
+      next.push(await sha256(concat));
+    }
+    level = next;
+  }
+  return level[0];
+}
+
+// === Main verification =================================================
+
+async function verifyPub() {
+  document.getElementById("verify").disabled = true;
+  logEl.textContent = "";
+
+  let baseUrl = document.getElementById("url").value.trim();
+  if (!baseUrl) {
+    logFail("no URL given");
+    document.getElementById("verify").disabled = false;
+    return;
+  }
+  if (!baseUrl.endsWith("/")) baseUrl += "/";
+
+  try {
+    log("Verifying " + baseUrl);
+    log("");
+
+    // 1. Fetch published root.
+    log("[1/5] GET " + baseUrl + "merkle_root.txt");
+    const rootResp = await fetch(baseUrl + "merkle_root.txt");
+    if (!rootResp.ok) throw new Error("merkle_root.txt fetch failed: " + rootResp.status);
+    const publishedRoot = (await rootResp.text()).trim();
+    logInfo("published root: " + publishedRoot);
+    if (!/^[0-9a-f]{64}$/.test(publishedRoot)) {
+      throw new Error("published root does not look like 64 hex chars");
+    }
+    log("");
+
+    // 2. Fetch leaf-hash list.
+    log("[2/5] GET " + baseUrl + "build/leaf_hashes.txt");
+    const leafResp = await fetch(baseUrl + "build/leaf_hashes.txt");
+    if (!leafResp.ok) throw new Error("leaf_hashes.txt fetch failed: " + leafResp.status);
+    const leafText = await leafResp.text();
+    const leafLines = leafText.split(/\r?\n/).filter(l => l.trim().length > 0);
+    logInfo("leaf count: " + leafLines.length);
+    const expected = leafLines.map(line => {
+      const m = line.match(/^([0-9a-f]{64})\s+(.+)$/);
+      if (!m) throw new Error("malformed leaf line: " + line);
+      return { hash: m[1], filename: m[2] };
+    });
+    log("");
+
+    // 3 & 4. Fetch each fact, recompute SHA-256, compare.
+    log("[3/5] Fetching " + expected.length + " fact files and recomputing SHA-256...");
+    const recomputedLeafBytes = [];
+    let allMatch = true;
+    for (const e of expected) {
+      const r = await fetch(baseUrl + "facts/" + e.filename);
+      if (!r.ok) {
+        logFail("fetch failed: " + e.filename + " (" + r.status + ")");
+        allMatch = false;
+        recomputedLeafBytes.push(null);
+        continue;
+      }
+      const bytes = await r.arrayBuffer();
+      const digest = await sha256(bytes);
+      const digestHex = bytesToHex(digest);
+      if (digestHex === e.hash) {
+        logOK(e.filename + "  " + digestHex);
+      } else {
+        logFail(e.filename + "  expected=" + e.hash + "  got=" + digestHex);
+        allMatch = false;
+      }
+      recomputedLeafBytes.push(digest);
+    }
+    if (!allMatch) throw new Error("one or more leaf hashes did not match");
+    log("");
+
+    // 5. Recompute Merkle root and compare.
+    log("[4/5] Computing Bitcoin-style Merkle root over " + recomputedLeafBytes.length + " leaves...");
+    const recomputedRoot = bytesToHex(await merkleRoot(recomputedLeafBytes));
+    logInfo("recomputed root: " + recomputedRoot);
+    log("");
+
+    log("[5/5] Comparing recomputed root to published root...");
+    if (recomputedRoot === publishedRoot) {
+      logOK("MERKLE ROOT MATCHES — every fact byte is consistent with the published root");
+      log("");
+      log("");
+      log("--- VERIFICATION RESULT ---", "ok");
+      logOK("All facts verified.");
+      logOK("Recomputed root: " + recomputedRoot);
+      log("");
+      logInfo("Bitcoin attestation NOT verified here. To verify against Bitcoin:");
+      logInfo("  brew install opentimestamps-client");
+      logInfo("  curl -O " + baseUrl + "merkle_root.txt");
+      logInfo("  curl -O " + baseUrl + "merkle_root.txt.ots");
+      logInfo("  ots verify merkle_root.txt.ots");
+    } else {
+      logFail("MERKLE ROOT MISMATCH");
+      logFail("  published:  " + publishedRoot);
+      logFail("  recomputed: " + recomputedRoot);
+    }
+  } catch (err) {
+    log("");
+    logFail("verification failed: " + err.message);
+    logInfo("If you see CORS errors in the browser console, the host has not");
+    logInfo("set Access-Control-Allow-Origin headers. Try the IPFS gateway URL");
+    logInfo("instead — IPFS gateways generally serve with permissive CORS.");
+  } finally {
+    document.getElementById("verify").disabled = false;
+  }
+}
+
+// Self-test on load: confirm sha256 implementation matches expected.
+(async function selfTest() {
+  const enc = new TextEncoder();
+  const got = bytesToHex(await sha256(enc.encode("a")));
+  const expected = "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb";
+  if (got === expected) {
+    log("self-test  sha256('a') OK  " + got, "info");
+  } else {
+    log("self-test FAILED  sha256('a') = " + got + " (expected " + expected + ")", "fail");
+  }
+
+  // Merkle test vector C: leaves ["a","b","c"] → known root.
+  const leafA = await sha256(enc.encode("a"));
+  const leafB = await sha256(enc.encode("b"));
+  const leafC = await sha256(enc.encode("c"));
+  const rootC = bytesToHex(await merkleRoot([leafA, leafB, leafC]));
+  const expectedC = "d31a37ef6ac14a2db1470c4316beb5592e6afd4465022339adafda76a18ffabe";
+  if (rootC === expectedC) {
+    log("self-test  merkle vector C OK  " + rootC, "info");
+  } else {
+    log("self-test FAILED  merkle C = " + rootC + " (expected " + expectedC + ")", "fail");
+  }
+})();
+</script>
+
+</body>
+</html>

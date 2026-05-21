@@ -1,0 +1,35 @@
+FACT 04 — ALLEGATION SUMMARY (FICTIONAL)
+
+The fictional Jane Doe alleges, on the basis of the evidence listed in
+FACT 03, that:
+
+  ACME_AEROSPACE (FICTIONAL) management, between 2024-Q3 and 2026-Q1,
+  was aware of a specific manufacturing-tolerance defect in the
+  fictional Acme-7800 component and chose not to escalate the defect
+  through the company's standard quality-incident channel.
+
+  The defect, if uncorrected on units already shipped, would, under
+  conditions reproducible in laboratory testing, produce a non-trivial
+  probability of in-service failure of a load-bearing element.
+
+  Documents 1, 2, and 7 in FACT 03 are the internal quality reports
+  that describe the defect. Documents 3 and 4 are the email threads in
+  which management discussed (and, the allegation contends, decided
+  against) escalation. Documents 5 and 6 are slide-deck photographs
+  from a meeting in which the decision was internally communicated.
+
+The allegation does NOT claim:
+
+  - That any actual failure has occurred. The defect's in-service
+    failure probability is non-trivial but not deterministic.
+  - That every named individual in the documents acted with intent to
+    conceal. Multiple readings of the documents are possible; the
+    allegation reflects the whistleblower's reading.
+  - That ACME_AEROSPACE has not taken corrective action in the period
+    between the most recent document (2025-Q4) and this sealing
+    (2026-05-21).
+
+This fact asserts only the whistleblower's allegation as stated. It
+does not assert that the allegation is true. The allegation is a
+contestable claim about the meaning of the sealed documents in FACT 03.
+The documents themselves are the load-bearing artifact.

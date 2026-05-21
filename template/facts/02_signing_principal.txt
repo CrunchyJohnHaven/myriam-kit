@@ -1,0 +1,18 @@
+FACT 02 — SIGNING PRINCIPAL
+
+[Replace this body with a declaration of who is sealing the publication
+and under what authority.]
+
+Example:
+
+  This publication is sealed by [name or entity] in the capacity of
+  [role / title / standing]. The signing principal accepts responsibility
+  for the contents of all sealed facts in this publication.
+
+  Communications about this publication may be directed to
+  [contact channel — email, address, etc.]. The signing principal does
+  not guarantee a response.
+
+  This fact asserts only the identity of the signing principal and the
+  channel for communications. It does not assert that the principal will
+  respond to any particular message.

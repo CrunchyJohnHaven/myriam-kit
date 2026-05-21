@@ -1,0 +1,24 @@
+FACT 03 — WHAT THIS PUBLICATION IS NOT
+
+[Replace this body with an explicit disambiguation of what your
+publication is NOT — preempting interpretations the domain name, page
+title, or surrounding context might invite.]
+
+Example:
+
+  This publication is not:
+    - an official communication from any government, agency, or court
+    - a contract, agreement, or binding obligation
+    - a guarantee of any outcome stated within
+    - a substitute for advice from a [doctor / lawyer / engineer]
+
+  It is a cryptographically sealed publication of a small set of facts
+  under the MYRIAM-kit protocol. Each fact is verifiable byte-for-byte
+  against the published Merkle root, which is committed to the Bitcoin
+  blockchain via OpenTimestamps.
+
+  Readers who are not familiar with these cryptographic primitives may
+  consult [link to your verify documentation or this kit's docs].
+
+  This fact asserts only the negations above and the protocol context.
+  It does not assert any further claim about the world.

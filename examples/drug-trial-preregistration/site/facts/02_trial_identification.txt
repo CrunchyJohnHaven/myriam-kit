@@ -1,0 +1,25 @@
+FACT 02 — TRIAL IDENTIFICATION (FICTIONAL)
+
+  Trial title:        A Phase 3, Randomized, Double-Blind,
+                      Placebo-Controlled Trial of Compound FICT-X-7
+                      in Adults with [Fictional Condition Y]
+  Internal trial ID:  FICT-2026-001 (FICTIONAL)
+  Registry IDs:       (none — fictional trial; a real trial would list
+                      ClinicalTrials.gov NCT#, EU CTR EudraCT#, etc.)
+  Sponsor:            Fictional Therapeutics Inc. (FICTIONAL)
+  Principal investigator: Dr. [Fictional Name], Department of
+                      [Fictional Department], [Fictional University]
+  Trial sites:        Number planned: 24 (multi-center, North America)
+  Estimated duration: Enrollment 18 months; follow-up 12 months;
+                      total 30 months
+  Phase:              3
+  Investigational drug: FICT-X-7 (FICTIONAL — a fictional small-molecule
+                      compound; chemical structure NOT included in this
+                      pre-registration but is on file with the sponsor
+                      and any regulatory authority of jurisdiction)
+  Comparator:         Placebo (matching capsule, no active ingredient)
+
+This fact asserts only the identification fields above for the
+fictional trial. It does not assert that any real trial exists, that
+any real drug is in development, or that any real investigator is
+involved.

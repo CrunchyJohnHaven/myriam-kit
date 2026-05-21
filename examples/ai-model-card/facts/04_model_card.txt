@@ -1,0 +1,43 @@
+FACT 04 — MODEL CARD (CAPABILITIES, LIMITS, KNOWN FAILURE MODES)
+
+The fictional Calm-mini-v0 model card, as released:
+
+INTENDED USE
+
+  Calm-mini-v0 is intended for short-form English text completion and
+  question-answering on factual topics with a strong recency cutoff
+  (training data through 2025-Q3). It is intended for use by developers
+  evaluating small-model behavior, not for end-user deployment.
+
+OUT-OF-SCOPE USES
+
+  - High-stakes decisions (medical, legal, financial, hiring)
+  - Production customer-facing applications
+  - Tasks requiring multi-step reasoning beyond ~3 steps
+  - Tasks requiring information past the training cutoff
+  - Languages other than English (model is English-only)
+
+KNOWN FAILURE MODES (as observed by the publisher during pre-release evals)
+
+  1. Confidently fabricates citations for any claim asked to "cite a source."
+  2. Conflates similar names of public figures with non-trivial frequency.
+  3. Fails to refuse some prompts that should be refused, especially when
+     framed as "for a fictional story" or similar bypass patterns.
+  4. Generates plausible-sounding code that does not compile, particularly
+     for languages underrepresented in training (Rust, OCaml, Zig).
+  5. Reasoning chains beyond 3 steps degrade rapidly; CoT prompting does
+     not reliably mitigate this in the 280M parameter regime.
+
+LIMITS THIS MODEL CARD DOES NOT COVER
+
+  - Long-horizon agentic behavior (not evaluated)
+  - Behavior under adversarial fine-tuning by downstream users
+  - Behavior on inputs longer than 4,000 tokens (only 0-4K evaluated)
+  - Behavior in any language other than English
+
+This fact is illustrative. A real model card would be longer, more
+specific, and tied to actual eval results in FACT 05.
+
+This fact asserts only the contents of the above model card as
+released. It does not assert that the model exists, that the failure
+modes are exhaustive, or that the intended uses are safe.

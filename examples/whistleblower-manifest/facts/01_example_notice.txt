@@ -1,0 +1,17 @@
+FACT 01 — EXAMPLE NOTICE
+
+This publication is an EXAMPLE demonstration of how a whistleblower can
+use myriam-kit to seal an evidence manifest. The whistleblower named in
+subsequent facts ("Jane Doe"), the alleged misconduct, the evidence
+files referenced, and the document hashes are ALL FICTIONAL.
+
+The purpose of this publication is to show the SHAPE of a real
+whistleblower evidence-manifest seal. A real disclosure would replace
+each fact body with the actual artifacts of the actual case, and would
+NOT pre-publish the example notice — though a separately-sealed
+publication can be linked from the real one to demonstrate that the
+form was followed.
+
+This fact asserts only that the publication is an example, not a real
+disclosure. No real misconduct is hereby alleged. No real evidence is
+hereby disclosed.

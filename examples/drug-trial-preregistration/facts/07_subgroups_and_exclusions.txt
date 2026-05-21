@@ -1,0 +1,52 @@
+FACT 07 — PRE-REGISTERED SUBGROUP ANALYSES + FULL EXCLUSION CRITERIA (FICTIONAL)
+
+PRE-REGISTERED SUBGROUP ANALYSES
+
+  Subgroup analyses below are PRE-SPECIFIED. They will be reported
+  regardless of direction or significance. They are EXPLORATORY (do not
+  affect the primary inference).
+
+  S1. Sex (male / female / non-binary or unspecified)
+  S2. Age group (18-44 / 45-64 / 65-70)
+  S3. Baseline FSSS severity (mild 12-17 / moderate 18-24 / severe 25-30)
+  S4. Region (North America / non-North America — N/A for this trial,
+      noted for cross-trial comparability)
+  S5. Concomitant baseline therapy (yes / no)
+
+  Each subgroup analysis uses the same ANCOVA model as the primary
+  analysis, with treatment-by-subgroup interaction tested at
+  alpha = 0.10 (exploratory only). Forest plots will be reported.
+
+ANY POST-HOC SUBGROUP IDENTIFIED AFTER UNBLINDING IS NOT IN THIS LIST.
+Post-hoc subgroups, if reported, must be labeled as such in the trial
+report and cannot be claimed as confirmatory.
+
+FULL EXCLUSION CRITERIA (pre-registered)
+
+  E1.  Age < 18 or > 70 at screening
+  E2.  Pregnancy, breastfeeding, or planning pregnancy during the trial
+  E3.  Inability to provide informed consent
+  E4.  Severe hepatic impairment (Child-Pugh class C) at screening
+  E5.  eGFR < 30 mL/min/1.73m² at screening
+  E6.  Known hypersensitivity to FICT-X-7 or any excipient
+  E7.  Active or recent (past 12 months) participation in another
+       investigational drug trial
+  E8.  Cancer treatment within past 5 years (excluding non-melanoma
+       skin cancer and stable cervical CIS)
+  E9.  Uncontrolled cardiovascular disease (NYHA class III/IV; MI or
+       stroke within past 6 months)
+  E10. Active substance use disorder (excluding tobacco, caffeine) within
+       past 12 months
+  E11. Use of [fictional class of contraindicated medications] within
+       past 30 days
+  E12. Inability to comply with the trial schedule (per investigator
+       assessment)
+
+This fact asserts only the pre-registered subgroup analyses and the
+full exclusion criteria. It does not assert that the subgroup choices
+are exhaustive of meaningful subpopulations, or that the exclusion
+criteria are appropriate for all clinical contexts.
+
+CRITICAL NOTE: addition of new exclusion criteria after this sealing,
+or post-hoc subgroup analyses presented as confirmatory, will be
+DETECTABLE as deviations from this sealed pre-registration.

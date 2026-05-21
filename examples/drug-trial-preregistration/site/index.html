@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Example: Drug Trial Pre-registration Seal — myriam-kit</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: ui-monospace, "SFMono-Regular", "Menlo", "Monaco", monospace; max-width: 720px; margin: 0 auto; padding: 2rem 1rem 6rem; line-height: 1.55; font-size: 15px; }
+  h1 { font-size: 1.4rem; margin-bottom: 0.2rem; }
+  h2 { font-size: 1.05rem; margin-top: 2.5rem; border-bottom: 1px solid currentColor; padding-bottom: 0.2rem; }
+  .sub { opacity: 0.7; margin-top: 0; }
+  .fact { border-left: 3px solid currentColor; padding: 0.4rem 0 0.4rem 0.9rem; margin: 1.2rem 0; white-space: pre-wrap; }
+  .hash { font-size: 0.78rem; opacity: 0.75; word-break: break-all; }
+  .root { border: 1px solid currentColor; padding: 0.6rem 0.8rem; margin: 1rem 0; word-break: break-all; font-size: 0.85rem; }
+  .banner { border: 1px solid currentColor; padding: 0.6rem 0.8rem; margin: 1rem 0; font-size: 0.85rem; background: rgba(255,200,0,0.08); }
+  a { color: inherit; }
+  footer { margin-top: 4rem; font-size: 0.8rem; opacity: 0.7; }
+  .badge { display: inline-block; border: 1px solid currentColor; padding: 0.1rem 0.5rem; font-size: 0.7rem; letter-spacing: 0.1em; }
+</style>
+</head>
+<body>
+
+<h1>Drug Trial Pre-registration Seal &mdash; example</h1>
+<p class="sub">Example publication built with myriam-kit &middot; <span class="badge">EXAMPLE</span></p>
+
+<div class="banner">
+<strong>This is an EXAMPLE.</strong> The trial "FICT-2026-001," the drug
+"FICT-X-7," the sponsor "Fictional Therapeutics Inc.," the investigators,
+and all numerical parameters are FICTIONAL. The purpose of this
+publication is to demonstrate the form of a real clinical-trial
+pre-registration seal. No real trial is hereby pre-registered. A real
+sponsor would fork this kit, replace each fact with the real protocol
+content, and seal BEFORE enrollment begins.
+See <a href="README.md">README.md</a> for adoption guidance.
+</div>
+
+<p>
+This page is a sealed publication of 8 facts that together constitute
+a complete trial pre-registration: trial identification, hypothesis,
+study design, endpoints, statistical analysis plan, subgroup analyses
+and exclusion criteria, and pre-registration commitments. The 8 facts
+have been hashed (SHA-256), combined into a Bitcoin-style Merkle root,
+and committed to the Bitcoin blockchain via
+<a href="https://opentimestamps.org">OpenTimestamps</a> against two
+independent calendar operators.
+</p>
+
+<p>
+This kit is a <strong>complement to</strong> existing trial registries
+(ClinicalTrials.gov, EU CTR, ISRCTN), not a replacement. A real trial
+should be registered in the jurisdictional registry AND additionally
+sealed under MYRIAM.
+</p>
+
+<h2>The Eight Facts</h2>
+
+<div class="fact">FACT 01 &mdash; EXAMPLE NOTICE
+
+This publication is an EXAMPLE demonstration of how a clinical-trial
+sponsor or investigator can use myriam-kit to seal a trial pre-
+registration. The trial named in subsequent facts ("FICT-2026-001"),
+the sponsor, the investigators, the drug, and all numerical parameters
+are FICTIONAL.
+
+The purpose of this publication is to show the SHAPE of a real
+clinical-trial pre-registration seal. A real registration would replace
+each fact body with the actual content of the actual trial protocol.
+
+This kit is a COMPLEMENT to existing trial registries (ClinicalTrials.gov,
+EU CTR, ISRCTN, etc.), not a replacement. A real trial should be
+registered in the appropriate jurisdictional registry AND additionally
+sealed under MYRIAM. The MYRIAM seal provides Bitcoin-anchored
+tamper-evidence on top of the registry's own integrity controls.
+
+This fact asserts only that the publication is an example, not a real
+trial pre-registration. No real trial is hereby pre-registered. No real
+drug is hereby identified. No real sponsor or investigator is hereby
+named.</div>
+<div class="hash">SHA-256: dbed243d772769784e20135b6c72a5804efd610a73a536b019d24986900fb6c2</div>
+
+<div class="fact">FACT 02 &mdash; TRIAL IDENTIFICATION (FICTIONAL)
+
+  Trial title:        A Phase 3, Randomized, Double-Blind,
+                      Placebo-Controlled Trial of Compound FICT-X-7
+                      in Adults with [Fictional Condition Y]
+  Internal trial ID:  FICT-2026-001 (FICTIONAL)
+  Registry IDs:       (none &mdash; fictional trial; a real trial would list
+                      ClinicalTrials.gov NCT#, EU CTR EudraCT#, etc.)
+  Sponsor:            Fictional Therapeutics Inc. (FICTIONAL)
+  Principal investigator: Dr. [Fictional Name], Department of
+                      [Fictional Department], [Fictional University]
+  Trial sites:        Number planned: 24 (multi-center, North America)
+  Estimated duration: Enrollment 18 months; follow-up 12 months;
+                      total 30 months
+  Phase:              3
+  Investigational drug: FICT-X-7 (FICTIONAL)
+  Comparator:         Placebo (matching capsule, no active ingredient)
+
+This fact asserts only the identification fields above for the
+fictional trial. It does not assert that any real trial exists, that
+any real drug is in development, or that any real investigator is
+involved.</div>
+<div class="hash">SHA-256: e3c645940e31fd0592d200e9c9d81f7890c1f98ba5a4d4321137274dae960428</div>
+
+<div class="fact">FACT 03 &mdash; HYPOTHESIS (FICTIONAL)
+
+PRIMARY HYPOTHESIS
+
+  Treatment with FICT-X-7 at 50 mg orally once daily for 12 weeks will
+  produce a statistically significant reduction in the primary endpoint
+  (defined in FACT 05) compared to placebo, at the alpha = 0.05 level,
+  in the modified intent-to-treat population.
+
+NULL HYPOTHESIS (formally stated for clarity)
+
+  H0: &mu;_treatment &minus; &mu;_placebo = 0 on the primary endpoint
+  H1: &mu;_treatment &minus; &mu;_placebo &ne; 0 on the primary endpoint
+
+EFFECT SIZE OF INTEREST
+
+  The trial is powered to detect a between-group difference of 0.4
+  standardized units on the primary endpoint, which the sponsor
+  considers the minimum clinically meaningful difference.
+
+This fact asserts only that the above is the trial's pre-registered
+hypothesis. It does not assert that the hypothesis is true, that the
+effect size is achievable, or that the chosen primary endpoint
+captures clinical meaningfulness.</div>
+<div class="hash">SHA-256: 313cec73aa98a886c1fb67db5772d9fde5d1c4cdfaeacd49e3a4dfa2ad3f4c10</div>
+
+<div class="fact">FACT 04 &mdash; STUDY DESIGN (FICTIONAL)
+
+DESIGN
+
+  Type:                     Randomized, double-blind, placebo-controlled,
+                            parallel-group
+  Allocation ratio:         1:1 (treatment : placebo)
+  Randomization:            Centralized, computer-generated, stratified
+                            by [fictional stratification variable]
+  Blinding:                 Participants, investigators, outcome
+                            assessors, and statisticians all blinded
+                            until database lock
+
+POPULATION
+
+  Total planned enrollment: 480 participants
+  Inclusion criteria:       Adults age 18-70 with [fictional condition Y]
+                            of moderate severity, stable on baseline
+                            therapy for &ge;3 months
+  Exclusion criteria:       (full list pre-registered in FACT 07)
+
+INTERVENTION
+
+  Treatment arm:    FICT-X-7 50 mg orally once daily for 12 weeks
+  Placebo arm:      Matching capsule once daily for 12 weeks
+  Duration:         12 weeks active treatment; 12 weeks follow-up
+                    (24 weeks total per participant)
+
+ANALYSIS POPULATIONS (pre-defined)
+
+  - mITT (modified intent-to-treat): PRIMARY ANALYSIS POPULATION
+  - Per-protocol: SENSITIVITY ANALYSIS POPULATION
+  - Safety: SAFETY ANALYSIS POPULATION
+
+This fact asserts only the study design as pre-registered. It does not
+assert that the design is appropriate or optimal. The seal proves the
+design was committed to *prior* to seeing data.</div>
+<div class="hash">SHA-256: 76e43edc5e8c81be7430dec3151811f48905fcdab6ff1f97b435171d10718e8a</div>
+
+<div class="fact">FACT 05 &mdash; PRIMARY AND SECONDARY ENDPOINTS (FICTIONAL)
+
+PRIMARY ENDPOINT (one and only one &mdash; singular by design)
+
+  Change from baseline in [Fictional Symptom Severity Score, FSSS]
+  at Week 12.
+
+  - Direction of benefit: negative change (decrease) is beneficial
+  - Primary analysis: ANCOVA, alpha = 0.05 (two-sided)
+  - Missing-data: multiple imputation under MAR, 100 imputations
+
+KEY SECONDARY ENDPOINTS (pre-ordered for hierarchical testing)
+
+  1. Response rate at Week 12
+  2. Time to response
+  3. Change from baseline in FQLI at Week 12
+  4. Change from baseline in FSSS at Week 24
+
+OTHER PRE-REGISTERED ENDPOINTS (exploratory)
+
+  - Adverse-event rates
+  - All-cause mortality
+  - MACE composite
+  - Liver function abnormalities
+
+HIERARCHICAL TESTING ORDER preserves family-wise error rate at
+alpha = 0.05.
+
+CRITICAL: any post-hoc endpoint substitution will be DETECTABLE as a
+deviation from this sealed pre-registration. This is the central
+protection the seal provides.</div>
+<div class="hash">SHA-256: dcc82b43144be6bd79f2c0c512a54ea81c885090f51458b831cb6d2865105461</div>
+
+<div class="fact">FACT 06 &mdash; STATISTICAL ANALYSIS PLAN (FICTIONAL)
+
+SAMPLE SIZE
+
+  Effect size 0.4 std units, SD 1.6, alpha 0.05 two-sided, power 0.90,
+  20% dropout adjustment: 240 per arm, 480 total.
+
+PRIMARY ANALYSIS
+
+  ANCOVA on change in FSSS, with baseline FSSS as covariate, treatment
+  and stratification factor as fixed effects.
+
+INTERIM ANALYSES
+
+  ONE pre-planned interim at 50% enrollment, futility-only,
+  non-binding. Alpha spending: O'Brien-Fleming with no alpha at interim.
+
+MISSING DATA
+
+  Primary: multiple imputation MAR, m=100, Rubin's rules.
+  Sensitivity: tipping-point analysis.
+
+OUTPUT REPORTING
+
+  Primary endpoint reported regardless of significance. Sponsor commits
+  not to suppress negative or null results (see FACT 08).
+
+CRITICAL: any deviation from this plan (changing the test, the
+imputation method, the model) will be DETECTABLE as a deviation from
+this sealed pre-registration. Unforeseen deviations must be documented
+in a NEW sealed publication that references this one by Merkle root,
+BEFORE the primary analysis is conducted.</div>
+<div class="hash">SHA-256: bba46f63cb6ad10927cf186eb7ea85ad053309bac3b8b1e96718de5309a5ba71</div>
+
+<div class="fact">FACT 07 &mdash; SUBGROUPS + EXCLUSIONS (FICTIONAL)
+
+PRE-REGISTERED SUBGROUP ANALYSES (exploratory)
+
+  S1. Sex
+  S2. Age group (18-44 / 45-64 / 65-70)
+  S3. Baseline FSSS severity (mild / moderate / severe)
+  S4. Region
+  S5. Concomitant baseline therapy
+
+Each tested via treatment-by-subgroup interaction at alpha = 0.10
+(exploratory only). Forest plots reported regardless of significance.
+
+ANY POST-HOC SUBGROUP IDENTIFIED AFTER UNBLINDING IS NOT IN THIS LIST.
+Post-hoc subgroups must be labeled as such; cannot be claimed as
+confirmatory.
+
+FULL EXCLUSION CRITERIA (pre-registered)
+
+  E1. Age outside 18-70
+  E2. Pregnancy or planned pregnancy
+  E3. Inability to consent
+  E4. Severe hepatic impairment (Child-Pugh C)
+  E5. eGFR &lt; 30 mL/min/1.73m&sup2;
+  E6. Hypersensitivity to drug or excipients
+  E7. Recent other trial participation
+  E8. Cancer treatment within 5 years
+  E9. Uncontrolled cardiovascular disease
+  E10. Active substance use disorder
+  E11. Contraindicated medications within 30 days
+  E12. Inability to comply with schedule
+
+CRITICAL: addition of new exclusion criteria after sealing, or
+post-hoc subgroups presented as confirmatory, will be DETECTABLE as
+deviations.</div>
+<div class="hash">SHA-256: e51e79c9dd98b87b6e2367098c84f65e4001a12e52dbc18fb219ae194e0d4bcf</div>
+
+<div class="fact">FACT 08 &mdash; COMMITMENTS + SIGNING PRINCIPAL (FICTIONAL)
+
+In the spirit of the MYRIAM protocol's "minimize preventable deaths
+over time" objective function, the fictional sponsor commits to:
+
+  1. PUBLICATION OF RESULTS REGARDLESS OF DIRECTION within 12 months
+     of database lock.
+  2. NO POST-HOC ENDPOINT SUBSTITUTION. Primary endpoint must match
+     FACT 05 in published report.
+  3. NO POST-HOC SUBGROUP MINING presented as confirmatory.
+  4. NO STATISTICAL-PLAN DEVIATION without sealed amendment.
+  5. DATA AVAILABILITY: de-identified individual-participant data
+     within 12 months of publication.
+  6. ADVERSE-EVENT TRANSPARENCY: all serious AEs reported regardless
+     of attribution.
+  7. NO RETROACTIVE CHANGES to this pre-registration.
+
+SIGNING PRINCIPAL
+
+  Sponsor:        Fictional Therapeutics Inc. (FICTIONAL)
+  Principal:      Dr. [Fictional Name], Chief Medical Officer
+  Co-signatory:   Dr. [Fictional Name], Principal Investigator
+                  (institution: [Fictional University])
+  Date sealed:    2026-05-21
+
+This fact asserts only the commitments and signing principals as
+declared. It does not assert that the commitments will be honored in
+practice, only that any future deviation will be publicly comparable
+against this sealed declaration.</div>
+<div class="hash">SHA-256: da08e598223d3c8cda10e1d1f40b7c2fb2ba9811aa7f88f303ab75965791b469</div>
+
+<h2>Cryptographic Seal</h2>
+
+<p><strong>Merkle root</strong> (Bitcoin-style, over the 8 facts above):</p>
+<div class="root">7b4a704ff6b4e412f8f51f0578e01076be3e91ed2d0dc89ac327779b8311a9ff</div>
+
+<p><strong>Seal time:</strong> 2026-05-21T20:45Z (approximately 16:45 EDT)</p>
+
+<p><strong>Bitcoin commitment:</strong> OpenTimestamps receipt at
+<a href="merkle_root.txt.ots">merkle_root.txt.ots</a>, pending against:</p>
+<ul>
+  <li><code>alice.btc.calendar.opentimestamps.org</code> &mdash; Peter Todd</li>
+  <li><code>finney.calendar.eternitywall.com</code> &mdash; Eternity Wall</li>
+</ul>
+
+<p><strong>Signing principal:</strong> Fictional Therapeutics Inc.
+(fictional). For real pre-registrations, see <a href="README.md">README.md</a>.</p>
+
+<h2>How to Verify</h2>
+
+<ol>
+  <li>Download all 8 fact files from <code>facts/</code>.</li>
+  <li>Recompute each file's SHA-256 and confirm it matches the per-fact
+      hash above.</li>
+  <li>Compute the Merkle root or run
+      <a href="build/verify.py">verify.py</a>.</li>
+  <li>Verify the OpenTimestamps receipt:
+      <code>ots verify merkle_root.txt.ots</code></li>
+</ol>
+
+<h2>What this kit defends against</h2>
+
+<p>Failure modes the seal directly catches: post-hoc endpoint switching,
+outcome cherry-picking, subgroup mining, silent sample-size revision,
+suppression of negative results.</p>
+
+<p>Historical mortality cases where the kit would have helped: Vioxx
+(cardiovascular endpoint cutoff change), Paxil Study 329 (negative
+adolescent data reframed), multiple oncology trials that swapped
+survival for surrogate endpoints when survival failed.</p>
+
+<p>To fork this kit for a real pre-registration: read the
+<a href="README.md">README</a> first. The seal must be created BEFORE
+enrollment begins.</p>
+
+<footer>
+Example publication &middot; myriam-kit Drug Trial Pre-registration &middot; 2026-05-21<br>
+Fictional. Not a real trial. Read FACT 01.<br>
+Public domain (CC0).
+</footer>
+
+</body>
+</html>

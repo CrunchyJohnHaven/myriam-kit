@@ -1,0 +1,22 @@
+FACT 03 — WEIGHTS ARTIFACT HASH (FICTIONAL)
+
+The fictional Calm-mini-v0 weights file is committed to under the
+following hash:
+
+  SHA-256 of weights file:
+    6ad381d45454195ec9ca3a6b56101e4f1d1e065ae90bf4de324cce53b4acdea4
+
+This hash was computed as:
+
+  echo -n "calm-mini-v0 placeholder weights for myriam-kit example, 2026-05-21" | shasum -a 256
+
+That is: the hash is of a deterministic placeholder ASCII string, NOT
+of real model weights. Anyone can reproduce the hash to confirm.
+
+In a real release, this fact would hash the actual safetensors or GGUF
+file as distributed, and the body would name the exact filename and
+size. Any post-release modification to the weights would change the
+hash and be detectable.
+
+This fact asserts only the placeholder hash above. It does not assert
+that any real weights file exists.

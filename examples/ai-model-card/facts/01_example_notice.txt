@@ -1,0 +1,15 @@
+FACT 01 — EXAMPLE NOTICE
+
+This publication is an EXAMPLE demonstration of how myriam-kit may be
+used to seal the release of an AI model card. The model named in
+subsequent facts ("Calm-mini-v0") is FICTIONAL. The weights hash is
+the SHA-256 of a placeholder string, not of real model weights. The
+eval scores are illustrative.
+
+The purpose of this publication is to show the SHAPE of a real model
+release attestation. A real release would replace each fact body with
+the actual artifacts of the real model.
+
+This fact asserts only that the publication is an example, not a real
+release. No real model is hereby released. No real evals are hereby
+reported.

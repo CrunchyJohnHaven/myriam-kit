@@ -1,0 +1,67 @@
+FACT 05 — THREAT MODEL (DECLARED)
+
+The fictional Jane Doe expects, based on her assessment of how
+similar disclosures have historically been responded to, that the
+following actions may be attempted against the disclosure described
+in FACTS 02–04. The MYRIAM seal of this publication is intended to
+defend against the specific subset of these actions noted with [SEAL].
+
+ANTICIPATED RESPONSES BY THE NAMED ORGANIZATION:
+
+  T1. [SEAL] Public dispute of the document contents.
+      Defense: hashes in FACT 03 prove the documents the whistleblower
+      currently holds match the bytes she had at sealing time. Any
+      "altered after the fact" claim is publicly refutable.
+
+  T2. [SEAL] Claim that documents were never sealed at the asserted time.
+      Defense: the OpenTimestamps receipt against Bitcoin proves the
+      manifest Merkle root existed at or before the OTS-attested time.
+
+  T3. [SEAL] Claim documents are fabricated retroactively.
+      Defense: the seal time (via OTS) plus the manifest hashes prove
+      the document hashes existed at a specific time. Whether the
+      content of the documents is true is still contestable, but their
+      existence-as-bytes at the sealed time is not.
+
+  T4. Pressure on the whistleblower to retract.
+      No defense at the MYRIAM layer. Once sealed, the publication
+      cannot be silently retracted; the whistleblower may make a
+      separate sealed publication acknowledging retraction, but the
+      original sealed publication remains.
+
+  T5. Legal action against the whistleblower for disclosure itself.
+      No defense at the MYRIAM layer. Whistleblower-protection law is
+      jurisdiction-specific and outside the protocol's scope. The
+      whistleblower must seek independent legal counsel.
+
+  T6. Pressure on intermediaries (journalists, regulators) to ignore
+      or bury the disclosure.
+      Partial defense via IPFS pin: the publication is
+      content-addressed and can be retrieved by any party who has the
+      CID, independent of any single intermediary's cooperation.
+
+  T7. Personal retaliation against the whistleblower.
+      No defense at the MYRIAM layer.
+
+  T8. Discrediting the whistleblower's motivations or character.
+      No defense at the MYRIAM layer. The seal is about the documents,
+      not about the whistleblower.
+
+ANTICIPATED RESPONSES BY INTERMEDIARIES:
+
+  T9. [SEAL] Journalist or regulator receives documents in altered form
+      from a third party not the original whistleblower.
+      Defense: the manifest hashes let the recipient verify the bytes
+      they receive match the bytes that were sealed. If hashes do not
+      match, the recipient knows the documents have been altered in
+      transit.
+
+  T10. Journalist or regulator silently drops the story.
+      No defense at the MYRIAM layer. But the sealed publication
+      itself is now in the public IPFS network, retrievable by other
+      parties even if the first recipient does not act.
+
+This fact asserts only the threat model as the whistleblower has
+declared it. It does not assert that all listed threats will
+materialize, that the defenses will be effective in every case, or
+that the unlisted threats are exhaustive.

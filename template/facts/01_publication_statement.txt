@@ -1,0 +1,19 @@
+FACT 01 — PUBLICATION STATEMENT
+
+[Replace this entire file body with the body of your first fact.
+Each fact body should be plain UTF-8 text. LF line endings. The exact
+bytes of this file are what gets hashed into the Merkle tree.]
+
+This template fact, if left unchanged before sealing, will appear in
+your published page unedited and will be hashed verbatim. Do not seal
+the template.
+
+Example shape for a fact:
+
+  [Party] has [declared / named / stated / committed to / acknowledged]
+  the following:
+
+    "[The thing the party said or did, quoted exactly]"
+
+  This fact asserts only that the party [verb]ed the above. It does not
+  assert that the content is true.

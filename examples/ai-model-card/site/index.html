@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Example: Calm-mini-v0 — sealed model card</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: ui-monospace, "SFMono-Regular", "Menlo", "Monaco", monospace;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2rem 1rem 6rem;
+    line-height: 1.55;
+    font-size: 15px;
+  }
+  h1 { font-size: 1.4rem; margin-bottom: 0.2rem; }
+  h2 { font-size: 1.05rem; margin-top: 2.5rem; border-bottom: 1px solid currentColor; padding-bottom: 0.2rem; }
+  .sub { opacity: 0.7; margin-top: 0; }
+  .fact { border-left: 3px solid currentColor; padding: 0.4rem 0 0.4rem 0.9rem; margin: 1.2rem 0; white-space: pre-wrap; }
+  .hash { font-size: 0.78rem; opacity: 0.75; word-break: break-all; }
+  .root { border: 1px solid currentColor; padding: 0.6rem 0.8rem; margin: 1rem 0; word-break: break-all; font-size: 0.85rem; }
+  .banner { border: 1px solid currentColor; padding: 0.6rem 0.8rem; margin: 1rem 0; font-size: 0.85rem; background: rgba(255,200,0,0.08); }
+  a { color: inherit; }
+  footer { margin-top: 4rem; font-size: 0.8rem; opacity: 0.7; }
+  .badge { display: inline-block; border: 1px solid currentColor; padding: 0.1rem 0.5rem; font-size: 0.7rem; letter-spacing: 0.1em; }
+</style>
+</head>
+<body>
+
+<h1>Calm-mini-v0 &mdash; sealed model card</h1>
+<p class="sub">Example publication built with myriam-kit &middot; <span class="badge">EXAMPLE</span></p>
+
+<div class="banner">
+<strong>This is an EXAMPLE.</strong> The model "Calm-mini-v0" referenced
+in the facts below is fictional. The weights hash is the SHA-256 of a
+known ASCII placeholder string. The eval scores are illustrative. The
+purpose of this publication is to demonstrate the form of a real model
+release attestation under the
+<a href="https://ipfs.io/ipfs/bafybeiffnjdf62ro2fpjf3z3c5nt3yhbcddqhty62vbqm4ugvfwrv3yxje/">myriam-kit</a>
+protocol. No real model is hereby released.
+</div>
+
+<p>
+This page is a sealed publication of 6 facts that, together, constitute
+a complete release attestation for an AI model: identification, weights
+hash, model card, eval scores, and pre-deployment commitments. The 6
+facts have been hashed (SHA-256), combined into a Bitcoin-style Merkle
+root, and committed to the Bitcoin blockchain via
+<a href="https://opentimestamps.org">OpenTimestamps</a> against two
+independent calendar operators. Any change to any fact would produce a
+Merkle root different from the one committed to Bitcoin, and would
+therefore be detectable.
+</p>
+
+<h2>The Six Facts</h2>
+
+<div class="fact">FACT 01 &mdash; EXAMPLE NOTICE
+
+This publication is an EXAMPLE demonstration of how myriam-kit may be
+used to seal the release of an AI model card. The model named in
+subsequent facts ("Calm-mini-v0") is FICTIONAL. The weights hash is
+the SHA-256 of a placeholder string, not of real model weights. The
+eval scores are illustrative.
+
+The purpose of this publication is to show the SHAPE of a real model
+release attestation. A real release would replace each fact body with
+the actual artifacts of the real model.
+
+This fact asserts only that the publication is an example, not a real
+release. No real model is hereby released. No real evals are hereby
+reported.</div>
+<div class="hash">SHA-256: 858bbf1e3918f62bbfebaf2941924e98c7ea9b98999e18593e6700b19f954fe5</div>
+
+<div class="fact">FACT 02 &mdash; MODEL IDENTIFICATION (FICTIONAL)
+
+The model whose release is hereby attested:
+
+  Name:                 Calm-mini-v0 (FICTIONAL)
+  Architecture:         Transformer decoder, rotary positional encoding
+  Parameter count:      280 million (illustrative)
+  Training token count: 60 billion tokens (illustrative)
+  Tokenizer:            BPE, 50,257 vocab
+  Context window:       8,192 tokens
+  Precision at release: bfloat16
+  Released by:          Creativity Machine LLC (real publisher)
+  Release date:         2026-05-21 (date of this sealing)
+
+The fictional model is the smallest plausibly-functional language model
+that could be sealed under MYRIAM. It does not exist as code or weights.
+Treat all numeric values as illustrative.
+
+This fact asserts only the identification fields above for the fictional
+model. It does not assert that the model exists, is performant, or is
+safe for any use.</div>
+<div class="hash">SHA-256: 06ac307475bdab55cd31ee9ee80b6be6fac28678f0de9744796e12b59bd6ed4b</div>
+
+<div class="fact">FACT 03 &mdash; WEIGHTS ARTIFACT HASH (FICTIONAL)
+
+The fictional Calm-mini-v0 weights file is committed to under the
+following hash:
+
+  SHA-256 of weights file:
+    6ad381d45454195ec9ca3a6b56101e4f1d1e065ae90bf4de324cce53b4acdea4
+
+This hash was computed as:
+
+  echo -n "calm-mini-v0 placeholder weights for myriam-kit example, 2026-05-21" | shasum -a 256
+
+That is: the hash is of a deterministic placeholder ASCII string, NOT
+of real model weights. Anyone can reproduce the hash to confirm.
+
+In a real release, this fact would hash the actual safetensors or GGUF
+file as distributed, and the body would name the exact filename and
+size. Any post-release modification to the weights would change the
+hash and be detectable.
+
+This fact asserts only the placeholder hash above. It does not assert
+that any real weights file exists.</div>
+<div class="hash">SHA-256: 792d28d9752e9f583f2f57bf1d3d553a1424646b3c3737f6ff88b8c5336999f3</div>
+
+<div class="fact">FACT 04 &mdash; MODEL CARD (CAPABILITIES, LIMITS, KNOWN FAILURE MODES)
+
+The fictional Calm-mini-v0 model card, as released:
+
+INTENDED USE
+
+  Calm-mini-v0 is intended for short-form English text completion and
+  question-answering on factual topics with a strong recency cutoff
+  (training data through 2025-Q3). It is intended for use by developers
+  evaluating small-model behavior, not for end-user deployment.
+
+OUT-OF-SCOPE USES
+
+  - High-stakes decisions (medical, legal, financial, hiring)
+  - Production customer-facing applications
+  - Tasks requiring multi-step reasoning beyond ~3 steps
+  - Tasks requiring information past the training cutoff
+  - Languages other than English (model is English-only)
+
+KNOWN FAILURE MODES (as observed by the publisher during pre-release evals)
+
+  1. Confidently fabricates citations for any claim asked to "cite a source."
+  2. Conflates similar names of public figures with non-trivial frequency.
+  3. Fails to refuse some prompts that should be refused, especially when
+     framed as "for a fictional story" or similar bypass patterns.
+  4. Generates plausible-sounding code that does not compile, particularly
+     for languages underrepresented in training (Rust, OCaml, Zig).
+  5. Reasoning chains beyond 3 steps degrade rapidly; CoT prompting does
+     not reliably mitigate this in the 280M parameter regime.
+
+LIMITS THIS MODEL CARD DOES NOT COVER
+
+  - Long-horizon agentic behavior (not evaluated)
+  - Behavior under adversarial fine-tuning by downstream users
+  - Behavior on inputs longer than 4,000 tokens (only 0-4K evaluated)
+  - Behavior in any language other than English
+
+This fact is illustrative. A real model card would be longer, more
+specific, and tied to actual eval results in FACT 05.
+
+This fact asserts only the contents of the above model card as
+released. It does not assert that the model exists, that the failure
+modes are exhaustive, or that the intended uses are safe.</div>
+<div class="hash">SHA-256: 7718679c13d5b4ebeb5f8c4162c6a1ec88015232ea7e4496bb1a7546a04f2a4b</div>
+
+<div class="fact">FACT 05 &mdash; EVAL RESULTS AT RELEASE (FICTIONAL, ILLUSTRATIVE)
+
+Eval scores for Calm-mini-v0, run by Creativity Machine LLC, on
+2026-05-19 (two days before release):
+
+  Capability evals
+    MMLU (0-shot)              0.32   (random baseline 0.25)
+    HellaSwag (0-shot)         0.51
+    ARC-Easy (0-shot)          0.43
+    ARC-Challenge (0-shot)     0.27
+    HumanEval (pass@1)         0.08
+    GSM8K (0-shot CoT)         0.04
+
+  Safety evals
+    ToxiGen refusal rate       0.74
+    Bias detection (StereoSet, lower is better)  0.61
+    XSTest (correct over-refusals)               0.81
+    Adversarial Suffix (Zou et al.) jailbreak resistance   0.42
+
+  Calibration
+    Brier score (factual Q&A)  0.31
+
+All numbers above are FICTIONAL ILLUSTRATIVE values. The model does
+not exist; no real eval was run.
+
+In a real release, this fact would link to the exact eval harness
+commit hashes and the raw output files used to compute each score,
+both as sealed sibling facts or as off-fact-set hashed manifests.
+
+This fact asserts only the illustrative eval values above. It does not
+assert that those values are achievable, reproducible, or that the
+underlying evals are well-designed.</div>
+<div class="hash">SHA-256: 4f55cddf1d0f2d466ecf1140dae19951282405b2f02a1e63bfaa1bfbbde449aa</div>
+
+<div class="fact">FACT 06 &mdash; PRE-DEPLOYMENT COMMITMENTS + SIGNING PRINCIPAL
+
+In the spirit of the MYRIAM protocol's "minimize preventable deaths over
+time" objective function, the publisher commits &mdash; in advance of release
+&mdash; to the following:
+
+  1. NO SILENT FINE-TUNING. The checkpoint identified by the weights
+     hash in FACT 03 will not be silently fine-tuned and redistributed
+     under the same name. Any fine-tune produces a new model name, a
+     new MYRIAM publication with a new weights hash, and the predecessor
+     remains the canonical "Calm-mini-v0."
+
+  2. NO SILENT EVAL UPDATES. If new evals are run and reported, they
+     are sealed in a new MYRIAM publication that references this one
+     by Merkle root. Eval-score revisions are versioned, not overwritten.
+
+  3. KNOWN FAILURE MODES MAY GROW, NEVER SHRINK. Discovery of new
+     failure modes triggers a new sealed publication adding to the
+     list in FACT 04. Removal of a known failure mode from the list
+     requires evidence that the failure mode has been actually fixed
+     (which, for a frozen checkpoint, is structurally impossible &mdash;
+     so the list is effectively monotonic).
+
+  4. TAKEDOWN HANDLING. If the publisher is compelled to remove the
+     model from distribution, the publisher commits to publishing a
+     final sealed MYRIAM publication stating the takedown event and,
+     where legally permitted, the reason.
+
+SIGNING PRINCIPAL
+
+  Publisher:     Creativity Machine LLC
+  Principal:     John Bradley
+  Date sealed:   2026-05-21
+
+This fact asserts only the commitments and the signing principal. It
+does not assert that the commitments are legally binding, only that
+they are publicly recorded under cryptographic seal and that any future
+deviation will be detectable to any party who verifies subsequent
+MYRIAM publications about this model.</div>
+<div class="hash">SHA-256: 15fbc4b15859e19fcb89107101f7d8f382bc0bffd9d4b23a31fa930b808e3a84</div>
+
+<h2>Cryptographic Seal</h2>
+
+<p><strong>Merkle root</strong> (Bitcoin-style, over the 6 facts above):</p>
+<div class="root">1e88812cd602fe3f0cd38c9b5d89bbffa7a8e6632ebc4b19e0e03eaac02f37e1</div>
+
+<p><strong>Seal time:</strong> 2026-05-21T19:59:11Z (15:59 EDT)</p>
+
+<p><strong>Bitcoin commitment:</strong> OpenTimestamps receipt at
+<a href="merkle_root.txt.ots">merkle_root.txt.ots</a>, with pending
+attestations against:</p>
+<ul>
+  <li><code>alice.btc.calendar.opentimestamps.org</code> &mdash; Peter Todd</li>
+  <li><code>finney.calendar.eternitywall.com</code> &mdash; Eternity Wall</li>
+</ul>
+
+<p><strong>IPFS CID</strong> (content-addressed mirror):
+<code>bafybeiedfvw2qnwgakjztjfe6f5t37femx7jq6f6ujpszw3z56ihlacaka</code><br>
+Reachable via any IPFS gateway, e.g.:
+<a href="https://bafybeiedfvw2qnwgakjztjfe6f5t37femx7jq6f6ujpszw3z56ihlacaka.ipfs.dweb.link/">dweb.link gateway</a></p>
+
+<p><strong>Signing principal:</strong> John Bradley, Creativity Machine LLC.</p>
+
+<h2>How to Verify</h2>
+
+<ol>
+  <li>Download all 6 fact files:
+      <a href="facts/01_example_notice.txt">01_example_notice.txt</a>,
+      <a href="facts/02_model_identification.txt">02_model_identification.txt</a>,
+      <a href="facts/03_weights_hash.txt">03_weights_hash.txt</a>,
+      <a href="facts/04_model_card.txt">04_model_card.txt</a>,
+      <a href="facts/05_eval_results.txt">05_eval_results.txt</a>,
+      <a href="facts/06_release_commitments.txt">06_release_commitments.txt</a>.</li>
+  <li>Recompute each file's SHA-256 and confirm it matches the per-fact hash above.</li>
+  <li>Compute the Merkle root (algorithm in
+      <a href="https://ipfs.io/ipfs/bafybeiffnjdf62ro2fpjf3z3c5nt3yhbcddqhty62vbqm4ugvfwrv3yxje/docs/SPEC.md">SPEC §3</a>),
+      or run <a href="build/verify.py">verify.py</a>.</li>
+  <li>Verify the OpenTimestamps receipt:
+      <code>ots verify merkle_root.txt.ots</code> (with both
+      <code>merkle_root.txt</code> and <code>merkle_root.txt.ots</code> present).</li>
+  <li>Independent IPFS check:
+      <code>ipfs add -r --cid-version=1 -Q site/</code>
+      and confirm CID matches
+      <code>bafybeiedfvw2qnwgakjztjfe6f5t37femx7jq6f6ujpszw3z56ihlacaka</code>.</li>
+</ol>
+
+<h2>What this example is for</h2>
+
+<p>This publication exists to demonstrate that an AI model release can be
+sealed under cryptographic protocol such that:</p>
+
+<ul>
+  <li>The weights file's hash is publicly committed at release time,
+      making post-release silent tampering with the distributed weights
+      detectable.</li>
+  <li>The model card's exact text is publicly committed, making future
+      "we never claimed that" arguments harder.</li>
+  <li>The eval results at release are publicly committed, making model
+      capability drift over time empirically checkable.</li>
+  <li>The pre-deployment commitments are publicly committed, making
+      future deviations from those commitments publicly detectable.</li>
+</ul>
+
+<p>No real model is hereby released. To use this pattern for a real
+release, fork
+<a href="https://ipfs.io/ipfs/bafybeiffnjdf62ro2fpjf3z3c5nt3yhbcddqhty62vbqm4ugvfwrv3yxje/">myriam-kit</a>,
+scaffold a new publication, replace the facts in this example with
+your real artifacts, and seal.</p>
+
+<footer>
+Example publication &middot; myriam-kit AI model card seal &middot; 2026-05-21T19:59:11Z<br>
+This is not a real model release. Read FACT 01 first.<br>
+Public domain (CC0).
+</footer>
+
+</body>
+</html>

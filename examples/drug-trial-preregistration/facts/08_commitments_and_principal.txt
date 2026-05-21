@@ -1,0 +1,71 @@
+FACT 08 — PRE-REGISTRATION COMMITMENTS + SIGNING PRINCIPAL (FICTIONAL)
+
+In the spirit of the MYRIAM protocol's "minimize preventable deaths
+over time" objective function, the fictional sponsor commits — in
+advance of enrollment — to the following:
+
+  1. PUBLICATION OF RESULTS REGARDLESS OF DIRECTION
+     The sponsor commits to publishing the trial results (positive,
+     negative, or null) within 12 months of database lock, in a
+     peer-reviewed journal or, failing that, on a public archive.
+     Suppression of negative or null results would be detectable as
+     a deviation from this commitment.
+
+  2. NO POST-HOC ENDPOINT SUBSTITUTION
+     If the primary endpoint (FACT 05) fails to show significance,
+     the sponsor commits NOT to promote any secondary or exploratory
+     endpoint to "primary" in the published report. Secondary
+     endpoints will be reported as secondary; exploratory endpoints
+     will be reported as exploratory.
+
+  3. NO POST-HOC SUBGROUP MINING PRESENTED AS CONFIRMATORY
+     Any subgroup analysis not in FACT 07 must be labeled "post-hoc
+     and exploratory" in the published report. The pre-registered
+     subgroups in FACT 07 are the only ones that can be claimed as
+     pre-specified.
+
+  4. NO STATISTICAL-PLAN DEVIATION WITHOUT SEALED AMENDMENT
+     If unforeseen events require deviation from the statistical
+     analysis plan in FACT 06 (e.g., enrollment lower than expected,
+     analysis error discovered), the deviation will be documented in
+     a NEW sealed MYRIAM publication that references this one by
+     Merkle root, BEFORE the primary analysis is conducted (and
+     therefore before unblinding).
+
+  5. DATA AVAILABILITY
+     Within 12 months of publication, the sponsor commits to making
+     the de-identified individual-participant dataset available to
+     qualified researchers via a controlled-access mechanism. Hashes
+     of the canonical dataset will be sealed in a separate MYRIAM
+     publication so that the dataset's integrity can be verified.
+
+  6. ADVERSE-EVENT TRANSPARENCY
+     All serious adverse events will be reported regardless of
+     attribution. The trial's safety database will be made available
+     to regulators within statutorily required windows; in addition,
+     the sponsor commits to making aggregate safety data publicly
+     available within 6 months of database lock.
+
+  7. NO RETROACTIVE CHANGES TO THIS PRE-REGISTRATION
+     The sponsor will not silently amend this pre-registration. Any
+     necessary amendments will be NEW sealed publications referencing
+     this one, with each amendment timestamped via OpenTimestamps.
+     Silent amendment is structurally impossible under the seal.
+
+SIGNING PRINCIPAL
+
+  Sponsor:        Fictional Therapeutics Inc. (FICTIONAL)
+  Principal:      Dr. [Fictional Name], Chief Medical Officer
+  Co-signatory:   Dr. [Fictional Name], Principal Investigator
+                  (institution: [Fictional University])
+  Date sealed:    2026-05-21
+
+This fact asserts only the commitments and signing principals as
+declared for the fictional trial. It does not assert that the
+commitments will be honored in practice, or that honoring them is
+sufficient for ethical trial conduct.
+
+The commitments are intended as a *forensic anchor*. Any future
+deviation from any commitment by the sponsor will be publicly
+comparable against this sealed declaration, providing evidence for
+regulatory, patient-advocacy, and journalistic accountability.

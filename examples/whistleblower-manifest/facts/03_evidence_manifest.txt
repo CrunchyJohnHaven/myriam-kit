@@ -1,0 +1,38 @@
+FACT 03 — EVIDENCE MANIFEST (FICTIONAL)
+
+The following table lists the seven evidence items in the fictional
+Jane Doe disclosure. The actual document contents are NOT included in
+this MYRIAM publication — only their cryptographic hashes. This is the
+core whistleblower-protection property of the format: the manifest
+proves what existed at the time of sealing, without exposing the
+contents to anyone who has not yet received them.
+
+  IDX  TYPE          FILENAME (FICTIONAL)         SIZE       SHA-256
+  ---  ------------  ----------------------       --------   --------
+   1   PDF report    QA_Q4_2024_internal.pdf      2.4 MB     cbb671235d5bb13d9f81a91a8661fa648e59e84f6ba0fb126356993066f065a0
+   2   PDF report    QA_Q1_2025_internal.pdf      2.7 MB     89a72e41fa212f6520115739df2d79f366e132c4714c0d60ae87540555195893
+   3   Email .mbox   exec_thread_2025-02.mbox     410 KB     03c23f853b396b0df96070f20cd904ec27881e3f6390c55aedc9550c8a2d79f2
+   4   Email .mbox   exec_thread_2025-06.mbox     280 KB     0a22e596cc4e1e2992e14f8749de4bce304c1190a820337d17e29fea0e6f4d9d
+   5   JPEG image    meeting_2025-11-08_001.jpg   3.1 MB     5c4821d81b2aa72015f6f85235317c7092ab509e164cbdb3933f54769444bfd3
+   6   JPEG image    meeting_2025-11-08_002.jpg   2.9 MB     ac67969651fbafe91c1e54fc16c92277879c3900da799f658e5c5bdd9a6e1db3
+   7   PDF           QA_Q4_2025_internal.pdf      1.8 MB     bcc0dd54e33e6fd1a0a5f05a97f1e452c37148c267872451f29c98102324593b
+
+  Total: 7 items, 13.6 MB
+
+Each hash was computed with SHA-256 over the exact bytes of the file as
+acquired. Any recipient of the underlying documents may verify, by
+re-hashing each file with `shasum -a 256`, that the bytes they received
+match the bytes that existed at the moment of sealing.
+
+In this fictional example, the hashes above are deterministic
+placeholders. Each was computed as:
+
+  echo -n "ACME_FICTIONAL_DOC_<i>_PLACEHOLDER_2026-05-21" | shasum -a 256
+
+A real disclosure would replace these with hashes of the actual files.
+
+This fact asserts only the manifest contents above and the integrity
+property the hashes provide. It does not assert what the actual
+documents allegedly demonstrate; that interpretation is in FACT 04 and
+is, like all such interpretations, subject to challenge by parties
+named in the documents.

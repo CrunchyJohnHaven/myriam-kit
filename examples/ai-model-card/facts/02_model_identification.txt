@@ -1,0 +1,21 @@
+FACT 02 — MODEL IDENTIFICATION (FICTIONAL)
+
+The model whose release is hereby attested:
+
+  Name:                 Calm-mini-v0 (FICTIONAL)
+  Architecture:         Transformer decoder, rotary positional encoding
+  Parameter count:      280 million (illustrative)
+  Training token count: 60 billion tokens (illustrative)
+  Tokenizer:            BPE, 50,257 vocab
+  Context window:       8,192 tokens
+  Precision at release: bfloat16
+  Released by:          Creativity Machine LLC (real publisher)
+  Release date:         2026-05-21 (date of this sealing)
+
+The fictional model is the smallest plausibly-functional language model
+that could be sealed under MYRIAM. It does not exist as code or weights.
+Treat all numeric values as illustrative.
+
+This fact asserts only the identification fields above for the fictional
+model. It does not assert that the model exists, is performant, or is
+safe for any use.

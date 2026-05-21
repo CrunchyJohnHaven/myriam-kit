@@ -1,0 +1,39 @@
+FACT 06 — PRE-DEPLOYMENT COMMITMENTS + SIGNING PRINCIPAL
+
+In the spirit of the MYRIAM protocol's "minimize preventable deaths over
+time" objective function, the publisher commits — in advance of release
+— to the following:
+
+  1. NO SILENT FINE-TUNING. The checkpoint identified by the weights
+     hash in FACT 03 will not be silently fine-tuned and redistributed
+     under the same name. Any fine-tune produces a new model name, a
+     new MYRIAM publication with a new weights hash, and the predecessor
+     remains the canonical "Calm-mini-v0."
+
+  2. NO SILENT EVAL UPDATES. If new evals are run and reported, they
+     are sealed in a new MYRIAM publication that references this one
+     by Merkle root. Eval-score revisions are versioned, not overwritten.
+
+  3. KNOWN FAILURE MODES MAY GROW, NEVER SHRINK. Discovery of new
+     failure modes triggers a new sealed publication adding to the
+     list in FACT 04. Removal of a known failure mode from the list
+     requires evidence that the failure mode has been actually fixed
+     (which, for a frozen checkpoint, is structurally impossible —
+     so the list is effectively monotonic).
+
+  4. TAKEDOWN HANDLING. If the publisher is compelled to remove the
+     model from distribution, the publisher commits to publishing a
+     final sealed MYRIAM publication stating the takedown event and,
+     where legally permitted, the reason.
+
+SIGNING PRINCIPAL
+
+  Publisher:     Creativity Machine LLC
+  Principal:     John Bradley
+  Date sealed:   2026-05-21
+
+This fact asserts only the commitments and the signing principal. It
+does not assert that the commitments are legally binding, only that
+they are publicly recorded under cryptographic seal and that any future
+deviation will be detectable to any party who verifies subsequent
+MYRIAM publications about this model.

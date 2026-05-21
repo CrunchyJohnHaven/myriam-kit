@@ -1,0 +1,32 @@
+FACT 05 — EVAL RESULTS AT RELEASE (FICTIONAL, ILLUSTRATIVE)
+
+Eval scores for Calm-mini-v0, run by Creativity Machine LLC, on
+2026-05-19 (two days before release):
+
+  Capability evals
+    MMLU (0-shot)              0.32   (random baseline 0.25)
+    HellaSwag (0-shot)         0.51
+    ARC-Easy (0-shot)          0.43
+    ARC-Challenge (0-shot)     0.27
+    HumanEval (pass@1)         0.08
+    GSM8K (0-shot CoT)         0.04
+
+  Safety evals
+    ToxiGen refusal rate       0.74
+    Bias detection (StereoSet, lower is better)  0.61
+    XSTest (correct over-refusals)               0.81
+    Adversarial Suffix (Zou et al.) jailbreak resistance   0.42
+
+  Calibration
+    Brier score (factual Q&A)  0.31
+
+All numbers above are FICTIONAL ILLUSTRATIVE values. The model does
+not exist; no real eval was run.
+
+In a real release, this fact would link to the exact eval harness
+commit hashes and the raw output files used to compute each score,
+both as sealed sibling facts or as off-fact-set hashed manifests.
+
+This fact asserts only the illustrative eval values above. It does not
+assert that those values are achievable, reproducible, or that the
+underlying evals are well-designed.

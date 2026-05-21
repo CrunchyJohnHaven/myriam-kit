@@ -1,0 +1,22 @@
+FACT 01 — EXAMPLE NOTICE
+
+This publication is an EXAMPLE demonstration of how a clinical-trial
+sponsor or investigator can use myriam-kit to seal a trial pre-
+registration. The trial named in subsequent facts ("FICT-2026-001"),
+the sponsor, the investigators, the drug, and all numerical parameters
+are FICTIONAL.
+
+The purpose of this publication is to show the SHAPE of a real
+clinical-trial pre-registration seal. A real registration would replace
+each fact body with the actual content of the actual trial protocol.
+
+This kit is a COMPLEMENT to existing trial registries (ClinicalTrials.gov,
+EU CTR, ISRCTN, etc.), not a replacement. A real trial should be
+registered in the appropriate jurisdictional registry AND additionally
+sealed under MYRIAM. The MYRIAM seal provides Bitcoin-anchored
+tamper-evidence on top of the registry's own integrity controls.
+
+This fact asserts only that the publication is an example, not a real
+trial pre-registration. No real trial is hereby pre-registered. No real
+drug is hereby identified. No real sponsor or investigator is hereby
+named.

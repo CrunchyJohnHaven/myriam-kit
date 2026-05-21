@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Example: Whistleblower Manifest Seal — myriam-kit</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: ui-monospace, "SFMono-Regular", "Menlo", "Monaco", monospace;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2rem 1rem 6rem;
+    line-height: 1.55;
+    font-size: 15px;
+  }
+  h1 { font-size: 1.4rem; margin-bottom: 0.2rem; }
+  h2 { font-size: 1.05rem; margin-top: 2.5rem; border-bottom: 1px solid currentColor; padding-bottom: 0.2rem; }
+  .sub { opacity: 0.7; margin-top: 0; }
+  .fact { border-left: 3px solid currentColor; padding: 0.4rem 0 0.4rem 0.9rem; margin: 1.2rem 0; white-space: pre-wrap; }
+  .hash { font-size: 0.78rem; opacity: 0.75; word-break: break-all; }
+  .root { border: 1px solid currentColor; padding: 0.6rem 0.8rem; margin: 1rem 0; word-break: break-all; font-size: 0.85rem; }
+  .banner { border: 1px solid currentColor; padding: 0.6rem 0.8rem; margin: 1rem 0; font-size: 0.85rem; background: rgba(255,200,0,0.08); }
+  a { color: inherit; }
+  footer { margin-top: 4rem; font-size: 0.8rem; opacity: 0.7; }
+  .badge { display: inline-block; border: 1px solid currentColor; padding: 0.1rem 0.5rem; font-size: 0.7rem; letter-spacing: 0.1em; }
+</style>
+</head>
+<body>
+
+<h1>Whistleblower Manifest Seal &mdash; example</h1>
+<p class="sub">Example publication built with myriam-kit &middot; <span class="badge">EXAMPLE</span></p>
+
+<div class="banner">
+<strong>This is an EXAMPLE.</strong> The whistleblower "Jane Doe," the
+company "Acme Aerospace," the alleged Acme-7800 defect, and all
+document hashes are FICTIONAL. The purpose of this publication is to
+demonstrate the form of a real whistleblower evidence-manifest seal.
+No real disclosure is hereby made. No real company is hereby accused.
+A real whistleblower would fork this kit and replace each fact with the
+real artifacts of the real case. See <a href="README.md">README.md</a>
+for guidance on real-world use.
+</div>
+
+<p>
+This page is a sealed publication of 8 facts that together constitute
+a complete whistleblower evidence-manifest seal: an example notice,
+provenance of evidence, manifest of evidence hashes, allegation
+summary, threat model, recipient verification protocol, no-silent-
+retraction commitment, and signing principal. The 8 facts have been
+hashed (SHA-256), combined into a Bitcoin-style Merkle root, and
+committed to the Bitcoin blockchain via
+<a href="https://opentimestamps.org">OpenTimestamps</a> against two
+independent calendar operators.
+</p>
+
+<h2>The Eight Facts</h2>
+
+<div class="fact">FACT 01 &mdash; EXAMPLE NOTICE
+
+This publication is an EXAMPLE demonstration of how a whistleblower can
+use myriam-kit to seal an evidence manifest. The whistleblower named in
+subsequent facts ("Jane Doe"), the alleged misconduct, the evidence
+files referenced, and the document hashes are ALL FICTIONAL.
+
+The purpose of this publication is to show the SHAPE of a real
+whistleblower evidence-manifest seal. A real disclosure would replace
+each fact body with the actual artifacts of the actual case, and would
+NOT pre-publish the example notice &mdash; though a separately-sealed
+publication can be linked from the real one to demonstrate that the
+form was followed.
+
+This fact asserts only that the publication is an example, not a real
+disclosure. No real misconduct is hereby alleged. No real evidence is
+hereby disclosed.</div>
+<div class="hash">SHA-256: 8cab5863380c4dbe556de2bc932020a93618e3e2ff722f495b7d378f9da57785</div>
+
+<div class="fact">FACT 02 &mdash; PROVENANCE OF EVIDENCE (FICTIONAL)
+
+The fictional Jane Doe was employed as a Senior Quality Engineer at
+"Acme Aerospace" (fictional) from 2024-03-15 to 2026-04-01. During that
+period she had authorized access to internal quality-assurance records
+under her employment agreement.
+
+The evidence referenced in FACT 03 was acquired in the following ways
+(each item separately):
+
+  - Quality reports she authored or co-authored: produced as part of
+    her work, retained as part of her personal work records under her
+    employment agreement's whistleblower-protection clause.
+  - Email communications to and from her: forwarded to her personal
+    archive in real time as received, per the email retention practice
+    she had maintained since 2020 across all employers.
+  - One internal slide deck: photographed during a meeting she
+    attended, with her personal phone, on 2025-11-08.
+
+No evidence in FACT 03 was acquired by unauthorized access to systems,
+by impersonation of other employees, by circumvention of access
+controls, or by exfiltrating documents she was not authorized to view.
+
+This fact asserts only the provenance chain above for the fictional
+evidence set. It does not assert that all whistleblowers' evidence is
+acquired this cleanly, or that this provenance pattern is sufficient
+for any specific legal defense.</div>
+<div class="hash">SHA-256: 557d5f522058ad2093d45b576e0adb5cb6816a452c54be855c612c76ccc362f7</div>
+
+<div class="fact">FACT 03 &mdash; EVIDENCE MANIFEST (FICTIONAL)
+
+The following table lists the seven evidence items in the fictional
+Jane Doe disclosure. The actual document contents are NOT included in
+this MYRIAM publication &mdash; only their cryptographic hashes. This is the
+core whistleblower-protection property of the format: the manifest
+proves what existed at the time of sealing, without exposing the
+contents to anyone who has not yet received them.
+
+  IDX  TYPE          FILENAME (FICTIONAL)         SIZE       SHA-256
+  ---  ------------  ----------------------       --------   --------
+   1   PDF report    QA_Q4_2024_internal.pdf      2.4 MB     cbb671235d5bb13d9f81a91a8661fa648e59e84f6ba0fb126356993066f065a0
+   2   PDF report    QA_Q1_2025_internal.pdf      2.7 MB     89a72e41fa212f6520115739df2d79f366e132c4714c0d60ae87540555195893
+   3   Email .mbox   exec_thread_2025-02.mbox     410 KB     03c23f853b396b0df96070f20cd904ec27881e3f6390c55aedc9550c8a2d79f2
+   4   Email .mbox   exec_thread_2025-06.mbox     280 KB     0a22e596cc4e1e2992e14f8749de4bce304c1190a820337d17e29fea0e6f4d9d
+   5   JPEG image    meeting_2025-11-08_001.jpg   3.1 MB     5c4821d81b2aa72015f6f85235317c7092ab509e164cbdb3933f54769444bfd3
+   6   JPEG image    meeting_2025-11-08_002.jpg   2.9 MB     ac67969651fbafe91c1e54fc16c92277879c3900da799f658e5c5bdd9a6e1db3
+   7   PDF           QA_Q4_2025_internal.pdf      1.8 MB     bcc0dd54e33e6fd1a0a5f05a97f1e452c37148c267872451f29c98102324593b
+
+  Total: 7 items, 13.6 MB
+
+Each hash was computed with SHA-256 over the exact bytes of the file as
+acquired. Any recipient of the underlying documents may verify, by
+re-hashing each file with `shasum -a 256`, that the bytes they received
+match the bytes that existed at the moment of sealing.
+
+In this fictional example, the hashes above are deterministic
+placeholders. Each was computed as:
+
+  echo -n "ACME_FICTIONAL_DOC_&lt;i&gt;_PLACEHOLDER_2026-05-21" | shasum -a 256
+
+A real disclosure would replace these with hashes of the actual files.
+
+This fact asserts only the manifest contents above and the integrity
+property the hashes provide. It does not assert what the actual
+documents allegedly demonstrate; that interpretation is in FACT 04 and
+is, like all such interpretations, subject to challenge by parties
+named in the documents.</div>
+<div class="hash">SHA-256: c1c4c9479ce26b4529a597ce79321ebfc80ac69cb77694bd1193657edbe85204</div>
+
+<div class="fact">FACT 04 &mdash; ALLEGATION SUMMARY (FICTIONAL)
+
+The fictional Jane Doe alleges, on the basis of the evidence listed in
+FACT 03, that:
+
+  ACME_AEROSPACE (FICTIONAL) management, between 2024-Q3 and 2026-Q1,
+  was aware of a specific manufacturing-tolerance defect in the
+  fictional Acme-7800 component and chose not to escalate the defect
+  through the company's standard quality-incident channel.
+
+  The defect, if uncorrected on units already shipped, would, under
+  conditions reproducible in laboratory testing, produce a non-trivial
+  probability of in-service failure of a load-bearing element.
+
+  Documents 1, 2, and 7 in FACT 03 are the internal quality reports
+  that describe the defect. Documents 3 and 4 are the email threads in
+  which management discussed (and, the allegation contends, decided
+  against) escalation. Documents 5 and 6 are slide-deck photographs
+  from a meeting in which the decision was internally communicated.
+
+The allegation does NOT claim:
+
+  - That any actual failure has occurred. The defect's in-service
+    failure probability is non-trivial but not deterministic.
+  - That every named individual in the documents acted with intent to
+    conceal. Multiple readings of the documents are possible; the
+    allegation reflects the whistleblower's reading.
+  - That ACME_AEROSPACE has not taken corrective action in the period
+    between the most recent document (2025-Q4) and this sealing
+    (2026-05-21).
+
+This fact asserts only the whistleblower's allegation as stated. It
+does not assert that the allegation is true. The allegation is a
+contestable claim about the meaning of the sealed documents in FACT 03.
+The documents themselves are the load-bearing artifact.</div>
+<div class="hash">SHA-256: c6d9fc9c9feba59f42759b61454490760f4800caca0b56b376d434f935a8b7e2</div>
+
+<div class="fact">FACT 05 &mdash; THREAT MODEL (DECLARED)
+
+The fictional Jane Doe expects, based on her assessment of how
+similar disclosures have historically been responded to, that the
+following actions may be attempted against the disclosure described
+in FACTS 02&ndash;04. The MYRIAM seal of this publication is intended to
+defend against the specific subset of these actions noted with [SEAL].
+
+ANTICIPATED RESPONSES BY THE NAMED ORGANIZATION:
+
+  T1. [SEAL] Public dispute of the document contents.
+      Defense: hashes in FACT 03 prove the documents the whistleblower
+      currently holds match the bytes she had at sealing time. Any
+      "altered after the fact" claim is publicly refutable.
+
+  T2. [SEAL] Claim that documents were never sealed at the asserted time.
+      Defense: the OpenTimestamps receipt against Bitcoin proves the
+      manifest Merkle root existed at or before the OTS-attested time.
+
+  T3. [SEAL] Claim documents are fabricated retroactively.
+      Defense: the seal time (via OTS) plus the manifest hashes prove
+      the document hashes existed at a specific time. Whether the
+      content of the documents is true is still contestable, but their
+      existence-as-bytes at the sealed time is not.
+
+  T4. Pressure on the whistleblower to retract.
+      No defense at the MYRIAM layer. Once sealed, the publication
+      cannot be silently retracted; the whistleblower may make a
+      separate sealed publication acknowledging retraction, but the
+      original sealed publication remains.
+
+  T5. Legal action against the whistleblower for disclosure itself.
+      No defense at the MYRIAM layer. Whistleblower-protection law is
+      jurisdiction-specific and outside the protocol's scope. The
+      whistleblower must seek independent legal counsel.
+
+  T6. Pressure on intermediaries (journalists, regulators) to ignore
+      or bury the disclosure.
+      Partial defense via IPFS pin: the publication is
+      content-addressed and can be retrieved by any party who has the
+      CID, independent of any single intermediary's cooperation.
+
+  T7. Personal retaliation against the whistleblower.
+      No defense at the MYRIAM layer.
+
+  T8. Discrediting the whistleblower's motivations or character.
+      No defense at the MYRIAM layer. The seal is about the documents,
+      not about the whistleblower.
+
+ANTICIPATED RESPONSES BY INTERMEDIARIES:
+
+  T9. [SEAL] Journalist or regulator receives documents in altered form
+      from a third party not the original whistleblower.
+      Defense: the manifest hashes let the recipient verify the bytes
+      they receive match the bytes that were sealed. If hashes do not
+      match, the recipient knows the documents have been altered in
+      transit.
+
+  T10. Journalist or regulator silently drops the story.
+      No defense at the MYRIAM layer. But the sealed publication
+      itself is now in the public IPFS network, retrievable by other
+      parties even if the first recipient does not act.
+
+This fact asserts only the threat model as the whistleblower has
+declared it. It does not assert that all listed threats will
+materialize, that the defenses will be effective in every case, or
+that the unlisted threats are exhaustive.</div>
+<div class="hash">SHA-256: b41ed744f9792bc0d620ed9eef4fae5b2595839dafc7f5beac7eb44478b49ac0</div>
+
+<div class="fact">FACT 06 &mdash; RECIPIENT PROTOCOL (DECLARED)
+
+This sealed publication is the *manifest* of evidence. The underlying
+documents are NOT contained in this publication. They are held by the
+fictional Jane Doe and transmitted separately to recipients.
+
+For any recipient (journalist, regulator, attorney) of the underlying
+documents, the verification protocol is:
+
+  1. Receive this sealed manifest from any trusted source, including
+     by URL or by IPFS CID. The publication is content-addressed and
+     does not require trusted-channel delivery.
+
+  2. Verify the manifest's own integrity:
+     - Recompute the Merkle root from FACTS 01&ndash;08 per MYRIAM SPEC §3.
+     - Confirm the root matches the one in this publication.
+     - Verify the OpenTimestamps receipt against Bitcoin to confirm
+       the manifest existed at or before the sealed time.
+
+  3. Separately, receive the underlying documents from the whistleblower
+     by whatever channel is appropriate (Signal, SecureDrop, in-person
+     handoff). The MYRIAM protocol does not specify this channel; it
+     specifies only what the recipient does with documents once held.
+
+  4. For each document received, compute SHA-256 and compare to the
+     hash in FACT 03. ALL hashes must match. If any hash differs:
+     - The document the recipient has does not match what was sealed.
+     - The document may have been altered in transit, or substituted.
+     - The recipient should request retransmission via a different
+       channel, or refuse to act on the disclosure.
+
+  5. If all hashes match, the recipient holds documents that are
+     bytewise identical to what was sealed at the sealed time. This
+     does NOT establish that the documents' contents are true; it
+     establishes only that the recipient is reading the same bytes
+     the whistleblower sealed.
+
+  6. The recipient may then independently evaluate the allegation in
+     FACT 04 against the contents of the documents, and pursue
+     reporting/regulatory action under their own judgment.
+
+  7. The recipient SHOULD NOT publish the underlying documents publicly
+     without the whistleblower's consent. The sealed manifest is
+     public; the documents are not.
+
+This fact asserts only the recipient verification protocol as declared.
+It does not assert that recipients will follow this protocol, that
+following the protocol guarantees correct action, or that any specific
+journalist or regulator is being contacted.</div>
+<div class="hash">SHA-256: 20934682a3c0c4c6c50291e02b79a478d4175718c29c02fb5a8840dfea23ed5e</div>
+
+<div class="fact">FACT 07 &mdash; NO-SILENT-RETRACTION COMMITMENT (DECLARED)
+
+The fictional Jane Doe commits, at the moment of sealing, that:
+
+  1. SHE WILL NOT silently retract this publication. Once sealed, this
+     publication is part of the public record. If she later concludes
+     that the allegation in FACT 04 is incorrect, she will make that
+     conclusion a NEW sealed publication that references this one by
+     Merkle root, rather than asking that this one be unpublished.
+
+  2. SHE WILL NOT dispute the manifest hashes in FACT 03. The bytes
+     she sealed are the bytes she will continue to claim are the
+     authentic documents. Any apparent "I never sealed those bytes"
+     statement made by her in the future should be treated as evidence
+     of coercion, since the sealed record makes that statement
+     impossible to make truthfully.
+
+  3. SHE WILL acknowledge corrections. If a recipient demonstrates that
+     a hash in FACT 03 is incorrect (i.e., the bytes she sealed do not
+     match the bytes she now has), she will issue a new sealed
+     publication acknowledging the discrepancy and explaining its
+     cause.
+
+  4. SHE WILL respect the documents-vs-allegation distinction. The
+     allegation in FACT 04 is contestable. The hashes in FACT 03 are
+     not contestable as bytes-at-time-of-sealing. She will not conflate
+     the two in her own future statements.
+
+This commitment is intended as a *forensic anchor*. Any future
+statement by Jane Doe that contradicts this commitment can be
+publicly compared against this sealed declaration, providing evidence
+of either a change in her position or external coercion.
+
+This fact asserts only the commitment as declared. It does not assert
+that the commitment will be honored, or that honoring it will protect
+the whistleblower from retaliation.</div>
+<div class="hash">SHA-256: 970ba6eb3b6b16ba53e5a99daeaee1360aaceb279a44eeb35134199fb0f1d95f</div>
+
+<div class="fact">FACT 08 &mdash; SIGNING PRINCIPAL (FICTIONAL)
+
+The fictional signing principal of this example whistleblower disclosure:
+
+  Name:               Jane Doe (FICTIONAL)
+  Capacity:           Whistleblower; former Senior Quality Engineer
+                      at Acme Aerospace (fictional company)
+  Date sealed:        2026-05-21
+  Cryptographic key:  no key in this example (a real disclosure could
+                      attach a PGP public key fingerprint here, so
+                      future statements claimed to be from the
+                      whistleblower can be cryptographically verified;
+                      omitted here because no real person exists)
+
+In a real disclosure, the signing principal section should include:
+
+  - The whistleblower's legal name OR a pseudonym they will
+    consistently use across all related publications.
+  - Their role/capacity at the time of acquiring the evidence.
+  - A PGP public key OR equivalent (so future statements claimed to
+    be from them can be cryptographically verified against this seal).
+  - A canonical contact channel (typically an attorney, not the
+    whistleblower's personal contact).
+  - Date and time of sealing.
+
+The whistleblower SHOULD NOT include in this fact:
+
+  - Personal contact information (use an attorney).
+  - Home address or other locating information.
+  - Identifying information about family members.
+  - The whistleblower's own identity if they are remaining anonymous;
+    in that case the principal field is the pseudonym, and the
+    whistleblower's attorney serves as the practical principal for
+    communications.
+
+This fact asserts only the signing principal identification fields for
+the fictional whistleblower as declared. It does not assert any of
+those fields about any real person.</div>
+<div class="hash">SHA-256: c55492a4a07761dea7d1bbe477c8ae7d8b8525ad6c895996a31cdc50dfc7317e</div>
+
+<h2>Cryptographic Seal</h2>
+
+<p><strong>Merkle root</strong> (Bitcoin-style, over the 8 facts above):</p>
+<div class="root">7271cbc2dcf7474f5a16af1c8aa27a53666a9f674f98cd64804c8f83ea097c14</div>
+
+<p><strong>Seal time:</strong> 2026-05-21T20:35Z (approximately 16:35 EDT)</p>
+
+<p><strong>Bitcoin commitment:</strong> OpenTimestamps receipt at
+<a href="merkle_root.txt.ots">merkle_root.txt.ots</a>, with pending
+attestations against:</p>
+<ul>
+  <li><code>alice.btc.calendar.opentimestamps.org</code> &mdash; Peter Todd</li>
+  <li><code>finney.calendar.eternitywall.com</code> &mdash; Eternity Wall</li>
+</ul>
+
+<p><strong>Signing principal:</strong> Jane Doe (fictional). For real
+disclosures, see <a href="README.md">README.md</a>.</p>
+
+<h2>How to Verify</h2>
+
+<ol>
+  <li>Download all 8 fact files from <code>facts/</code>.</li>
+  <li>Recompute each file's SHA-256 and confirm it matches the per-fact
+      hash above.</li>
+  <li>Compute the Merkle root (algorithm in myriam-kit SPEC §3) or run
+      <a href="build/verify.py">verify.py</a>.</li>
+  <li>Verify the OpenTimestamps receipt: <code>ots verify merkle_root.txt.ots</code></li>
+</ol>
+
+<h2>What this kit is for</h2>
+
+<p>This is a worked example for the
+<a href="README.md">Whistleblower Manifest Seal Kit</a>. The kit defends
+against the specific failure mode where evidence gets buried, edited,
+or disputed by intermediaries between the whistleblower and the public.
+Historical cases the kit would have helped with:</p>
+
+<ul>
+  <li>Boeing 737 MAX (internal safety reports buried)</li>
+  <li>Theranos (lab-test concerns suppressed for years)</li>
+  <li>FDA inspector reports edited post-submission</li>
+</ul>
+
+<p>The kit does NOT defend against personal retaliation, legal action
+against the whistleblower for disclosure itself, or intermediaries
+silently dropping the story. See the README's threat model.</p>
+
+<p>To fork this kit for a real disclosure: read the
+<a href="README.md">README</a> first. The cryptography is the easy part.
+Everything upstream of the cryptography (legal counsel, operational
+security, choice of recipient) is where the real risk lives.</p>
+
+<footer>
+Example publication &middot; myriam-kit Whistleblower Manifest Seal &middot; 2026-05-21<br>
+Fictional. Not a real disclosure. Read FACT 01.<br>
+Public domain (CC0).
+</footer>
+
+</body>
+</html>

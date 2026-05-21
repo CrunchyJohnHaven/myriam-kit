@@ -1,0 +1,49 @@
+FACT 06 — RECIPIENT PROTOCOL (DECLARED)
+
+This sealed publication is the *manifest* of evidence. The underlying
+documents are NOT contained in this publication. They are held by the
+fictional Jane Doe and transmitted separately to recipients.
+
+For any recipient (journalist, regulator, attorney) of the underlying
+documents, the verification protocol is:
+
+  1. Receive this sealed manifest from any trusted source, including
+     by URL or by IPFS CID. The publication is content-addressed and
+     does not require trusted-channel delivery.
+
+  2. Verify the manifest's own integrity:
+     - Recompute the Merkle root from FACTS 01–08 per MYRIAM SPEC §3.
+     - Confirm the root matches the one in this publication.
+     - Verify the OpenTimestamps receipt against Bitcoin to confirm
+       the manifest existed at or before the sealed time.
+
+  3. Separately, receive the underlying documents from the whistleblower
+     by whatever channel is appropriate (Signal, SecureDrop, in-person
+     handoff). The MYRIAM protocol does not specify this channel; it
+     specifies only what the recipient does with documents once held.
+
+  4. For each document received, compute SHA-256 and compare to the
+     hash in FACT 03. ALL hashes must match. If any hash differs:
+     - The document the recipient has does not match what was sealed.
+     - The document may have been altered in transit, or substituted.
+     - The recipient should request retransmission via a different
+       channel, or refuse to act on the disclosure.
+
+  5. If all hashes match, the recipient holds documents that are
+     bytewise identical to what was sealed at the sealed time. This
+     does NOT establish that the documents' contents are true; it
+     establishes only that the recipient is reading the same bytes
+     the whistleblower sealed.
+
+  6. The recipient may then independently evaluate the allegation in
+     FACT 04 against the contents of the documents, and pursue
+     reporting/regulatory action under their own judgment.
+
+  7. The recipient SHOULD NOT publish the underlying documents publicly
+     without the whistleblower's consent. The sealed manifest is
+     public; the documents are not.
+
+This fact asserts only the recipient verification protocol as declared.
+It does not assert that recipients will follow this protocol, that
+following the protocol guarantees correct action, or that any specific
+journalist or regulator is being contacted.

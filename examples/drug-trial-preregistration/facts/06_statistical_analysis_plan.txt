@@ -1,0 +1,65 @@
+FACT 06 — STATISTICAL ANALYSIS PLAN (FICTIONAL)
+
+SAMPLE SIZE CALCULATION
+
+  Assumed effect size:        0.4 standardized units on FSSS
+  Assumed standard deviation: 1.6 units (from prior Phase 2 data)
+  Two-sided alpha:            0.05
+  Power:                      0.90
+  Drop-out adjustment:        20% (assumed)
+  Resulting per-arm size:     240
+  Total:                      480
+
+PRIMARY ANALYSIS
+
+  Model:           ANCOVA
+  Dependent var:   Change in FSSS from baseline to Week 12
+  Fixed effects:   Treatment (FICT-X-7 vs placebo); baseline FSSS
+                   (continuous covariate); stratification factor
+                   (categorical)
+  Test:            Two-sided t-test of treatment effect at alpha = 0.05
+  Effect estimate: Adjusted mean difference with 95% CI
+
+INTERIM ANALYSES
+
+  Planned interim:  ONE pre-planned interim analysis at 50% enrollment
+                    (240 randomized participants), for futility only
+                    (no early efficacy stopping). Alpha spending:
+                    O'Brien-Fleming, with no alpha spent at interim
+                    (futility only; non-binding).
+  Futility rule:    Conditional power < 10% under current trend leads
+                    to recommendation to DSMB; final decision by DSMB.
+  Other looks:      None. No alpha adjustment for unplanned looks.
+
+HANDLING OF MISSING DATA
+
+  Primary:    Multiple imputation (m=100) under Missing At Random
+              assumption; Rubin's rules for pooling estimates.
+  Sensitivity: Tipping-point analysis (delta-adjustment) to assess
+              robustness to MNAR.
+  Per-protocol: Complete-case analysis; no imputation.
+
+PROTOCOL DEVIATIONS
+
+  Major deviations are pre-defined in the protocol and will be reported
+  in the published trial report. mITT analysis includes participants
+  with major deviations; per-protocol analysis excludes them.
+
+OUTPUT REPORTING
+
+  Primary endpoint will be reported regardless of statistical
+  significance. The trial sponsor commits, in FACT 08, NOT to suppress
+  publication of negative or null results. Pre-registered exploratory
+  analyses will also be reported regardless of outcome.
+
+This fact asserts only the statistical analysis plan as pre-registered.
+It does not assert that the plan is the only defensible one or that
+the assumptions (effect size, SD, dropout rate) are correct.
+
+CRITICAL NOTE: any deviation from this plan in the final analysis
+(e.g., changing the test, the imputation method, or the model) will be
+DETECTABLE as a deviation from this sealed pre-registration. Deviations
+required by unforeseen events (e.g., unexpected enrollment patterns,
+discovery of analysis errors) should be documented in a NEW sealed
+publication that references this one by Merkle root, BEFORE the primary
+analysis is conducted.

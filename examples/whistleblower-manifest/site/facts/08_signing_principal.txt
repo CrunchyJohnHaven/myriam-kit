@@ -1,0 +1,38 @@
+FACT 08 — SIGNING PRINCIPAL (FICTIONAL)
+
+The fictional signing principal of this example whistleblower disclosure:
+
+  Name:               Jane Doe (FICTIONAL)
+  Capacity:           Whistleblower; former Senior Quality Engineer
+                      at Acme Aerospace (fictional company)
+  Date sealed:        2026-05-21
+  Cryptographic key:  no key in this example (a real disclosure could
+                      attach a PGP public key fingerprint here, so
+                      future statements claimed to be from the
+                      whistleblower can be cryptographically verified;
+                      omitted here because no real person exists)
+
+In a real disclosure, the signing principal section should include:
+
+  - The whistleblower's legal name OR a pseudonym they will
+    consistently use across all related publications.
+  - Their role/capacity at the time of acquiring the evidence.
+  - A PGP public key OR equivalent (so future statements claimed to
+    be from them can be cryptographically verified against this seal).
+  - A canonical contact channel (typically an attorney, not the
+    whistleblower's personal contact).
+  - Date and time of sealing.
+
+The whistleblower SHOULD NOT include in this fact:
+
+  - Personal contact information (use an attorney).
+  - Home address or other locating information.
+  - Identifying information about family members.
+  - The whistleblower's own identity if they are remaining anonymous;
+    in that case the principal field is the pseudonym, and the
+    whistleblower's attorney serves as the practical principal for
+    communications.
+
+This fact asserts only the signing principal identification fields for
+the fictional whistleblower as declared. It does not assert any of
+those fields about any real person.

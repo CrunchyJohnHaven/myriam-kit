@@ -1,0 +1,36 @@
+FACT 07 — NO-SILENT-RETRACTION COMMITMENT (DECLARED)
+
+The fictional Jane Doe commits, at the moment of sealing, that:
+
+  1. SHE WILL NOT silently retract this publication. Once sealed, this
+     publication is part of the public record. If she later concludes
+     that the allegation in FACT 04 is incorrect, she will make that
+     conclusion a NEW sealed publication that references this one by
+     Merkle root, rather than asking that this one be unpublished.
+
+  2. SHE WILL NOT dispute the manifest hashes in FACT 03. The bytes
+     she sealed are the bytes she will continue to claim are the
+     authentic documents. Any apparent "I never sealed those bytes"
+     statement made by her in the future should be treated as evidence
+     of coercion, since the sealed record makes that statement
+     impossible to make truthfully.
+
+  3. SHE WILL acknowledge corrections. If a recipient demonstrates that
+     a hash in FACT 03 is incorrect (i.e., the bytes she sealed do not
+     match the bytes she now has), she will issue a new sealed
+     publication acknowledging the discrepancy and explaining its
+     cause.
+
+  4. SHE WILL respect the documents-vs-allegation distinction. The
+     allegation in FACT 04 is contestable. The hashes in FACT 03 are
+     not contestable as bytes-at-time-of-sealing. She will not conflate
+     the two in her own future statements.
+
+This commitment is intended as a *forensic anchor*. Any future
+statement by Jane Doe that contradicts this commitment can be
+publicly compared against this sealed declaration, providing evidence
+of either a change in her position or external coercion.
+
+This fact asserts only the commitment as declared. It does not assert
+that the commitment will be honored, or that honoring it will protect
+the whistleblower from retaliation.

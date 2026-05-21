@@ -1,0 +1,27 @@
+FACT 02 — PROVENANCE OF EVIDENCE (FICTIONAL)
+
+The fictional Jane Doe was employed as a Senior Quality Engineer at
+"Acme Aerospace" (fictional) from 2024-03-15 to 2026-04-01. During that
+period she had authorized access to internal quality-assurance records
+under her employment agreement.
+
+The evidence referenced in FACT 03 was acquired in the following ways
+(each item separately):
+
+  - Quality reports she authored or co-authored: produced as part of
+    her work, retained as part of her personal work records under her
+    employment agreement's whistleblower-protection clause.
+  - Email communications to and from her: forwarded to her personal
+    archive in real time as received, per the email retention practice
+    she had maintained since 2020 across all employers.
+  - One internal slide deck: photographed during a meeting she
+    attended, with her personal phone, on 2025-11-08.
+
+No evidence in FACT 03 was acquired by unauthorized access to systems,
+by impersonation of other employees, by circumvention of access
+controls, or by exfiltrating documents she was not authorized to view.
+
+This fact asserts only the provenance chain above for the fictional
+evidence set. It does not assert that all whistleblowers' evidence is
+acquired this cleanly, or that this provenance pattern is sufficient
+for any specific legal defense.

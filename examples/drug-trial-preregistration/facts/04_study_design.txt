@@ -1,0 +1,57 @@
+FACT 04 — STUDY DESIGN (FICTIONAL)
+
+DESIGN
+
+  Type:                     Randomized, double-blind, placebo-controlled,
+                            parallel-group
+  Allocation ratio:         1:1 (treatment : placebo)
+  Randomization:            Centralized, computer-generated, stratified
+                            by [fictional stratification variable]
+  Blinding:                 Participants, investigators, outcome
+                            assessors, and statisticians all blinded
+                            until database lock
+
+POPULATION
+
+  Total planned enrollment: 480 participants
+  Inclusion criteria:       Adults age 18-70 with [fictional condition Y]
+                            of moderate severity (defined by [fictional
+                            severity scale] score 12-30 at screening),
+                            stable on baseline therapy for ≥3 months
+  Exclusion criteria:       (full list pre-registered separately in
+                            FACT 07; abbreviated here)
+                            - Pregnancy or planned pregnancy
+                            - Active or recent (past 12 months)
+                              participation in another investigational
+                              drug trial
+                            - Severe hepatic impairment (Child-Pugh C)
+                            - Known hypersensitivity to FICT-X-7 or
+                              excipients
+
+INTERVENTION
+
+  Treatment arm:    FICT-X-7 50 mg orally once daily for 12 weeks
+  Placebo arm:      Matching capsule once daily for 12 weeks
+  Duration:         12 weeks active treatment; 12 weeks follow-up
+                    (24 weeks total per participant)
+  Concomitant medications: All baseline therapies continued unchanged;
+                    no new therapies for [fictional condition Y] permitted
+                    during the trial except for documented rescue
+
+ANALYSIS POPULATIONS (pre-defined)
+
+  - mITT (modified intent-to-treat): all randomized participants who
+    received ≥1 dose and have ≥1 post-baseline assessment.
+    PRIMARY ANALYSIS POPULATION.
+  - Per-protocol: mITT participants who completed ≥8 weeks of
+    treatment and had no major protocol deviations.
+    SENSITIVITY ANALYSIS POPULATION.
+  - Safety: all randomized participants who received ≥1 dose.
+    SAFETY ANALYSIS POPULATION.
+
+This fact asserts only the study design as pre-registered for the
+fictional trial. It does not assert that the design is appropriate
+for the (fictional) condition or that the parameters chosen are
+optimal. Design choices are open to peer-review critique; the seal
+only proves that the design was committed to *prior* to seeing the
+data.

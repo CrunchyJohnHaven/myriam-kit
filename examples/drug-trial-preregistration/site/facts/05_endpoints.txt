@@ -1,0 +1,47 @@
+FACT 05 — PRIMARY AND SECONDARY ENDPOINTS (FICTIONAL)
+
+PRIMARY ENDPOINT (one and only one — singular by design)
+
+  Change from baseline in [Fictional Symptom Severity Score, FSSS]
+  at Week 12 (end of treatment).
+
+  - Measured as: ((FSSS_week12) − (FSSS_baseline))
+  - Direction of benefit: negative change (decrease) is beneficial
+  - Primary analysis: ANCOVA with treatment as fixed effect, baseline
+    FSSS as covariate, stratification factors as fixed effects, at
+    alpha = 0.05 (two-sided)
+  - Missing-data handling: multiple imputation under MAR assumption,
+    100 imputations, Rubin's combining rules
+
+KEY SECONDARY ENDPOINTS (pre-ordered for hierarchical testing)
+
+  1. Response rate at Week 12 (proportion with ≥50% reduction in FSSS)
+  2. Time to response (Kaplan-Meier, log-rank test)
+  3. Change from baseline in [Fictional Quality-of-Life Index, FQLI] at Week 12
+  4. Change from baseline in FSSS at Week 24 (post-treatment durability)
+
+OTHER PRE-REGISTERED ENDPOINTS (exploratory)
+
+  - Adverse-event rates (any AE, serious AE, AE leading to
+    discontinuation)
+  - All-cause mortality
+  - Cardiovascular events (independently adjudicated by blinded
+    committee — protocol-pre-specified MACE composite)
+  - Liver function abnormalities (ALT, AST, bilirubin)
+
+HIERARCHICAL TESTING ORDER
+
+  Testing proceeds in the order above for the primary endpoint and
+  the four key secondary endpoints. Testing stops at the first
+  non-significant result; subsequent endpoints reported descriptively.
+  This controls family-wise error rate at alpha = 0.05.
+
+This fact asserts only the endpoint definitions and testing strategy
+as pre-registered. It does not assert that the endpoints capture all
+clinically meaningful outcomes, that the testing strategy is the only
+defensible one, or that any specific result will be obtained.
+
+CRITICAL NOTE: any post-hoc endpoint substitution (e.g., promoting an
+exploratory endpoint to primary after the primary endpoint fails) will
+be DETECTABLE as a deviation from this sealed pre-registration. This
+is the central protection the seal provides.
