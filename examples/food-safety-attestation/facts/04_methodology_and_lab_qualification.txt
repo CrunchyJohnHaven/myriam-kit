@@ -1,0 +1,98 @@
+FACT 04 — METHODOLOGY AND LABORATORY QUALIFICATION (FICTIONAL)
+
+This fact freezes WHICH methods, WHICH method versions, and WHICH
+laboratory accreditation status were in effect for each test row in
+FACT 03 at the moment of release. Without this anchor, a later
+"actually we used method X" claim is unfalsifiable; with this anchor,
+it is publicly refutable.
+
+ANALYTICAL METHODS
+
+  Row 1 (L. monocytogenes):    FSIS MLG 8.13 (Sept. 2024 revision)
+                               OR ISO 11290-1:2017
+                               Method-document SHA-256:
+                               aaa1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1
+  Row 2 (Salmonella):          FSIS MLG 4.12 (May 2023 revision)
+                               OR ISO 6579-1:2017 with Amendment 1:2020
+                               Method-document SHA-256:
+                               b1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2
+  Row 3 (E. coli O157:H7 +     FSIS MLG 5.10 + FSIS MLG 5C.01
+       non-O157 STEC):         Method-document SHA-256:
+                               c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2
+  Row 4 (APC):                 AOAC OMA 990.12 (Petrifilm) OR FDA BAM Ch. 3
+  Row 5 (Enterobacteriaceae):  ISO 21528-2:2017
+  Row 6 (Nitrite):             AOAC OMA 973.31 (Griess; spectrophotometric)
+  Row 7 (Veterinary residues): LC-MS/MS multi-residue panel per FDA
+                               KAN 4.0 USDA MRM-LCMS; validated against
+                               USDA FSIS multi-residue Tier 2 list
+  Row 8 (Heavy metals):        ICP-MS per AOAC OMA 2015.01 (microwave
+                               digestion + ICP-MS)
+  Row 9-10 (allergen ELISA):   AOAC OMA 2010.13 (soy R5 ELISA) and
+                               AOAC OMA 2017.08 (milk casein ELISA)
+  Row 11 (Listeria spp. EMP):  FSIS MLG 8.13 sponge protocol
+  Row 12 (Salmonella EMP):     FSIS MLG 4.12 environmental sponge
+
+LABORATORIES
+
+  Lab Alpha:    ISO/IEC 17025:2017 accredited under A2LA scope
+                covering FSIS MLG 4, 5, 8 and ISO 6579, 11290.
+                Accreditation certificate identifier: FICT-A2LA-12345
+                Accreditation valid through: 2027-08-31
+                Accreditation-cert SHA-256:
+                d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2
+                Most-recent proficiency test (PT) round result:
+                  - FAPAS / AAFCO Salmonella PT Q1-2026: PASS
+                  - FAPAS L. monocytogenes PT Q1-2026: PASS
+                PT-results SHA-256:
+                  e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3
+
+  Lab Beta:     ISO/IEC 17025:2017 accredited under ANAB scope
+                covering AOAC chemistry and ICP-MS / LC-MS methods.
+                Accreditation certificate identifier: FICT-ANAB-67890
+                Accreditation valid through: 2028-02-28
+                Accreditation-cert SHA-256:
+                f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4
+                Most-recent veterinary-residue PT round result: PASS
+
+  Lab Gamma:    ISO/IEC 17025:2017 accredited under A2LA scope
+                covering allergen ELISA methods.
+                Accreditation certificate identifier: FICT-A2LA-22222
+                Accreditation valid through: 2027-11-30
+
+INDEPENDENCE STATEMENT
+
+  - Labs Alpha, Beta, and Gamma are commercially independent of the
+    manufacturer (no shared ownership, no exclusive long-term contract
+    with revenue-share, no related-party relationships per US
+    GAAP / IFRS related-party-disclosure rules).
+  - Sample chain-of-custody from production-line collection through
+    laboratory receipt is logged per FSIS-acceptable custody protocol;
+    custody-log SHA-256:
+      a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6
+  - Where the manufacturer also runs internal in-house screening
+    tests, those results are not represented in FACT 03; FACT 03
+    is the third-party accredited release record.
+
+DEVIATIONS, RETESTS, OR OUT-OF-SPECIFICATION (OOS) EVENTS
+
+During the analysis of this lot:
+  - One initial Row 11 (Listeria spp. EMP, Zone 3) presumptive
+    positive was confirmed by isolate-level speciation as a non-
+    monocytogenes Listeria spp. (Listeria innocua); per the EMP
+    program SOP this triggered intensified sanitation + post-
+    sanitation sponge resampling, both of which returned ND.
+    Corrective-action investigation log SHA-256 in FACT 07.
+  - No retests were performed on Rows 1-10 finished-product samples;
+    initial-test results are the release results.
+  - No OOS dispositioned with rationale for release; the lot
+    released cleanly on initial-test data.
+
+This fact asserts only the methodology, laboratory-qualification
+status, independence statement, and deviation summary as recorded at
+the moment of release for the fictional lot. It does not assert that
+the methods listed are the only valid methods for these analytes,
+that ISO 17025 accreditation guarantees correct individual test
+results, or that the absence of recorded retests means no informal
+re-runs occurred upstream of formal sample registration (such re-runs
+are addressed by lab quality-system controls and by the lab's own
+ISO 17025 internal-quality-control records, not by this seal).

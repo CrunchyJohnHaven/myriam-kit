@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Example: Court Evidence Chain-of-Custody Seal &mdash; myriam-kit</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: ui-monospace, "SFMono-Regular", "Menlo", "Monaco", monospace;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2rem 1rem 6rem;
+    line-height: 1.55;
+    font-size: 15px;
+  }
+  h1 { font-size: 1.4rem; margin-bottom: 0.2rem; }
+  h2 { font-size: 1.05rem; margin-top: 2.5rem; border-bottom: 1px solid currentColor; padding-bottom: 0.2rem; }
+  .sub { opacity: 0.7; margin-top: 0; }
+  .fact { border-left: 3px solid currentColor; padding: 0.4rem 0 0.4rem 0.9rem; margin: 1.2rem 0; white-space: pre-wrap; }
+  .hash { font-size: 0.78rem; opacity: 0.75; word-break: break-all; }
+  .root { border: 1px solid currentColor; padding: 0.6rem 0.8rem; margin: 1rem 0; word-break: break-all; font-size: 0.85rem; }
+  .banner { border: 1px solid currentColor; padding: 0.6rem 0.8rem; margin: 1rem 0; font-size: 0.85rem; background: rgba(255,200,0,0.08); }
+  a { color: inherit; }
+  footer { margin-top: 4rem; font-size: 0.8rem; opacity: 0.7; }
+  .badge { display: inline-block; border: 1px solid currentColor; padding: 0.1rem 0.5rem; font-size: 0.7rem; letter-spacing: 0.1em; }
+</style>
+</head>
+<body>
+
+<h1>Court Evidence Chain-of-Custody Seal &mdash; example</h1>
+<p class="sub">Example publication built with myriam-kit &middot; <span class="badge">EXAMPLE</span></p>
+
+<div class="banner">
+<strong>This is an EXAMPLE.</strong> The case identifier
+FICT-CR-2026-00471, the agency, the warrant FICT-SW-2026-0188, the
+exhibit hashes, the examiner roles, and the custody-event timeline
+are ALL FICTIONAL. No real case is hereby investigated. No real
+suspect, defendant, victim, or witness is hereby identified.
+<br><br>
+<strong>This seal does NOT establish admissibility, lawfulness of
+seizure, methodological reliability, or any legal conclusion.</strong>
+It anchors only WHAT BYTES were acquired and WHEN, by WHICH AGENCY,
+under WHICH WARRANT, through WHICH TOOLS. See
+<a href="README.md">README.md</a> for the full set of failure modes
+the seal does NOT defend against, and refusal-rules the kit enforces.
+</div>
+
+<p>
+This page is a sealed publication of 8 facts that together constitute
+a complete forensic-acquisition chain-of-custody seal: an example
+notice, acquisition context, evidence manifest, acquisition
+methodology, chain-of-custody event log, examiner qualifications by
+role, companion disclosures and refusal record, and signing principal.
+The 8 facts have been hashed (SHA-256), combined into a Bitcoin-style
+Merkle root, and committed to the Bitcoin blockchain via
+<a href="https://opentimestamps.org">OpenTimestamps</a> against two
+independent calendar operators.
+</p>
+
+<h2>The Eight Facts</h2>
+
+<div class="fact">FACT 01 &mdash; EXAMPLE NOTICE
+
+This publication is an EXAMPLE demonstration of how a forensic
+acquisition team &mdash; computer forensics examiner, mobile-device
+extraction technician, body-cam evidence custodian, etc. &mdash; can use
+myriam-kit to seal a chain-of-custody anchor at the moment of digital
+evidence acquisition. The case identifier, warrant citation, acquiring
+agency, examiner role, exhibit hashes, custody-event timeline, and all
+other particulars in subsequent facts are ALL FICTIONAL.
+
+The purpose of this publication is to show the SHAPE of a real
+forensic-acquisition seal. A real attestation would replace each fact
+body with the actual artifacts of the actual acquisition.
+
+This kit is intended to compose with &mdash; not replace &mdash; the existing
+chain-of-custody, evidence-handling, and admissibility procedures of
+the jurisdiction running the case (Federal Rules of Evidence, Daubert
+standards under FRE 702, agency forensic SOPs, defense-discovery
+obligations, etc.). The MYRIAM seal provides Bitcoin-anchored
+tamper-evidence on top of whatever paper-and-signature chain-of-custody
+record the agency already maintains. It does NOT itself satisfy any
+court's admissibility test; admissibility is a legal-procedure
+question, not a cryptographic one.
+
+This fact asserts only that the publication is an example, not a real
+forensic-acquisition record. No real case is hereby investigated. No
+real suspect, defendant, victim, witness, or third party is hereby
+identified.</div>
+<div class="hash">SHA-256: 80473e2d1eb1aae4ad2f11610ebec600b4080672b80d13533b798d848284659f</div>
+
+<div class="fact">FACT 02 &mdash; ACQUISITION CONTEXT (FICTIONAL)
+
+  Case identifier:        FICT-CR-2026-00471 (FICTIONAL)
+  Internal exhibit set:   Exhibit Set "F" (FICTIONAL &mdash; six items, see
+                          FACT 03)
+  Acquiring agency:       Fictional County Sheriff's Office, Digital
+                          Forensics Unit (FICTIONAL)
+  Requesting authority:   Fictional County District Attorney's Office,
+                          Major Crimes Division (FICTIONAL)
+  Legal basis for seizure:
+                          Search warrant, Fictional Superior Court,
+                          Department 12, signed by the Honorable
+                          [Fictional Judicial Officer], 2026-05-18 at
+                          14:07 PDT (FICTIONAL). Warrant authorizes
+                          forensic imaging of devices and accounts
+                          enumerated in the warrant rider.
+  Warrant docket reference:
+                          FICT-SW-2026-0188 (FICTIONAL)
+  Date/time of seizure:   2026-05-19, 06:42 PDT (initial seizure at
+                          premises; FICTIONAL)
+  Date/time of acquisition:
+                          2026-05-19, 11:14 PDT (start of forensic
+                          imaging in lab) through 2026-05-19, 22:30
+                          PDT (last image completed; FICTIONAL)
+  Location of seizure:    [Address redacted at this layer; recorded in
+                          the sealed-separately custody log hashed in
+                          FACT 05. The redaction prevents this public
+                          publication from re-identifying the premises
+                          or its lawful occupant.]
+  Location of acquisition:
+                          Fictional County Sheriff's Office, Digital
+                          Forensics Lab, Room 3 (FICTIONAL)
+  Examiner role on duty:  Lead Digital Forensics Examiner (one role-
+                          level individual; see FACT 06). Personal
+                          name omitted from this public seal; sealed
+                          separately in the role-to-individual binding
+                          record hashed in FACT 06.
+
+This fact binds the sealed publication to a named, accountable agency
+acting under a specific, dated, docketed legal authorization. It does
+NOT name suspects, defendants, occupants of the premises, victims,
+witnesses, or any other private individual. The legal-basis citation
+is included so the seal can be located within the court record by any
+party with standing to request it.
+
+This fact asserts only the agency, legal-basis citation, and temporal
+context for the fictional acquisition. It does not assert:
+  - that the warrant was correctly issued under applicable law,
+  - that the seizure was lawful,
+  - that the scope of acquisition was within warrant scope,
+  - that any person at the premises was a suspect or defendant,
+  - that evidence acquired is incriminating.</div>
+<div class="hash">SHA-256: 8d0c6bc60957f834f4e9d8d36ac1226ca0b89ff4f8378db238bb0ea2f9d13b22</div>
+
+<div class="fact">FACT 03 &mdash; EVIDENCE MANIFEST (FICTIONAL)
+
+The following table lists the six forensic-image items in the
+fictional Exhibit Set "F" acquired under the warrant cited in FACT 02.
+The actual image contents are NOT included in this MYRIAM publication
+&mdash; only their cryptographic hashes. This is the core chain-of-custody
+property of the seal: the manifest anchors WHICH BYTES were acquired
+and WHEN, without exposing the contents of the images to the public.
+
+  IDX  TYPE                FILENAME (FICTIONAL)             SIZE       SHA-256                                                            ACQ METHOD                  SOURCE DEVICE (anonymized)
+  ---  ------------------  -------------------------------  ---------  ----------------------------------------------------------------   --------------------------  -----------------------------
+   1   E01 disk image      F-001_laptop.E01                 487 GB     46e9c5a4b1c5e8c7d9f0b1a2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60   imaged via FTK Imager       Laptop "Device-A1" (FICT)
+   2   E01 disk image      F-002_desktop.E01                1.96 TB    7a8f9e0d1c2b3a4958675849392a1b0c2d3e4f5061728394a5b6c7d8e9f00112   imaged via FTK Imager       Desktop "Device-B2" (FICT)
+   3   AFF4 phone image    F-003_phone.aff4                 248 GB     b1c2d3e4f50617283940a1b2c3d4e5f6071829304a1b2c3d4e5f6071829304a1b   GrayKey extraction          Mobile "Device-C3" (FICT)
+   4   E01 thumb drive     F-004_thumbdrive.E01             63 GB      0c1d2e3f405162738495a6b7c8d9e0f102132435465768798a9bacbdcedfe0f10   imaged via FTK Imager       USB "Device-D4" (FICT)
+   5   MP4 archive (set)   F-005_bodycam_2026-05-19.tar     14.2 GB    f0e1d2c3b4a5968778695a4b3c2d1e0f01928374655463728190abcdef012345   handoff from BWC system     Body-Camera 7 (FICT shift)
+   6   E01 NAS volume      F-006_nas_volume.E01             8.4 TB     8273645a4b3c2d1e0f9876543210abcdef0123456789abcdef0123456789abcd   imaged via FTK Imager       NAS "Device-F6" (FICT)
+
+  Total: 6 items, ~11.6 TB
+
+Each hash was computed with SHA-256 over the exact bytes of the
+forensic image file as written by the imaging tool, immediately after
+imaging completed and BEFORE any examination began. A second hash
+(sealed separately in FACT 04 as part of the methodology record)
+verifies the image against the live source device at acquisition time.
+
+Any party &mdash; defense expert, opposing counsel, appellate-review forensic
+examiner, court-appointed neutral &mdash; receiving any of the above
+forensic-image files through proper discovery may re-hash the file
+they receive with SHA-256 and compare to the row above. If the hashes
+match, the recipient holds the exact bytes that were sealed at the
+moment of acquisition. If the hashes do not match, the file has been
+altered (intentionally or accidentally) since acquisition; the
+recipient should raise this immediately with the issuing agency and
+opposing counsel.
+
+In this fictional example, the hashes above are deterministic
+placeholders. A real acquisition would replace these with hashes of
+the actual forensic images.
+
+What is INTENTIONALLY ABSENT from this manifest:
+
+  - File-by-file hashes of individual files INSIDE the disk images.
+    Those reside in the examination report, hashed separately in FACT
+    05's custody log, NOT in this public manifest. The reason: an
+    individual file's hash on a suspect's personal device may itself
+    be evidence relevant only to the prosecution and defense, and
+    public hashing creates a permanent searchable record that could
+    re-identify the case subject via correlation with other databases.
+  - Any file-level hash of suspected child sexual abuse material,
+    biometric template, or other PII-equivalent data. Such material
+    is NEVER hashed into this kit's public manifest, even by hash;
+    see refusal-rule R3 in FACT 07.
+  - Metadata that would identify any person at the premises: account
+    names, user account UIDs, phone-book entries, biometric
+    enrollment IDs, etc.
+
+This fact asserts only the manifest of forensic-image-level hashes,
+sizes, formats, source devices (anonymized), and acquisition methods
+above, and the integrity property the hashes provide. It does not
+assert:
+  - what evidence the images contain,
+  - whether the contents are incriminating or exculpatory,
+  - whether the images were acquired within warrant scope,
+  - whether the source-device chain-of-custody before imaging was
+    proper (covered separately in FACT 05),
+  - whether the examination of these images was methodologically
+    sound (covered separately in FACT 04 and 06).</div>
+<div class="hash">SHA-256: f5c0a322dbcc46c03f59c592edbe1da8b25bf1bf88e32028923ca230bc9e973e</div>
+
+<div class="fact">FACT 04 &mdash; ACQUISITION METHODOLOGY (FICTIONAL)
+
+This fact freezes, at the moment of sealing, the tools, hardware, and
+procedures used to acquire the forensic images listed in FACT 03. Any
+post-acquisition claim that "different tools were used" or "the
+write-blocker was not engaged" is publicly refutable against this
+record. A defense expert, court-appointed neutral, or appellate
+reviewer may diff the agency's later-produced methodology report
+against this sealed record.
+
+ACQUISITION TOOLS (versions are load-bearing &mdash; newer versions may
+have different bug-fix histories that affect verification)
+
+  Forensic imaging software:
+    - AccessData FTK Imager v4.7.1 (FICTIONAL version reference for
+      Items 1, 2, 4, 6)
+      Binary SHA-256: a1b2c3d4e5f6789abcdef0123456789abcdef0123456789abcdef0123456789ab
+    - Magnet Forensics GrayKey v2.18.3 (FICTIONAL version reference
+      for Item 3 mobile extraction)
+      Binary SHA-256: c2d3e4f5061728394a5b6c7d8e9f00112233445566778899aabbccddeeff0011
+
+  Body-camera evidence handoff tool (Item 5):
+    - Axon Evidence.com client v3.41.0 (FICTIONAL); the body-camera
+      footage was transferred from the BWC docking system to a
+      forensic workstation, packaged into a TAR archive, and hashed
+      at the receiving end. The chain-of-custody from BWC to the
+      forensic workstation is documented in the custody log hashed
+      in FACT 05.
+
+WRITE-BLOCKER HARDWARE (used for Items 1, 2, 4, 6; not applicable to
+Items 3 or 5 which use vendor-specific extraction tooling that
+inherently produces read-only acquisitions)
+
+  Make/model:             Tableau T35u-RW (FICTIONAL serial range)
+  Firmware version:       v4.07 (FICTIONAL)
+  Pre-acquisition verification:
+                          Each write-blocker was verified against the
+                          NIST Computer Forensics Tool Testing
+                          program's test protocol on 2026-05-18 (the
+                          day before acquisition). Verification log
+                          hash recorded in FACT 05.
+
+ACQUISITION VERIFICATION PROCEDURE
+
+  For each imaged item, after imaging completed:
+    1. The imaging tool computed both MD5 and SHA-256 hashes of the
+       acquired image during the imaging pass.
+    2. A second pass (verification read) re-hashed the image and
+       compared to the first-pass hash.
+    3. For live-source acquisitions where the source device could be
+       re-read non-destructively, the source device was re-hashed
+       after imaging and compared.
+    4. All three hashes (image-1st-pass, image-2nd-pass, source-
+       device-post-image) matched for Items 1, 2, 4, and 6.
+    5. For Items 3 (phone) and 5 (body-cam), only the image-level
+       hash is meaningful; the source-device hash is not reproducible
+       for those acquisition types.
+    6. The hashes recorded in FACT 03 are the SHA-256 image hashes
+       after verification.
+
+  Verification log hash (sealed separately, contains per-item details):
+    SHA-256: 4d5e6f70819203a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c
+
+FORENSIC IMAGE FORMAT
+
+  - Items 1, 2, 4, 6: EnCase Evidence File format (.E01), variable
+    chunk size, compression on, MD5+SHA-256 embedded.
+  - Item 3: AFF4 (Advanced Forensic Format v4), GrayKey native
+    output format.
+  - Item 5: bytewise-preserved TAR archive of the original .mp4
+    bodycam files plus the BWC vendor's manifest .json. Per-file
+    hashes of the .mp4 contents are stored INSIDE the TAR's manifest
+    .json, NOT in this public manifest.
+
+WHAT THIS FACT DOES NOT CERTIFY
+
+  - That the tools above are bug-free. FTK Imager, GrayKey, and AFF4
+    parsers have all had documented bugs in past versions. The
+    sealed version-and-binary-hash record allows later parties to
+    cross-reference against the vendor's published vulnerability and
+    bug-fix lists.
+  - That the write-blockers performed correctly on the specific
+    media in question. The NIST CFTT protocol verifies the general
+    case; specific-media edge cases (e.g., hybrid SSHD platters,
+    certain SSD wear-leveling firmware) are known to behave
+    differently and the verification protocol does not catch all
+    such edge cases.
+  - That the acquisition procedure was the BEST procedure available;
+    only that it was the procedure followed. Methodology choices
+    are subject to Daubert challenge under FRE 702 in U.S. federal
+    courts and similar standards elsewhere.
+
+This fact asserts only the acquisition tools, write-blocker hardware,
+verification procedure, and image format used for the fictional
+acquisition. It does not assert that the methodology was valid under
+any specific court's admissibility test, that the tools were free of
+defects, or that the resulting images are necessarily an exact
+representation of the source devices' contents in every possible
+edge case.</div>
+<div class="hash">SHA-256: 10989242feec881aa765de752977f9d722718ed8825d4493a859656d7df21493</div>
+
+<div class="fact">FACT 05 &mdash; CHAIN-OF-CUSTODY LOG (FICTIONAL)
+
+This fact records the custody events from initial seizure through the
+completion of forensic imaging. Custodians are identified by ROLE,
+NOT by personal name. A separately-sealed companion record (hashed
+below) binds role labels to the specific individuals on duty; that
+companion record is held by the agency under standard discovery
+procedures, not published in this public seal. The role-only
+publication is the kit's default refusal-rule R7 (see FACT 07) &mdash; it
+prevents the public seal from creating a permanent searchable
+identifier of every officer and forensic-staff member involved in
+every case.
+
+CUSTODY EVENT TIMELINE &mdash; Exhibit Set "F"
+
+  EVT  TIMESTAMP (FICT)         ROLE OF CUSTODIAN                EVENT
+  ---  -----------------------  -------------------------------- ----------------------------------------
+  E01  2026-05-19 06:42 PDT     Lead Detective on warrant team    Items 1, 2, 3, 4, 6 seized at premises
+                                                                  per warrant FICT-SW-2026-0188; sealed
+                                                                  into evidence bags F-001 through F-006
+                                                                  (excluding F-005, see E03)
+  E02  2026-05-19 08:15 PDT     Evidence transport officer        Sealed bags transferred from premises
+                                                                  to Sheriff's Office Evidence Intake
+                                                                  via marked vehicle; transport route
+                                                                  recorded on vehicle GPS (hashed in
+                                                                  GPS-log record below)
+  E03  2026-05-19 08:48 PDT     BWC docking-station custodian     Item 5 body-camera footage from
+                                                                  on-duty officers at the warrant
+                                                                  service was extracted from the BWC
+                                                                  docking system into evidence package
+                                                                  F-005; chain begins with the BWC
+                                                                  system's own provenance log, hashed
+                                                                  separately below
+  E04  2026-05-19 09:22 PDT     Evidence Intake clerk             Items checked into evidence locker;
+                                                                  per-item barcodes scanned; intake
+                                                                  manifest entered into agency CMS
+  E05  2026-05-19 10:55 PDT     Lead Digital Forensics Examiner   Items 1, 2, 3, 4, 6 checked out of
+                                                                  evidence locker to Digital Forensics
+                                                                  Lab Room 3 for imaging
+  E06  2026-05-19 11:14 PDT     Lead Digital Forensics Examiner   Imaging began on Item 1
+  E07  2026-05-19 12:28 PDT     Lead Digital Forensics Examiner   Item 1 image verification complete
+                                                                  (see FACT 04 procedure)
+  E08  2026-05-19 12:35 PDT     Lead Digital Forensics Examiner   Imaging began on Item 4 (parallel
+                                                                  workstation; small device)
+  E09  2026-05-19 13:01 PDT     Lead Digital Forensics Examiner   Item 4 image verification complete
+  E10  2026-05-19 13:07 PDT     Lead Digital Forensics Examiner   Imaging began on Item 3 via GrayKey
+  E11  2026-05-19 15:52 PDT     Lead Digital Forensics Examiner   Item 3 extraction complete
+  E12  2026-05-19 16:00 PDT     Lead Digital Forensics Examiner   Imaging began on Item 2 (large; ran
+                                                                  to E14)
+  E13  2026-05-19 16:18 PDT     Secondary Examiner (same lab)     Item 5 (Item 5 BWC archive) verified
+                                                                  upon receipt from BWC docking
+                                                                  custodian; hashed
+  E14  2026-05-19 21:47 PDT     Lead Digital Forensics Examiner   Item 2 image verification complete
+  E15  2026-05-19 21:55 PDT     Lead Digital Forensics Examiner   Imaging began on Item 6 (largest;
+                                                                  ran to completion)
+  E16  2026-05-19 22:30 PDT     Lead Digital Forensics Examiner   Item 6 image verification complete;
+                                                                  all imaging concluded
+  E17  2026-05-19 22:38 PDT     Lead Digital Forensics Examiner   All six forensic images written to
+                                                                  forensic storage array; hashes
+                                                                  recorded in FACT 03 above; original
+                                                                  source devices returned to evidence
+                                                                  locker with continued tamper-seal
+  E18  2026-05-19 22:55 PDT     Evidence Intake clerk             Items 1-6 source devices checked
+                                                                  back into evidence locker; this seal
+                                                                  publication being prepared
+
+SEPARATELY-SEALED COMPANION RECORDS (referenced by hash; not
+themselves published in this public seal)
+
+  Role-to-individual binding record (binds each event above to the
+  specific on-duty individual; held under agency CMS access control;
+  discoverable under defense-discovery procedures):
+    SHA-256: 5f6071829304a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f607182930
+
+  Pre-acquisition write-blocker NIST CFTT verification log (referenced
+  in FACT 04):
+    SHA-256: 4d5e6f70819203a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c
+
+  Transport vehicle GPS log (E02 transport route):
+    SHA-256: 6071829304a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f6071829304
+
+  Body-worn-camera docking-system provenance log (predecessor chain
+  for Item 5):
+    SHA-256: 71829304a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f6071829304a1
+
+  Source-device tamper-seal photographs (before and after imaging,
+  for each item):
+    SHA-256: 829304a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f6071829304a1b2
+
+  Evidence locker access log (for events E04, E05, E18):
+    SHA-256: 9304a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f6071829304a1b2c3
+
+WHAT THIS LOG IS AND IS NOT
+
+  This log is the agency's own contemporaneous custody record, with
+  the role/name redaction applied for public publication. It is not
+  a court's finding that the custody chain was procedurally correct
+  under applicable law. The log is the agency's claim; whether the
+  claim satisfies a state's chain-of-custody admissibility
+  requirement is a matter for the court.
+
+  Any post-sealing modification of the custody log &mdash; adding a custody
+  event after the fact, removing one, or changing the timestamp on
+  one &mdash; produces a different SHA-256 over this fact body and is
+  publicly detectable. The hash anchor freezes the agency's
+  contemporaneous custody claim at the moment of acquisition.
+
+This fact asserts only the custody-event timeline above and the hashes
+of the separately-sealed companion records, as the agency
+contemporaneously recorded them at the moment of sealing. It does not
+assert:
+  - that the chain-of-custody was procedurally correct under
+    applicable law,
+  - that the role-to-individual binding is correct in the companion
+    record (that is a separate evidentiary question),
+  - that no custody events occurred that were not logged.</div>
+<div class="hash">SHA-256: 3c4286aef4b29b4b01a2d281c4a96ff96e5e8261a25e26429e1c0ae103b813c2</div>
+
+<div class="fact">FACT 06 &mdash; EXAMINER QUALIFICATIONS BY ROLE (FICTIONAL)
+
+This fact records, at role level, the certifications and qualifications
+of the personnel who performed the acquisition described in FACTS 02
+through 05. PERSONAL NAMES ARE NOT IN THIS PUBLIC SEAL. The role-to-
+individual binding is sealed in the separately-held companion record
+hashed in FACT 05. The reason: personal names of forensic examiners
+have, in past cases, been used to harass examiners, attempt to coerce
+them outside courtroom procedure, or build a searchable index of
+which examiner worked which cases that aids organized opposition.
+Examiner credentials are public; examiner-personal-identification per
+case is appropriately discoverable under court process, not on a
+permanent public ledger.
+
+ROLE 1 &mdash; LEAD DIGITAL FORENSICS EXAMINER (events E05&ndash;E12, E14&ndash;E18)
+
+  Certifications held (at time of acquisition):
+    - International Association of Computer Investigative
+      Specialists (IACIS) Certified Forensic Computer Examiner
+      (CFCE), credential issued FICTIONAL_YEAR, active.
+    - SANS GIAC Certified Forensic Analyst (GCFA), credential issued
+      FICTIONAL_YEAR, active.
+    - Magnet Forensics Certified Examiner (MCE), FICTIONAL_YEAR,
+      active.
+  Continuing-education status (at time of acquisition):
+    - 40+ hours per year for the most recent three years on file
+      with each certifying body, per IACIS / SANS recertification
+      requirements.
+  Prior testifying experience (at time of acquisition):
+    - Has been qualified as an expert witness in digital forensics
+      under FRE 702 or state equivalents in [FICTIONAL_NUMBER]
+      prior proceedings (the count, not the cases).
+  Daubert exposure (at time of acquisition):
+    - No adverse Daubert ruling on file. (FICTIONAL &mdash; in a real
+      acquisition this disclosure is load-bearing; an examiner with
+      a prior adverse Daubert ruling must declare it, since the
+      ruling speaks directly to the reliability prong of any future
+      challenge.)
+  Conflicts of interest (at time of acquisition):
+    - No prior or current relationship with any party named in the
+      warrant or with the requesting authority. (FICTIONAL &mdash; if any
+      conflict existed, a real attestation would name it here.)
+
+ROLE 2 &mdash; SECONDARY DIGITAL FORENSICS EXAMINER (event E13 only &mdash;
+verified Item 5 body-cam archive)
+
+  Certifications held (at time of acquisition):
+    - IACIS CFCE, credential issued FICTIONAL_YEAR, active.
+    - Vendor-specific BWC handoff certification (vendor-specific
+      training program for the Axon Evidence.com workflow).
+  Conflicts of interest:
+    - None disclosed.
+
+ROLE 3 &mdash; EVIDENCE INTAKE CLERK (events E04, E18)
+
+  Position is a credentialed civilian role within the agency.
+  Certifications held: agency-internal evidence-handling course,
+  recertified annually. Not an expert-witness role; performs
+  documentary check-in/check-out, not forensic analysis.
+
+ROLE 4 &mdash; EVIDENCE TRANSPORT OFFICER (event E02)
+
+  Sworn officer of the acquiring agency, completed evidence-
+  transport protocol training (agency-internal, FICTIONAL
+  certification). Not an expert-witness role.
+
+ROLE 5 &mdash; LEAD DETECTIVE ON WARRANT TEAM (event E01)
+
+  Sworn officer, lead investigator on the warrant team that served
+  the search warrant. Conducted seizure of devices at the premises;
+  not a forensic examiner. The seizure itself is governed by warrant
+  law, not by forensic methodology.
+
+ROLE 6 &mdash; BWC DOCKING-STATION CUSTODIAN (event E03)
+
+  Sworn officer; routine custodian of the body-worn-camera docking
+  station for the precinct. Performed the BWC-to-evidence transfer
+  per agency SOP. Not a forensic-analysis role.
+
+WHAT THIS FACT DOES AND DOES NOT ASSERT
+
+  This fact records the credential profile that the roles' personnel
+  held at the time of acquisition. It is intended to be cross-
+  checked against the certifying bodies' public registries (IACIS,
+  SANS GIAC, Magnet Forensics) using the credentials listed, NOT
+  using personal names. Verification at this layer answers the
+  question "was the work done by a person with active credentials of
+  this type" but does not answer "was THIS specific person, with
+  this specific history, qualified to do THIS specific work." That
+  second question is for the court at any Daubert challenge.
+
+This fact asserts only the role-level certifications and conflict-of-
+interest disclosures as they stood at the time of acquisition. It
+does not assert:
+  - that certification implies competence in any specific case,
+  - that an absence of a disclosed conflict means no conflict exists,
+  - that the examiner's prior expert-witness qualification in other
+    proceedings binds any future court to qualify them in this case,
+  - that the role-to-individual binding (sealed separately, hashed
+    in FACT 05) is itself uncontested.</div>
+<div class="hash">SHA-256: d1e3db91ca355ac521367898c4cf847b560bec3ac8b9a318847575788a36f937</div>
+
+<div class="fact">FACT 07 &mdash; COMPANION DISCLOSURES AND REFUSAL RECORD (FICTIONAL)
+
+Per the MYRIAM kit's "constraint-first" design principle, this fact
+records what the kit explicitly refused to seal and any companion
+disclosures the acquiring agency is obliged to publish alongside the
+acquisition record so that selective omission is detectable. The
+disclosures here are not optional &mdash; leaving any of them blank without
+explicit "none at acquisition time" attestation is itself a public
+red flag.
+
+COMPANION DISCLOSURES (sealed alongside the acquisition record so the
+acquisition cannot be read in isolation)
+
+  C1. PARALLEL INVESTIGATIONS
+      The acquiring agency, at acquisition time, was aware of no
+      parallel investigation by another agency targeting the same
+      premises or devices. (FICTIONAL &mdash; if a parallel federal,
+      state, or interagency investigation existed, a real
+      attestation would disclose its existence &mdash; though not
+      necessarily its contents &mdash; so a defense or appellate review
+      can detect non-coordination problems.)
+
+  C2. PENDING CHALLENGES TO WARRANT OR SCOPE
+      At the moment of acquisition, no motion to quash or suppress
+      had been filed against warrant FICT-SW-2026-0188. (FICTIONAL
+      &mdash; a real attestation would record any filed motion's docket
+      number, even pending, so that later litigation cannot claim
+      the agency was unaware of the challenge at acquisition time.)
+
+  C3. SUPPRESSED-EVIDENCE MOTIONS, IF KNOWN
+      No suppressed-evidence ruling against the acquiring agency in
+      any related case in the prior 12 months. (FICTIONAL &mdash; a real
+      attestation lists any prior suppression rulings against the
+      same agency in related cases, since those rulings may bear on
+      the same agency's later acquisitions in the same investigation.)
+
+  C4. PRIVILEGED MATERIAL FILTER
+      The acquisition included devices that may contain attorney-
+      client privileged communications, work-product privileged
+      material, clergy-penitent privileged material, or other
+      privileged categories. A taint-team / filter-team protocol
+      is in effect per agency SOP; the protocol is sealed
+      separately and hashed below. (FICTIONAL &mdash; a real attestation
+      MUST disclose whether a privilege-filter protocol is in
+      effect, because acquisition of privileged material without
+      filtering raises distinct legal and constitutional issues.)
+      Taint-team protocol SHA-256:
+        a304a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f6071829304a1b2c3d
+
+  C5. PRIOR ACQUISITION ATTEMPTS ON THESE DEVICES
+      No prior attempted acquisitions on the same source devices.
+      (FICTIONAL &mdash; if a prior attempt failed, abandoned, or was
+      partial, a real attestation discloses it, because a defense
+      expert may need to evaluate whether prior attempts altered
+      the source.)
+
+  C6. KNOWN BUGS / OPEN ISSUES IN THE TOOLS USED
+      The vendor bug-tracker advisories for FTK Imager v4.7.1 and
+      GrayKey v2.18.3 current as of acquisition date were reviewed;
+      none of the open issues were assessed by the examiner as
+      affecting the integrity of the acquisitions performed.
+      (FICTIONAL &mdash; a real attestation includes the URL or hash of
+      the vendor advisory list reviewed.)
+      Reviewed-advisories list SHA-256:
+        b1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f6071829304a1b2c3d4e5f6
+
+REFUSAL RECORD &mdash; patterns the kit refused to seal
+
+The kit does NOT seal the following types of facts, even if requested
+by the acquiring agency or a co-equal authority:
+
+  R1. INDIVIDUAL IDENTIFICATION OF SUSPECTS, DEFENDANTS, VICTIMS,
+      WITNESSES, OR THIRD PARTIES
+      No fact published here may name, or include any identifier
+      reducible to, any individual who is a subject of, victim of,
+      or witness to the investigation. The case docket reference in
+      FACT 02 is the appropriate handle for parties with standing
+      to locate the case in court records; this public seal is not
+      a re-identification index.
+
+  R2. PERSONAL NAMES OF FORENSIC EXAMINERS OR OTHER AGENCY STAFF
+      Per FACT 06, roles are published; personal names are sealed
+      separately under agency CMS access. This refusal protects
+      examiner-personal-safety; agencies that find this refusal
+      operationally incompatible should publish role-only at this
+      layer and bind names through normal discovery.
+
+  R3. ANY HASH OR FINGERPRINT OF SUSPECTED CHILD SEXUAL ABUSE
+      MATERIAL, BIOMETRIC TEMPLATE, OR OTHER VULNERABLE-PERSON-
+      RE-IDENTIFYING DATA
+      Even by hash. Even by file-level fingerprint. The reason: an
+      individual file's SHA-256 is a permanent searchable
+      identifier; publishing it on a public ledger can re-victimize
+      subjects via correlation with private databases held by other
+      parties. Image-level (forensic-image-level) hashes are
+      acceptable because the forensic-image binary is not itself a
+      re-victimizing artifact in the same way; file-level hashes of
+      such material are NEVER acceptable in a public seal.
+
+  R4. EXAMINATION FINDINGS, INTERPRETATIONS, OR OPINIONS
+      The kit anchors WHAT BYTES were acquired and WHEN. It does
+      NOT anchor what the examiner concluded the bytes mean. The
+      examiner's report is appropriately sealed and discovered
+      under normal court process; pre-publishing a forensic
+      interpretation as a tamper-evident "fact" gives the
+      interpretation a misleading veneer of cryptographic
+      certainty.
+
+  R5. CLAIMS OF ADMISSIBILITY OR LEGAL CONCLUSION
+      The kit will not seal a fact body that claims the evidence
+      is "admissible," that the warrant was "lawful," that the
+      chain-of-custody was "proper under [statute X]," or any
+      other legal conclusion. Admissibility is a court function;
+      the kit anchors bytes and timestamps only.
+
+  R6. SEALING BY ANYONE OTHER THAN THE ACQUIRING AGENCY'S
+      AUTHORIZED PRINCIPAL
+      A defense expert, court-appointed neutral, or third party
+      may use the same kit to seal THEIR OWN independent
+      verification of the manifest; but they may not seal the
+      ORIGINAL acquisition under the acquiring agency's name. The
+      principal in FACT 08 is the only valid signer for that.
+
+  R7. ROLE-TO-INDIVIDUAL BINDINGS IN THE PUBLIC SEAL
+      As described in FACT 06, the role-to-individual binding is
+      sealed separately and discoverable under court process. The
+      kit refuses to publish that binding here.
+
+  R8. PRE-SEIZURE OR PRE-WARRANT FACT PATTERNS
+      The kit refuses to seal facts about the investigation that
+      pre-date the warrant cited in FACT 02 (informant
+      statements, pre-warrant surveillance, parallel-construction
+      inputs, etc.). The seal is scoped to the acquisition event;
+      pre-acquisition investigative facts have their own
+      evidentiary regime and do not belong on this seal.
+
+If during acquisition any request matching R1-R8 was made and refused,
+that refusal would be documented as a sealed fact:
+  "Refusal #N: party X requested sealing of [pattern]; the kit
+  refused per refusal-rule R[m]."
+
+  Refusals this acquisition: NONE. (FICTIONAL)
+
+This fact asserts only the companion-disclosure status and any
+refusal record at the moment of acquisition. It does not assert that
+the refusal-rule list is exhaustive of all PII or admissibility
+patterns, that all companion disclosures have been identified by the
+acquiring agency, or that the disclosures listed are themselves
+non-contestable.</div>
+<div class="hash">SHA-256: d4fe5814c2c52143e47b73c0d11d37fff90b4c374747f1e12ddb4edadd8a2193</div>
+
+<div class="fact">FACT 08 &mdash; SIGNING PRINCIPAL (FICTIONAL)
+
+  Acquiring Agency:        Fictional County Sheriff's Office, Digital
+                           Forensics Unit (FICTIONAL)
+  Agency identifier:       FICT-LEA-9999 (FICTIONAL)
+  Statutory basis for
+    agency forensic work:  Fictional state statute §456.78 governing
+                           law-enforcement forensic acquisitions
+                           (FICTIONAL &mdash; a real attestation cites the
+                           actual state statute)
+  Acquisition timestamp:   2026-05-19T22:38 PDT (FICTIONAL &mdash; end of
+                           imaging window per FACT 05 event E17)
+  Date sealed:             2026-05-21 (FICTIONAL)
+
+PRIMARY SIGNATORY
+
+  Role:                    Lead Digital Forensics Examiner (one role-
+                           level individual; personal name in
+                           separately-held role-to-individual binding
+                           hashed in FACT 05)
+  Acting in capacity of:   Sworn forensic examiner of the acquiring
+                           agency, performing acquisition under the
+                           warrant cited in FACT 02
+  Cryptographic key:       (a real attestation would attach the
+                           examiner's PGP public-key fingerprint, or
+                           an agency-issued forensic-staff X.509
+                           certificate, here; omitted in this example
+                           because no real person exists)
+
+CO-SIGNATORY (counter-sign for the agency)
+
+  Role:                    Unit Supervisor, Digital Forensics Unit
+                           (one role-level individual; personal name
+                           in separately-held binding)
+  Acting in capacity of:   Supervisor counter-sign attesting that the
+                           acquisition was performed under the unit's
+                           established SOP and within warrant scope as
+                           understood by the unit at the time
+
+WHY THE PRINCIPAL IS ROLE-LEVEL, NOT PERSON-LEVEL
+
+In real-world digital-forensics practice, the binding between a
+forensic finding and the person who produced it is established
+through:
+  - the examiner's contemporaneous lab notes,
+  - the examiner's CV / expert-witness disclosure under FRCP 26 (or
+    state equivalent),
+  - and the examiner's live testimony at any evidentiary hearing.
+
+A public Bitcoin-anchored seal is not the appropriate venue to bind
+an examiner's personal identity to a case. That binding belongs in
+the court record, where access is controlled and where the binding
+can be tested through cross-examination. The role-level public seal
+plus the separately-discoverable role-to-individual binding (hashed
+in FACT 05) is the kit's default; agencies in jurisdictions where
+public personal-naming is required can amend their fork to include
+the personal name, but the default refusal favors examiner safety.
+
+In a real attestation, the signing principal section should include:
+
+  - The acquiring agency's identity and statutory basis.
+  - The role and supervisor-role for each signatory.
+  - A cryptographic key (PGP, X.509, agency-issued) so that future
+    statements claimed to be from the signing principal can be
+    cryptographically verified against this seal.
+  - The acquisition and sealing timestamps.
+
+The signing principal section SHOULD NOT include:
+
+  - Personal contact information for examiners or supervisors.
+  - Home addresses or other locating information.
+  - Identifying information about examiners' family members.
+  - The name of any private party to the investigation
+    (suspect, defendant, victim, witness, premises occupant).
+
+This fact asserts only the signing principal identification fields
+for the fictional acquisition as declared. It does not assert any of
+those fields about any real agency, any real examiner, or any real
+case.</div>
+<div class="hash">SHA-256: a6a89202823aa6c81b7c46e9135e8fc9cfef5234b1e8582a257c1fd827973c54</div>
+
+<h2>Cryptographic Seal</h2>
+
+<p><strong>Merkle root</strong> (Bitcoin-style, over the 8 facts above):</p>
+<div class="root">06437f794574f7b547bea5443850ea34d002c565516930fa8174afa67cdd348d</div>
+
+<p><strong>Seal time:</strong> 2026-05-21T22:38Z</p>
+
+<p><strong>Bitcoin commitment:</strong> OpenTimestamps receipt at
+<a href="merkle_root.txt.ots">merkle_root.txt.ots</a>, with pending
+attestations against:</p>
+<ul>
+  <li><code>alice.btc.calendar.opentimestamps.org</code> &mdash; Peter Todd</li>
+  <li><code>finney.calendar.eternitywall.com</code> &mdash; Eternity Wall</li>
+</ul>
+
+<p><strong>Signing principal:</strong> Fictional County Sheriff's
+Office, Digital Forensics Unit, by Lead Digital Forensics Examiner
+(role-level; personal name in separately-held binding hashed in
+FACT 05). For real acquisitions, see <a href="README.md">README.md</a>.</p>
+
+<h2>How to Verify</h2>
+
+<ol>
+  <li>Download all 8 fact files from <code>facts/</code>.</li>
+  <li>Recompute each file's SHA-256 and confirm it matches the per-fact
+      hash above.</li>
+  <li>Compute the Merkle root (algorithm in myriam-kit SPEC §3) or run
+      <a href="build/verify.py">verify.py</a>.</li>
+  <li>Verify the OpenTimestamps receipt: <code>ots verify merkle_root.txt.ots</code></li>
+</ol>
+
+<h2>What this kit is for</h2>
+
+<p>This is a worked example for the
+<a href="README.md">Court Evidence Chain-of-Custody Seal Kit</a>. The
+kit anchors WHAT BYTES were acquired and WHEN, by WHICH AGENCY, under
+WHICH WARRANT, through WHICH TOOLS &mdash; at the moment of forensic
+acquisition. It is intended to compose with, not replace, existing
+chain-of-custody and admissibility procedures.</p>
+
+<p>What the kit does NOT establish:</p>
+
+<ul>
+  <li>Admissibility under FRE 901 / FRE 702 / Daubert / state evidence codes</li>
+  <li>Lawfulness of the warrant or the seizure</li>
+  <li>Whether the evidence is incriminating or exculpatory</li>
+  <li>Procedural correctness of the chain-of-custody under applicable law</li>
+  <li>Reliability of the forensic tools or methodology in any specific case</li>
+</ul>
+
+<p>The kit refuses to seal personal identification of any party,
+file-level hashes of vulnerable-person re-identifying material,
+examination findings or legal conclusions. See the
+<a href="README.md">README</a> for the full set of refusal rules.</p>
+
+<p>To fork this kit for a real acquisition: read the
+<a href="README.md">README</a> first. The cryptography is the easy
+part. The agency's existing chain-of-custody discipline, the
+warrant's lawfulness, and the methodology's reliability all live
+upstream of the cryptography.</p>
+
+<footer>
+Example publication &middot; myriam-kit Court Evidence Chain-of-Custody Seal &middot; 2026-05-21<br>
+Fictional. Not a real forensic-acquisition record. Read FACT 01.<br>
+Public domain (CC0).
+</footer>
+
+</body>
+</html>

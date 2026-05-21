@@ -1,0 +1,99 @@
+FACT 04 — ACQUISITION METHODOLOGY (FICTIONAL)
+
+This fact freezes, at the moment of sealing, the tools, hardware, and
+procedures used to acquire the forensic images listed in FACT 03. Any
+post-acquisition claim that "different tools were used" or "the
+write-blocker was not engaged" is publicly refutable against this
+record. A defense expert, court-appointed neutral, or appellate
+reviewer may diff the agency's later-produced methodology report
+against this sealed record.
+
+ACQUISITION TOOLS (versions are load-bearing — newer versions may
+have different bug-fix histories that affect verification)
+
+  Forensic imaging software:
+    - AccessData FTK Imager v4.7.1 (FICTIONAL version reference for
+      Items 1, 2, 4, 6)
+      Binary SHA-256: a1b2c3d4e5f6789abcdef0123456789abcdef0123456789abcdef0123456789ab
+    - Magnet Forensics GrayKey v2.18.3 (FICTIONAL version reference
+      for Item 3 mobile extraction)
+      Binary SHA-256: c2d3e4f5061728394a5b6c7d8e9f00112233445566778899aabbccddeeff0011
+
+  Body-camera evidence handoff tool (Item 5):
+    - Axon Evidence.com client v3.41.0 (FICTIONAL); the body-camera
+      footage was transferred from the BWC docking system to a
+      forensic workstation, packaged into a TAR archive, and hashed
+      at the receiving end. The chain-of-custody from BWC to the
+      forensic workstation is documented in the custody log hashed
+      in FACT 05.
+
+WRITE-BLOCKER HARDWARE (used for Items 1, 2, 4, 6; not applicable to
+Items 3 or 5 which use vendor-specific extraction tooling that
+inherently produces read-only acquisitions)
+
+  Make/model:             Tableau T35u-RW (FICTIONAL serial range)
+  Firmware version:       v4.07 (FICTIONAL)
+  Pre-acquisition verification:
+                          Each write-blocker was verified against the
+                          NIST Computer Forensics Tool Testing
+                          program's test protocol on 2026-05-18 (the
+                          day before acquisition). Verification log
+                          hash recorded in FACT 05.
+
+ACQUISITION VERIFICATION PROCEDURE
+
+  For each imaged item, after imaging completed:
+    1. The imaging tool computed both MD5 and SHA-256 hashes of the
+       acquired image during the imaging pass.
+    2. A second pass (verification read) re-hashed the image and
+       compared to the first-pass hash.
+    3. For live-source acquisitions where the source device could be
+       re-read non-destructively, the source device was re-hashed
+       after imaging and compared.
+    4. All three hashes (image-1st-pass, image-2nd-pass, source-
+       device-post-image) matched for Items 1, 2, 4, and 6.
+    5. For Items 3 (phone) and 5 (body-cam), only the image-level
+       hash is meaningful; the source-device hash is not reproducible
+       for those acquisition types.
+    6. The hashes recorded in FACT 03 are the SHA-256 image hashes
+       after verification.
+
+  Verification log hash (sealed separately, contains per-item details):
+    SHA-256: 4d5e6f70819203a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c
+
+FORENSIC IMAGE FORMAT
+
+  - Items 1, 2, 4, 6: EnCase Evidence File format (.E01), variable
+    chunk size, compression on, MD5+SHA-256 embedded.
+  - Item 3: AFF4 (Advanced Forensic Format v4), GrayKey native
+    output format.
+  - Item 5: bytewise-preserved TAR archive of the original .mp4
+    bodycam files plus the BWC vendor's manifest .json. Per-file
+    hashes of the .mp4 contents are stored INSIDE the TAR's manifest
+    .json, NOT in this public manifest.
+
+WHAT THIS FACT DOES NOT CERTIFY
+
+  - That the tools above are bug-free. FTK Imager, GrayKey, and AFF4
+    parsers have all had documented bugs in past versions. The
+    sealed version-and-binary-hash record allows later parties to
+    cross-reference against the vendor's published vulnerability and
+    bug-fix lists.
+  - That the write-blockers performed correctly on the specific
+    media in question. The NIST CFTT protocol verifies the general
+    case; specific-media edge cases (e.g., hybrid SSHD platters,
+    certain SSD wear-leveling firmware) are known to behave
+    differently and the verification protocol does not catch all
+    such edge cases.
+  - That the acquisition procedure was the BEST procedure available;
+    only that it was the procedure followed. Methodology choices
+    are subject to Daubert challenge under FRE 702 in U.S. federal
+    courts and similar standards elsewhere.
+
+This fact asserts only the acquisition tools, write-blocker hardware,
+verification procedure, and image format used for the fictional
+acquisition. It does not assert that the methodology was valid under
+any specific court's admissibility test, that the tools were free of
+defects, or that the resulting images are necessarily an exact
+representation of the source devices' contents in every possible
+edge case.

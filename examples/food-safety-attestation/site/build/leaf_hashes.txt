@@ -1,0 +1,2 @@
+69e0d650c9e860d00af3ce2cda55d566500f0aa9ac657bcfbb17a07e228ec563  01_example_notice.txt
+c8f772970f98ef6254e1fe7aca7f6a7c787096573057dbc186480443c02e60c8  02_product_identification.txt

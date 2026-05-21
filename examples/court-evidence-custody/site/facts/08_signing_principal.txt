@@ -1,0 +1,79 @@
+FACT 08 — SIGNING PRINCIPAL (FICTIONAL)
+
+  Acquiring Agency:        Fictional County Sheriff's Office, Digital
+                           Forensics Unit (FICTIONAL)
+  Agency identifier:       FICT-LEA-9999 (FICTIONAL)
+  Statutory basis for
+    agency forensic work:  Fictional state statute §456.78 governing
+                           law-enforcement forensic acquisitions
+                           (FICTIONAL — a real attestation cites the
+                           actual state statute)
+  Acquisition timestamp:   2026-05-19T22:38 PDT (FICTIONAL — end of
+                           imaging window per FACT 05 event E17)
+  Date sealed:             2026-05-21 (FICTIONAL)
+
+PRIMARY SIGNATORY
+
+  Role:                    Lead Digital Forensics Examiner (one role-
+                           level individual; personal name in
+                           separately-held role-to-individual binding
+                           hashed in FACT 05)
+  Acting in capacity of:   Sworn forensic examiner of the acquiring
+                           agency, performing acquisition under the
+                           warrant cited in FACT 02
+  Cryptographic key:       (a real attestation would attach the
+                           examiner's PGP public-key fingerprint, or
+                           an agency-issued forensic-staff X.509
+                           certificate, here; omitted in this example
+                           because no real person exists)
+
+CO-SIGNATORY (counter-sign for the agency)
+
+  Role:                    Unit Supervisor, Digital Forensics Unit
+                           (one role-level individual; personal name
+                           in separately-held binding)
+  Acting in capacity of:   Supervisor counter-sign attesting that the
+                           acquisition was performed under the unit's
+                           established SOP and within warrant scope as
+                           understood by the unit at the time
+
+WHY THE PRINCIPAL IS ROLE-LEVEL, NOT PERSON-LEVEL
+
+In real-world digital-forensics practice, the binding between a
+forensic finding and the person who produced it is established
+through:
+  - the examiner's contemporaneous lab notes,
+  - the examiner's CV / expert-witness disclosure under FRCP 26 (or
+    state equivalent),
+  - and the examiner's live testimony at any evidentiary hearing.
+
+A public Bitcoin-anchored seal is not the appropriate venue to bind
+an examiner's personal identity to a case. That binding belongs in
+the court record, where access is controlled and where the binding
+can be tested through cross-examination. The role-level public seal
+plus the separately-discoverable role-to-individual binding (hashed
+in FACT 05) is the kit's default; agencies in jurisdictions where
+public personal-naming is required can amend their fork to include
+the personal name, but the default refusal favors examiner safety.
+
+In a real attestation, the signing principal section should include:
+
+  - The acquiring agency's identity and statutory basis.
+  - The role and supervisor-role for each signatory.
+  - A cryptographic key (PGP, X.509, agency-issued) so that future
+    statements claimed to be from the signing principal can be
+    cryptographically verified against this seal.
+  - The acquisition and sealing timestamps.
+
+The signing principal section SHOULD NOT include:
+
+  - Personal contact information for examiners or supervisors.
+  - Home addresses or other locating information.
+  - Identifying information about examiners' family members.
+  - The name of any private party to the investigation
+    (suspect, defendant, victim, witness, premises occupant).
+
+This fact asserts only the signing principal identification fields
+for the fictional acquisition as declared. It does not assert any of
+those fields about any real agency, any real examiner, or any real
+case.

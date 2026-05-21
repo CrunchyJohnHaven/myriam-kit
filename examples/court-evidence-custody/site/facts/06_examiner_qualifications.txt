@@ -1,0 +1,100 @@
+FACT 06 — EXAMINER QUALIFICATIONS BY ROLE (FICTIONAL)
+
+This fact records, at role level, the certifications and qualifications
+of the personnel who performed the acquisition described in FACTS 02
+through 05. PERSONAL NAMES ARE NOT IN THIS PUBLIC SEAL. The role-to-
+individual binding is sealed in the separately-held companion record
+hashed in FACT 05. The reason: personal names of forensic examiners
+have, in past cases, been used to harass examiners, attempt to coerce
+them outside courtroom procedure, or build a searchable index of
+which examiner worked which cases that aids organized opposition.
+Examiner credentials are public; examiner-personal-identification per
+case is appropriately discoverable under court process, not on a
+permanent public ledger.
+
+ROLE 1 — LEAD DIGITAL FORENSICS EXAMINER (events E05–E12, E14–E18)
+
+  Certifications held (at time of acquisition):
+    - International Association of Computer Investigative
+      Specialists (IACIS) Certified Forensic Computer Examiner
+      (CFCE), credential issued FICTIONAL_YEAR, active.
+    - SANS GIAC Certified Forensic Analyst (GCFA), credential issued
+      FICTIONAL_YEAR, active.
+    - Magnet Forensics Certified Examiner (MCE), FICTIONAL_YEAR,
+      active.
+  Continuing-education status (at time of acquisition):
+    - 40+ hours per year for the most recent three years on file
+      with each certifying body, per IACIS / SANS recertification
+      requirements.
+  Prior testifying experience (at time of acquisition):
+    - Has been qualified as an expert witness in digital forensics
+      under FRE 702 or state equivalents in [FICTIONAL_NUMBER]
+      prior proceedings (the count, not the cases).
+  Daubert exposure (at time of acquisition):
+    - No adverse Daubert ruling on file. (FICTIONAL — in a real
+      acquisition this disclosure is load-bearing; an examiner with
+      a prior adverse Daubert ruling must declare it, since the
+      ruling speaks directly to the reliability prong of any future
+      challenge.)
+  Conflicts of interest (at time of acquisition):
+    - No prior or current relationship with any party named in the
+      warrant or with the requesting authority. (FICTIONAL — if any
+      conflict existed, a real attestation would name it here.)
+
+ROLE 2 — SECONDARY DIGITAL FORENSICS EXAMINER (event E13 only —
+verified Item 5 body-cam archive)
+
+  Certifications held (at time of acquisition):
+    - IACIS CFCE, credential issued FICTIONAL_YEAR, active.
+    - Vendor-specific BWC handoff certification (vendor-specific
+      training program for the Axon Evidence.com workflow).
+  Conflicts of interest:
+    - None disclosed.
+
+ROLE 3 — EVIDENCE INTAKE CLERK (events E04, E18)
+
+  Position is a credentialed civilian role within the agency.
+  Certifications held: agency-internal evidence-handling course,
+  recertified annually. Not an expert-witness role; performs
+  documentary check-in/check-out, not forensic analysis.
+
+ROLE 4 — EVIDENCE TRANSPORT OFFICER (event E02)
+
+  Sworn officer of the acquiring agency, completed evidence-
+  transport protocol training (agency-internal, FICTIONAL
+  certification). Not an expert-witness role.
+
+ROLE 5 — LEAD DETECTIVE ON WARRANT TEAM (event E01)
+
+  Sworn officer, lead investigator on the warrant team that served
+  the search warrant. Conducted seizure of devices at the premises;
+  not a forensic examiner. The seizure itself is governed by warrant
+  law, not by forensic methodology.
+
+ROLE 6 — BWC DOCKING-STATION CUSTODIAN (event E03)
+
+  Sworn officer; routine custodian of the body-worn-camera docking
+  station for the precinct. Performed the BWC-to-evidence transfer
+  per agency SOP. Not a forensic-analysis role.
+
+WHAT THIS FACT DOES AND DOES NOT ASSERT
+
+  This fact records the credential profile that the roles' personnel
+  held at the time of acquisition. It is intended to be cross-
+  checked against the certifying bodies' public registries (IACIS,
+  SANS GIAC, Magnet Forensics) using the credentials listed, NOT
+  using personal names. Verification at this layer answers the
+  question "was the work done by a person with active credentials of
+  this type" but does not answer "was THIS specific person, with
+  this specific history, qualified to do THIS specific work." That
+  second question is for the court at any Daubert challenge.
+
+This fact asserts only the role-level certifications and conflict-of-
+interest disclosures as they stood at the time of acquisition. It
+does not assert:
+  - that certification implies competence in any specific case,
+  - that an absence of a disclosed conflict means no conflict exists,
+  - that the examiner's prior expert-witness qualification in other
+    proceedings binds any future court to qualify them in this case,
+  - that the role-to-individual binding (sealed separately, hashed
+    in FACT 05) is itself uncontested.

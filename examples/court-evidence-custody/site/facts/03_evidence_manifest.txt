@@ -1,0 +1,68 @@
+FACT 03 — EVIDENCE MANIFEST (FICTIONAL)
+
+The following table lists the six forensic-image items in the
+fictional Exhibit Set "F" acquired under the warrant cited in FACT 02.
+The actual image contents are NOT included in this MYRIAM publication
+— only their cryptographic hashes. This is the core chain-of-custody
+property of the seal: the manifest anchors WHICH BYTES were acquired
+and WHEN, without exposing the contents of the images to the public.
+
+  IDX  TYPE                FILENAME (FICTIONAL)             SIZE       SHA-256                                                            ACQ METHOD                  SOURCE DEVICE (anonymized)
+  ---  ------------------  -------------------------------  ---------  ----------------------------------------------------------------   --------------------------  -----------------------------
+   1   E01 disk image      F-001_laptop.E01                 487 GB     46e9c5a4b1c5e8c7d9f0b1a2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60   imaged via FTK Imager       Laptop "Device-A1" (FICT)
+   2   E01 disk image      F-002_desktop.E01                1.96 TB    7a8f9e0d1c2b3a4958675849392a1b0c2d3e4f5061728394a5b6c7d8e9f00112   imaged via FTK Imager       Desktop "Device-B2" (FICT)
+   3   AFF4 phone image    F-003_phone.aff4                 248 GB     b1c2d3e4f50617283940a1b2c3d4e5f6071829304a1b2c3d4e5f6071829304a1b   GrayKey extraction          Mobile "Device-C3" (FICT)
+   4   E01 thumb drive     F-004_thumbdrive.E01             63 GB      0c1d2e3f405162738495a6b7c8d9e0f102132435465768798a9bacbdcedfe0f10   imaged via FTK Imager       USB "Device-D4" (FICT)
+   5   MP4 archive (set)   F-005_bodycam_2026-05-19.tar     14.2 GB    f0e1d2c3b4a5968778695a4b3c2d1e0f01928374655463728190abcdef012345   handoff from BWC system     Body-Camera 7 (FICT shift)
+   6   E01 NAS volume      F-006_nas_volume.E01             8.4 TB     8273645a4b3c2d1e0f9876543210abcdef0123456789abcdef0123456789abcd   imaged via FTK Imager       NAS "Device-F6" (FICT)
+
+  Total: 6 items, ~11.6 TB
+
+Each hash was computed with SHA-256 over the exact bytes of the
+forensic image file as written by the imaging tool, immediately after
+imaging completed and BEFORE any examination began. A second hash
+(sealed separately in FACT 04 as part of the methodology record)
+verifies the image against the live source device at acquisition time.
+
+Any party — defense expert, opposing counsel, appellate-review forensic
+examiner, court-appointed neutral — receiving any of the above
+forensic-image files through proper discovery may re-hash the file
+they receive with SHA-256 and compare to the row above. If the hashes
+match, the recipient holds the exact bytes that were sealed at the
+moment of acquisition. If the hashes do not match, the file has been
+altered (intentionally or accidentally) since acquisition; the
+recipient should raise this immediately with the issuing agency and
+opposing counsel.
+
+In this fictional example, the hashes above are deterministic
+placeholders. A real acquisition would replace these with hashes of
+the actual forensic images.
+
+What is INTENTIONALLY ABSENT from this manifest:
+
+  - File-by-file hashes of individual files INSIDE the disk images.
+    Those reside in the examination report, hashed separately in FACT
+    05's custody log, NOT in this public manifest. The reason: an
+    individual file's hash on a suspect's personal device may itself
+    be evidence relevant only to the prosecution and defense, and
+    public hashing creates a permanent searchable record that could
+    re-identify the case subject via correlation with other databases.
+  - Any file-level hash of suspected child sexual abuse material,
+    biometric template, or other PII-equivalent data. Such material
+    is NEVER hashed into this kit's public manifest, even by hash;
+    see refusal-rule R3 in FACT 07.
+  - Metadata that would identify any person at the premises: account
+    names, user account UIDs, phone-book entries, biometric
+    enrollment IDs, etc.
+
+This fact asserts only the manifest of forensic-image-level hashes,
+sizes, formats, source devices (anonymized), and acquisition methods
+above, and the integrity property the hashes provide. It does not
+assert:
+  - what evidence the images contain,
+  - whether the contents are incriminating or exculpatory,
+  - whether the images were acquired within warrant scope,
+  - whether the source-device chain-of-custody before imaging was
+    proper (covered separately in FACT 05),
+  - whether the examination of these images was methodologically
+    sound (covered separately in FACT 04 and 06).
