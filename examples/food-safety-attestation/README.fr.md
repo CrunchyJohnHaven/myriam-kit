@@ -47,7 +47,7 @@ sécurité alimentaire au-delà de cela. Les éléments suivants sont
    passe l'échantillonnage de libération peut encore contenir des
    unités contaminées qui n'ont pas été échantillonnées. Le sceau
    ancre les ÉCHANTILLONS, non le vrac. Cette contrainte est
-   explicitement restated dans le FACT 03 et constitue la limite
+   explicitement réénoncée dans le FACT 03 et constitue la limite
    honnête la plus importante de cette trousse.
 
 3. **Certifier que les tests de libération ont été menés

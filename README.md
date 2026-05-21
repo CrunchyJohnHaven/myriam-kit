@@ -32,16 +32,37 @@ generalization of that pattern.
 
 ## Available languages
 
-This README and several example kits are available in 17 languages.
+This README is available in 56 languages.
 Full index at [TRANSLATIONS.md](TRANSLATIONS.md).
 
-[العربية](README.ar.md) · [বাংলা](README.bn.md) · [Deutsch](README.de.md) ·
-[Español](README.es.md) · [Français](README.fr.md) · [हिन्दी](README.hi.md) ·
-[Bahasa Indonesia](README.id.md) · [Italiano](README.it.md) ·
-[日本語](README.ja.md) · [한국어](README.ko.md) · [Polski](README.pl.md) ·
-[Português Brasileiro](README.pt-BR.md) · [Русский](README.ru.md) ·
-[Kiswahili](README.sw.md) · [Türkçe](README.tr.md) ·
-[Tiếng Việt](README.vi.md) · [中文](README.zh.md)
+[Afaan Oromoo](README.om.md) · [Azərbaycan](README.az.md) ·
+[Bahasa Indonesia](README.id.md) · [Bahasa Melayu](README.ms.md) ·
+[Basa Jawa](README.jv.md) · [Català](README.ca.md) ·
+[Čeština](README.cs.md) · [Dansk](README.da.md) ·
+[Deutsch](README.de.md) · [Español](README.es.md) ·
+[Filipino](README.fil.md) · [Français](README.fr.md) ·
+[Hausa](README.ha.md) · [Igbo](README.ig.md) ·
+[isiZulu](README.zu.md) · [Italiano](README.it.md) ·
+[Kiswahili](README.sw.md) · [Magyar](README.hu.md) ·
+[Nederlands](README.nl.md) · [Norsk](README.no.md) ·
+[Oʻzbek](README.uz.md) · [Polski](README.pl.md) ·
+[Português Brasileiro](README.pt-BR.md) · [Română](README.ro.md) ·
+[Suomi](README.fi.md) · [Svenska](README.sv.md) ·
+[Tiếng Việt](README.vi.md) · [Türkçe](README.tr.md) ·
+[Yorùbá](README.yo.md) · [Ελληνικά](README.el.md) ·
+[Қазақша](README.kk.md) · [Русский](README.ru.md) ·
+[Українська](README.uk.md) · [አማርኛ](README.am.md) ·
+[עברית](README.he.md) · [العربية](README.ar.md) ·
+[فارسی](README.fa.md) · [پښتو](README.ps.md) ·
+[اردو](README.ur.md) · [हिन्दी](README.hi.md) ·
+[नेपाली](README.ne.md) · [मराठी](README.mr.md) ·
+[বাংলা](README.bn.md) · [ਪੰਜਾਬੀ](README.pa.md) ·
+[ગુજરાતી](README.gu.md) · [தமிழ்](README.ta.md) ·
+[తెలుగు](README.te.md) · [ಕನ್ನಡ](README.kn.md) ·
+[മലയാളം](README.ml.md) · [සිංහල](README.si.md) ·
+[ไทย](README.th.md) · [ខ្មែរ](README.km.md) ·
+[မြန်မာ](README.my.md) · [한국어](README.ko.md) ·
+[中文](README.zh.md) · [日本語](README.ja.md)
 
 Translations are CC0 and may be improved by community PRs.
 
