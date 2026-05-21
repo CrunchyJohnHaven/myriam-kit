@@ -214,6 +214,13 @@ Approximate speakers: ~200M (East Africa: Tanzania, Kenya, Uganda, DRC).
 - [README in Swahili](README.sw.md)
 - Example kit: [Vaccine Batch Attestation — Kiswahili](examples/vaccine-batch-attestation/README.sw.md)
 
+## Telugu — తెలుగు (te)
+
+Approximate speakers: ~96M (Andhra Pradesh, Telangana, India).
+
+- [README in Telugu](README.te.md)
+- Example kit: [Election Tally Pre-Certification — తెలుగు](examples/election-tally-precertification/README.te.md)
+
 ## Turkish — Türkçe (tr)
 
 Approximate speakers: ~85M (Turkey, Cyprus).
@@ -227,13 +234,27 @@ Approximate speakers: ~85M (Vietnam).
 
 - [README in Vietnamese](README.vi.md)
 
+## Yoruba — Yorùbá (yo)
+
+Approximate speakers: ~45M (Nigeria, Benin, Togo).
+
+- [README in Yoruba](README.yo.md)
+- Example kit: [Public Spending Attestation — Yorùbá](examples/public-spending-attestation/README.yo.md)
+
+## Zulu — isiZulu (zu)
+
+Approximate speakers: ~27M (South Africa).
+
+- [README in isiZulu](README.zu.md)
+- Example kit: [Public Spending Attestation — isiZulu](examples/public-spending-attestation/README.zu.md)
+
 ---
 
 ## Coverage summary
 
-- 17 top-level README translations
-- 14 example-kit translations across 6 of the 6 example domains
-- Combined first-language reach of the languages covered: ~4.5 billion people
+- 33 top-level README translations
+- 26 example-kit translations across 6 of the 6 example domains
+- Combined first-language reach of the languages covered: ~5.8 billion people
 - All translations are CC0; no attribution required to use, fork, or improve
 
 ## How to contribute a fix or a new language
