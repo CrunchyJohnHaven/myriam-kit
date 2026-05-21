@@ -22,6 +22,13 @@ elections, AI safety, journalism, and scientific reproducibility.
 
 ---
 
+## Amharic — አማርኛ (am)
+
+Approximate speakers: ~32M (Ethiopia).
+
+- [README in Amharic](README.am.md)
+- Example kit: [Vaccine Batch Attestation — አማርኛ](examples/vaccine-batch-attestation/README.am.md)
+
 ## Arabic — العربية (ar)
 
 Approximate speakers: ~400M (Modern Standard Arabic, 25+ countries).
@@ -34,6 +41,12 @@ Approximate speakers: ~400M (Modern Standard Arabic, 25+ countries).
 Approximate speakers: ~270M (Bangladesh, West Bengal).
 
 - [README in Bengali](README.bn.md)
+
+## Burmese — မြန်မာဘာသာ (my)
+
+Approximate speakers: ~33M (Myanmar).
+
+- [README in Burmese](README.my.md)
 
 ## Chinese (Simplified) — 中文 (zh)
 
@@ -56,12 +69,32 @@ Approximate speakers: ~135M (Germany, Austria, Switzerland).
 - [README in German](README.de.md)
 - Example kit: [Scientific Reproducibility — Deutsch](examples/scientific-reproducibility/README.de.md)
 
+## Gujarati — ગુજરાતી (gu)
+
+Approximate speakers: ~56M (Gujarat, India).
+
+- [README in Gujarati](README.gu.md)
+
+## Hausa — Hausa (ha)
+
+Approximate speakers: ~70M (Nigeria, Niger, West Africa).
+
+- [README in Hausa](README.ha.md)
+- Example kit: [Public Spending Attestation — Hausa](examples/public-spending-attestation/README.ha.md)
+
 ## Hindi — हिन्दी (hi)
 
 Approximate speakers: ~600M (India).
 
 - [README in Hindi](README.hi.md)
 - Example kit: [Vaccine Batch Attestation — हिन्दी](examples/vaccine-batch-attestation/README.hi.md)
+
+## Igbo — Igbo (ig)
+
+Approximate speakers: ~27M (Nigeria).
+
+- [README in Igbo](README.ig.md)
+- Example kit: [Food Safety Attestation — Igbo](examples/food-safety-attestation/README.ig.md)
 
 ## Indonesian — Bahasa Indonesia (id)
 
@@ -84,12 +117,60 @@ Approximate speakers: ~125M (Japan).
 - [README in Japanese](README.ja.md)
 - Example kit: [AI Model Behavior Lock — 日本語](examples/ai-model-card/README.ja.md)
 
+## Javanese — Basa Jawa (jv)
+
+Approximate speakers: ~82M (Java, Indonesia).
+
+- [README in Javanese](README.jv.md)
+- Example kit: [Vaccine Batch Attestation — Basa Jawa](examples/vaccine-batch-attestation/README.jv.md)
+
+## Kannada — ಕನ್ನಡ (kn)
+
+Approximate speakers: ~44M (Karnataka, India).
+
+- [README in Kannada](README.kn.md)
+
+## Khmer — ខ្មែរ (km)
+
+Approximate speakers: ~17M (Cambodia).
+
+- [README in Khmer](README.km.md)
+- Example kit: [Whistleblower Manifest — ខ្មែរ](examples/whistleblower-manifest/README.km.md)
+
 ## Korean — 한국어 (ko)
 
 Approximate speakers: ~80M (South Korea, North Korea).
 
 - [README in Korean](README.ko.md)
 - Example kit: [Election Tally Pre-Certification — 한국어](examples/election-tally-precertification/README.ko.md)
+
+## Malay — Bahasa Melayu (ms)
+
+Approximate speakers: ~290M (Malaysia, Brunei, Singapore; also widely
+mutually intelligible with Indonesian).
+
+- [README in Malay](README.ms.md)
+- Example kit: [Whistleblower Manifest — Bahasa Melayu](examples/whistleblower-manifest/README.ms.md)
+
+## Malayalam — മലയാളം (ml)
+
+Approximate speakers: ~38M (Kerala, India).
+
+- [README in Malayalam](README.ml.md)
+
+## Marathi — मराठी (mr)
+
+Approximate speakers: ~83M (Maharashtra, India).
+
+- [README in Marathi](README.mr.md)
+- Example kit: [Food Safety Attestation — मराठी](examples/food-safety-attestation/README.mr.md)
+
+## Pashto — پښتو (ps)
+
+Approximate speakers: ~60M (Afghanistan, Pakistan).
+
+- [README in Pashto](README.ps.md)
+- Example kit: [Whistleblower Manifest — پښتو](examples/whistleblower-manifest/README.ps.md)
 
 ## Polish — Polski (pl)
 
@@ -104,6 +185,13 @@ Portuguese-speaking population, ahead of Portugal at ~10M).
 
 - [README in Brazilian Portuguese](README.pt-BR.md)
 - Example kit: [Whistleblower Manifest — Português Brasileiro](examples/whistleblower-manifest/README.pt-BR.md)
+
+## Punjabi — ਪੰਜਾਬੀ (pa)
+
+Approximate speakers: ~113M (Punjab region of India and Pakistan; diaspora).
+
+- [README in Punjabi](README.pa.md)
+- Example kit: [Supply Chain Audit Attestation — ਪੰਜਾਬੀ](examples/supply-chain-audit-attestation/README.pa.md)
 
 ## Russian — Русский (ru)
 
