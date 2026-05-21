@@ -32,7 +32,7 @@ generalization of that pattern.
 
 ## Available languages
 
-This README is available in 56 languages.
+This README is available in 57 languages.
 Full index at [TRANSLATIONS.md](TRANSLATIONS.md).
 
 [Afaan Oromoo](README.om.md) · [Azərbaycan](README.az.md) ·
@@ -43,7 +43,8 @@ Full index at [TRANSLATIONS.md](TRANSLATIONS.md).
 [Filipino](README.fil.md) · [Français](README.fr.md) ·
 [Hausa](README.ha.md) · [Igbo](README.ig.md) ·
 [isiZulu](README.zu.md) · [Italiano](README.it.md) ·
-[Kiswahili](README.sw.md) · [Magyar](README.hu.md) ·
+[Kiswahili](README.sw.md) · [Kurdî](README.ku.md) ·
+[Magyar](README.hu.md) ·
 [Nederlands](README.nl.md) · [Norsk](README.no.md) ·
 [Oʻzbek](README.uz.md) · [Polski](README.pl.md) ·
 [Português Brasileiro](README.pt-BR.md) · [Română](README.ro.md) ·
