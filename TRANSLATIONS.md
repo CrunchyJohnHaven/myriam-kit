@@ -384,9 +384,9 @@ Approximate speakers: ~27M (South Africa).
 
 ## Coverage summary
 
-- 33 top-level README translations
-- 26 example-kit translations across 6 of the 6 example domains
-- Combined first-language reach of the languages covered: ~5.8 billion people
+- 52 top-level README translations
+- 44 example-kit translations across all 11 example domains
+- Combined first-language reach of the languages covered: ~6.4 billion people
 - All translations are CC0; no attribution required to use, fork, or improve
 
 ## How to contribute a fix or a new language
