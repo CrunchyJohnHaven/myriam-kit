@@ -1,0 +1,61 @@
+FACT 02 — JURISDICTION AND LEGAL BASIS (FICTIONAL)
+
+  Jurisdiction:           Fictional Municipality of Anywhere, FICTIONAL_STATE,
+                          FICTIONAL_COUNTRY (FICTIONAL)
+  Level of government:    Municipal (this kit also applies to state /
+                          provincial / national levels by substitution)
+  Issuing authority:      Department of Finance and Public Works,
+                          Fictional Municipality of Anywhere (FICTIONAL)
+  Fiscal year:            FY2026 (FICTIONAL — calendar-year fiscal)
+  Reporting period:       2026-Q2 (April 1 – June 30, 2026) (FICTIONAL)
+  Attestation timestamp:  2026-07-15T10:00:00Z (FICTIONAL — moment this
+                          attestation is sealed, immediately after
+                          quarterly close and treasurer's sign-off)
+
+STATUTORY AUTHORITY FOR THE EXPENDITURES SEALED IN THIS PUBLICATION
+
+  Enabling statute:       Fictional Municipal Finance Code §401–§412
+                          (FICTIONAL — authorizes capital and operating
+                          expenditures within annually appropriated limits)
+
+  Procurement statute:    Fictional Municipal Procurement Code §201
+                          (FICTIONAL — competitive-bid requirements, sole-
+                          source exception conditions, threshold tiers)
+
+  Anti-corruption statute: Fictional Municipal Code of Ethics §101
+                          (FICTIONAL — public-official disclosure, conflict
+                          of interest, gift-acceptance rules)
+
+  Transparency obligations: Fictional Open Records Act §301 (FICTIONAL)
+                          + Fictional Open Contracting Ordinance §302
+                          (FICTIONAL — mirrors Open Contracting Data
+                          Standard publication points 1–4)
+
+  Audit obligations:      Fictional Municipal Audit Act §501 (FICTIONAL —
+                          subjects all expenditures sealed here to
+                          jurisdiction of the Fictional Office of the
+                          Inspector General and the Fictional Supreme Audit
+                          Institution)
+
+INTERNATIONAL FRAMEWORKS THIS ATTESTATION ALIGNS WITH
+
+  - Open Contracting Data Standard (OCDS) v1.1.5 publication points:
+    planning, tender, award, contract, implementation
+  - International Aid Transparency Initiative (IATI) standard v2.03
+    (applicable only where this expenditure includes externally funded
+    aid components; not the case for this fictional example)
+  - OECD Recommendation of the Council on Public Integrity (2017)
+  - UN Convention against Corruption (UNCAC) Articles 9, 13
+
+This fact binds the entire sealed publication to a named, accountable
+public body acting in official capacity under a specific statutory
+mandate. Naming the issuing authority and its statutory basis is the
+load-bearing referent that lets later truth-finding processes (audits,
+court orders, FOI requests) know which legal regime applies.
+
+This fact asserts only the identity of the issuing authority and the
+legal context under which the expenditures sealed elsewhere in this
+publication were authorized. It does not assert that the underlying
+appropriation was itself lawful, that the statutory authority cited was
+correctly invoked, or that the expenditure complied with the cited
+statutes in substance.

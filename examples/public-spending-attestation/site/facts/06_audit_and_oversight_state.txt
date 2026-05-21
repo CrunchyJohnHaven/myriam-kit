@@ -1,0 +1,103 @@
+FACT 06 — AUDIT AND OVERSIGHT STATE (FICTIONAL)
+
+This fact records the audit and oversight context in which this
+publication is sealed. It identifies which bodies have jurisdiction
+over the sealed expenditures, what their deadlines are, and what the
+current state of any ongoing review is. Sealing this context at
+issuance prevents post-hoc revisionism about which oversight regime
+applied or what review was already underway.
+
+INTERNAL CONTROL AUTHORITY
+
+  Internal auditor:       Office of Internal Audit, Fictional Municipality
+                          of Anywhere (FICTIONAL)
+  Reporting line:         Reports to the Audit Committee of the Council;
+                          functionally independent of Department of
+                          Finance and Public Works
+  Current audit cycle:    FY2026 risk-based audit plan adopted 2025-12-15
+  Plan SHA-256:           5c4821d81b2aa72015f6f85235317c7092ab509e164cbdb3933f54769444bfd3
+
+EXTERNAL AUDIT — INSPECTOR GENERAL
+
+  Body:                   Fictional Office of the Inspector General
+                          (FICTIONAL — independent of the executive
+                          branch of the Municipality, with subpoena
+                          authority over municipal records)
+  Statutory basis:        Fictional Municipal Audit Act §501, §502, §503
+  Jurisdiction over this publication:
+                          All FACT 04 transactions are within the IG's
+                          subject-matter jurisdiction (capital works,
+                          operating expenditures, grants, contract
+                          amendments above USD 100,000)
+  Reporting deadline:     The IG must issue its FY2026 Q2 review report
+                          no later than 2026-12-31 (six months after
+                          quarter close, per §503(c))
+
+EXTERNAL AUDIT — SUPREME AUDIT INSTITUTION
+
+  Body:                   Fictional Supreme Audit Institution (FICTIONAL —
+                          analogous to a national audit office such as
+                          the US GAO, UK NAO, Brazilian TCU, Indian CAG,
+                          Argentine AGN, German BRH, or French Cour des
+                          comptes)
+  Statutory basis:        Fictional National Audit Act §1001 (FICTIONAL —
+                          places municipal expenditures that include
+                          national co-funding under SAI jurisdiction)
+  Jurisdiction over this publication:
+                          Two transactions in FACT 04 (T-2026-Q2-001
+                          Roads & Bridges and T-2026-Q2-005 Public Health
+                          Equipment) include national co-funding and are
+                          therefore within SAI jurisdiction in addition
+                          to the IG's
+  Reporting deadline:     SAI Q2 horizontal report (covering all
+                          municipalities receiving FY2026 national
+                          co-funding) deadline 2027-03-31
+
+JUDICIAL AND PROSECUTORIAL CONTEXT
+
+  Prosecutorial body with jurisdiction over corruption offenses
+  affecting these expenditures:
+                          Fictional National Anti-Corruption Prosecutor
+                          (FICTIONAL — analogous to bodies under UNCAC
+                          Article 36)
+  No active criminal investigation has been disclosed against any
+  transaction in FACT 04 as of the attestation timestamp. If an
+  investigation is opened later, the seal of this attestation provides
+  an anchor for what the records said on the day of issuance.
+
+CIVIL-SOCIETY AND JOURNALISTIC OVERSIGHT
+
+  Open-records-act-active requesters as of attestation timestamp:
+    - Fictional Transparency Foundation (NGO) — standing FOI request
+      for all municipal procurement records >USD 250,000
+    - Fictional News Bureau (investigative journalism outlet) —
+      standing FOI request for all contract amendments
+    Both requests are pre-existing and disclosed here so that any
+    later denial of access can be diffed against the sealed state of
+    the records on this date.
+
+PARALLEL TRANSPARENCY OBLIGATIONS NOT EXHAUSTED BY THIS SEAL
+
+  - Open Contracting Data Standard (OCDS) publication portal:
+    All FACT 04 transactions are published in OCDS format on the
+    municipal procurement portal. The seal binds the portal's
+    Q2-close-state to this Merkle root; it does not exempt the
+    municipality from continuing OCDS publication obligations.
+  - International Aid Transparency Initiative (IATI):
+    Not applicable to this publication (no international aid).
+  - Donor/co-funder reporting:
+    National co-funded transactions trigger separate quarterly reports
+    to the relevant national ministries; this seal is in addition to
+    those reports, not in lieu of them.
+  - Freedom-of-information / public-records statutes:
+    The seal does not exempt the municipality from continuing FOI
+    response obligations; in fact, the seal makes selective FOI
+    response detectable as a deviation from the sealed record.
+
+This fact asserts only the audit and oversight context as it existed
+at the moment of attestation. It does not assert that any audit, IG
+review, or SAI examination has been completed, that any completed
+audit has found expenditures lawful, or that the named oversight
+bodies have the resources to exercise their jurisdiction in fact.
+The seal records who SHOULD review; whether they DO review, and what
+they FIND, is a downstream and entirely separate question.

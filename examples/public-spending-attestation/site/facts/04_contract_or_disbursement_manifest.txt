@@ -1,0 +1,140 @@
+FACT 04 — CONTRACT AND DISBURSEMENT MANIFEST (FICTIONAL)
+
+This is the LOAD-BEARING content of the seal. It records, per transaction,
+the contract or disbursement event as recorded by the issuing authority
+at the moment of issuance. Any later silent revision to any amount,
+vendor, date, or purpose below would produce a different SHA-256 of
+this fact file, a different Merkle root for this publication, and would
+fail verification against the Bitcoin-committed root.
+
+VENDOR IDENTIFICATION POLICY (READ FIRST)
+
+  This fact identifies vendors by REGISTERED LEGAL ENTITY NAME and
+  jurisdiction-issued business identifier ONLY. It does NOT identify:
+    - Individual employees, officers, or beneficial owners
+    - Personal phone numbers, email addresses, or home addresses
+    - Bank account numbers, tax IDs of natural persons, or other PII
+
+  The vendor entity name is what is on the publicly registered contract
+  and what appears in the jurisdiction's procurement portal. Beneficial-
+  ownership disclosure is a SEPARATE oversight regime (Fictional
+  Beneficial Ownership Registry §601) whose output may be sealed in a
+  parallel publication but is NOT included here. The seal of beneficial
+  ownership requires its own legal and privacy review.
+
+TRANSACTIONS SEALED IN THIS PUBLICATION
+
+  T-2026-Q2-001  CONTRACT AWARD
+    Date issued:      2026-04-08
+    Contract ID:      MUN-2026-RB-014 (FICTIONAL)
+    Budget line:      A (100-2400-5210 — Roads & Bridges Rehabilitation)
+    Vendor entity:    Fictional Paving Co. Inc. (FICTIONAL)
+    Vendor registry ID: FIC-CORP-99214 (FICTIONAL)
+    Purpose:          Resurfacing of 14.2 lane-miles on Fictional Route 7
+    Contract value:   USD 8,420,000 (FICTIONAL)
+    Procurement type: Competitive sealed bid, 4 responsive bidders
+    Award basis:      Lowest responsive bidder
+    Performance period: 2026-05-01 through 2026-10-31
+    Contract document SHA-256:
+      a1b2c3d4e5f6789abcdef0123456789abcdef0123456789abcdef0123456789ab
+
+  T-2026-Q2-002  CONTRACT AWARD
+    Date issued:      2026-04-22
+    Contract ID:      MUN-2026-SS-007 (FICTIONAL)
+    Budget line:      B (200-3100-4080 — Food Security Grants)
+    Vendor entity:    Fictional Community Food Network (501(c)(3))
+    Vendor registry ID: FIC-NPO-04471 (FICTIONAL)
+    Purpose:          Food distribution grants to 47 affiliated sites
+    Contract value:   USD 1,800,000 (FICTIONAL)
+    Procurement type: Single-source per §201(d) (designated nonprofit
+                      with prior multi-year performance record); sole-
+                      source justification SHA-256:
+                      4d9e7a91c4b8d2e5f60a1b2c3d4e5f60718293a4b5c6d7e8
+    Performance period: 2026-05-01 through 2027-04-30
+
+  T-2026-Q2-003  DISBURSEMENT
+    Date issued:      2026-05-14
+    Disbursement ID:  MUN-2026-D-00831 (FICTIONAL)
+    Against contract: MUN-2026-RB-014 (T-2026-Q2-001 above)
+    Vendor entity:    Fictional Paving Co. Inc. (FICTIONAL)
+    Milestone:        25% mobilization payment per contract schedule
+    Amount:           USD 2,105,000 (FICTIONAL)
+    Pay-application SHA-256:
+      88c4d4ee218a4f9001e6f4b3c5d7e6f5a4b3c2d1e0f9876543210fedcba98765
+    Engineer of record sign-off SHA-256:
+      0a22e596cc4e1e2992e14f8749de4bce304c1190a820337d17e29fea0e6f4d9d
+
+  T-2026-Q2-004  DISBURSEMENT
+    Date issued:      2026-06-03
+    Disbursement ID:  MUN-2026-D-01044 (FICTIONAL)
+    Against contract: MUN-2025-IT-022 (prior-year — Fictional Software
+                      Solutions LLC; multi-year SaaS contract)
+    Vendor entity:    Fictional Software Solutions LLC (FICTIONAL)
+    Vendor registry ID: FIC-CORP-77108 (FICTIONAL)
+    Milestone:        Annual subscription renewal, FY2026 portion
+    Budget line:      D (200-1500-4220 — Software Licenses)
+    Amount:           USD 2,135,200 (FICTIONAL)
+
+  T-2026-Q2-005  CONTRACT AWARD
+    Date issued:      2026-06-15
+    Contract ID:      MUN-2026-PH-029 (FICTIONAL)
+    Budget line:      C (100-3200-5340 — Public Health Equipment)
+    Vendor entity:    Fictional Medical Devices Group AG (FICTIONAL)
+    Vendor registry ID: CH-CHE-987654321 (FICTIONAL Swiss entity)
+    Purpose:          Imaging equipment for 3 municipal clinics
+    Contract value:   USD 4,250,000 (FICTIONAL)
+    Procurement type: International competitive bid; 3 responsive
+                      bidders (1 domestic, 2 foreign)
+    Award basis:      Technical scoring + lowest-cost weighted formula
+    Contract document SHA-256:
+      cbb671235d5bb13d9f81a91a8661fa648e59e84f6ba0fb126356993066f065a0
+
+  T-2026-Q2-006  CONTRACT AMENDMENT (CHANGE ORDER)
+    Date issued:      2026-06-28
+    Amendment ID:     MUN-2026-RB-014.CO1 (FICTIONAL)
+    Against contract: MUN-2026-RB-014 (T-2026-Q2-001)
+    Vendor entity:    Fictional Paving Co. Inc.
+    Reason:           Discovery of unstable subgrade on 1.4 miles of
+                      the 14.2-mile resurfacing; additional excavation
+                      and sub-base replacement required
+    Cost impact:      +USD 1,250,000 (15% of original contract)
+    Justification SHA-256:
+      03c23f853b396b0df96070f20cd904ec27881e3f6390c55aedc9550c8a2d79f2
+    Approving authority: Department of Finance and Public Works,
+                      ratified per Procurement Code §201(g) on change
+                      orders ≤25% of original value
+
+  T-2026-Q2-007  DISBURSEMENT (PARKS — OVERRUN PORTION)
+    Date issued:      2026-06-30
+    Disbursement ID:  MUN-2026-D-01418 (FICTIONAL)
+    Against contract: MUN-2025-PK-001 (prior-year — Fictional Parks
+                      Construction Inc.)
+    Vendor entity:    Fictional Parks Construction Inc. (FICTIONAL)
+    Vendor registry ID: FIC-CORP-55003 (FICTIONAL)
+    Milestone:        Final completion + scope-expansion settlement
+    Budget line:      E (100-4000-5110 — Parks New Construction)
+    Amount:           USD 9,237,000 (FICTIONAL)
+    Note:              This disbursement is the immediate cause of the
+                       Line E over-appropriation flagged in FACT 03 and
+                       discussed in FACT 07 (C5). The seal records the
+                       disbursement as issued; the underlying question
+                       of whether the scope-expansion settlement was
+                       legitimate is an audit matter, not a sealing
+                       matter.
+
+AGGREGATE FOR THIS PUBLICATION
+
+  Total contracts awarded this quarter:           4 (USD 16,605,200)
+  Total disbursements this quarter (any contract): 3 (USD 13,477,200)
+  Total contract amendments this quarter:         1 (USD  1,250,000)
+  Total flagged transactions (see FACT 07):       1 (T-2026-Q2-007)
+
+This fact asserts only the contract-and-disbursement events as recorded
+by the issuing authority at the moment of issuance. It does not assert
+that any contract was awarded to the most qualified bidder; that any
+disbursement was for work actually performed at the value claimed;
+that vendor entities are not shell companies or fronts for undisclosed
+beneficial owners; that pricing was at fair market value; or that any
+underlying transaction was free of corruption, collusion, or kickbacks.
+The seal anchors WHAT WAS REPORTED. Investigation of WHAT WAS TRUE is
+the jurisdiction of the audit, inspector-general, and judicial systems.

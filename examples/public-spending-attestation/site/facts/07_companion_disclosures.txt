@@ -1,0 +1,166 @@
+FACT 07 — COMPANION DISCLOSURES AND REFUSAL RECORD (FICTIONAL)
+
+Per the MYRIAM kit's "constraint-first" design principle, this fact
+records what the kit explicitly refused to seal and any companion
+disclosures the issuing authority is obliged to publish alongside the
+expenditure record so that selective omission is detectable.
+
+In public finance the dominant attack on the integrity of disclosure is
+NOT outright fabrication — it is selective publication: posting the
+clean transactions, omitting the messy ones, omitting the disputes,
+omitting the open investigations. Sealing the companion-disclosure
+state alongside the transactions makes selective omission detectable as
+a deviation from the as-sealed record.
+
+COMPANION DISCLOSURES (sealed alongside the manifest so the manifest
+cannot be read in isolation)
+
+  C1. PENDING PROCUREMENT PROTESTS
+      Vendor B (a domestic competitor, registry ID FIC-CORP-66104) has
+      filed a formal bid protest against the award decision on
+      T-2026-Q2-005 (MUN-2026-PH-029, Public Health Equipment). The
+      protest is under review by the Procurement Review Board; the
+      contract has nonetheless been awarded pending resolution
+      (consistent with §201(j) on time-critical health expenditures).
+      Protest filing SHA-256:
+        7e8f9a0b1c2d3e4f50617283940a1b2c3d4e5f60718293a4b5c6d7e8f9012345
+      Decision expected: 2026-08-30
+
+  C2. PENDING INTERNAL INVESTIGATIONS
+      The Office of Internal Audit has opened a routine (not adverse)
+      audit of vendor T-2026-Q2-002 (Fictional Community Food Network,
+      sole-source) per the FY2026 risk-based plan. Opening date
+      2026-05-20. No findings have been issued as of attestation
+      timestamp. This disclosure is included so that a future finding
+      cannot be claimed to have come "out of nowhere" — the audit was
+      already underway and publicly recorded as of this sealing.
+
+  C3. OUTSTANDING FOI / OPEN-RECORDS REQUESTS
+      Two pre-existing standing FOI requests (Fictional Transparency
+      Foundation, Fictional News Bureau) are noted in FACT 06. As of
+      attestation timestamp, three additional discrete requests are
+      pending:
+        - 2026-FOI-0411: copy of executed contract MUN-2026-PH-029,
+          requested 2026-06-18 by a member of the public; statutory
+          15-day response window expires 2026-07-03 (already past;
+          response is overdue — explanation: contract published on
+          procurement portal on 2026-06-22, formal response pending)
+        - 2026-FOI-0517: list of all sole-source justifications FY2026
+          to date, requested 2026-07-01 by Fictional Transparency
+          Foundation; response not yet due
+        - 2026-FOI-0524: communications between Procurement Director
+          and Vendor T-2026-Q2-002 dated 2025-09 through 2026-04,
+          requested 2026-07-08; response not yet due
+
+  C4. DISSENTING REVIEW
+      No member of the Council Finance Committee has filed a written
+      dissent against the Q2 spending pattern sealed in this
+      publication. Council member [Fictional Name], Finance Committee,
+      verbally raised concerns at the 2026-07-08 committee meeting
+      about the cost of T-2026-Q2-006 (change order on roads contract)
+      but withdrew the concern after staff briefing. This verbal
+      record is sealed by reference here, NOT to silence the Council
+      member, but to make it permanent so that if the concern was
+      improperly persuaded away, the record exists for accountability.
+      Meeting minutes SHA-256:
+        9a0b1c2d3e4f50617283940a1b2c3d4e5f60718293a4b5c6d7e8f9012345678a
+
+  C5. KNOWN BUDGET-LINE OVERRUN
+      As recorded in FACT 03, Line E (Parks > New Construction) is
+      USD 9,000,000 over its FY2026 appropriation as of Q2 close. The
+      overrun is the result of T-2026-Q2-007 — the final settlement on
+      a prior-year construction contract MUN-2025-PK-001. The
+      municipality is in compliance with §404 of the Finance Code,
+      which requires reporting of any over-appropriation to Council
+      within 30 days of recognition; the report was filed on
+      2026-07-10 (within the window). The seal records this overrun
+      AS IT IS REPORTED, including the Council notification timeline,
+      so that any future claim of "we caught this earlier" or "we
+      reported this later" is publicly diffable.
+
+REFUSAL RECORD — patterns the kit refused to seal
+
+The kit does NOT seal the following types of facts, even if requested
+by the issuing authority:
+
+  R1. INDIVIDUAL EMPLOYEE OR OFFICER PII
+      No fact in this publication names individual government employees
+      below the principal-signing level (FACT 08), individual vendor
+      employees, individual bidder representatives, individual scoring
+      panel members, or any natural person not occupying a public-
+      facing accountability role.
+
+  R2. SUPPLIER COMMERCIAL PII
+      The kit refuses to seal supplier bank account numbers, internal
+      pricing breakdowns containing supplier cost structure, supplier
+      employee lists, supplier tax IDs of natural persons, supplier
+      banking routing detail, or anything else whose publication would
+      damage commercial interests without serving anti-corruption.
+      Such information may be HASHED (see FACT 05) but not published.
+
+  R3. SECURITY-CLASSIFIED EXPENDITURES
+      Expenditures classified under national-security statutes are NOT
+      included in this publication. A separate sealing regime under
+      classified handling is a different problem; this kit refuses to
+      handle it. The exclusion itself is disclosed here so that the
+      reader knows the publication is incomplete by design rather than
+      by oversight.
+
+  R4. CIVIL ENFORCEMENT OF TAX OBLIGATIONS AGAINST IDENTIFIED NATURAL
+      PERSONS
+      Even though tax-collection actions are public expenditures (of
+      enforcement resources), naming individual taxpayers under
+      enforcement is refused — the privacy harm exceeds the
+      transparency benefit, and parallel transparency exists under
+      tax-court reporting rather than spending-attestation.
+
+  R5. CLAIMS THAT THE EXPENDITURE WAS LAWFUL, FAIR, OR CORRUPTION-FREE
+      The kit refuses to seal any framing of the form "this expenditure
+      was free of corruption" or "the procurement was demonstrably
+      fair." Such claims are epistemically beyond the kit's domain. The
+      kit anchors WHAT WAS RECORDED; it does not vouch for the
+      underlying transaction.
+
+  R6. PRE-ISSUANCE TRANSACTIONS
+      The kit refuses to seal contracts before they are formally
+      awarded, or disbursements before they are formally issued.
+      Anchoring a draft contract or a pending payment as if it were
+      executed creates false certainty.
+
+  R7. SEALING BY ANYONE OTHER THAN THE RESPONSIBLE FINANCE PRINCIPAL
+      A contractor, vendor, council member, journalist, or third-party
+      observer cannot seal "the public spending record" in lieu of the
+      finance authority that issued it. (Such third parties may seal
+      their OWN observations or investigations under their own
+      principal, with their own refusal record, in a separate
+      publication.)
+
+  R8. SELECTIVE SEALING THAT OMITS COMPANION DISCLOSURES C1–C5 ABOVE
+      The kit refuses to seal a publication that includes FACT 04
+      (transactions) but omits FACT 07 (disclosures and refusals).
+      A publication without companion disclosures is not a legitimate
+      MYRIAM publication under this kit.
+
+If during issuance any request matching R1–R8 was made and refused,
+that refusal would be documented as a sealed sub-fact:
+  "Refusal #N: party X requested sealing of [pattern]; the kit refused
+  per refusal-rule R[m]."
+
+Refusals this attestation:
+
+  Refusal #1: The Office of the Mayor requested that the change-order
+  on T-2026-Q2-006 (MUN-2026-RB-014.CO1) be omitted from FACT 04 on
+  grounds that "it complicates the narrative." The kit refused per
+  R6 (cannot omit issued transactions) and per the underlying
+  publication-integrity principle that selective omission of issued
+  transactions is precisely the failure mode the kit exists to
+  prevent. The change order is included; this refusal is recorded.
+
+This fact asserts only the companion-disclosure status and refusal
+record at the moment of attestation. It does not assert that the
+disclosure list is exhaustive of all material companion facts that
+SHOULD have been disclosed, that the refusal list is exhaustive of
+all attempted misuses of the kit, or that absence of a disclosure
+implies absence of the underlying condition. A more honest seal
+discloses more; the seal cannot compel honesty about what is not
+disclosed.

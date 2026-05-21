@@ -1,0 +1,34 @@
+FACT 01 — EXAMPLE NOTICE
+
+This publication is an EXAMPLE demonstration of how a municipal, state,
+provincial, or national government finance authority can use myriam-kit
+to seal a public-spending attestation at the moment of budget execution.
+The jurisdiction, statutory references, appropriation lines, contract
+identifiers, vendor entity names, disbursement amounts, audit bodies,
+and signing officials are ALL FICTIONAL.
+
+The purpose: show the SHAPE of a real public-spending attestation seal.
+A real attestation would replace each fact body with the actual fields
+of an actual budget-execution event (contract award, milestone
+disbursement, deliverable acceptance) as it is issued by the responsible
+finance authority.
+
+This kit is intended to compose with — not replace — existing public-
+finance infrastructure (statutory appropriation processes, treasury
+disbursement systems, supreme audit institutions, inspector-general
+offices, freedom-of-information regimes, the Open Contracting Data
+Standard, the International Aid Transparency Initiative, and equivalent
+domestic transparency portals). The MYRIAM seal provides Bitcoin-
+anchored tamper-evidence on top of whatever publication regime the
+jurisdiction already operates.
+
+The seal anchors WHAT WAS REPORTED AT ISSUANCE. It does not anchor
+whether the underlying transaction was lawful, free of corruption,
+priced at market rate, or delivered as specified. Those are downstream
+questions for auditors, inspectors-general, courts, and journalists.
+The seal makes the as-reported state of the record permanent and
+publicly diffable against later versions.
+
+This fact asserts only that the publication is an example, not a real
+public-spending attestation. No real expenditure is hereby attested.
+No real official, vendor, or jurisdiction is hereby named.
