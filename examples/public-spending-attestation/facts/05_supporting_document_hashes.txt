@@ -1,0 +1,118 @@
+FACT 05 — SUPPORTING DOCUMENT HASHES (FICTIONAL)
+
+This fact anchors the supporting documentation behind each transaction
+in FACT 04 by content hash, NOT by full content. The hashes-only design
+serves two purposes:
+
+  (1) Document bodies routinely contain personal information of
+      contractor employees (signatures, drivers' license numbers,
+      site-staff lists), supplier banking information, internal
+      pricing breakdowns, and protected commercial information. Sealing
+      hashes anchors the bytes-as-issued without publishing the bytes.
+
+  (2) A regulator, auditor, journalist, or court with lawful access to
+      the original document can re-compute SHA-256 of the received
+      document and confirm bit-for-bit identity with the document that
+      existed at the moment of attestation. Silent post-attestation
+      modification of any supporting document is detectable by re-hash.
+
+Each hash below is SHA-256 of the full canonical document file, computed
+at the moment of sealing.
+
+PROCUREMENT-PHASE DOCUMENTS
+
+  Solicitation documents (T-2026-Q2-001 / contract MUN-2026-RB-014)
+    Request for Bid (RFB) PDF:
+      SHA-256: 0a22e596cc4e1e2992e14f8749de4bce304c1190a820337d17e29fea0e6f4d9d
+      Pages:   78
+    Bid evaluation matrix (with bidders' names but not their internal
+    pricing breakdowns):
+      SHA-256: 5c4821d81b2aa72015f6f85235317c7092ab509e164cbdb3933f54769444bfd3
+    Notice of award:
+      SHA-256: db14e2c98d2fdaf9a6dec2c25fcfa7bd14f0c8b9e7e6e4d3c2b1a09876543210f
+
+  Solicitation documents (T-2026-Q2-005 / contract MUN-2026-PH-029)
+    Request for Proposals (RFP) PDF (international tender):
+      SHA-256: 89a72e41fa212f6520115739df2d79f366e132c4714c0d60ae87540555195893
+    Technical scoring sheet (anonymized scorer IDs):
+      SHA-256: 92be19ca77f5ef0d2b3a4c5d6e7f80910a1b2c3d4e5f60718293a4b5c6d7e8f9
+    Notice of award + protest period closure record:
+      SHA-256: 4d9e7a91c4b8d2e5f60a1b2c3d4e5f60718293a4b5c6d7e8f9012345678abcde
+
+  Sole-source justification (T-2026-Q2-002 / contract MUN-2026-SS-007)
+    Sole-source memorandum:
+      SHA-256: 4d9e7a91c4b8d2e5f60a1b2c3d4e5f60718293a4b5c6d7e8f9012345678abcd1
+    Procurement Director approval:
+      SHA-256: 7f3e91b25c8a4d6f0e1b2c3d4e5f60718293a4b5c6d7e8f90123456789abcdef
+
+CONTRACT EXECUTION DOCUMENTS
+
+  Executed contract (T-2026-Q2-001 / MUN-2026-RB-014):
+    SHA-256: a1b2c3d4e5f6789abcdef0123456789abcdef0123456789abcdef0123456789ab
+    Pages:   142 (including all schedules, bond documents,
+             insurance certificates)
+
+  Executed contract (T-2026-Q2-002 / MUN-2026-SS-007):
+    SHA-256: 6f1e3a8b2d5c7e09f12a3b4c5d6e7f80910a1b2c3d4e5f60718293a4b5c6d7e8
+    Pages:   54
+
+  Executed contract (T-2026-Q2-005 / MUN-2026-PH-029):
+    SHA-256: cbb671235d5bb13d9f81a91a8661fa648e59e84f6ba0fb126356993066f065a0
+    Pages:   208
+
+  Change order (T-2026-Q2-006 / MUN-2026-RB-014.CO1):
+    SHA-256: 03c23f853b396b0df96070f20cd904ec27881e3f6390c55aedc9550c8a2d79f2
+    Independent engineer cost-justification report (separate):
+      SHA-256: 88c4d4ee218a4f9001e6f4b3c5d7e6f5a4b3c2d1e0f9876543210fedcba98765
+
+DISBURSEMENT-SUPPORTING DOCUMENTS
+
+  Pay application + supporting invoices (T-2026-Q2-003):
+    Pay-app SHA-256: 88c4d4ee218a4f9001e6f4b3c5d7e6f5a4b3c2d1e0f9876543210fedcba98765
+    Schedule-of-values reconciliation:
+      SHA-256: 13fa92b8c5e0d7691a4b3c2d1e0f9876543210fedcba9876543210fedcba9876
+    Engineer-of-record certification:
+      SHA-256: a8b9c0d1e2f3041526374859607182930a1b2c3d4e5f60718293a4b5c6d7e8f9
+
+  Invoice (T-2026-Q2-004 — software subscription):
+    Invoice SHA-256:
+      SHA-256: f02938475b6c1a8d9e0f1234567890abcdef1234567890abcdef1234567890ab
+    Service-level confirmation from IT Department:
+      SHA-256: 25c4e0b86f1a3d7e92c8b4f5a6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9
+
+  Final-payment reconciliation (T-2026-Q2-007):
+    Project closeout package SHA-256:
+      SHA-256: 7e8f9a0b1c2d3e4f50617283940a1b2c3d4e5f60718293a4b5c6d7e8f9012345
+    Scope-expansion settlement memorandum:
+      SHA-256: 9a0b1c2d3e4f50617283940a1b2c3d4e5f60718293a4b5c6d7e8f9012345678a
+    Deliverable acceptance form (signed by Parks Department head):
+      SHA-256: bf1c2d3e4f50617283940a1b2c3d4e5f60718293a4b5c6d7e8f901234567890a
+
+CONTROL DOCUMENTS
+
+  Procurement portal export (Open Contracting Data Standard JSON):
+    SHA-256: c4a9f6e3b1d8527e4a3b2c1d0e9f8765432109876543210987654321098765432
+    Note: same export visible on the public procurement portal; the
+    seal binds the portal's then-current view to this attestation.
+
+  Treasury disbursement ledger entries (Q2 lines, redacted of banking
+  detail):
+    SHA-256: 1d2e3f40516273849506172839405a6b7c8d9e0f1a2b3c4d5e6f70819203a4b5
+
+  Internal controls sign-off log (officers approving each disbursement):
+    SHA-256: 2e3f40516273849506172839405a6b7c8d9e0f1a2b3c4d5e6f70819203a4b5c6
+    Note: role-only identification of approving officers; individual
+    names are sealed only in FACT 08 for the responsible principal.
+
+A regulator, inspector general, auditor, journalist, or court with
+lawful access to any of the above documents can re-hash the received
+document with SHA-256 and compare to the row above. Any post-issuance
+modification of any document produces a different hash than the sealed
+one and is publicly detectable.
+
+This fact asserts only that the listed supporting documents existed in
+their hashed bytewise form at the moment of attestation. It does not
+assert that the documents are themselves accurate, complete, or
+non-misleading; that the procurement processes they document complied
+with applicable law in substance; or that the costs and quantities they
+contain reflect work actually performed at fair value.
