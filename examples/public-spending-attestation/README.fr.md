@@ -45,7 +45,7 @@ sceau** :
    déclarée, ou est l'une de dizaines de sociétés-écrans contrôlées
    par un cartel unique, le sceau ancre l'entité de surface. La
    transparence des bénéficiaires effectifs est un régime SÉPARÉ
-   (Recommandation 24 du GAFI, 5AMLD/6AMLD de l'UE, Corporate
+   (Recommandation 24 du FATF, 5AMLD/6AMLD de l'UE, Corporate
    Transparency Act des États-Unis) dont la sortie nécessite son
    propre protocole de scellement.
 
@@ -489,7 +489,7 @@ La trousse est conçue pour se composer avec, et non remplacer :
   la société civile sans exiger de confiance dans le portail du
   gouvernement.
 
-- **Recommandation de l'OCDE sur l'intégrité publique (2017).** La
+- **Recommandation de l'OECD sur l'intégrité publique (2017).** La
   trousse soutient la Recommandation 4 (données ouvertes du
   gouvernement sur les finances publiques, sous forme lisible par
   machine et en temps utile) en rendant les données
@@ -523,7 +523,7 @@ La trousse est conçue pour se composer avec, et non remplacer :
   d'accès à l'information en suspens au moment de l'attestation.
 
 - **Registres des bénéficiaires effectifs (Recommandation 24 du
-  GAFI, directives AML de l'UE, Corporate Transparency Act des
+  FATF, directives AML de l'UE, Corporate Transparency Act des
   États-Unis).** Les données de bénéficiaires effectifs NE SONT
   PAS scellées dans le cadre de cette trousse (le FAIT 04 prend
   l'identité du fournisseur uniquement à partir du nom d'entité
@@ -550,7 +550,7 @@ La trousse est conçue pour se composer avec, et non remplacer :
 - Les canaux de lanceurs d'alerte et les régimes de divulgation
   protégée
 - La divulgation des bénéficiaires effectifs
-- La revue par les pairs au plan international (OCDE, Évaluation
+- La revue par les pairs au plan international (OECD, Évaluation
   de la transparence budgétaire du FMI, semestre européen, IATI
   Registry)
 - Les procédures de recouvrement d'actifs administrées par les

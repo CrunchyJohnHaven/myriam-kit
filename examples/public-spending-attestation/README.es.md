@@ -42,7 +42,7 @@ Los siguientes modos de falla están **fuera del dominio del sello**:
    es una de docenas de sociedades pantalla controladas por un único
    cártel, el sello ancla a la entidad superficial. La transparencia de
    la titularidad real es un régimen SEPARADO (Recomendación 24 del
-   GAFI, 5AMLD/6AMLD de la UE, Corporate Transparency Act de EE. UU.)
+   FATF, 5AMLD/6AMLD de la UE, Corporate Transparency Act de EE. UU.)
    cuya salida requiere su propio protocolo de sellado.
 
 3. **Fraude contable previo a la emisión.** Si la propia autoridad
@@ -461,7 +461,7 @@ El kit está diseñado para componerse con, no para reemplazar:
   modo que es verificable de forma independiente por la sociedad
   civil sin requerir confianza en el portal del gobierno.
 
-- **Recomendación de la OCDE sobre Integridad Pública (2017).** El
+- **Recomendación de la OECD sobre Integridad Pública (2017).** El
   kit apoya la Recomendación 4 (datos abiertos de gobierno sobre
   finanzas públicas, en forma legible por máquina y oportuna) al
   hacer que los datos estén criptográficamente anclados además de
@@ -493,7 +493,7 @@ El kit está diseñado para componerse con, no para reemplazar:
   sellado. El HECHO 07 C3 ancla las solicitudes de acceso pendientes
   en el momento de la atestación.
 
-- **Registros de titularidad real (Recomendación 24 del GAFI,
+- **Registros de titularidad real (Recomendación 24 de la FATF,
   directivas AML de la UE, Corporate Transparency Act de EE. UU.).**
   Los datos de titularidad real NO se sellan bajo este kit (el
   HECHO 04 toma la identidad del proveedor sólo del nombre de la
@@ -519,7 +519,7 @@ El kit está diseñado para componerse con, no para reemplazar:
 - Los canales de denunciantes y los regímenes de divulgación
   protegida
 - La divulgación de titularidad real
-- La revisión por pares internacional (OCDE, Evaluación de
+- La revisión por pares internacional (OECD, Evaluación de
   Transparencia Fiscal del FMI, semestre europeo, IATI Registry)
 - Los procedimientos de recuperación de activos administrados por
   tribunales
