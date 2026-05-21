@@ -1,0 +1,172 @@
+# Translations
+
+myriam-kit ships in multiple languages so that the protocol can be adopted in
+contexts where English is not the primary working language of the people who
+most need it (clinicians, election officials, journalists, researchers).
+
+The translations below were produced via parallel sub-agents on 2026-05-21 as
+a one-shot effort. They are CC0, like the rest of the kit, and they may
+absolutely be improved by community pull requests. If you are a native or
+fluent speaker and spot a phrasing that lands wrong, the protocol that the
+text is trying to describe, or a technical term that has a better
+domain-appropriate translation, please open a PR. There is no style guide to
+adhere to; clarity for the intended reader is the only target.
+
+Each section lists:
+- the README translation for the top-level kit
+- any example-kit translations available in that language
+
+Language coverage was prioritized by population and by the realistic
+domains where MYRIAM-shaped sealing is most needed: public health,
+elections, AI safety, journalism, and scientific reproducibility.
+
+---
+
+## Arabic — العربية (ar)
+
+Approximate speakers: ~400M (Modern Standard Arabic, 25+ countries).
+
+- [README in Arabic](README.ar.md)
+- Example kit: [Election Tally Pre-Certification — العربية](examples/election-tally-precertification/README.ar.md)
+
+## Bengali — বাংলা (bn)
+
+Approximate speakers: ~270M (Bangladesh, West Bengal).
+
+- [README in Bengali](README.bn.md)
+
+## Chinese (Simplified) — 中文 (zh)
+
+Approximate speakers: ~1.1B (Mainland China, Singapore).
+
+- [README in Chinese](README.zh.md)
+- Example kit: [Scientific Reproducibility — 中文](examples/scientific-reproducibility/README.zh.md)
+
+## French — Français (fr)
+
+Approximate speakers: ~300M (France, Canada, West Africa, Belgium, Switzerland).
+
+- [README in French](README.fr.md)
+- Example kit: [AI Model Behavior Lock — Français](examples/ai-model-card/README.fr.md)
+
+## German — Deutsch (de)
+
+Approximate speakers: ~135M (Germany, Austria, Switzerland).
+
+- [README in German](README.de.md)
+- Example kit: [Scientific Reproducibility — Deutsch](examples/scientific-reproducibility/README.de.md)
+
+## Hindi — हिन्दी (hi)
+
+Approximate speakers: ~600M (India).
+
+- [README in Hindi](README.hi.md)
+- Example kit: [Vaccine Batch Attestation — हिन्दी](examples/vaccine-batch-attestation/README.hi.md)
+
+## Indonesian — Bahasa Indonesia (id)
+
+Approximate speakers: ~270M (Indonesia).
+
+- [README in Indonesian](README.id.md)
+- Example kit: [Election Tally Pre-Certification — Bahasa Indonesia](examples/election-tally-precertification/README.id.md)
+
+## Italian — Italiano (it)
+
+Approximate speakers: ~65M (Italy, Switzerland).
+
+- [README in Italian](README.it.md)
+- Example kit: [Drug Trial Pre-registration — Italiano](examples/drug-trial-preregistration/README.it.md)
+
+## Japanese — 日本語 (ja)
+
+Approximate speakers: ~125M (Japan).
+
+- [README in Japanese](README.ja.md)
+- Example kit: [AI Model Behavior Lock — 日本語](examples/ai-model-card/README.ja.md)
+
+## Korean — 한국어 (ko)
+
+Approximate speakers: ~80M (South Korea, North Korea).
+
+- [README in Korean](README.ko.md)
+- Example kit: [Election Tally Pre-Certification — 한국어](examples/election-tally-precertification/README.ko.md)
+
+## Polish — Polski (pl)
+
+Approximate speakers: ~45M (Poland).
+
+- [README in Polish](README.pl.md)
+
+## Portuguese (Brazil) — Português Brasileiro (pt-BR)
+
+Approximate speakers: ~215M (Brazil; the Brazil variant is the larger
+Portuguese-speaking population, ahead of Portugal at ~10M).
+
+- [README in Brazilian Portuguese](README.pt-BR.md)
+- Example kit: [Whistleblower Manifest — Português Brasileiro](examples/whistleblower-manifest/README.pt-BR.md)
+
+## Russian — Русский (ru)
+
+Approximate speakers: ~260M (Russia, post-Soviet states).
+
+- [README in Russian](README.ru.md)
+- Example kit: [Election Tally Pre-Certification — Русский](examples/election-tally-precertification/README.ru.md)
+
+## Spanish — Español (es)
+
+Approximate speakers: ~600M (Spain, Latin America).
+
+- [README in Spanish](README.es.md)
+- Example kit: [Drug Trial Pre-registration — Español](examples/drug-trial-preregistration/README.es.md)
+
+## Swahili — Kiswahili (sw)
+
+Approximate speakers: ~200M (East Africa: Tanzania, Kenya, Uganda, DRC).
+
+- [README in Swahili](README.sw.md)
+- Example kit: [Vaccine Batch Attestation — Kiswahili](examples/vaccine-batch-attestation/README.sw.md)
+
+## Turkish — Türkçe (tr)
+
+Approximate speakers: ~85M (Turkey, Cyprus).
+
+- [README in Turkish](README.tr.md)
+- Example kit: [Whistleblower Manifest — Türkçe](examples/whistleblower-manifest/README.tr.md)
+
+## Vietnamese — Tiếng Việt (vi)
+
+Approximate speakers: ~85M (Vietnam).
+
+- [README in Vietnamese](README.vi.md)
+
+---
+
+## Coverage summary
+
+- 17 top-level README translations
+- 14 example-kit translations across 6 of the 6 example domains
+- Combined first-language reach of the languages covered: ~4.5 billion people
+- All translations are CC0; no attribution required to use, fork, or improve
+
+## How to contribute a fix or a new language
+
+1. Fork the repo.
+2. For a fix: edit `README.<lang>.md` or `examples/<kit>/README.<lang>.md`
+   directly. Open a PR. Native fluency is sufficient; no translator
+   credentials needed.
+3. For a new language: copy `README.md` to `README.<ISO-639-1-code>.md`,
+   translate, add a section to this file, link from the top-level
+   `README.md` and from `index.html`. Open a PR. The maintainer (currently:
+   nobody — see the README) will merge based on whether the language has
+   plausible MYRIAM-domain users, which is a very low bar.
+
+The protocol itself is language-neutral. Merkle trees, OpenTimestamps,
+and IPFS work identically regardless of the language in which a fact
+was originally written. The translations exist so that the *kit* (the
+glue around the protocol) is usable by people who would otherwise have
+to learn English first.
+
+---
+
+*Translations produced 2026-05-21. CC0. No attribution required.
+Improvements welcome via PR.*

@@ -30,6 +30,21 @@ generalization of that pattern.
 - Public domain (CC0). Use it, fork it, vendor it into your repo, never
   credit it. The point is not the credit.
 
+## Available languages
+
+This README and several example kits are available in 17 languages.
+Full index at [TRANSLATIONS.md](TRANSLATIONS.md).
+
+[العربية](README.ar.md) · [বাংলা](README.bn.md) · [Deutsch](README.de.md) ·
+[Español](README.es.md) · [Français](README.fr.md) · [हिन्दी](README.hi.md) ·
+[Bahasa Indonesia](README.id.md) · [Italiano](README.it.md) ·
+[日本語](README.ja.md) · [한국어](README.ko.md) · [Polski](README.pl.md) ·
+[Português Brasileiro](README.pt-BR.md) · [Русский](README.ru.md) ·
+[Kiswahili](README.sw.md) · [Türkçe](README.tr.md) ·
+[Tiếng Việt](README.vi.md) · [中文](README.zh.md)
+
+Translations are CC0 and may be improved by community PRs.
+
 ## What you can do with it
 
 The pattern fits anywhere a small set of facts needs to be:

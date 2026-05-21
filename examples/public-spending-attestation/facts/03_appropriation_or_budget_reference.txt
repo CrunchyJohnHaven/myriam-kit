@@ -1,0 +1,84 @@
+FACT 03 — APPROPRIATION OR BUDGET REFERENCE (FICTIONAL)
+
+This fact identifies the specific line in the legally adopted budget
+that the expenditures sealed in FACT 04 are executing against. Sealing
+the appropriation reference at issuance prevents post-hoc reattribution
+of a disbursement to a different budget line — a documented technique
+for laundering excess spending on one program through unused capacity
+in another.
+
+ADOPTED BUDGET REFERENCE
+
+  Budget instrument:      Fictional Municipal Adopted Budget FY2026
+                          (FICTIONAL — adopted by Council resolution
+                          2025-189 on 2025-11-22)
+
+  Budget document hash:   3e7a91c4b8d2e5f60a1b2c3d4e5f60718293a4b5c6d7e8f
+                          90123456789abcdef0123456789abcdef0123456789ab
+                          (SHA-256 of the canonical PDF as adopted —
+                          FICTIONAL)
+
+  Budget total appropriated (FY2026):     USD 487,200,000 (FICTIONAL)
+  This publication scope (FY2026-Q2):     USD  41,832,500 (FICTIONAL)
+
+LINE-LEVEL APPROPRIATIONS BEING EXECUTED IN THIS PUBLICATION
+
+  Line A — Capital Works > Roads & Bridges > Rehabilitation Program
+    Account code:         100-2400-5210 (FICTIONAL)
+    FY2026 appropriated:  USD 18,500,000
+    Q2 executed (this seal): USD 12,847,300
+    YTD executed:         USD 14,022,100
+    Remaining:            USD  4,477,900
+
+  Line B — Operating > Social Services > Food Security Grants
+    Account code:         200-3100-4080 (FICTIONAL)
+    FY2026 appropriated:  USD  7,200,000
+    Q2 executed (this seal): USD  1,800,000
+    YTD executed:         USD  3,600,000
+    Remaining:            USD  3,600,000
+
+  Line C — Capital Works > Public Health Facilities > Equipment
+    Account code:         100-3200-5340 (FICTIONAL)
+    FY2026 appropriated:  USD  6,800,000
+    Q2 executed (this seal): USD  4,250,000
+    YTD executed:         USD  4,250,000
+    Remaining:            USD  2,550,000
+
+  Line D — Operating > Information Technology > Software Licenses
+    Account code:         200-1500-4220 (FICTIONAL)
+    FY2026 appropriated:  USD  3,400,000
+    Q2 executed (this seal): USD  2,135,200
+    YTD executed:         USD  2,810,500
+    Remaining:            USD    589,500
+
+  Line E — Capital Works > Parks > New Construction
+    Account code:         100-4000-5110 (FICTIONAL)
+    FY2026 appropriated:  USD 11,800,000
+    Q2 executed (this seal): USD 20,800,000
+    YTD executed:         USD 20,800,000
+    Remaining:            USD -9,000,000  *** OVER-APPROPRIATED ***
+    Note: this overrun is recorded as-issued; explanation is sealed in
+    FACT 07 (C5). The seal does NOT silently absorb the overrun — it
+    makes the overrun part of the permanent forensic record at the
+    moment of issuance.
+
+AMENDMENTS, REPROGRAMMINGS, AND TRANSFERS APPLIED IN THIS PERIOD
+
+  Amendment 2026-04 (Council resolution 2026-014, 2026-04-18):
+    Transferred USD 1,200,000 from Line F (Capital Works > Recreation
+    > Pool Resurfacing, account 100-4000-5120) to Line E (Parks > New
+    Construction). The transfer covered partial scope expansion; it
+    did NOT cover the full Line E overrun noted above.
+  Amendment hash: 92be19ca77f5ef0d2b3a4c5d6e7f80910a1b2c3d4e5f60718293a4b5c6d7e8f9
+
+CROSS-REFERENCE TO PRIOR SEALED PUBLICATIONS
+
+  FY2026-Q1 attestation Merkle root (if previously sealed):
+    [omitted in this example; a real series would chain by reference]
+
+This fact asserts only the appropriation lines and their executed-
+versus-appropriated state at the moment of the Q2 close as recorded by
+the issuing authority. It does not assert that the appropriations
+themselves are sufficient, necessary, or wisely chosen; that the budget
+adoption process was free of irregularity; or that the recorded
+execution state reflects all encumbrances and pending commitments.

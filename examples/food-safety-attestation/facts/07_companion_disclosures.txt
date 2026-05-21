@@ -1,0 +1,191 @@
+FACT 07 — COMPANION DISCLOSURES AND REFUSAL RECORD (FICTIONAL)
+
+Per the MYRIAM kit's constraint-first design principle, this fact
+records what the kit explicitly refused to seal and any companion
+disclosures the manufacturer is obliged to publish alongside the
+release record so that selective omission is detectable. The
+disclosures here are not optional — leaving any of them blank without
+explicit "none at release time" attestation is itself a public red
+flag.
+
+COMPANION DISCLOSURES (sealed alongside the release record so the
+release cannot be read in isolation)
+
+  C1. CORRECTIVE-ACTION INVESTIGATION FOR THE EMP PRESUMPTIVE
+
+      The single Listeria innocua presumptive in the FACT 03 Row 11
+      environmental monitoring program triggered a documented
+      corrective-action investigation per the manufacturer's
+      Listeria-control program. The investigation included root-
+      cause analysis (drain biofilm source, identified and
+      eradicated), intensified sanitation (CIP cycle + foaming
+      + sanitizer rotation), post-sanitation sponge resampling
+      (ND), and a temporary increase in sponge frequency for the
+      affected zone for 14 days post-incident.
+      Corrective-action investigation log SHA-256:
+        c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8
+
+  C2. RECENT REGULATORY INSPECTION HISTORY (PRECEDING 24 MONTHS)
+
+      - One FSIS routine inspection 2024-Q3: no NOIE, no Suspension,
+        no Withholding action; one Process Control deficiency noted
+        and corrected within 14 days.
+      - One FDA inspection 2025-Q2 (cross-jurisdictional verification
+        for FDA-regulated component supply): no Form 483 observations.
+      - One ISO 22000 / FSSC 22000 surveillance audit 2025-Q4:
+        no Major non-conformities; two Minor NCs closed within
+        45 days.
+      Aggregated inspection-history report SHA-256:
+        d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9
+
+  C3. PARALLEL RECALL HISTORY (PRECEDING 60 MONTHS) FOR THIS FACILITY
+
+      - One Class III recall in 2023 for undeclared sub-component
+        labeling (corrected supplier change-control gap); no illness
+        association; recall completeness 99.1 percent.
+      - No Class I or Class II recalls in the preceding 60 months.
+      Recall-history list SHA-256:
+        e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0
+
+  C4. KNOWN OPEN ISSUES IN THE TESTING METHODS USED
+
+      Vendor and reference-method advisories for FSIS MLG 8.13,
+      FSIS MLG 4.12, FSIS MLG 5.10, ISO 6579-1, and ISO 11290-1
+      current as of release date were reviewed by the QA Director;
+      no open advisories were assessed as affecting the integrity of
+      results in FACT 03. The advisory-review log is sealed
+      separately.
+      Reviewed-advisories log SHA-256:
+        f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1
+
+  C5. ROLE-TO-INDIVIDUAL BINDING (SEALED SEPARATELY UNDER COMPANY
+      ACCESS CONTROL; HASHED HERE)
+
+      The binding between the role-level signatories in FACT 05 +
+      FACT 08 (QA Director, Plant Manager) and the individuals
+      holding those roles at release is recorded in a separately
+      sealed company record. Regulators (FSIS, FDA, EU competent
+      authority) and litigation discovery can compel production of
+      the binding under existing process; the public seal does not
+      publish it. Rationale: protect identifiable line-level and
+      managerial personnel from harassment, identity correlation
+      with personal records, and supply-chain-targeted attacks that
+      a public name on Bitcoin would enable.
+      Role-binding record SHA-256:
+        a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2
+
+  C6. SUPPLIER-INGREDIENT TRACEBACK READINESS (NOT THE SUPPLIER
+      IDENTITIES; ONLY THE READINESS POSTURE)
+
+      The manufacturer maintains one-tier-back supplier-lot
+      traceability for all 6 ingredient categories used in this
+      product. Mock-traceback exercise Q4 2025: 96.7 percent of
+      ingredient inputs successfully traced to one-tier-back lot
+      identifier in under 4 hours. Supplier identities are NOT
+      published in this seal per refusal-rule R5; they are
+      maintained under contract and produced on regulator demand.
+      Traceback-readiness report SHA-256:
+        b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3
+
+REFUSAL RECORD — patterns the kit refused to seal
+
+The kit does NOT seal the following types of facts, even if requested
+by the manufacturer, a customer QA team, a third-party certifier, or
+a co-equal authority:
+
+  R1. ANY PII OF WORKERS, SUPERVISORS, OR INSPECTORS
+
+      No fact may include personal names, employee ID numbers, badge
+      numbers, social security numbers, home addresses, personal
+      phone numbers, or any other identifier of individual food-
+      production workers, supervisors, QA staff, or visiting
+      inspectors. Worker safety against retaliation and harassment
+      is the load-bearing constraint here; food-safety attestation
+      can be done at role-level without naming individuals.
+
+  R2. PRECISE FACILITY LOCATION
+
+      The facility region (state / multi-state region) is published
+      in FACT 02. The precise street address, GPS coordinates, or
+      any identifier of granularity sufficient to physically
+      identify the specific plant on a map is NOT published. The
+      regulatory establishment number, when published, is the
+      regulator's handle for the facility; physical-security
+      considerations and worker safety against targeted attacks
+      argue against publishing a public address on Bitcoin.
+
+  R3. INDIVIDUAL PRODUCTION-SHIFT PERSONNEL
+
+      Shift schedules, individual worker rotations, line operator
+      personal IDs — none of these appear in this seal. Pattern-of-
+      life of individual workers must not be derivable from the
+      public attestation.
+
+  R4. SUPPLIER IDENTITIES THAT COMPROMISE CONTRACTS
+
+      Supplier identities, supplier facility locations, supplier
+      lot codes (except in the FACT 06 case where a contamination
+      traceback REQUIRES naming a supplier's contaminated lot for
+      public health) are NOT published. Many supply contracts
+      contain confidentiality provisions; the seal does not breach
+      those by default. Where a public-health emergency requires
+      naming a supplier's contaminated lot, that disclosure is
+      handled through the regulator's recall channels and is
+      additionally sealed in a NEW MYRIAM publication, not by
+      retroactive amendment to this one.
+
+  R5. CUSTOMER LISTS AND DISTRIBUTION DESTINATIONS BEYOND HIGH-LEVEL
+
+      The high-level regional summary in FACT 05 is published; the
+      specific customer list (which retailers, which distribution
+      centers, which foodservice accounts) is NOT. Customer
+      identity is contractually confidential and competitively
+      sensitive; the regulator obtains the customer list through
+      established recall-coordination channels.
+
+  R6. SAFETY CLAIMS OR LEGAL CONCLUSIONS
+
+      The kit will not seal a fact body that claims the product is
+      "safe," that it is "GRAS for this use" (GRAS is an FDA
+      determination), that it meets "all applicable food safety
+      standards" (this is a legal conclusion), or any other safety
+      or legal conclusion. Safety claims are downstream of the
+      facts the seal anchors; the kit anchors the testing record
+      and the release decision, NOT a safety conclusion.
+
+  R7. WORKER-COMPLAINT OR WHISTLEBLOWER PATTERNS
+
+      The kit refuses to publish any pattern that could re-identify
+      a worker who has filed an OSHA, USDA, or company-internal
+      complaint about food-safety or workplace-safety practices.
+      Such complainants are protected under FSMA Section 402
+      (whistleblower protection) and parallel statutes; the seal
+      must not become a re-identification vector. Whistleblower
+      attestations have their own kit
+      (examples/whistleblower-manifest in this same repository) with
+      its own refusal-rule set tuned for that use case.
+
+  R8. SEALING BY ANYONE OTHER THAN THE RELEASING MANUFACTURER'S
+      AUTHORIZED PRINCIPAL
+
+      A third-party certifier, customer QA team, or independent
+      auditor may use the same kit to seal THEIR own independent
+      verification or audit findings; but they may not seal the
+      ORIGINAL release decision under the manufacturer's name. The
+      principal in FACT 08 is the only valid signer for that.
+
+If during release any request matching R1-R8 was made and refused,
+that refusal would be documented as a sealed fact:
+  "Refusal #N: party X requested sealing of [pattern]; the kit
+  refused per refusal-rule R[m]."
+
+  Refusals this release: NONE. (FICTIONAL)
+
+This fact asserts only the companion-disclosure status and any
+refusal record at the moment of release. It does not assert that the
+refusal-rule list is exhaustive of all PII or sensitive-disclosure
+patterns, that all companion disclosures have been identified by the
+manufacturer (selective omission of a disclosure category not yet
+contemplated is exactly the failure mode this fact is designed to
+make detectable over time), or that the disclosures listed are
+themselves non-contestable.

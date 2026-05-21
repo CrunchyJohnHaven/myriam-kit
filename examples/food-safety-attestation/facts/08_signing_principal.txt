@@ -1,0 +1,108 @@
+FACT 08 — SIGNING PRINCIPAL (FICTIONAL)
+
+  Manufacturer:                 Fictional Foods Manufacturing, Inc.
+                                (FICTIONAL)
+  Manufacturer identifier:      FICT-FFRM-99999 (FICTIONAL — a real
+                                attestation would carry the FDA Food
+                                Facility Registration ID or USDA FSIS
+                                Establishment Number; for non-US
+                                jurisdictions, the equivalent
+                                competent-authority approval number)
+  Statutory basis for           US Food Safety Modernization Act of
+    food-safety operation:      2011 (FSMA), USDA FSIS regulations
+                                under the Federal Meat Inspection Act,
+                                and Codex Alimentarius / HACCP
+                                principles (FICTIONAL invocation)
+  Release timestamp:            2026-05-12 (FICTIONAL — release date
+                                per FACT 05)
+  Date sealed:                  2026-05-12 (BEFORE first truck
+                                departure 2026-05-13)
+
+PRIMARY SIGNATORY
+
+  Role:                         QA Director (one role-level
+                                individual; personal name in the
+                                separately-held role-to-individual
+                                binding hashed in FACT 07; rationale
+                                for role-level-not-person-level
+                                publication below)
+  Acting in capacity of:        Manufacturer's quality-assurance
+                                authority empowered under the
+                                manufacturer's food-safety plan
+                                (Preventive Controls / HACCP) to
+                                authorize release of finished product
+                                after review of all release-testing
+                                results and CCP records
+  Cryptographic key:            (a real attestation would attach the
+                                role's PGP public-key fingerprint, or
+                                a company-issued X.509 certificate
+                                for that role, here; omitted in this
+                                example because no real person or
+                                role-key exists)
+
+CO-SIGNATORY (counter-sign for the manufacturer)
+
+  Role:                         Plant Manager (one role-level
+                                individual; personal name in
+                                separately-held binding)
+  Acting in capacity of:        Operational manager counter-signing
+                                that the production run met the
+                                facility's established SOPs and that
+                                no operational deviations exist
+                                outside what is recorded in FACT 04 +
+                                FACT 07
+
+WHY THE PRINCIPAL IS ROLE-LEVEL, NOT PERSON-LEVEL
+
+In real-world food-safety practice, the binding between a release
+decision and the individual signing it is established through:
+
+  - the company's contemporaneous QA records, retained per FSMA /
+    FSIS recordkeeping requirements (at least 2 years for human
+    food, 3 years for non-shelf-stable RTE under FSMA),
+  - the company's HR records of role assignment (who held the
+    QA Director role on 2026-05-12),
+  - and the individual's testimony or affidavit in any subsequent
+    regulatory or litigation proceeding.
+
+A public Bitcoin-anchored seal is not the appropriate venue to bind
+a worker's personal identity to a food-safety decision. That binding
+belongs in the company's controlled records, where access is governed
+by employment privacy law, by FSMA Section 402 whistleblower
+protections, and by general worker-safety considerations against
+harassment. The role-level public seal plus the separately-held
+role-to-individual binding (hashed in FACT 07) is the kit's default;
+companies in jurisdictions where public personal-naming is required
+(e.g. some EU member-state competent authorities require a named
+"qualified person" on the public label) can amend their fork to
+include the personal name, but the default refusal favors worker
+safety. See refusal-rule R1 in FACT 07 and in the README.
+
+In a real attestation, the signing principal section should include:
+
+  - The manufacturer's legal name and regulatory establishment ID.
+  - The role and counter-sign role for each signatory.
+  - A cryptographic key (PGP, X.509, role-issued) so that future
+    statements claimed to be from the signing principal can be
+    cryptographically verified against this seal.
+  - The release and sealing timestamps.
+  - A canonical contact channel for regulator coordination and
+    recall response.
+
+The signing principal section SHOULD NOT include:
+
+  - Personal names, contact information, or home addresses of QA
+    staff, plant managers, line workers, or visiting inspectors.
+  - Identifying information about workers' family members or
+    employment history.
+  - Precise facility coordinates beyond region.
+  - Supplier identities (per refusal-rule R4) or customer
+    identities (per refusal-rule R5).
+  - Trade secrets about the manufacturing process beyond what FSMA
+    or FSIS specifically require in the public-record portion of
+    the food-safety plan.
+
+This fact asserts only the signing principal identification fields
+for the fictional lot release as declared. It does not assert any of
+those fields about any real manufacturer, any real worker, or any
+real food product.
