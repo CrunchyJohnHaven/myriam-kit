@@ -77,6 +77,8 @@ That is exactly the shape this tool is built for.
 Five-minute walkthrough in [docs/QUICKSTART.md](docs/QUICKSTART.md).
 Full protocol spec in [docs/SPEC.md](docs/SPEC.md).
 Threat model in [docs/THREAT_MODEL.md](docs/THREAT_MODEL.md).
+Comparison with adjacent systems (Sigstore, Sigsum, CT, OTS, IPFS, OSF,
+Arweave, etc.) in [docs/COMPARISON.md](docs/COMPARISON.md).
 
 ## How to verify someone else's publication
 
