@@ -1,0 +1,20 @@
+FACT 01 — EXAMPLE NOTICE
+
+This publication is an EXAMPLE demonstration of how a research group
+can use myriam-kit to seal a reproducibility manifest for a paper or
+preprint. The paper, authors, dataset, analysis pipeline, and all
+hashes are FICTIONAL.
+
+The purpose: show the SHAPE of a real reproducibility seal. A research
+group would replace each fact body with the actual artifacts of an
+actual study.
+
+This kit is intended to compose with existing scholarly infrastructure
+(arXiv, bioRxiv, OSF, GitHub, Zenodo). The MYRIAM seal provides
+Bitcoin-anchored, tamper-evident attestation that a specific snapshot
+of (paper draft, raw data, analysis pipeline, expected result) existed
+in a specific form at a specific time.
+
+This fact asserts only that the publication is an example, not a real
+reproducibility seal. No real paper is hereby published. No real
+result is hereby claimed.

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{PUBLICATION_TITLE}}</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: ui-monospace, "SFMono-Regular", "Menlo", "Monaco", monospace;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2rem 1rem 6rem;
+    line-height: 1.55;
+    font-size: 15px;
+  }
+  h1 { font-size: 1.4rem; margin-bottom: 0.2rem; }
+  h2 { font-size: 1.05rem; margin-top: 2.5rem; border-bottom: 1px solid currentColor; padding-bottom: 0.2rem; }
+  .sub { opacity: 0.7; margin-top: 0; }
+  .fact { border-left: 3px solid currentColor; padding: 0.4rem 0 0.4rem 0.9rem; margin: 1.2rem 0; white-space: pre-wrap; }
+  .hash { font-size: 0.78rem; opacity: 0.75; word-break: break-all; }
+  .root { border: 1px solid currentColor; padding: 0.6rem 0.8rem; margin: 1rem 0; word-break: break-all; font-size: 0.85rem; }
+  a { color: inherit; }
+  footer { margin-top: 4rem; font-size: 0.8rem; opacity: 0.7; }
+  .badge { display: inline-block; border: 1px solid currentColor; padding: 0.1rem 0.5rem; font-size: 0.7rem; letter-spacing: 0.1em; }
+</style>
+</head>
+<body>
+
+<h1>{{PUBLICATION_TITLE}}</h1>
+<p class="sub">Sealed under the MYRIAM-kit protocol &middot; <span class="badge">MYRIAM-kit</span></p>
+
+<p>
+This page is a sealed publication of {{N}} facts under the
+<a href="https://github.com/.../myriam-kit">MYRIAM-kit</a> protocol. Each fact below has
+been hashed (SHA-256), combined into a Bitcoin-style Merkle root, and
+committed to the Bitcoin blockchain via
+<a href="https://opentimestamps.org">OpenTimestamps</a> against two
+independent calendar operators. Any change to any fact would produce a
+Merkle root different from the one committed to Bitcoin, and would
+therefore be detectable by any member of the public.
+</p>
+
+<h2>The {{N}} Facts</h2>
+
+<!-- For each fact: copy the body of the .txt file into the .fact div,
+     and put the SHA-256 of that file into the adjacent .hash div. -->
+
+<div class="fact">{{FACT_01_BODY}}</div>
+<div class="hash">SHA-256: {{FACT_01_HASH}}</div>
+
+<div class="fact">{{FACT_02_BODY}}</div>
+<div class="hash">SHA-256: {{FACT_02_HASH}}</div>
+
+<div class="fact">{{FACT_03_BODY}}</div>
+<div class="hash">SHA-256: {{FACT_03_HASH}}</div>
+
+<!-- Add more <div class="fact">...</div> + <div class="hash">...</div>
+     pairs as needed. -->
+
+<h2>Cryptographic Seal</h2>
+
+<p><strong>Merkle root</strong> (Bitcoin-style, over the facts above):</p>
+<div class="root">{{MERKLE_ROOT}}</div>
+
+<p><strong>Seal time:</strong> {{SEAL_TIME}}</p>
+
+<p><strong>Bitcoin commitment:</strong> OpenTimestamps receipt at
+<a href="merkle_root.txt.ots">merkle_root.txt.ots</a>, with pending
+attestations against two independent calendar operators.</p>
+
+<p><strong>IPFS CID</strong> (content-addressed mirror): <code>{{IPFS_CID}}</code><br>
+Reachable via any IPFS gateway, e.g.:
+<a href="https://{{IPFS_CID}}.ipfs.dweb.link/">{{IPFS_CID}}.ipfs.dweb.link</a></p>
+
+<p><strong>Signing principal:</strong> {{SIGNING_PRINCIPAL}}</p>
+
+<h2>How to Verify</h2>
+
+<ol>
+  <li>Download all {{N}} fact files from <code>facts/</code>.</li>
+  <li>Recompute each file's SHA-256 and confirm it matches the per-fact hash shown above.</li>
+  <li>Compute the Merkle root (algorithm in
+      <a href="https://github.com/.../myriam-kit/blob/main/docs/SPEC.md#3-merkle-root">SPEC §3</a>),
+      or run <a href="build/verify.py">verify.py</a>.</li>
+  <li>Verify the OpenTimestamps receipt against Bitcoin:
+      <code>ots verify merkle_root.txt.ots</code> (with both
+      <code>merkle_root.txt</code> and <code>merkle_root.txt.ots</code>
+      present in the same directory).</li>
+  <li>Independent IPFS check:
+      <code>ipfs add -r --cid-version=1 -Q site-dir/</code>
+      and confirm the resulting CID matches <code>{{IPFS_CID}}</code>.</li>
+</ol>
+
+<h2>What this protocol promises (and doesn't)</h2>
+
+<p>The protocol delivers <strong>detectability of tampering</strong>, not
+impossibility of tampering. It delivers <strong>content-addressed
+mirroring</strong> at the IPFS layer, but not guaranteed long-term
+pinning durability without additional pin redundancy. It does <em>not</em>
+assert that any sealed fact is true; it asserts only that the fact was
+published in its current bytewise form at the sealed time.</p>
+
+<p>See the project's
+<a href="https://github.com/.../myriam-kit/blob/main/docs/THREAT_MODEL.md">threat model</a>
+for the full list of what the protocol does and does not defend against.</p>
+
+<footer>
+{{PUBLICATION_TITLE}} &middot; MYRIAM-kit &middot; sealed {{SEAL_TIME}}<br>
+Signed by {{SIGNING_PRINCIPAL}}.
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+FACT 02 — BATCH IDENTIFICATION (FICTIONAL)
+
+  Product name:           FICT-VAX-A (FICTIONAL inactivated viral vaccine)
+  Manufacturer:           Fictional BioPharma Inc.
+  Manufacturer license:   (none — fictional; a real attestation would list
+                          FDA Establishment ID / EU GMP cert / WHO PQ)
+  Batch ID:               FBP-2026-Q2-0184 (FICTIONAL)
+  Manufacturing date:     2026-04-12
+  Expiration date:        2027-04-12 (12-month shelf life)
+  Number of doses:        428,400 vials (10 doses per vial = 4,284,000 doses)
+  Storage requirements:   2–8°C; protect from light; do not freeze
+  Active ingredient:      [Fictional antigen identifier], 25 μg per dose
+  Excipients:             (canonical list pre-registered; abbreviated here)
+                          - aluminum hydroxide adjuvant 0.5 mg/dose
+                          - sodium chloride
+                          - sterile water for injection
+                          - residual formaldehyde < 0.01 mg/dose
+  Filling site:           Fictional Site B (Geneva)
+  Lot record SHA-256:     (placeholder)
+                          a1b2c3d4e5f6789abcdef0123456789abcdef0123456789abcdef0123456789ab
+
+This fact asserts only the batch identification fields above for the
+fictional batch. It does not assert anything about a real batch or
+manufacturer.

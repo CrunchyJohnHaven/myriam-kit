@@ -1,0 +1,32 @@
+FACT 06 — SIGNING PRINCIPAL (FICTIONAL)
+
+  Sponsor:              Fictional BioPharma Inc. (FICTIONAL)
+  Primary signatory:    Dr. [Fictional Name], QA Director
+  Secondary signatory:  Dr. [Fictional Name], Head of Manufacturing
+  Date sealed:          2026-04-26
+  Cryptographic key:    (none in this example; a real attestation would
+                        attach a PGP fingerprint for the QA director,
+                        so future statements claimed to be from QA can
+                        be cryptographically verified)
+
+In a real attestation, the signing principal section should include:
+
+  - The QA-release-authorized individual's legal name and license number
+    (where required by jurisdiction)
+  - The manufacturer's regulatory establishment ID (FDA / EU / WHO PQ)
+  - A PGP public key fingerprint OR equivalent (so future amendments,
+    recall notices, or stability updates can be cryptographically tied
+    to this same principal)
+  - A canonical contact channel for regulators and recall coordination
+
+The signing principal SHOULD NOT include in this fact:
+
+  - Personal phone numbers or home addresses of QA staff
+  - Trade secrets about the manufacturing process (these belong in
+    confidential regulatory submissions, not public seals)
+  - Detailed customer lists or distribution destinations beyond
+    high-level regional summary
+
+This fact asserts only the signing principal identification fields for
+the fictional batch release as declared. It does not assert any of
+those fields about any real manufacturer or individual.

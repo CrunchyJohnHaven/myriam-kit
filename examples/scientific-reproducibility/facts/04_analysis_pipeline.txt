@@ -1,0 +1,52 @@
+FACT 04 — ANALYSIS PIPELINE HASH (FICTIONAL)
+
+The complete analysis pipeline for the fictional study described in
+FACT 02 has been frozen at the time of sealing. The pipeline is
+specified at two layers:
+
+LAYER 1: Analysis script
+
+  Filename:           analysis.py (or analysis.R)
+  SHA-256:            89a72e41fa212f6520115739df2d79f366e132c4714c0d60ae87540555195893
+                      (deterministic placeholder for example purposes)
+  Language / version: Python 3.11.7 (or R 4.4.0)
+
+LAYER 2: Reproducible execution environment
+
+  Container:          Docker image (FICTIONAL)
+  Image SHA-256:      03c23f853b396b0df96070f20cd904ec27881e3f6390c55aedc9550c8a2d79f2
+  Image registry:     (not specified in this example; a real seal would
+                      reference a specific Docker Hub or GHCR digest)
+  Pinned dependencies: requirements.txt SHA-256:
+                      0a22e596cc4e1e2992e14f8749de4bce304c1190a820337d17e29fea0e6f4d9d
+
+REPRODUCTION COMMAND
+
+  docker run -v $(pwd)/raw_data_v0:/data:ro \
+             -v $(pwd)/output:/output:rw \
+             [FICTIONAL_IMAGE_DIGEST] \
+             python analysis.py
+
+Expected runtime: ~45 minutes on a single 8-core machine with 32GB RAM.
+
+PRE-REGISTERED ANALYSIS DECISIONS (pre-data-seeing)
+
+  - Primary outcome: [Fictional metric M_1]
+  - Statistical test: linear mixed model with random subject effects
+  - Multiple-testing correction: Holm-Bonferroni across pre-registered
+    secondary outcomes
+  - Pre-specified covariates: [Fictional covariates C_1, C_2, C_3]
+  - Outlier handling: 3 SD threshold, applied pre-analysis, defined as
+    rejection at the per-subject level
+  - Missing-data: multiple imputation, m=50
+
+A reproducer who hashes the script and the Docker image and confirms
+matches with the values above is guaranteed to be running the same
+analysis pipeline that produced the original result.
+
+CRITICAL NOTE: any post-publication change to the analysis script,
+covariate list, statistical test, or outlier policy will be DETECTABLE
+as a deviation from this sealed pre-registration. Deviations required
+by genuine unforeseen events should be documented in a NEW sealed
+publication that references this one by Merkle root, BEFORE the
+revised analysis is conducted.

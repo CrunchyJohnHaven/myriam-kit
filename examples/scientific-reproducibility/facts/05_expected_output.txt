@@ -1,0 +1,48 @@
+FACT 05 — EXPECTED OUTPUT HASH (FICTIONAL)
+
+When the pipeline in FACT 04 is run against the data in FACT 03, the
+fictional research group has computed the following canonical output
+and hashed it:
+
+  Output bundle:       results_v0.tar.gz
+  Archive contents:
+    ├── primary_outcome.csv        (1 row, the primary statistic + 95% CI)
+    ├── secondary_outcomes.csv     (4 rows, pre-registered secondaries)
+    ├── diagnostics/
+    │   ├── residuals_plot.png
+    │   ├── qq_plot.png
+    │   └── influence_diagnostics.csv
+    ├── tables/
+    │   ├── table_1_baseline.csv   (cohort baseline)
+    │   ├── table_2_main_results.csv
+    │   └── table_3_sensitivity.csv
+    └── manifest.json              (per-file SHA-256)
+
+  Output bundle SHA-256:
+    5c4821d81b2aa72015f6f85235317c7092ab509e164cbdb3933f54769444bfd3
+    (deterministic placeholder for example purposes)
+
+ANY REPRODUCER who:
+  1. Obtains the raw_data_v0.tar.gz matching FACT 03's hash
+  2. Pulls the Docker image matching FACT 04's digest
+  3. Runs the reproduction command in FACT 04
+
+should produce a results_v0.tar.gz whose SHA-256 matches the value
+above. If the reproducer's output hash does not match, one of the
+following is true:
+
+  - The reproducer received non-canonical raw data (re-verify FACT 03)
+  - The reproducer ran a different pipeline (re-verify FACT 04)
+  - The pipeline is genuinely non-deterministic (a bug; the
+    pre-registered pipeline should be fully deterministic)
+  - The original output was computed incorrectly (a research finding
+    that overrides the original; sealed result is now contestable)
+
+This fact asserts only the canonical output hash for the fictional
+analysis. It does not assert that the result is biologically /
+clinically / sociologically meaningful, only that it is the bytewise
+output of running the sealed pipeline on the sealed data.
+
+THE DISTINCTION matters: the seal anchors COMPUTATIONAL reproducibility.
+It does not anchor BIOLOGICAL / EMPIRICAL reproducibility (whether the
+finding would hold in a different sample or under different conditions).

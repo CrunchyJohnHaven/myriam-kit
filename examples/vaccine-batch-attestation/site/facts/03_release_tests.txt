@@ -1,0 +1,35 @@
+FACT 03 — RELEASE TESTING RESULTS (FICTIONAL)
+
+For batch FBP-2026-Q2-0184, the following pre-release tests were
+performed by independent laboratories. Each test result PDF is hashed
+with SHA-256; the raw PDFs are NOT included in this publication (only
+their hashes), so this attestation is durable even after the underlying
+PDFs are archived to cold storage.
+
+  IDX  TEST                        LAB           RESULT     SHA-256 OF FULL REPORT PDF
+  ---  --------------------------  ------------  ---------  -------------------------------
+   1   Identity (RT-PCR)           Lab Alpha     PASS       cbb671235d5bb13d9f81a91a8661fa648e59e84f6ba0fb126356993066f065a0
+   2   Potency (in vivo assay)     Lab Alpha     PASS       89a72e41fa212f6520115739df2d79f366e132c4714c0d60ae87540555195893
+   3   Sterility (USP <71>)        Lab Beta      PASS       03c23f853b396b0df96070f20cd904ec27881e3f6390c55aedc9550c8a2d79f2
+   4   Endotoxin (LAL)             Lab Beta      PASS       0a22e596cc4e1e2992e14f8749de4bce304c1190a820337d17e29fea0e6f4d9d
+                                                 (0.18 EU/dose, spec ≤ 5 EU/dose)
+   5   Mycoplasma                  Lab Beta      PASS       5c4821d81b2aa72015f6f85235317c7092ab509e164cbdb3933f54769444bfd3
+   6   General safety (rodent)     Lab Gamma     PASS       ac67969651fbafe91c1e54fc16c92277879c3900da799f658e5c5bdd9a6e1db3
+   7   Residual formaldehyde       Lab Alpha     PASS       bcc0dd54e33e6fd1a0a5f05a97f1e452c37148c267872451f29c98102324593b
+                                                 (0.006 mg/dose, spec ≤ 0.01)
+   8   Aluminum content            Lab Alpha     PASS       ee62d0d20f3a36ed1c6989e4b1cd5e1bbaccab2c7cf9b80eafefce0f9b1c1b8e
+                                                 (0.49 mg/dose, spec 0.4–0.6)
+
+  Total: 8 tests, all PASS.
+
+A regulator, auditor, or downstream investigator can request any
+individual report PDF from the sponsor or the testing laboratory.
+Re-hashing the received PDF with SHA-256 and comparing to the row above
+verifies that the PDF received matches the PDF that existed at the
+moment of batch release. Any post-release modification of any report
+would produce a different hash than the sealed one.
+
+This fact asserts only the release-testing manifest above for the
+fictional batch. It does not assert that the tests above are exhaustive
+of all tests required by any specific regulatory regime, or that
+PASS results entail clinical safety in any specific population.

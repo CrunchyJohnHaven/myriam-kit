@@ -87,10 +87,30 @@ Three options, in order of accessibility:
 
 ## Worked examples
 
-- [`examples/ai-model-card/`](examples/ai-model-card/) — a complete
-  fictional AI model release attestation sealed under MYRIAM. Shows
-  weights hash, model card, eval results, pre-deployment commitments.
-  Sealed, OTS-stamped, IPFS-pinned. Read this before writing your own.
+Five production-grade example kits ship with the toolkit. Each is
+sealed, OTS-stamped, IPFS-pinned, and includes an adoption README
+explaining when to fork it for a real-world case and what failure
+modes it defends against.
+
+- [`examples/whistleblower-manifest/`](examples/whistleblower-manifest/) —
+  for the Boeing 737 MAX / Theranos / FDA-inspector-report failure
+  mode where evidence gets buried or altered by intermediaries.
+- [`examples/ai-model-card/`](examples/ai-model-card/) — for AI labs
+  releasing models, with pre-deployment commitments that become
+  mechanically detectable instead of verbal.
+- [`examples/drug-trial-preregistration/`](examples/drug-trial-preregistration/) —
+  for clinical-trial sponsors, catching post-hoc endpoint switching
+  and selective reporting (Vioxx, Paxil Study 329 failure modes).
+- [`examples/vaccine-batch-attestation/`](examples/vaccine-batch-attestation/) —
+  for vaccine manufacturers and QA authorities, anchoring release
+  test results and recall commitments.
+- [`examples/scientific-reproducibility/`](examples/scientific-reproducibility/) —
+  for research groups, anchoring the (data, pipeline, expected
+  output) triple BEFORE analysis to make p-hacking and HARKing
+  publicly detectable.
+
+Read one of these before writing your own. The closest match to your
+use case is usually the right starting fork.
 
 ## Quick start
 

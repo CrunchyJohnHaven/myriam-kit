@@ -1,0 +1,34 @@
+FACT 04 — RELEASE DECISION (FICTIONAL)
+
+On 2026-04-26, the QA director of Fictional BioPharma Inc. reviewed all
+release-testing results documented in FACT 03 and made the following
+release decision:
+
+  RELEASED FOR DISTRIBUTION: 428,400 vials (4,284,000 doses)
+  RELEASE DATE:              2026-04-26
+  RELEASE AUTHORITY:         Dr. [Fictional Name], QA Director
+  ALTERNATE AUTHORITY:       Dr. [Fictional Name], Quality Compliance Officer
+
+The release decision is supported by:
+
+  - All 8 release tests in FACT 03 returned PASS
+  - No deviations or out-of-specification results in the manufacturing run
+  - Manufacturing record review complete (lot record hash in FACT 02)
+  - Stability program initiated; first stability time point at 3 months
+
+DISTRIBUTION DESTINATIONS (high-level — full distribution list NOT public)
+
+  - North America (FDA-licensed): est. 60% of batch
+  - Europe (EMA-authorized): est. 30% of batch
+  - WHO-eligible countries (via PQ pathway): est. 10% of batch
+
+POST-RELEASE OBLIGATIONS (acknowledged at time of release)
+
+  - Pharmacovigilance: monitor adverse-event reports for this batch ID
+  - Stability: continue per ICH Q1A protocol
+  - Recall capability: maintain trace-back to point of distribution
+
+This fact asserts only the release decision as recorded for the
+fictional batch on the date stated. It does not assert that the release
+was correct in hindsight, or that no adverse events will be associated
+with the batch in the field.

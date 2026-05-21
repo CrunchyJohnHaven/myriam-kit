@@ -1,0 +1,19 @@
+FACT 01 — EXAMPLE NOTICE
+
+This publication is an EXAMPLE demonstration of how a vaccine
+manufacturer or quality-assurance authority can use myriam-kit to
+seal a batch-release attestation. The manufacturer, batch ID, test
+laboratories, and all numerical parameters are FICTIONAL.
+
+The purpose: show the SHAPE of a real vaccine batch release seal.
+A real attestation would replace each fact body with the actual
+batch's QA records.
+
+This kit is intended to compose with — not replace — existing
+regulatory frameworks (FDA CBER, EMA, WHO PQ). The MYRIAM seal
+provides Bitcoin-anchored tamper-evidence on top of whatever regulatory
+attestation already exists.
+
+This fact asserts only that the publication is an example, not a real
+batch release. No real batch is hereby released. No real manufacturer
+or laboratory is hereby named.

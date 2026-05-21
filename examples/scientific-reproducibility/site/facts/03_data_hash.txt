@@ -1,0 +1,44 @@
+FACT 03 — RAW DATA HASH (FICTIONAL)
+
+The complete raw-data corpus for the fictional study described in FACT
+02 has been frozen at the time of sealing. Its SHA-256 hash is:
+
+  Raw data archive:      raw_data_v0.tar.gz (FICTIONAL filename)
+  Archive size:          2.3 GB
+  SHA-256:               cbb671235d5bb13d9f81a91a8661fa648e59e84f6ba0fb126356993066f065a0
+                         (deterministic placeholder for example purposes)
+
+Archive layout (canonical structure pre-registered):
+
+  raw_data_v0.tar.gz
+    ├── README.md            # data dictionary
+    ├── subjects/            # per-subject directories (anonymized IDs)
+    │   ├── subject_001/
+    │   │   ├── raw_measurements.csv
+    │   │   ├── covariates.csv
+    │   │   └── consent_metadata.json
+    │   └── ... (N=350 subjects)
+    ├── instruments/         # calibration files for measurement
+    │   │                    # instruments
+    └── manifests/           # per-file SHA-256 manifest
+
+A reproducer who obtains the archive (via the channels in FACT 06) can
+verify it byte-for-byte by re-hashing with SHA-256 and comparing to the
+hash above. Any post-publication modification, addition, or removal of
+data would produce a different archive hash than the sealed one.
+
+DATA AVAILABILITY POLICY
+
+  - Raw data NOT included in this MYRIAM publication (size, privacy)
+  - Hash sealed here at pre-analysis stage so any post-hoc data
+    manipulation is detectable
+  - Underlying data available via [controlled-access channel: a real
+    study would specify here, e.g. dbGaP, ICPSR, or institutional repo]
+  - Conditions of access pre-registered (peer reviewers / qualified
+    researchers under data-use agreement)
+
+This fact asserts only the cryptographic hash of the raw data archive
+as it existed at the moment of sealing, and the data-availability
+policy as declared. It does not assert that the data are correct,
+complete, or representative; only that they were not modified after
+this seal.

@@ -1,0 +1,56 @@
+FACT 06 — REPRODUCTION PROTOCOL + SIGNING PRINCIPAL (FICTIONAL)
+
+REPRODUCER PROTOCOL
+
+  1. Verify this MYRIAM seal:
+       - Download all 6 fact files from facts/
+       - Re-hash each and confirm matches the per-fact hash above
+       - Recompute the Merkle root per MYRIAM SPEC §3
+       - Verify the OpenTimestamps receipt against Bitcoin
+
+  2. Obtain the raw data archive:
+       - Via the data-availability channel declared in FACT 03
+       - Re-hash with SHA-256 and confirm matches FACT 03's hash
+
+  3. Obtain the analysis pipeline:
+       - Clone the code repository (FACT 02 / FACT 04)
+       - Re-hash the analysis script and confirm matches FACT 04
+       - Pull the Docker image and confirm the digest matches FACT 04
+
+  4. Run the reproduction command in FACT 04 against the verified raw data
+     and verified pipeline.
+
+  5. Hash the output bundle and compare to FACT 05.
+
+If steps 1–4 all verify and step 5's output hash matches, computational
+reproducibility is confirmed. If step 5 fails: see FACT 05 for
+diagnostic decision tree.
+
+POST-RESULT COMMITMENTS
+
+The signing principal commits, at the moment of pre-analysis sealing,
+to the following:
+
+  1. Publication regardless of result direction (positive, negative,
+     null) within 12 months of analysis completion.
+  2. Reporting all pre-registered analyses regardless of which were
+     "significant."
+  3. No silent post-hoc modification to the data, pipeline, or expected
+     output. Any necessary deviation becomes a NEW sealed publication.
+  4. Acknowledging reproduction failures by independent reproducers, in
+     a NEW sealed publication, within 90 days of the reproducer's
+     report.
+
+SIGNING PRINCIPAL
+
+  Lead author:        Dr. [Fictional First Author], [Fictional Title]
+  Institution:        [Fictional University]
+  ORCID:              (none in this example; a real seal would
+                      include the ORCID iD)
+  Co-signers:         [Fictional Second Author], [Fictional Third Author]
+  Date sealed:        2026-05-21 (BEFORE analysis)
+
+This fact asserts only the reproduction protocol, post-result
+commitments, and signing principal as declared. It does not assert that
+the commitments will be honored, only that any future deviation becomes
+publicly comparable against this sealed declaration.

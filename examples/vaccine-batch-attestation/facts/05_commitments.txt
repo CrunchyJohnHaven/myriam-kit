@@ -1,0 +1,48 @@
+FACT 05 — PHARMACOVIGILANCE AND RECALL COMMITMENTS (FICTIONAL)
+
+In the spirit of the MYRIAM protocol's "minimize preventable deaths
+over time" objective function, the fictional manufacturer commits, at
+the moment of release, to the following:
+
+  1. ADVERSE-EVENT TRANSPARENCY
+     All serious adverse events temporally associated with batch
+     FBP-2026-Q2-0184 will be reported to the appropriate regulatory
+     authorities within statutorily required timelines AND aggregate
+     adverse-event counts will be published in a NEW sealed MYRIAM
+     publication (referencing this one by Merkle root) at the 6-month
+     and 12-month post-release marks.
+
+  2. RECALL EXECUTION
+     If a serious safety signal is identified for this batch, the
+     manufacturer commits to:
+       - Issuing a recall notice within 72 hours of regulator
+         concurrence on the signal
+       - Publishing the recall scope (which lots, which destinations,
+         which dose ranges) as a NEW sealed MYRIAM publication
+       - Maintaining recall completeness reporting until ≥98% of
+         distributed doses are accounted for
+
+  3. NO SILENT RETESTING
+     If retesting of any release test in FACT 03 is performed after
+     this release, the retest result will be published as a NEW
+     sealed MYRIAM publication regardless of result. Replacement
+     of a sealed PASS with an unsealed retest is not a legitimate
+     amendment.
+
+  4. STABILITY UPDATES
+     Stability time-point results (3, 6, 9, 12 months) for this batch
+     will be sealed and published as NEW MYRIAM publications when
+     finalized.
+
+  5. NO POST-HOC PROTOCOL CHANGES
+     If the release-specification limits in FACT 03 are revised by the
+     sponsor or regulator after this release, the revised limits will
+     be sealed as a NEW publication. The original sealed limits remain
+     the basis on which this batch was released.
+
+This fact asserts only the commitments as declared. It does not assert
+that the commitments will be honored in practice, or that honoring them
+is sufficient for any specific safety guarantee.
+
+The commitments are a forensic anchor. Any future deviation by the
+manufacturer becomes publicly comparable against this sealed declaration.

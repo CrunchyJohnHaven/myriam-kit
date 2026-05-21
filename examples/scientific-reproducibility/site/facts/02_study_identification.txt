@@ -1,0 +1,32 @@
+FACT 02 — STUDY IDENTIFICATION (FICTIONAL)
+
+  Paper title:        "Fictional Effect of X on Y: A Phase-Aware Analysis
+                       of Z Across Fictional Conditions" (FICTIONAL)
+  Authors:            [Fictional First Author], [Fictional Second Author],
+                      [Fictional Third Author], et al.
+  Institution(s):     [Fictional University], [Fictional Institute]
+  Preprint URL:       (not yet posted — fictional)
+                      A real seal could reference a specific arXiv ID
+                      or bioRxiv DOI here
+  Code repository:    (not yet posted — fictional)
+                      A real seal would reference a GitHub commit hash
+                      or Zenodo DOI for the canonical analysis pipeline
+  Funding sources:    (none — fictional)
+                      A real seal would list all funders to anchor any
+                      future "conflict of interest" reconstruction
+  Conflict-of-interest declaration:
+                      None (FICTIONAL — a real declaration would be the
+                      exact text submitted to the journal)
+  Date of pre-analysis seal:
+                      2026-05-21 (before any data analysis)
+
+This fact asserts only the identification fields above for the
+fictional study. It does not assert that any real study, paper, or
+analysis exists.
+
+KEY DESIGN NOTE for reviewers and meta-analysts: this fact is sealed
+BEFORE the analysis is performed. Anchoring identification at the
+pre-analysis stage allows future readers to confirm that the published
+authors, institution, and funding declarations match what was sealed
+at the time the analysis was planned, even if any of those change post-
+publication.
