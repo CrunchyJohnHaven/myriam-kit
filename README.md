@@ -1,5 +1,12 @@
 # myriam-kit
 
+[![License: CC0-1.0](https://img.shields.io/badge/license-CC0_1.0-lightgrey.svg)](LICENSE)
+[![Examples: 5](https://img.shields.io/badge/worked_examples-5-blue.svg)](#worked-examples)
+[![Verifier: browser](https://img.shields.io/badge/verifier-browser_+_python-green.svg)](lib/verify.html)
+[![Bitcoin: anchored](https://img.shields.io/badge/bitcoin-OTS_anchored-orange.svg)](https://opentimestamps.org)
+[![IPFS: pinned](https://img.shields.io/badge/ipfs-pinned-65c2cb.svg)](https://ipfs.tech)
+[![Sigsum-friendly](https://img.shields.io/badge/transparency-Sigstore_adjacent-purple.svg)](https://www.sigstore.dev)
+
 A small toolkit for publishing a small set of facts in such a way that:
 
 - Any change to any fact is publicly detectable (Merkle tree)
