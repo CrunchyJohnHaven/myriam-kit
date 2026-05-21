@@ -1,0 +1,74 @@
+FACT 05 — RELEASE DECISION (FICTIONAL)
+
+On 2026-05-12, the QA Director of Fictional Foods Manufacturing, Inc.
+reviewed all release-testing results in FACT 03 against the
+methodology and lab qualification recorded in FACT 04 and made the
+following release decision:
+
+  RELEASED FOR DISTRIBUTION:    84,288 consumer units
+                                (200 g each; 16,857.6 kg total)
+  RELEASE DATE:                 2026-05-12
+  RELEASE AUTHORITY (role):     QA Director (role-level; personal name
+                                in separately-held role-to-individual
+                                binding hashed in FACT 07; rationale
+                                in FACT 08)
+  COUNTER-SIGN (role):          Plant Manager (role-level)
+  RELEASE-LETTER SHA-256:       b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7
+
+DECISION-SUPPORTING RECORD
+
+  - All 12 release tests in FACT 03 returned PASS / ND.
+  - All CCP records for the production run (cook lethality CCP-1,
+    cooling stabilization CCP-2, post-lethality RTE-environment
+    sampling CCP-3) were within critical-limit; CCP-record SHA-256
+    references in FACT 02.
+  - No deviations or out-of-specification results in the
+    manufacturing run (sanitation pre-op, processing, packaging).
+  - The single Listeria innocua presumptive in the EMP was
+    investigated, corrective action verified, and post-correction
+    sponge resampling returned ND; the corrective-action log is
+    hashed in FACT 07.
+  - HACCP plan HCP-RTE-CHKN-v6.2 (hashed in FACT 02) was the active
+    plan version at the time of production.
+
+DISTRIBUTION DESTINATIONS (high-level only — full customer list NOT
+public per refusal-rule R5; the manufacturer maintains the customer
+list under contract and produces it on regulator demand)
+
+  - Domestic retail (US): est. 78 percent of lot
+  - Domestic foodservice (US): est. 18 percent of lot
+  - One Canadian retail customer (CFIA-approved exporter pathway):
+    est. 4 percent of lot
+
+POST-RELEASE OBLIGATIONS (acknowledged at time of release)
+
+  - Trace-forward capability maintained to point of next-tier
+    distribution (one tier forward minimum; FSMA 204 / EU 178 Art. 18
+    equivalent)
+  - Consumer-complaint monitoring against lot ID FFM-2026-W19-L042
+  - Surveillance correlation with FDA RFR / CDC FoodNet / PulseNet
+    signal databases for matching pathogen subtypes during the
+    product's use-by window plus 30 days
+  - Recall capability: documented mock-recall completed Q1 2026;
+    98.3 percent unit recoverability within 4 hours
+
+TIMING AND IRREVERSIBILITY OF THIS SEAL
+
+  - Release decision: 2026-05-12 (this fact's date stamp)
+  - Distribution start: 2026-05-13 (first truck departure)
+  - Seal target: BEFORE first truck departure; the seal is forensically
+    strongest when sealed prior to any distribution movement. A seal
+    after distribution begins still has value but does not anchor the
+    pre-distribution state cleanly.
+
+This fact asserts only the release decision as recorded for the
+fictional lot on the date stated, based on the testing record in
+FACT 03 and methodology in FACT 04. It does not assert that the
+release was correct in hindsight, that no adverse health events will
+be associated with the lot, that the sampling-based PASS result
+guarantees pathogen-free product in every consumer unit (see FACT 03
+interpretation constraint), that the customer list withheld here
+contains no customers later subject to recall obligations, or that
+the role-level signatory's identity is bound to this seal by anything
+other than the separately-held role-to-individual binding hashed in
+FACT 07.

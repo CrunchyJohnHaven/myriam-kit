@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{{PUBLICATION_TITLE}}</title>
+<title>Example: Food Safety Attestation &mdash; myriam-kit</title>
 <style>
   :root { color-scheme: light dark; }
   body {
@@ -20,6 +20,7 @@
   .fact { border-left: 3px solid currentColor; padding: 0.4rem 0 0.4rem 0.9rem; margin: 1.2rem 0; white-space: pre-wrap; }
   .hash { font-size: 0.78rem; opacity: 0.75; word-break: break-all; }
   .root { border: 1px solid currentColor; padding: 0.6rem 0.8rem; margin: 1rem 0; word-break: break-all; font-size: 0.85rem; }
+  .banner { border: 1px solid currentColor; padding: 0.6rem 0.8rem; margin: 1rem 0; font-size: 0.85rem; background: rgba(255,200,0,0.08); }
   a { color: inherit; }
   footer { margin-top: 4rem; font-size: 0.8rem; opacity: 0.7; }
   .badge { display: inline-block; border: 1px solid currentColor; padding: 0.1rem 0.5rem; font-size: 0.7rem; letter-spacing: 0.1em; }
@@ -27,87 +28,921 @@
 </head>
 <body>
 
-<h1>{{PUBLICATION_TITLE}}</h1>
-<p class="sub">Sealed under the MYRIAM-kit protocol &middot; <span class="badge">MYRIAM-kit</span></p>
+<h1>Food Safety Attestation &mdash; example</h1>
+<p class="sub">Example publication built with myriam-kit &middot; <span class="badge">EXAMPLE</span></p>
+
+<div class="banner">
+<strong>This is an EXAMPLE.</strong> The manufacturer Fictional Foods
+Manufacturing, Inc., the facility, the lot ID FFM-2026-W19-L042, the
+testing laboratories Alpha/Beta/Gamma, the methods, the numerical
+results, the dates, and all personnel roles are ALL FICTIONAL. No
+real food product is hereby released. No real manufacturer,
+facility, laboratory, inspector, or worker is hereby identified.
+<br><br>
+<strong>This seal does NOT certify that the released product is
+safe.</strong> It anchors only WHICH release tests were performed
+on WHICH lot, by WHICH accredited laboratories, under WHICH
+methods, with WHICH results, and WHAT RELEASE DECISION the QA
+authority made on that basis. Microbial contamination is
+heterogeneous; a passing sample-based release record does NOT
+guarantee absence of contamination in unsampled units. See
+<a href="https://github.com/.../myriam-kit/blob/main/examples/food-safety-attestation/README.md">README.md</a>
+for the full set of failure modes the seal does NOT defend
+against, and refusal rules R1-R8 the kit enforces.
+</div>
 
 <p>
-This page is a sealed publication of {{N}} facts under the
-<a href="https://github.com/.../myriam-kit">MYRIAM-kit</a> protocol. Each fact below has
-been hashed (SHA-256), combined into a Bitcoin-style Merkle root, and
-committed to the Bitcoin blockchain via
-<a href="https://opentimestamps.org">OpenTimestamps</a> against two
-independent calendar operators. Any change to any fact would produce a
-Merkle root different from the one committed to Bitcoin, and would
-therefore be detectable by any member of the public.
+This page is a sealed publication of 8 facts that together constitute
+a complete food-safety release seal: an example notice, product and
+batch identification, release-testing results, methodology and lab
+qualification, release decision, recall and post-market surveillance
+commitments, companion disclosures and refusal record, and signing
+principal. The 8 facts have been hashed (SHA-256), combined into a
+Bitcoin-style Merkle root, and committed to the Bitcoin blockchain
+via <a href="https://opentimestamps.org">OpenTimestamps</a> against
+two independent calendar operators. Any change to any fact would
+produce a different Merkle root and be detectable by any member of
+the public.
 </p>
 
-<h2>The {{N}} Facts</h2>
+<h2>The Eight Facts</h2>
 
-<!-- For each fact: copy the body of the .txt file into the .fact div,
-     and put the SHA-256 of that file into the adjacent .hash div. -->
+<div class="fact">FACT 01 — EXAMPLE NOTICE
 
-<div class="fact">{{FACT_01_BODY}}</div>
-<div class="hash">SHA-256: {{FACT_01_HASH}}</div>
+This publication is an EXAMPLE demonstration of how a food manufacturer,
+a food-safety inspector, or a regulatory authority can use myriam-kit
+to seal a food-safety attestation at the moment of batch release or
+at sign-off of an inspection report. The manufacturer name, facility
+identifiers, lot numbers, testing laboratories, methods, numerical
+results, and all personnel are FICTIONAL.
 
-<div class="fact">{{FACT_02_BODY}}</div>
-<div class="hash">SHA-256: {{FACT_02_HASH}}</div>
+The purpose: show the SHAPE of a real food-safety release seal. A real
+attestation would replace each fact body with the actual batch&#x27;s
+release-testing records, methodology, and release decision — under the
+constraints documented in the README (PII refusals, supply-chain
+confidentiality boundaries, etc.).
 
-<div class="fact">{{FACT_03_BODY}}</div>
-<div class="hash">SHA-256: {{FACT_03_HASH}}</div>
+This kit is intended to compose with — not replace — existing food-
+safety regulatory frameworks (FDA FSMA, USDA FSIS, EU Regulation
+(EC) 178/2002 and the Hygiene Package, Codex Alimentarius / HACCP,
+ISO 22000, FSSC 22000, BRCGS, SQF). The MYRIAM seal provides Bitcoin-
+anchored tamper-evidence on top of whatever HACCP plan, inspection
+record, or release decision already exists under that regulatory
+framework.
 
-<!-- Add more <div class="fact">...</div> + <div class="hash">...</div>
-     pairs as needed. -->
+The seal does NOT certify that the released batch is safe. It commits
+that the testing-and-decision record had THIS exact byte content at
+the moment of release. The distinction is load-bearing and is
+elaborated in the README and in FACT 03&#x27;s closing disclaimer.
+
+This fact asserts only that the publication is an example, not a real
+batch release. No real batch is hereby released. No real manufacturer,
+facility, laboratory, inspector, or food product is hereby named.</div>
+<div class="hash">SHA-256: 69e0d650c9e860d00af3ce2cda55d566500f0aa9ac657bcfbb17a07e228ec563  &middot; <a href="facts/01_example_notice.txt">01_example_notice.txt</a></div>
+
+<div class="fact">FACT 02 — PRODUCT AND BATCH IDENTIFICATION (FICTIONAL)
+
+  Product name:           FICT-RTE-CHKN ready-to-eat sliced cooked
+                          chicken breast, vacuum-pack 200g retail SKU
+                          (FICTIONAL)
+  Product category:       Ready-to-eat (RTE) cooked meat — high-risk
+                          category for Listeria monocytogenes per
+                          FSIS RTE classification
+  Manufacturer:           Fictional Foods Manufacturing, Inc.
+                          (FICTIONAL)
+  Manufacturer license:   (none — fictional; a real attestation would
+                          list FDA Food Facility Registration FFRM ID
+                          or USDA FSIS Establishment Number, plus the
+                          equivalent registration / approval number
+                          for any non-US jurisdiction in which the
+                          batch will be distributed)
+  Facility (region only): South-central US region (FICTIONAL; precise
+                          street address deliberately withheld — see
+                          refusal-rule R2 below and in the README)
+  HACCP-plan identifier:  HCP-RTE-CHKN-v6.2 (FICTIONAL)
+                          HACCP-plan SHA-256:
+                          a1b2c3d4e5f6789abcdef0123456789abcdef0123456789abcdef0123456789ab
+  Lot ID:                 FFM-2026-W19-L042 (FICTIONAL)
+  Sub-lot range:          pallet positions P-001 through P-064
+  Production date:        2026-05-08 (Week 19, 2026)
+  Production shift:       Day shift (06:00 to 14:00 local; precise
+                          shift-personnel identification deliberately
+                          withheld — see refusal-rule R3)
+  Pack date:              2026-05-08
+  Use-by date:            2026-06-21 (44 days; vacuum-pack RTE chilled)
+  Storage requirement:    0 to 4 degrees C; do not freeze; protect
+                          from light
+  Number of consumer
+    units in lot:         84,288 retail packs (200 g each)
+  Approximate weight:     16,857.6 kg total finished product
+  Cook step (CCP-1):      Target internal temperature 71.1 degrees C
+                          held for 36 seconds minimum (per FSIS
+                          Appendix A lethality table 2021 revision)
+                          Logged process record SHA-256:
+                          c2d3e4f5a1b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2
+  Cooling step (CCP-2):   Cooled per FSIS Appendix B stabilization
+                          schedule (54.4 to 26.7 degrees C within
+                          1.5 h; 26.7 to 4.4 degrees C within
+                          additional 5 h). Logged cooling-record
+                          SHA-256:
+                          e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4
+  Slicing / packing
+    environment (CCP-3):  Post-lethality exposed RTE environment;
+                          Listeria-control sampling program per FSIS
+                          Compliance Guideline (food-contact and non-
+                          food-contact surface sponge sampling on a
+                          rolling 5-shift schedule). Environmental-
+                          program SHA-256:
+                          a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5
+
+This fact asserts only the batch identification and process-control
+fields above for the fictional lot. It does not assert anything about
+a real lot, manufacturer, facility, supplier, or personnel; it does
+not assert that the HACCP plan referenced is adequate for any specific
+hazard profile; and it does not name precise facility location,
+suppliers, or individual production-shift personnel — those are
+withheld per refusal rules R2, R3, and R4 in the README.</div>
+<div class="hash">SHA-256: c8f772970f98ef6254e1fe7aca7f6a7c787096573057dbc186480443c02e60c8  &middot; <a href="facts/02_product_identification.txt">02_product_identification.txt</a></div>
+
+<div class="fact">FACT 03 — RELEASE TESTING RESULTS (FICTIONAL)
+
+For lot FFM-2026-W19-L042, the following finished-product release tests
+plus the environmental-monitoring (EMP) summary covering the production
+window were performed by accredited laboratories. Each test result PDF
+is hashed with SHA-256; the raw PDFs are NOT included in this
+publication, only their hashes, so the attestation is durable after
+the underlying PDFs are archived to cold storage.
+
+Notation:
+  m = number of analytical units tested per ICMSF / Codex sampling
+      plan (&quot;n&quot; in classical notation is reserved for the lot here)
+  PASS = within finished-product specification at release
+  ND   = not detected at the method&#x27;s quantitation limit
+
+MICROBIOLOGICAL TESTS (finished product, n=5 lot-composite plus per-
+sub-lot grabs per ICMSF case-15 two-class plan for L. monocytogenes
+in RTE supporting growth)
+
+  IDX  TEST                            LAB           RESULT     SHA-256 OF FULL REPORT PDF
+  ---  ------------------------------  ------------  ---------  -------------------------------
+   1   Listeria monocytogenes,         Lab Alpha     PASS (ND)  d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9
+       25 g enrichment, m=5
+       (FSIS zero-tolerance method)
+   2   Salmonella spp., 25 g           Lab Alpha     PASS (ND)  f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1
+       enrichment, m=5
+   3   E. coli O157:H7 + non-O157 STEC Lab Alpha     PASS (ND)  b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3
+       Big-Six, 25 g enrichment, m=5
+       (informational for RTE; verifies
+       no cross-contamination from
+       any raw-handling adjacent line)
+   4   Aerobic plate count             Lab Alpha     PASS       d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5
+       (log10 CFU/g, m=5)              (1.7 log10 CFU/g composite mean;
+                                        specification ceiling &lt; 4.0 log10
+                                        CFU/g at release)
+   5   Enterobacteriaceae              Lab Alpha     PASS (ND   f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7
+       (hygiene indicator, m=5)        at 10 CFU/g LOD)
+
+CHEMICAL / RESIDUE TESTS
+
+   6   Nitrite residual (curing        Lab Beta      PASS       a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9
+       agent, ppm finished)            (78 ppm finished;
+                                        specification 40-156 ppm)
+   7   Veterinary drug residue         Lab Beta      PASS (ND   c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1
+       panel (12 antibiotics +         at MRL/2 for all
+       4 hormonal compounds; ND        analytes)
+       all at MRL / 2)
+   8   Heavy metals (Pb, Cd, As, Hg)   Lab Beta      PASS       e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3
+                                                                (all below Codex MLs by &gt;5x)
+
+ALLERGEN VERIFICATION (this product is single-ingredient meat with
+declared salt + spices + sodium nitrite; no Big-9 allergens declared,
+so the test is for ADVENTITIOUS cross-contact from shared lines)
+
+   9   Soy ELISA (cross-contact        Lab Gamma     PASS (ND   a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5
+       indicator for shared            at 2.5 ppm LOD)
+       seasoning line)
+  10   Milk ELISA (cross-contact       Lab Gamma     PASS (ND   c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7
+       indicator)                      at 2.5 ppm LOD)
+
+ENVIRONMENTAL MONITORING SUMMARY (rolling 30-day window covering and
+preceding production of lot FFM-2026-W19-L042; Listeria-control
+verification per FSIS Compliance Guideline)
+
+  11   Listeria spp. (presumptive,     Lab Alpha     PASS       e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9
+       Zone 2-4 surfaces; 240          (3 of 240 Zone 3-4
+       sponge sites in 30 d)           presumptive positives;
+                                        0 of 60 Zone 2 food-contact;
+                                        all confirmed as non-
+                                        monocytogenes Listeria spp.
+                                        with corrective sanitation
+                                        verified — corrective-action
+                                        log SHA-256 in FACT 07)
+  12   Salmonella, environmental       Lab Alpha     PASS (ND)  a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1
+       (drains and floor sinks,
+       60 sites in 30 d)
+
+  Total: 12 release-batch and EMP results; all within finished-product
+  specification at the moment of release.
+
+A regulator, a downstream auditor (FSIS, FDA, customer QA team, third-
+party certifier), or an investigator following a later illness signal
+can request any individual report PDF from the manufacturer or the
+testing laboratory. Re-hashing the received PDF with SHA-256 and
+comparing to the row above verifies the PDF received matches the PDF
+that existed at the moment of release. Any post-release modification
+of any report would produce a different hash than the sealed one.
+
+CRITICAL INTERPRETATION CONSTRAINT
+
+The sample-based PASS results above attest to what the sampled
+analytical units tested ND or within-spec for. Microbial contamination
+in bulk food product is HETEROGENEOUS — Listeria, Salmonella, and
+STEC pathogens occur in low-prevalence localized hotspots, not
+uniformly distributed through a lot. Standard ICMSF sampling plans
+have a documented and bounded probability of detecting contamination
+present at low prevalence; the probability is NOT 1. A lot that
+passes its release sampling can still contain contaminated units that
+were not sampled. The 2008-onward peanut-product Salmonella outbreaks,
+the 2011 European STEC O104:H4 sprouted-seed outbreak, the 2015 ice-
+cream Listeria monocytogenes outbreak, the 2018 leafy-greens
+multistate STEC O157:H7 outbreaks, and the 2008 melamine adulteration
+of infant formula in China each illustrate failure modes the release
+sampling either missed (heterogeneous contamination, novel hazard,
+adulteration not screened for) or could not have detected (deliberate
+fraudulent substitution outside the assay set). The seal anchors
+WHICH samples returned WHICH results at release. It does not
+extrapolate from samples to the safety of every consumer unit in the
+lot. That inference is a separate epistemological step, governed by
+the validated sampling plan, the HACCP hazard analysis, and post-
+release surveillance.
+
+This fact asserts only the release-testing and environmental-
+monitoring manifest above for the fictional lot at the moment of
+release. It does not assert that the tests above are exhaustive of
+all tests required by any specific regulatory regime, that the
+sampling plan&#x27;s confidence level guarantees absence of pathogens in
+all consumer units, that PASS results entail consumer safety in any
+specific population (including immunocompromised, pregnant, infant,
+or elderly consumers for whom Listeria and Salmonella present
+elevated risk), or that contamination introduced AFTER release (in
+distribution, retail handling, or consumer preparation) is anchored
+by this seal.</div>
+<div class="hash">SHA-256: b0d3af547454fd8cfd4eb66a51ca51e77a0deeb65a0ccbe6d674f4f9e076d20b  &middot; <a href="facts/03_release_test_results.txt">03_release_test_results.txt</a></div>
+
+<div class="fact">FACT 04 — METHODOLOGY AND LABORATORY QUALIFICATION (FICTIONAL)
+
+This fact freezes WHICH methods, WHICH method versions, and WHICH
+laboratory accreditation status were in effect for each test row in
+FACT 03 at the moment of release. Without this anchor, a later
+&quot;actually we used method X&quot; claim is unfalsifiable; with this anchor,
+it is publicly refutable.
+
+ANALYTICAL METHODS
+
+  Row 1 (L. monocytogenes):    FSIS MLG 8.13 (Sept. 2024 revision)
+                               OR ISO 11290-1:2017
+                               Method-document SHA-256:
+                               aaa1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1
+  Row 2 (Salmonella):          FSIS MLG 4.12 (May 2023 revision)
+                               OR ISO 6579-1:2017 with Amendment 1:2020
+                               Method-document SHA-256:
+                               b1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2
+  Row 3 (E. coli O157:H7 +     FSIS MLG 5.10 + FSIS MLG 5C.01
+       non-O157 STEC):         Method-document SHA-256:
+                               c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2
+  Row 4 (APC):                 AOAC OMA 990.12 (Petrifilm) OR FDA BAM Ch. 3
+  Row 5 (Enterobacteriaceae):  ISO 21528-2:2017
+  Row 6 (Nitrite):             AOAC OMA 973.31 (Griess; spectrophotometric)
+  Row 7 (Veterinary residues): LC-MS/MS multi-residue panel per FDA
+                               KAN 4.0 USDA MRM-LCMS; validated against
+                               USDA FSIS multi-residue Tier 2 list
+  Row 8 (Heavy metals):        ICP-MS per AOAC OMA 2015.01 (microwave
+                               digestion + ICP-MS)
+  Row 9-10 (allergen ELISA):   AOAC OMA 2010.13 (soy R5 ELISA) and
+                               AOAC OMA 2017.08 (milk casein ELISA)
+  Row 11 (Listeria spp. EMP):  FSIS MLG 8.13 sponge protocol
+  Row 12 (Salmonella EMP):     FSIS MLG 4.12 environmental sponge
+
+LABORATORIES
+
+  Lab Alpha:    ISO/IEC 17025:2017 accredited under A2LA scope
+                covering FSIS MLG 4, 5, 8 and ISO 6579, 11290.
+                Accreditation certificate identifier: FICT-A2LA-12345
+                Accreditation valid through: 2027-08-31
+                Accreditation-cert SHA-256:
+                d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2
+                Most-recent proficiency test (PT) round result:
+                  - FAPAS / AAFCO Salmonella PT Q1-2026: PASS
+                  - FAPAS L. monocytogenes PT Q1-2026: PASS
+                PT-results SHA-256:
+                  e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3
+
+  Lab Beta:     ISO/IEC 17025:2017 accredited under ANAB scope
+                covering AOAC chemistry and ICP-MS / LC-MS methods.
+                Accreditation certificate identifier: FICT-ANAB-67890
+                Accreditation valid through: 2028-02-28
+                Accreditation-cert SHA-256:
+                f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4
+                Most-recent veterinary-residue PT round result: PASS
+
+  Lab Gamma:    ISO/IEC 17025:2017 accredited under A2LA scope
+                covering allergen ELISA methods.
+                Accreditation certificate identifier: FICT-A2LA-22222
+                Accreditation valid through: 2027-11-30
+
+INDEPENDENCE STATEMENT
+
+  - Labs Alpha, Beta, and Gamma are commercially independent of the
+    manufacturer (no shared ownership, no exclusive long-term contract
+    with revenue-share, no related-party relationships per US
+    GAAP / IFRS related-party-disclosure rules).
+  - Sample chain-of-custody from production-line collection through
+    laboratory receipt is logged per FSIS-acceptable custody protocol;
+    custody-log SHA-256:
+      a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6
+  - Where the manufacturer also runs internal in-house screening
+    tests, those results are not represented in FACT 03; FACT 03
+    is the third-party accredited release record.
+
+DEVIATIONS, RETESTS, OR OUT-OF-SPECIFICATION (OOS) EVENTS
+
+During the analysis of this lot:
+  - One initial Row 11 (Listeria spp. EMP, Zone 3) presumptive
+    positive was confirmed by isolate-level speciation as a non-
+    monocytogenes Listeria spp. (Listeria innocua); per the EMP
+    program SOP this triggered intensified sanitation + post-
+    sanitation sponge resampling, both of which returned ND.
+    Corrective-action investigation log SHA-256 in FACT 07.
+  - No retests were performed on Rows 1-10 finished-product samples;
+    initial-test results are the release results.
+  - No OOS dispositioned with rationale for release; the lot
+    released cleanly on initial-test data.
+
+This fact asserts only the methodology, laboratory-qualification
+status, independence statement, and deviation summary as recorded at
+the moment of release for the fictional lot. It does not assert that
+the methods listed are the only valid methods for these analytes,
+that ISO 17025 accreditation guarantees correct individual test
+results, or that the absence of recorded retests means no informal
+re-runs occurred upstream of formal sample registration (such re-runs
+are addressed by lab quality-system controls and by the lab&#x27;s own
+ISO 17025 internal-quality-control records, not by this seal).</div>
+<div class="hash">SHA-256: 55b4f77c359af11c91cf6d4280d3dfe498b1b92ca8a894d298eb43f55fbccbc3  &middot; <a href="facts/04_methodology_and_lab_qualification.txt">04_methodology_and_lab_qualification.txt</a></div>
+
+<div class="fact">FACT 05 — RELEASE DECISION (FICTIONAL)
+
+On 2026-05-12, the QA Director of Fictional Foods Manufacturing, Inc.
+reviewed all release-testing results in FACT 03 against the
+methodology and lab qualification recorded in FACT 04 and made the
+following release decision:
+
+  RELEASED FOR DISTRIBUTION:    84,288 consumer units
+                                (200 g each; 16,857.6 kg total)
+  RELEASE DATE:                 2026-05-12
+  RELEASE AUTHORITY (role):     QA Director (role-level; personal name
+                                in separately-held role-to-individual
+                                binding hashed in FACT 07; rationale
+                                in FACT 08)
+  COUNTER-SIGN (role):          Plant Manager (role-level)
+  RELEASE-LETTER SHA-256:       b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7
+
+DECISION-SUPPORTING RECORD
+
+  - All 12 release tests in FACT 03 returned PASS / ND.
+  - All CCP records for the production run (cook lethality CCP-1,
+    cooling stabilization CCP-2, post-lethality RTE-environment
+    sampling CCP-3) were within critical-limit; CCP-record SHA-256
+    references in FACT 02.
+  - No deviations or out-of-specification results in the
+    manufacturing run (sanitation pre-op, processing, packaging).
+  - The single Listeria innocua presumptive in the EMP was
+    investigated, corrective action verified, and post-correction
+    sponge resampling returned ND; the corrective-action log is
+    hashed in FACT 07.
+  - HACCP plan HCP-RTE-CHKN-v6.2 (hashed in FACT 02) was the active
+    plan version at the time of production.
+
+DISTRIBUTION DESTINATIONS (high-level only — full customer list NOT
+public per refusal-rule R5; the manufacturer maintains the customer
+list under contract and produces it on regulator demand)
+
+  - Domestic retail (US): est. 78 percent of lot
+  - Domestic foodservice (US): est. 18 percent of lot
+  - One Canadian retail customer (CFIA-approved exporter pathway):
+    est. 4 percent of lot
+
+POST-RELEASE OBLIGATIONS (acknowledged at time of release)
+
+  - Trace-forward capability maintained to point of next-tier
+    distribution (one tier forward minimum; FSMA 204 / EU 178 Art. 18
+    equivalent)
+  - Consumer-complaint monitoring against lot ID FFM-2026-W19-L042
+  - Surveillance correlation with FDA RFR / CDC FoodNet / PulseNet
+    signal databases for matching pathogen subtypes during the
+    product&#x27;s use-by window plus 30 days
+  - Recall capability: documented mock-recall completed Q1 2026;
+    98.3 percent unit recoverability within 4 hours
+
+TIMING AND IRREVERSIBILITY OF THIS SEAL
+
+  - Release decision: 2026-05-12 (this fact&#x27;s date stamp)
+  - Distribution start: 2026-05-13 (first truck departure)
+  - Seal target: BEFORE first truck departure; the seal is forensically
+    strongest when sealed prior to any distribution movement. A seal
+    after distribution begins still has value but does not anchor the
+    pre-distribution state cleanly.
+
+This fact asserts only the release decision as recorded for the
+fictional lot on the date stated, based on the testing record in
+FACT 03 and methodology in FACT 04. It does not assert that the
+release was correct in hindsight, that no adverse health events will
+be associated with the lot, that the sampling-based PASS result
+guarantees pathogen-free product in every consumer unit (see FACT 03
+interpretation constraint), that the customer list withheld here
+contains no customers later subject to recall obligations, or that
+the role-level signatory&#x27;s identity is bound to this seal by anything
+other than the separately-held role-to-individual binding hashed in
+FACT 07.</div>
+<div class="hash">SHA-256: 4891adace55f9a963edb905f8ad103b3c930d47a041f2f0e2d95640fcaa5496c  &middot; <a href="facts/05_release_decision.txt">05_release_decision.txt</a></div>
+
+<div class="fact">FACT 06 — RECALL AND POST-MARKET SURVEILLANCE COMMITMENTS (FICTIONAL)
+
+In the spirit of the MYRIAM protocol&#x27;s &quot;minimize preventable deaths
+over time&quot; objective function, and as the food-safety analog of
+pharmacovigilance, the fictional manufacturer commits at the moment
+of release to the following. These commitments are NOT a substitute
+for the statutory recall obligations under FSMA, FSIS recall policy,
+EU Regulation (EC) 178/2002 Article 19, or any other applicable
+regime — they are an ADDITIVE, publicly comparable layer that makes
+selective compliance detectable.
+
+  1. ILLNESS-SIGNAL TRANSPARENCY
+
+     Any complaint of foodborne illness causally associated by the
+     manufacturer&#x27;s preliminary investigation with lot
+     FFM-2026-W19-L042 will be reported to FSIS / FDA / state public-
+     health authorities within statutorily required timelines AND an
+     aggregate complaint summary will be published in a NEW sealed
+     MYRIAM publication (referencing this one by Merkle root) at the
+     30-day and 90-day post-release marks IF any signal is detected.
+     If no signal is detected, the 90-day &quot;no-signal&quot; attestation is
+     also sealed and published, so silent suppression of a known
+     signal is detectable.
+
+  2. RECALL EXECUTION
+
+     If a Class I recall trigger is identified for this lot (per FDA
+     21 CFR 7.3(m) or FSIS Directive 8080.1 definition: &quot;reasonable
+     probability that use will cause serious adverse health
+     consequences or death&quot;), the manufacturer commits to:
+       - Notifying the appropriate regulator within 24 hours of
+         internal Class I determination
+       - Initiating recall within 72 hours of regulator concurrence
+       - Publishing the recall scope (which lot codes, distribution
+         destinations, dose / serving ranges) as a NEW sealed
+         MYRIAM publication
+       - Maintaining recall-completeness reporting until at least
+         98 percent of distributed units are accounted for, with
+         monthly sealed updates until completion
+       - For unaccounted units beyond 98 percent: sealed attestation
+         of the unaccounted residual with consumer-facing public
+         notice
+
+     The 72-hour and 98-percent commitments above are tighter than the
+     statutory minimums in some jurisdictions. They are voluntary; the
+     seal commits them publicly. A future failure to meet these self-
+     imposed limits is publicly comparable against this declaration.
+
+  3. SUPPLY-CHAIN CONTAMINATION SCENARIOS
+
+     If contamination is traced upstream to a specific supplier
+     ingredient lot, the manufacturer commits to:
+       - Quarantining all unfilled production using that ingredient lot
+       - Issuing a supplier-traceback advisory through FDA Reportable
+         Food Registry (or successor) within 24 hours of confirmation
+       - Sealing the traceback timeline as a NEW MYRIAM publication
+         (with supplier identity withheld pending litigation /
+         confidentiality resolution but the contaminated-ingredient
+         lot code published)
+
+  4. NO SILENT RETESTING
+
+     If retesting of any release test in FACT 03 is performed after
+     this release, the retest result will be published as a NEW
+     sealed MYRIAM publication regardless of result. Replacement of
+     a sealed PASS with an unsealed retest result is NOT a legitimate
+     amendment under this commitment.
+
+  5. NO POST-HOC SPECIFICATION CHANGES
+
+     If the release-specification limits in FACT 03 are revised by
+     the manufacturer or regulator after this release (e.g. method
+     replaced, LOD changed, sampling plan updated), the revised
+     limits will be sealed in a NEW publication. The original sealed
+     limits remain the basis on which this lot was released.
+
+  6. AGGREGATE SAFETY-SIGNAL SHARING
+
+     Anonymized aggregate complaint and surveillance data for this
+     product CATEGORY (RTE cooked chicken) will be contributed to
+     industry-wide aggregation programs (IFSAC, CDC FoodNet) per
+     existing protocols. The contribution itself is not sealed here,
+     but acknowledgment that the manufacturer participates in those
+     programs is.
+
+ANALOG TO PHARMACOVIGILANCE
+
+In pharmaceuticals, post-market surveillance is a regulated discipline
+(VAERS, EudraVigilance, ICH E2D). In food, the analog is more
+fragmented: CDC PulseNet for pathogen whole-genome sequencing,
+FoodNet for active surveillance, FSIS and FDA for trace-back, RFR for
+manufacturer self-reporting. The manufacturer&#x27;s role in this analog
+is contributing reliable lot-level identifiers, prompt internal-
+signal escalation, and recall execution capacity. The commitments
+above are the food-safety equivalent of a manufacturer&#x27;s
+pharmacovigilance plan at the moment of release.
+
+This fact asserts only the recall and surveillance commitments as
+declared. It does not assert that the commitments will be honored in
+practice, that honoring them is sufficient for any specific safety
+guarantee, or that the manufacturer has the operational capacity to
+execute a Class I recall under all foreseeable distribution scenarios
+(an unlikely but possible failure mode that defense-of-recall-
+capability programs and FSIS / FDA recall exercises are designed to
+detect). The commitments are a forensic anchor. Any future deviation
+becomes publicly comparable against this sealed declaration.</div>
+<div class="hash">SHA-256: 67a0c184e93fbe7dce9c520afa568a3cb224a2b0034fd05c7b022e8cecdfd3a6  &middot; <a href="facts/06_recall_commitments.txt">06_recall_commitments.txt</a></div>
+
+<div class="fact">FACT 07 — COMPANION DISCLOSURES AND REFUSAL RECORD (FICTIONAL)
+
+Per the MYRIAM kit&#x27;s constraint-first design principle, this fact
+records what the kit explicitly refused to seal and any companion
+disclosures the manufacturer is obliged to publish alongside the
+release record so that selective omission is detectable. The
+disclosures here are not optional — leaving any of them blank without
+explicit &quot;none at release time&quot; attestation is itself a public red
+flag.
+
+COMPANION DISCLOSURES (sealed alongside the release record so the
+release cannot be read in isolation)
+
+  C1. CORRECTIVE-ACTION INVESTIGATION FOR THE EMP PRESUMPTIVE
+
+      The single Listeria innocua presumptive in the FACT 03 Row 11
+      environmental monitoring program triggered a documented
+      corrective-action investigation per the manufacturer&#x27;s
+      Listeria-control program. The investigation included root-
+      cause analysis (drain biofilm source, identified and
+      eradicated), intensified sanitation (CIP cycle + foaming
+      + sanitizer rotation), post-sanitation sponge resampling
+      (ND), and a temporary increase in sponge frequency for the
+      affected zone for 14 days post-incident.
+      Corrective-action investigation log SHA-256:
+        c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8
+
+  C2. RECENT REGULATORY INSPECTION HISTORY (PRECEDING 24 MONTHS)
+
+      - One FSIS routine inspection 2024-Q3: no NOIE, no Suspension,
+        no Withholding action; one Process Control deficiency noted
+        and corrected within 14 days.
+      - One FDA inspection 2025-Q2 (cross-jurisdictional verification
+        for FDA-regulated component supply): no Form 483 observations.
+      - One ISO 22000 / FSSC 22000 surveillance audit 2025-Q4:
+        no Major non-conformities; two Minor NCs closed within
+        45 days.
+      Aggregated inspection-history report SHA-256:
+        d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9
+
+  C3. PARALLEL RECALL HISTORY (PRECEDING 60 MONTHS) FOR THIS FACILITY
+
+      - One Class III recall in 2023 for undeclared sub-component
+        labeling (corrected supplier change-control gap); no illness
+        association; recall completeness 99.1 percent.
+      - No Class I or Class II recalls in the preceding 60 months.
+      Recall-history list SHA-256:
+        e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0
+
+  C4. KNOWN OPEN ISSUES IN THE TESTING METHODS USED
+
+      Vendor and reference-method advisories for FSIS MLG 8.13,
+      FSIS MLG 4.12, FSIS MLG 5.10, ISO 6579-1, and ISO 11290-1
+      current as of release date were reviewed by the QA Director;
+      no open advisories were assessed as affecting the integrity of
+      results in FACT 03. The advisory-review log is sealed
+      separately.
+      Reviewed-advisories log SHA-256:
+        f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1
+
+  C5. ROLE-TO-INDIVIDUAL BINDING (SEALED SEPARATELY UNDER COMPANY
+      ACCESS CONTROL; HASHED HERE)
+
+      The binding between the role-level signatories in FACT 05 +
+      FACT 08 (QA Director, Plant Manager) and the individuals
+      holding those roles at release is recorded in a separately
+      sealed company record. Regulators (FSIS, FDA, EU competent
+      authority) and litigation discovery can compel production of
+      the binding under existing process; the public seal does not
+      publish it. Rationale: protect identifiable line-level and
+      managerial personnel from harassment, identity correlation
+      with personal records, and supply-chain-targeted attacks that
+      a public name on Bitcoin would enable.
+      Role-binding record SHA-256:
+        a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2
+
+  C6. SUPPLIER-INGREDIENT TRACEBACK READINESS (NOT THE SUPPLIER
+      IDENTITIES; ONLY THE READINESS POSTURE)
+
+      The manufacturer maintains one-tier-back supplier-lot
+      traceability for all 6 ingredient categories used in this
+      product. Mock-traceback exercise Q4 2025: 96.7 percent of
+      ingredient inputs successfully traced to one-tier-back lot
+      identifier in under 4 hours. Supplier identities are NOT
+      published in this seal per refusal-rule R5; they are
+      maintained under contract and produced on regulator demand.
+      Traceback-readiness report SHA-256:
+        b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3
+
+REFUSAL RECORD — patterns the kit refused to seal
+
+The kit does NOT seal the following types of facts, even if requested
+by the manufacturer, a customer QA team, a third-party certifier, or
+a co-equal authority:
+
+  R1. ANY PII OF WORKERS, SUPERVISORS, OR INSPECTORS
+
+      No fact may include personal names, employee ID numbers, badge
+      numbers, social security numbers, home addresses, personal
+      phone numbers, or any other identifier of individual food-
+      production workers, supervisors, QA staff, or visiting
+      inspectors. Worker safety against retaliation and harassment
+      is the load-bearing constraint here; food-safety attestation
+      can be done at role-level without naming individuals.
+
+  R2. PRECISE FACILITY LOCATION
+
+      The facility region (state / multi-state region) is published
+      in FACT 02. The precise street address, GPS coordinates, or
+      any identifier of granularity sufficient to physically
+      identify the specific plant on a map is NOT published. The
+      regulatory establishment number, when published, is the
+      regulator&#x27;s handle for the facility; physical-security
+      considerations and worker safety against targeted attacks
+      argue against publishing a public address on Bitcoin.
+
+  R3. INDIVIDUAL PRODUCTION-SHIFT PERSONNEL
+
+      Shift schedules, individual worker rotations, line operator
+      personal IDs — none of these appear in this seal. Pattern-of-
+      life of individual workers must not be derivable from the
+      public attestation.
+
+  R4. SUPPLIER IDENTITIES THAT COMPROMISE CONTRACTS
+
+      Supplier identities, supplier facility locations, supplier
+      lot codes (except in the FACT 06 case where a contamination
+      traceback REQUIRES naming a supplier&#x27;s contaminated lot for
+      public health) are NOT published. Many supply contracts
+      contain confidentiality provisions; the seal does not breach
+      those by default. Where a public-health emergency requires
+      naming a supplier&#x27;s contaminated lot, that disclosure is
+      handled through the regulator&#x27;s recall channels and is
+      additionally sealed in a NEW MYRIAM publication, not by
+      retroactive amendment to this one.
+
+  R5. CUSTOMER LISTS AND DISTRIBUTION DESTINATIONS BEYOND HIGH-LEVEL
+
+      The high-level regional summary in FACT 05 is published; the
+      specific customer list (which retailers, which distribution
+      centers, which foodservice accounts) is NOT. Customer
+      identity is contractually confidential and competitively
+      sensitive; the regulator obtains the customer list through
+      established recall-coordination channels.
+
+  R6. SAFETY CLAIMS OR LEGAL CONCLUSIONS
+
+      The kit will not seal a fact body that claims the product is
+      &quot;safe,&quot; that it is &quot;GRAS for this use&quot; (GRAS is an FDA
+      determination), that it meets &quot;all applicable food safety
+      standards&quot; (this is a legal conclusion), or any other safety
+      or legal conclusion. Safety claims are downstream of the
+      facts the seal anchors; the kit anchors the testing record
+      and the release decision, NOT a safety conclusion.
+
+  R7. WORKER-COMPLAINT OR WHISTLEBLOWER PATTERNS
+
+      The kit refuses to publish any pattern that could re-identify
+      a worker who has filed an OSHA, USDA, or company-internal
+      complaint about food-safety or workplace-safety practices.
+      Such complainants are protected under FSMA Section 402
+      (whistleblower protection) and parallel statutes; the seal
+      must not become a re-identification vector. Whistleblower
+      attestations have their own kit
+      (examples/whistleblower-manifest in this same repository) with
+      its own refusal-rule set tuned for that use case.
+
+  R8. SEALING BY ANYONE OTHER THAN THE RELEASING MANUFACTURER&#x27;S
+      AUTHORIZED PRINCIPAL
+
+      A third-party certifier, customer QA team, or independent
+      auditor may use the same kit to seal THEIR own independent
+      verification or audit findings; but they may not seal the
+      ORIGINAL release decision under the manufacturer&#x27;s name. The
+      principal in FACT 08 is the only valid signer for that.
+
+If during release any request matching R1-R8 was made and refused,
+that refusal would be documented as a sealed fact:
+  &quot;Refusal #N: party X requested sealing of [pattern]; the kit
+  refused per refusal-rule R[m].&quot;
+
+  Refusals this release: NONE. (FICTIONAL)
+
+This fact asserts only the companion-disclosure status and any
+refusal record at the moment of release. It does not assert that the
+refusal-rule list is exhaustive of all PII or sensitive-disclosure
+patterns, that all companion disclosures have been identified by the
+manufacturer (selective omission of a disclosure category not yet
+contemplated is exactly the failure mode this fact is designed to
+make detectable over time), or that the disclosures listed are
+themselves non-contestable.</div>
+<div class="hash">SHA-256: 5e47bf50bbdccfeac8b09705ecfae5a48c323a6c8b110705dcc8513d6f239adc  &middot; <a href="facts/07_companion_disclosures.txt">07_companion_disclosures.txt</a></div>
+
+<div class="fact">FACT 08 — SIGNING PRINCIPAL (FICTIONAL)
+
+  Manufacturer:                 Fictional Foods Manufacturing, Inc.
+                                (FICTIONAL)
+  Manufacturer identifier:      FICT-FFRM-99999 (FICTIONAL — a real
+                                attestation would carry the FDA Food
+                                Facility Registration ID or USDA FSIS
+                                Establishment Number; for non-US
+                                jurisdictions, the equivalent
+                                competent-authority approval number)
+  Statutory basis for           US Food Safety Modernization Act of
+    food-safety operation:      2011 (FSMA), USDA FSIS regulations
+                                under the Federal Meat Inspection Act,
+                                and Codex Alimentarius / HACCP
+                                principles (FICTIONAL invocation)
+  Release timestamp:            2026-05-12 (FICTIONAL — release date
+                                per FACT 05)
+  Date sealed:                  2026-05-12 (BEFORE first truck
+                                departure 2026-05-13)
+
+PRIMARY SIGNATORY
+
+  Role:                         QA Director (one role-level
+                                individual; personal name in the
+                                separately-held role-to-individual
+                                binding hashed in FACT 07; rationale
+                                for role-level-not-person-level
+                                publication below)
+  Acting in capacity of:        Manufacturer&#x27;s quality-assurance
+                                authority empowered under the
+                                manufacturer&#x27;s food-safety plan
+                                (Preventive Controls / HACCP) to
+                                authorize release of finished product
+                                after review of all release-testing
+                                results and CCP records
+  Cryptographic key:            (a real attestation would attach the
+                                role&#x27;s PGP public-key fingerprint, or
+                                a company-issued X.509 certificate
+                                for that role, here; omitted in this
+                                example because no real person or
+                                role-key exists)
+
+CO-SIGNATORY (counter-sign for the manufacturer)
+
+  Role:                         Plant Manager (one role-level
+                                individual; personal name in
+                                separately-held binding)
+  Acting in capacity of:        Operational manager counter-signing
+                                that the production run met the
+                                facility&#x27;s established SOPs and that
+                                no operational deviations exist
+                                outside what is recorded in FACT 04 +
+                                FACT 07
+
+WHY THE PRINCIPAL IS ROLE-LEVEL, NOT PERSON-LEVEL
+
+In real-world food-safety practice, the binding between a release
+decision and the individual signing it is established through:
+
+  - the company&#x27;s contemporaneous QA records, retained per FSMA /
+    FSIS recordkeeping requirements (at least 2 years for human
+    food, 3 years for non-shelf-stable RTE under FSMA),
+  - the company&#x27;s HR records of role assignment (who held the
+    QA Director role on 2026-05-12),
+  - and the individual&#x27;s testimony or affidavit in any subsequent
+    regulatory or litigation proceeding.
+
+A public Bitcoin-anchored seal is not the appropriate venue to bind
+a worker&#x27;s personal identity to a food-safety decision. That binding
+belongs in the company&#x27;s controlled records, where access is governed
+by employment privacy law, by FSMA Section 402 whistleblower
+protections, and by general worker-safety considerations against
+harassment. The role-level public seal plus the separately-held
+role-to-individual binding (hashed in FACT 07) is the kit&#x27;s default;
+companies in jurisdictions where public personal-naming is required
+(e.g. some EU member-state competent authorities require a named
+&quot;qualified person&quot; on the public label) can amend their fork to
+include the personal name, but the default refusal favors worker
+safety. See refusal-rule R1 in FACT 07 and in the README.
+
+In a real attestation, the signing principal section should include:
+
+  - The manufacturer&#x27;s legal name and regulatory establishment ID.
+  - The role and counter-sign role for each signatory.
+  - A cryptographic key (PGP, X.509, role-issued) so that future
+    statements claimed to be from the signing principal can be
+    cryptographically verified against this seal.
+  - The release and sealing timestamps.
+  - A canonical contact channel for regulator coordination and
+    recall response.
+
+The signing principal section SHOULD NOT include:
+
+  - Personal names, contact information, or home addresses of QA
+    staff, plant managers, line workers, or visiting inspectors.
+  - Identifying information about workers&#x27; family members or
+    employment history.
+  - Precise facility coordinates beyond region.
+  - Supplier identities (per refusal-rule R4) or customer
+    identities (per refusal-rule R5).
+  - Trade secrets about the manufacturing process beyond what FSMA
+    or FSIS specifically require in the public-record portion of
+    the food-safety plan.
+
+This fact asserts only the signing principal identification fields
+for the fictional lot release as declared. It does not assert any of
+those fields about any real manufacturer, any real worker, or any
+real food product.</div>
+<div class="hash">SHA-256: e9c2eb9717b3d2dba4181eda6ba3070fbaff5ae5f11ce8562c9cd12d1f5317d7  &middot; <a href="facts/08_signing_principal.txt">08_signing_principal.txt</a></div>
 
 <h2>Cryptographic Seal</h2>
 
-<p><strong>Merkle root</strong> (Bitcoin-style, over the facts above):</p>
-<div class="root">{{MERKLE_ROOT}}</div>
+<p><strong>Merkle root</strong> (Bitcoin-style, over the 8 facts above):</p>
+<div class="root">48c3afa7f9437ea380ddab53d425c2c051a4d6de42d3d88de64235cae64ed313</div>
 
-<p><strong>Seal time:</strong> {{SEAL_TIME}}</p>
+<p><strong>Seal time:</strong> 2026-05-21T22:48:02Z</p>
 
 <p><strong>Bitcoin commitment:</strong> OpenTimestamps receipt at
 <a href="merkle_root.txt.ots">merkle_root.txt.ots</a>, with pending
-attestations against two independent calendar operators.</p>
+attestations against two independent calendar operators
+(alice.btc.calendar.opentimestamps.org and
+finney.calendar.eternitywall.com). After ~few hours, run
+<code>ots upgrade merkle_root.txt.ots</code> to convert each pending
+attestation into a full Bitcoin block reference.</p>
 
-<p><strong>IPFS CID</strong> (content-addressed mirror): <code>{{IPFS_CID}}</code><br>
-Reachable via any IPFS gateway, e.g.:
-<a href="https://{{IPFS_CID}}.ipfs.dweb.link/">{{IPFS_CID}}.ipfs.dweb.link</a></p>
+<p><strong>IPFS CID</strong> (content-addressed mirror): see
+<code>build/site_cid.txt</code> in the published bundle, or recompute
+locally with <code>ipfs add -r --cid-version=1 -Q site/</code>.</p>
 
-<p><strong>Signing principal:</strong> {{SIGNING_PRINCIPAL}}</p>
+<p><strong>Signing principal:</strong> Fictional Foods Manufacturing,
+Inc. (FICTIONAL); primary signatory role: QA Director; counter-sign
+role: Plant Manager. Personal names are sealed separately under
+refusal-rule R1; see FACT 07 and FACT 08.</p>
 
 <h2>How to Verify</h2>
 
 <ol>
-  <li>Download all {{N}} fact files from <code>facts/</code>.</li>
+  <li>Download all 8 fact files from <code>facts/</code>.</li>
   <li>Recompute each file's SHA-256 and confirm it matches the per-fact hash shown above.</li>
-  <li>Compute the Merkle root (algorithm in
-      <a href="https://github.com/.../myriam-kit/blob/main/docs/SPEC.md#3-merkle-root">SPEC §3</a>),
+  <li>Compute the Merkle root (Bitcoin-style pair-hash with duplicate-last-on-odd),
       or run <a href="build/verify.py">verify.py</a>.</li>
   <li>Verify the OpenTimestamps receipt against Bitcoin:
       <code>ots verify merkle_root.txt.ots</code> (with both
       <code>merkle_root.txt</code> and <code>merkle_root.txt.ots</code>
       present in the same directory).</li>
   <li>Independent IPFS check:
-      <code>ipfs add -r --cid-version=1 -Q site-dir/</code>
-      and confirm the resulting CID matches <code>{{IPFS_CID}}</code>.</li>
+      <code>ipfs add -r --cid-version=1 -Q site/</code> and confirm
+      the resulting CID matches the published CID.</li>
 </ol>
 
 <h2>What this protocol promises (and doesn't)</h2>
 
-<p>The protocol delivers <strong>detectability of tampering</strong>, not
-impossibility of tampering. It delivers <strong>content-addressed
-mirroring</strong> at the IPFS layer, but not guaranteed long-term
-pinning durability without additional pin redundancy. It does <em>not</em>
-assert that any sealed fact is true; it asserts only that the fact was
-published in its current bytewise form at the sealed time.</p>
+<p>The protocol delivers <strong>detectability of tampering</strong>
+with the release record, not <strong>prevention of contamination</strong>.
+It delivers <strong>content-addressed mirroring</strong> at the IPFS
+layer, but not guaranteed long-term pinning durability without
+additional pin redundancy. It does <em>not</em> assert that any
+sealed fact is true; it asserts only that the fact was published in
+its current bytewise form at the sealed time.</p>
 
-<p>See the project's
-<a href="https://github.com/.../myriam-kit/blob/main/docs/THREAT_MODEL.md">threat model</a>
-for the full list of what the protocol does and does not defend against.</p>
+<p>Specifically and critically:</p>
+<ul>
+  <li>The seal does NOT prevent contamination.</li>
+  <li>The seal does NOT guarantee all units in a passing lot are safe (microbial contamination is heterogeneous; sampling has bounded detection probability).</li>
+  <li>The seal does NOT detect contemporaneous fraud at the lab or QA-decision layer.</li>
+  <li>The seal does NOT replace FSMA / FSIS / EU competent-authority records.</li>
+  <li>The seal does NOT make a population-specific safety claim (immunocompromised, pregnant, infant, elderly consumers face documented elevated risk from Listeria / Salmonella even at sub-detection-limit concentrations).</li>
+</ul>
+
+<p>See the kit's <a href="https://github.com/.../myriam-kit/blob/main/examples/food-safety-attestation/README.md">README.md</a>
+for the full constraint-first failure-mode list and the refusal-rule
+set (R1-R8) the kit enforces. The opening sections of the README are
+the load-bearing parts of the kit.</p>
 
 <footer>
-{{PUBLICATION_TITLE}} &middot; MYRIAM-kit &middot; sealed {{SEAL_TIME}}<br>
-Signed by {{SIGNING_PRINCIPAL}}.
+Food Safety Attestation example &middot; MYRIAM-kit &middot; sealed 2026-05-21T22:48:02Z<br>
+Signed by Fictional Foods Manufacturing, Inc. (FICTIONAL) &middot; QA Director (role-level).
 </footer>
 
 </body>

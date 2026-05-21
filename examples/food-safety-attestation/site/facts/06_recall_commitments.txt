@@ -1,0 +1,106 @@
+FACT 06 — RECALL AND POST-MARKET SURVEILLANCE COMMITMENTS (FICTIONAL)
+
+In the spirit of the MYRIAM protocol's "minimize preventable deaths
+over time" objective function, and as the food-safety analog of
+pharmacovigilance, the fictional manufacturer commits at the moment
+of release to the following. These commitments are NOT a substitute
+for the statutory recall obligations under FSMA, FSIS recall policy,
+EU Regulation (EC) 178/2002 Article 19, or any other applicable
+regime — they are an ADDITIVE, publicly comparable layer that makes
+selective compliance detectable.
+
+  1. ILLNESS-SIGNAL TRANSPARENCY
+
+     Any complaint of foodborne illness causally associated by the
+     manufacturer's preliminary investigation with lot
+     FFM-2026-W19-L042 will be reported to FSIS / FDA / state public-
+     health authorities within statutorily required timelines AND an
+     aggregate complaint summary will be published in a NEW sealed
+     MYRIAM publication (referencing this one by Merkle root) at the
+     30-day and 90-day post-release marks IF any signal is detected.
+     If no signal is detected, the 90-day "no-signal" attestation is
+     also sealed and published, so silent suppression of a known
+     signal is detectable.
+
+  2. RECALL EXECUTION
+
+     If a Class I recall trigger is identified for this lot (per FDA
+     21 CFR 7.3(m) or FSIS Directive 8080.1 definition: "reasonable
+     probability that use will cause serious adverse health
+     consequences or death"), the manufacturer commits to:
+       - Notifying the appropriate regulator within 24 hours of
+         internal Class I determination
+       - Initiating recall within 72 hours of regulator concurrence
+       - Publishing the recall scope (which lot codes, distribution
+         destinations, dose / serving ranges) as a NEW sealed
+         MYRIAM publication
+       - Maintaining recall-completeness reporting until at least
+         98 percent of distributed units are accounted for, with
+         monthly sealed updates until completion
+       - For unaccounted units beyond 98 percent: sealed attestation
+         of the unaccounted residual with consumer-facing public
+         notice
+
+     The 72-hour and 98-percent commitments above are tighter than the
+     statutory minimums in some jurisdictions. They are voluntary; the
+     seal commits them publicly. A future failure to meet these self-
+     imposed limits is publicly comparable against this declaration.
+
+  3. SUPPLY-CHAIN CONTAMINATION SCENARIOS
+
+     If contamination is traced upstream to a specific supplier
+     ingredient lot, the manufacturer commits to:
+       - Quarantining all unfilled production using that ingredient lot
+       - Issuing a supplier-traceback advisory through FDA Reportable
+         Food Registry (or successor) within 24 hours of confirmation
+       - Sealing the traceback timeline as a NEW MYRIAM publication
+         (with supplier identity withheld pending litigation /
+         confidentiality resolution but the contaminated-ingredient
+         lot code published)
+
+  4. NO SILENT RETESTING
+
+     If retesting of any release test in FACT 03 is performed after
+     this release, the retest result will be published as a NEW
+     sealed MYRIAM publication regardless of result. Replacement of
+     a sealed PASS with an unsealed retest result is NOT a legitimate
+     amendment under this commitment.
+
+  5. NO POST-HOC SPECIFICATION CHANGES
+
+     If the release-specification limits in FACT 03 are revised by
+     the manufacturer or regulator after this release (e.g. method
+     replaced, LOD changed, sampling plan updated), the revised
+     limits will be sealed in a NEW publication. The original sealed
+     limits remain the basis on which this lot was released.
+
+  6. AGGREGATE SAFETY-SIGNAL SHARING
+
+     Anonymized aggregate complaint and surveillance data for this
+     product CATEGORY (RTE cooked chicken) will be contributed to
+     industry-wide aggregation programs (IFSAC, CDC FoodNet) per
+     existing protocols. The contribution itself is not sealed here,
+     but acknowledgment that the manufacturer participates in those
+     programs is.
+
+ANALOG TO PHARMACOVIGILANCE
+
+In pharmaceuticals, post-market surveillance is a regulated discipline
+(VAERS, EudraVigilance, ICH E2D). In food, the analog is more
+fragmented: CDC PulseNet for pathogen whole-genome sequencing,
+FoodNet for active surveillance, FSIS and FDA for trace-back, RFR for
+manufacturer self-reporting. The manufacturer's role in this analog
+is contributing reliable lot-level identifiers, prompt internal-
+signal escalation, and recall execution capacity. The commitments
+above are the food-safety equivalent of a manufacturer's
+pharmacovigilance plan at the moment of release.
+
+This fact asserts only the recall and surveillance commitments as
+declared. It does not assert that the commitments will be honored in
+practice, that honoring them is sufficient for any specific safety
+guarantee, or that the manufacturer has the operational capacity to
+execute a Class I recall under all foreseeable distribution scenarios
+(an unlikely but possible failure mode that defense-of-recall-
+capability programs and FSIS / FDA recall exercises are designed to
+detect). The commitments are a forensic anchor. Any future deviation
+becomes publicly comparable against this sealed declaration.

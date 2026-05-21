@@ -1,0 +1,123 @@
+FACT 03 — RELEASE TESTING RESULTS (FICTIONAL)
+
+For lot FFM-2026-W19-L042, the following finished-product release tests
+plus the environmental-monitoring (EMP) summary covering the production
+window were performed by accredited laboratories. Each test result PDF
+is hashed with SHA-256; the raw PDFs are NOT included in this
+publication, only their hashes, so the attestation is durable after
+the underlying PDFs are archived to cold storage.
+
+Notation:
+  m = number of analytical units tested per ICMSF / Codex sampling
+      plan ("n" in classical notation is reserved for the lot here)
+  PASS = within finished-product specification at release
+  ND   = not detected at the method's quantitation limit
+
+MICROBIOLOGICAL TESTS (finished product, n=5 lot-composite plus per-
+sub-lot grabs per ICMSF case-15 two-class plan for L. monocytogenes
+in RTE supporting growth)
+
+  IDX  TEST                            LAB           RESULT     SHA-256 OF FULL REPORT PDF
+  ---  ------------------------------  ------------  ---------  -------------------------------
+   1   Listeria monocytogenes,         Lab Alpha     PASS (ND)  d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9
+       25 g enrichment, m=5
+       (FSIS zero-tolerance method)
+   2   Salmonella spp., 25 g           Lab Alpha     PASS (ND)  f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1
+       enrichment, m=5
+   3   E. coli O157:H7 + non-O157 STEC Lab Alpha     PASS (ND)  b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3
+       Big-Six, 25 g enrichment, m=5
+       (informational for RTE; verifies
+       no cross-contamination from
+       any raw-handling adjacent line)
+   4   Aerobic plate count             Lab Alpha     PASS       d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5
+       (log10 CFU/g, m=5)              (1.7 log10 CFU/g composite mean;
+                                        specification ceiling < 4.0 log10
+                                        CFU/g at release)
+   5   Enterobacteriaceae              Lab Alpha     PASS (ND   f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7
+       (hygiene indicator, m=5)        at 10 CFU/g LOD)
+
+CHEMICAL / RESIDUE TESTS
+
+   6   Nitrite residual (curing        Lab Beta      PASS       a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9
+       agent, ppm finished)            (78 ppm finished;
+                                        specification 40-156 ppm)
+   7   Veterinary drug residue         Lab Beta      PASS (ND   c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1
+       panel (12 antibiotics +         at MRL/2 for all
+       4 hormonal compounds; ND        analytes)
+       all at MRL / 2)
+   8   Heavy metals (Pb, Cd, As, Hg)   Lab Beta      PASS       e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3
+                                                                (all below Codex MLs by >5x)
+
+ALLERGEN VERIFICATION (this product is single-ingredient meat with
+declared salt + spices + sodium nitrite; no Big-9 allergens declared,
+so the test is for ADVENTITIOUS cross-contact from shared lines)
+
+   9   Soy ELISA (cross-contact        Lab Gamma     PASS (ND   a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5
+       indicator for shared            at 2.5 ppm LOD)
+       seasoning line)
+  10   Milk ELISA (cross-contact       Lab Gamma     PASS (ND   c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7
+       indicator)                      at 2.5 ppm LOD)
+
+ENVIRONMENTAL MONITORING SUMMARY (rolling 30-day window covering and
+preceding production of lot FFM-2026-W19-L042; Listeria-control
+verification per FSIS Compliance Guideline)
+
+  11   Listeria spp. (presumptive,     Lab Alpha     PASS       e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9
+       Zone 2-4 surfaces; 240          (3 of 240 Zone 3-4
+       sponge sites in 30 d)           presumptive positives;
+                                        0 of 60 Zone 2 food-contact;
+                                        all confirmed as non-
+                                        monocytogenes Listeria spp.
+                                        with corrective sanitation
+                                        verified — corrective-action
+                                        log SHA-256 in FACT 07)
+  12   Salmonella, environmental       Lab Alpha     PASS (ND)  a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1
+       (drains and floor sinks,
+       60 sites in 30 d)
+
+  Total: 12 release-batch and EMP results; all within finished-product
+  specification at the moment of release.
+
+A regulator, a downstream auditor (FSIS, FDA, customer QA team, third-
+party certifier), or an investigator following a later illness signal
+can request any individual report PDF from the manufacturer or the
+testing laboratory. Re-hashing the received PDF with SHA-256 and
+comparing to the row above verifies the PDF received matches the PDF
+that existed at the moment of release. Any post-release modification
+of any report would produce a different hash than the sealed one.
+
+CRITICAL INTERPRETATION CONSTRAINT
+
+The sample-based PASS results above attest to what the sampled
+analytical units tested ND or within-spec for. Microbial contamination
+in bulk food product is HETEROGENEOUS — Listeria, Salmonella, and
+STEC pathogens occur in low-prevalence localized hotspots, not
+uniformly distributed through a lot. Standard ICMSF sampling plans
+have a documented and bounded probability of detecting contamination
+present at low prevalence; the probability is NOT 1. A lot that
+passes its release sampling can still contain contaminated units that
+were not sampled. The 2008-onward peanut-product Salmonella outbreaks,
+the 2011 European STEC O104:H4 sprouted-seed outbreak, the 2015 ice-
+cream Listeria monocytogenes outbreak, the 2018 leafy-greens
+multistate STEC O157:H7 outbreaks, and the 2008 melamine adulteration
+of infant formula in China each illustrate failure modes the release
+sampling either missed (heterogeneous contamination, novel hazard,
+adulteration not screened for) or could not have detected (deliberate
+fraudulent substitution outside the assay set). The seal anchors
+WHICH samples returned WHICH results at release. It does not
+extrapolate from samples to the safety of every consumer unit in the
+lot. That inference is a separate epistemological step, governed by
+the validated sampling plan, the HACCP hazard analysis, and post-
+release surveillance.
+
+This fact asserts only the release-testing and environmental-
+monitoring manifest above for the fictional lot at the moment of
+release. It does not assert that the tests above are exhaustive of
+all tests required by any specific regulatory regime, that the
+sampling plan's confidence level guarantees absence of pathogens in
+all consumer units, that PASS results entail consumer safety in any
+specific population (including immunocompromised, pregnant, infant,
+or elderly consumers for whom Listeria and Salmonella present
+elevated risk), or that contamination introduced AFTER release (in
+distribution, retail handling, or consumer preparation) is anchored
+by this seal.
