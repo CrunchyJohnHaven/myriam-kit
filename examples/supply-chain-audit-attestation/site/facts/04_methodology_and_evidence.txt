@@ -1,0 +1,136 @@
+FACT 04 — METHODOLOGY AND EVIDENCE MANIFEST (FICTIONAL)
+
+This fact records HOW the audit was conducted and what evidence the
+findings in FACT 03 rest on. Sealing methodology alongside findings
+prevents the "the audit was thorough" defense from being unfalsifiable
+later — the methodology is part of the public record.
+
+ON-SITE TIME ALLOCATION (FICTIONAL)
+
+  Total on-site hours (team aggregate):     76 hours over 4 calendar days
+  Opening meeting (management):              2 hours
+  Document review (HR, payroll, OT, H&S):   18 hours
+  Production-floor walk-through:            14 hours (across all floors
+                                            the auditors were shown)
+  Dormitory inspection:                      4 hours (2 of 3 reported
+                                            dormitories visited; 1
+                                            "unavailable due to repair")
+  Worker interviews:                        22 hours (counts below)
+  Management interviews:                     8 hours
+  Closing meeting:                           2 hours
+  Travel + administrative buffer:            6 hours
+
+WORKER INTERVIEWS (FICTIONAL)
+
+  Total workers interviewed:                42 (of ~1,000 workforce; ~4%)
+  Interview format:
+    - Confidential 1-on-1:                  31 interviews
+    - Small group (3–5 workers):             3 groups (11 workers)
+  Interview language:
+    - Local language via interpreter:       38 interviews
+    - Direct (auditor-fluent language):      4 interviews
+  Interview location:
+    - On-site, audit-team-selected private room:  39
+    - Off-site (cafe near factory, after-shift):   3 (worker-requested)
+  Interpreter:
+    - From independent agency (not supplier): YES
+    - Same interpreter used by supplier for previous audits: NO
+  Workers selected by:
+    - Random sample from full roster:       30 (worker IDs sealed in
+                                            confidential annex only)
+    - Auditor-requested specific shifts/lines: 12
+
+  Stratification:
+    - Female workers interviewed:            27 (~64% — exceeds 51%
+                                            female share in workforce per
+                                            HR records reviewed)
+    - Migrant workers interviewed:            6 (12%; HR records show
+                                            ~10% workforce migrant)
+    - Workers <2 years tenure:               18
+    - Workers >5 years tenure:                9
+
+  KNOWN METHODOLOGY LIMITATIONS DISCLOSED:
+    - All interviewees still actively employed at the supplier; no
+      ex-worker interviews conducted (industry norm; well-documented
+      blind spot — coached or fearful current workers underreport)
+    - No off-site, anonymous worker surveys (e.g. via SMS hotline)
+      conducted; recommended by ILO Better Work but not part of this
+      audit's scope
+    - Interpreters cannot be guaranteed to translate worker statements
+      verbatim; some chilling effect on dissenting disclosures expected
+
+DOCUMENT REVIEW (FICTIONAL)
+
+  Sample of payroll records reviewed:       6 months × 50 workers (300
+                                            payslips)
+    SHA-256 of reviewed-sample manifest:    a1b2c3d4e5f6789abcdef0123456789abcdef0123456789abcdef0123456789ab
+    NOTE: original payslips contain worker
+    names and ID numbers; only manifest of
+    which payslips were reviewed is hashed
+    here, not the payslips themselves.
+
+  Overtime records reviewed:                12 months, all production lines
+    SHA-256 of OT-record summary:           db14e2c98d2fdaf9a6dec2c25fcfa7bd14f0c8b9e7e6e4d3c2b1a09876543210f
+
+  Health & safety records:                  fire-drill logs, accident
+                                            register, MSDS index,
+                                            chemical inventory
+    SHA-256 of H&S document index:          c2b1a09876543210fdb14e2c98d2fdaf9a6dec2c25fcfa7bd14f0c8b9e7e6e4d3
+    H&S logs found incomplete (fire-drill
+    records missing for 14 months — see
+    FACT 03 element 3 finding).
+
+  Grievance log:                            NOT PROVIDED — supplier
+                                            stated "informal handling
+                                            only." Auditors treated
+                                            absence as a MAJOR_NC under
+                                            element 9 (FACT 03).
+
+  Worker contracts (sample):                40 contracts reviewed
+    SHA-256 of contract-sample manifest:    e6f5a4b3c2d1e0f9a8b7c6d5e4f3a2b1c8d7e6f5a4b3c2d1e0f9a8b7c6d5e4f3
+
+  Subcontracting / homework records:        supplier stated "no
+                                            subcontracting." Auditors
+                                            could not verify negatively
+                                            (impossibility — see
+                                            CRITICAL HONESTY below).
+
+SITE-VISIT ARTIFACTS (FICTIONAL)
+
+  Photographs taken on-site:                117 photos (workers' faces
+                                            blurred; identifying marks
+                                            removed before report)
+    SHA-256 of photo-manifest index:        f3a2b1c8d7e6f5a4b3c2d1e0f9a8b7c6d5e4f3a2b1c8d7e6f5a4b3c2d1e0f9a8
+
+  Building safety certificate of occupancy: ON FILE; copy reviewed
+    SHA-256:                                4a3b2c1d0e9f8a7b6c5d4e3f2a1b0c9d8e7f6a5b4c3d2e1f0a9b8c7d6e5f4a3b
+
+  Fire-safety inspection record (most recent): supplier produced cert
+    dated 2025-11-04 (FICTIONAL)
+    SHA-256:                                2c1d0e9f8a7b6c5d4e3f2a1b0c9d8e7f6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d
+
+  Local labor-bureau inspection records:    NOT PROVIDED — auditors
+                                            requested; supplier stated
+                                            "no recent inspections."
+
+CRITICAL HONESTY ON METHODOLOGY:
+
+  - The audit could not rule out hidden subcontracting, off-the-books
+    workers, or production diverted to non-audited facilities during
+    the audit window. These are well-documented industry-wide blind
+    spots, not specific to this audit body.
+  - The audit could not rule out worker coaching: 14 days advance
+    notice provides time for management to script responses, remove
+    underage workers, hide non-compliant equipment, and clean
+    dormitories.
+  - The 4% interview-sample fraction is at the upper end of industry
+    norms but does NOT constitute statistical representativeness for
+    rare-event findings (e.g. severe abuse of a small number of
+    workers may be wholly missed).
+
+This fact asserts only the methodology and evidence inventory as
+recorded for the fictional audit. It does not assert that the
+methodology is adequate to detect the abuses the standard is meant to
+prevent, that the interview sample is representative of the workforce,
+or that the absence of an audit finding entails the absence of the
+underlying violation.

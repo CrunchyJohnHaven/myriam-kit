@@ -1,0 +1,82 @@
+FACT 04 — MEASUREMENT METHODOLOGY AND INSTRUMENTATION (FICTIONAL)
+
+This fact records the measurement chain that produced the inputs to
+FACT 03. Sealing the instrument inventory and calibration state at
+attestation moment prevents post-hoc claims that "we used a different
+sensor" or "the calibration was always valid."
+
+REMOTE-SENSING DATA SOURCES
+
+  Primary: Sentinel-2 L2A (ESA Copernicus)
+    Tiles covering project area: T18LXX, T18LYY, T18LZZ (FICTIONAL)
+    Acquisition window:          2018-01-01 through 2025-12-31
+    Total scenes processed:      318 (after cloud-cover filter ≤ 20%)
+    Cloud-masking algorithm:     Fmask v4.6 (citation hash:
+      5c4821d81b2aa72015f6f85235317c7092ab509e164cbdb3933f54769444bfd3)
+
+  Secondary: Landsat-8/9 Collection-2 Level-2 (USGS)
+    Used for inter-sensor cross-validation
+    Total scenes processed:      94 (annual aggregate, 2018–2025)
+
+  Tertiary: PlanetScope (Planet Labs commercial)
+    Used for sub-monthly disturbance detection
+    Tiles processed:             1,247 daily 3m mosaics over project area
+
+GROUND-TRUTH PLOT NETWORK
+
+  Number of permanent inventory plots:    78
+  Plot design:                            0.1-hectare circular,
+                                          IPCC AFOLU compliant
+  Last full re-measurement:               2024-Q3 (15 months prior to
+                                          attestation)
+  Plot-level DBH/height instrument:       Haglof DP II caliper +
+                                          Vertex IV hypsometer
+  Instrument calibration check date:      2024-08-15 (FICTIONAL)
+  Calibration log SHA-256:                ac67969651fbafe91c1e54fc16c92277879c3900da799f658e5c5bdd9a6e1db3
+  Sub-sample replicated by independent
+    field team for inter-observer error:  10% of plots, RMSE in agreement
+                                          ±4.2% biomass-equivalent
+
+DEFORESTATION DETECTION MODEL
+
+  Algorithm:              Random forest classifier (scikit-learn 1.5.2)
+  Training labels:        7,432 visually interpreted polygons,
+                          reference-region 2015–2024
+  Model artifact SHA-256: bcc0dd54e33e6fd1a0a5f05a97f1e452c37148c267872451f29c98102324593b
+  Reported accuracy:      Overall accuracy 91.3%, producer accuracy
+                          for "deforestation" class 87.2% (kappa 0.81)
+  Independent validation
+    set hash:             ee62d0d20f3a36ed1c6989e4b1cd5e1bbaccab2c7cf9b80eafefce0f9b1c1b8e
+
+CARBON-DENSITY MODEL
+
+  Allometric equation:    Chave et al. 2014 pan-tropical, moist forest
+                          stratum
+  Wood density source:    GlobalWoodDensityDatabase v1, species-weighted
+                          mean for project area: 0.61 g/cm³
+  Belowground biomass
+    factor:               Mokany et al. 2006 root-to-shoot ratio (0.24)
+  Soil organic carbon
+    pool:                 Not included (per methodology FCS-METH-REDD-001
+                          v3.2 §6.2, soil-C excluded for this category)
+  Dead wood and litter
+    pools:                Included; methodology default coefficients
+                          (no project-specific measurement)
+
+CODE PROVENANCE
+
+  Quantification pipeline repository SHA-256 (full source tarball):
+    db14e2c98d2fdaf9a6dec2c25fcfa7bd14f0c8b9e7e6e4d3c2b1a09876543210f
+  Repository public location:  Fictional GitHub URL (FICTIONAL)
+  Pipeline commit hash:        7a8b9c0d1e2f3a4b5c6d7e8f90a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b
+  Reproducibility status:      Containerized (Docker image hash above);
+                               full re-run from raw Sentinel-2 takes
+                               ~14 wall-hours on standard hardware
+
+This fact asserts only the measurement methodology and instrumentation
+chain as documented at the moment of attestation. It does not assert
+that the remote-sensing classifier correctly identifies deforestation
+in all cases, that the allometric equations apply to this specific
+forest, that the ground-truth plots are representative of the full
+project area, or that the carbon-density model captures all relevant
+biological complexity.

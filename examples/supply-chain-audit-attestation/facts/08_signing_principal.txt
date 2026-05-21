@@ -1,0 +1,69 @@
+FACT 08 — SIGNING PRINCIPAL (FICTIONAL)
+
+  Audit body:               Fictional Compliance Auditors Ltd. (FICTIONAL)
+  Audit body accreditation: SAAS-FICT-9999 (FICTIONAL)
+  Audit report:             Audit ID FCA-2026-1184 v1.0 (FICTIONAL)
+  Audit subject:            Supplier FACA-2026-1184 (FICTIONAL)
+  Date sealed:              2026-04-22 (audit report sign-off)
+  Sign-off vote:             Lead-auditor sign-off with audit-team
+                            concurrence (audit-team aggregate; no
+                            dissents per FACT 07 C5)
+
+PRIMARY SIGNATORY
+
+  Fictional Lead Auditor
+  Title:                    Lead Auditor (SA8000), staff of audit body
+  Acting capacity:          Professional auditor under audit body's
+                            accreditation; not personal capacity
+  Cryptographic key:        (a real attestation would include a PGP
+                            public-key fingerprint here so future
+                            statements claimed to come from the lead
+                            auditor — escalation notices, amendments,
+                            withdrawals — can be cryptographically
+                            verified; omitted because no real person
+                            exists)
+
+CO-SIGNATORIES
+
+  Auditor 2 (audit-team member)
+  Auditor 3 (audit-team member, trainee under lead supervision)
+  Audit body authorizing officer (typically a technical manager;
+    in a real attestation, the manager who countersigns the
+    sign-off would be named, with their own key fingerprint)
+
+In a real attestation, the signing-principal section should include:
+
+  - The lead auditor's legal name and accreditation ID (where
+    required by jurisdiction or by the accrediting body)
+  - The audit body's accreditation reference and the certification
+    standard under which the audit was conducted
+  - A PGP public-key fingerprint OR equivalent cryptographic key
+    binding (so future amendments, suspensions, withdrawals, or
+    escalations can be cryptographically tied to the same
+    principal)
+  - A canonical contact channel for regulators, workers, brands,
+    and journalists seeking to verify or challenge the audit
+
+The signing-principal section SHOULD NOT include:
+
+  - Personal phone numbers or home addresses of auditors
+  - Family or dependent information about auditors (auditors at
+    facilities where worker organizing is hostile may face personal
+    retaliation; locating information increases that risk)
+  - Trade secrets of the audit body's methodology beyond what is
+    disclosed in FACT 04
+  - Identifying information about individual workers, informants,
+    or whistleblower sources (per FACT 07 R1, R2)
+
+If a co-signatory is unwilling to be named on the public seal, the
+seal can still be valid with the lead auditor's signature; the kit
+refuses to compel naming of unwilling team members. (The lead-auditor
+sign-off is the load-bearing professional act; the kit's threat model
+treats it as analogous to a regulatory inspector signing an
+inspection report.)
+
+This fact asserts only the signing-principal identification fields for
+the fictional audit sign-off as declared. It does not assert any of
+those fields about any real audit body, audit team, or supplier; nor
+does it assert that the signing principal acted free of structural
+pressure described in FACT 06 and FACT 07.

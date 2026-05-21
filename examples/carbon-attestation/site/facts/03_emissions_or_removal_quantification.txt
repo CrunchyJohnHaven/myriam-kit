@@ -1,0 +1,72 @@
+FACT 03 — EMISSIONS OR REMOVAL QUANTIFICATION (FICTIONAL)
+
+The Fictional Forest Conservation NGO (FACT 02) and Fictional Verifier
+Ltd. (FACT 05) jointly attest the following quantitative result for the
+2025 vintage, computed under methodology FCS-METH-REDD-001 v3.2
+(methodology hash in FACT 02):
+
+GROSS PROJECT-SCENARIO EMISSIONS / REMOVALS
+
+  Avoided emissions (tCO2e):                            127,432
+  Removals (sequestration, tCO2e):                        4,108
+                                                       ---------
+  Subtotal — gross claim:                               131,540
+
+LESS: DEDUCTIONS APPLIED PER METHODOLOGY
+
+  Baseline scenario emissions (counterfactual):         -94,217
+    (10-year reference-region deforestation rate
+     model output; baseline hash sealed below)
+  Leakage deduction (activity-shifting, 10% per spec):  -13,154
+  Buffer pool contribution (non-permanence reserve,
+    20% per VCS AFOLU Buffer Tool v4):                  -23,460
+  Uncertainty deduction (90% CI lower-bound adj.):       -5,432
+                                                       ---------
+  Net creditable claim (tCO2e):                         -4,723
+
+Note: in this fictional example the deductions exceed the gross claim,
+producing a NEGATIVE net creditable result. This is intentional. Real
+projects DO sometimes produce negative net results after deductions —
+and real registries DO sometimes issue credits anyway. The kit seals
+whatever the project actually attests, including unflattering numbers.
+
+A real project with a NET POSITIVE result would proceed to FACT 06
+issuance; this example halts there as a refusal-mode demonstration
+(see FACT 07 R-list).
+
+CALCULATION INPUTS (HASHES)
+
+  Baseline scenario model output (canonical CSV):
+    SHA-256:        cbb671235d5bb13d9f81a91a8661fa648e59e84f6ba0fb126356993066f065a0
+    Source:         FCS-approved reference-region deforestation model
+                    output run for project area, 2015–2024 calibration
+
+  Project-area activity data (remote-sensing time series):
+    SHA-256:        89a72e41fa212f6520115739df2d79f366e132c4714c0d60ae87540555195893
+    Source:         Sentinel-2 L2A time series, project area,
+                    2018-01-01 through 2025-12-31 (8-year monthly
+                    stack)
+
+  Allometric biomass model + carbon-fraction assumptions:
+    SHA-256:        03c23f853b396b0df96070f20cd904ec27881e3f6390c55aedc9550c8a2d79f2
+    Source:         Methodology-specified allometric equation +
+                    IPCC 2019 Refinement default carbon fractions
+
+  Quantification spreadsheet (canonical XLSX):
+    SHA-256:        0a22e596cc4e1e2992e14f8749de4bce304c1190a820337d17e29fea0e6f4d9d
+    Size:           14.2 MB
+
+This fact is the LOAD-BEARING quantitative content of the seal. Each
+integer above is what the project developer and verifier jointly attest
+at the moment of attestation (FACT 02 + FACT 05 timestamps). Any later
+silent revision to any of these integers would produce a different
+SHA-256 of this fact file, a different Merkle root for this publication,
+and would fail verification against the Bitcoin-committed root.
+
+This fact asserts only the per-vintage emissions / removals
+quantification as computed under the cited methodology at the moment
+of attestation. It does not assert that the methodology correctly
+models the underlying climate phenomenon, that the baseline counter-
+factual is realistic, that the buffer-pool reserve is sufficient to
+cover real non-permanence risk, or that any tonne represents a real
+climate benefit.

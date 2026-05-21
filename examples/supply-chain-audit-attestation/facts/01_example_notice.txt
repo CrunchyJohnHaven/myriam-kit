@@ -1,0 +1,33 @@
+FACT 01 — EXAMPLE NOTICE
+
+This publication is an EXAMPLE demonstration of how a third-party social /
+labor / environmental auditor, an in-house supplier-compliance team, or an
+NGO running a supply-chain investigation can use myriam-kit to seal an
+audit-report attestation at the moment of sign-off. The supplier identifier,
+audit body, auditor names, scope, findings, dates, and all numerical and
+qualitative parameters are FICTIONAL.
+
+The purpose: show the SHAPE of a real supply-chain audit-report seal. A
+real attestation would replace each fact body with the actual elements of
+the actual audit.
+
+This kit is intended to compose with — not replace — existing supply-chain
+audit infrastructure (SA8000, RBA VAP, amfori BSCI, SMETA, FSC chain-of-
+custody, ISO 26000 guidance, B Corp impact assessment, Fair Labor
+Association, Higg Index). The MYRIAM seal provides Bitcoin-anchored
+tamper-evidence on top of whatever certification regime the auditor
+already operates under.
+
+CRITICAL HONESTY: the seal anchors the audit report as the auditor issued
+it. The seal does NOT and CANNOT verify that the audit findings are
+correct. Supply-chain audits have a documented history of being captured
+by industry, of missing severe abuses immediately before they surface as
+public disasters (e.g. Rana Plaza was audited months before collapse),
+and of relying on announced visits and translator-mediated interviews
+that can be coached. Sealing a captured audit creates a permanent
+public record of the captured audit. That is its honesty, not its
+defense.
+
+This fact asserts only that the publication is an example, not a real
+audit report. No real supplier, factory, worker, auditor, brand, or
+certification body is hereby named or attested.

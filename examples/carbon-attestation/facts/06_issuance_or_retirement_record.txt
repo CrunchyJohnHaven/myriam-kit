@@ -1,0 +1,87 @@
+FACT 06 — ISSUANCE OR RETIREMENT RECORD (FICTIONAL)
+
+This fact records the credit-lifecycle state on the registry of record
+(FACT 02) at the moment of attestation. The kit DOES NOT issue or
+retire credits — only the registry can. The kit anchors the registry
+state so that silent post-attestation changes (re-issuance of cancelled
+credits, double-counting across registries, retirement records
+disappearing) are publicly detectable.
+
+ISSUANCE BLOCK FOR THIS VINTAGE
+
+  (NOTE: in the FICTIONAL example in FACT 03, deductions exceeded
+  the gross claim, producing a negative net result. A real project
+  with that outcome would NOT proceed to issuance. The block below
+  is shown for shape-of-the-attestation purposes only and would be
+  empty in this case. A real project with a NET POSITIVE result would
+  populate the block as below.)
+
+  Issuance request submitted:    2026-01-15 (FICTIONAL)
+  Issuance approved:             N/A (would-be 2026-02-10, FICTIONAL)
+  Total credits issued (tCO2e):  0 (would-be 88,693 net of buffer pool
+                                  in the positive-result hypothetical)
+  Serial number range:           N/A (would be e.g.
+                                  FCS-FCS0099-2025-0000000001 through
+                                  FCS-FCS0099-2025-0000088693)
+  Credit vintage:                2025 (FACT 02)
+  Project ID:                    FCS-0099 (FACT 02)
+  Buffer-pool contribution:      N/A (would be 22,173 tCO2e to
+                                  pooled non-permanence reserve)
+
+CROSS-REGISTRY DOUBLE-COUNTING DECLARATION
+
+  Project also listed on other
+    registries?:                 NO (FICTIONAL)
+  Corresponding adjustment
+    under Paris Article 6:       Not applicable to this project type at
+                                  this attestation time (FICTIONAL — for
+                                  ITMO-traded units the relevant
+                                  authorization letter hash would be
+                                  sealed here)
+  Host-country letter of
+    authorization:               N/A (FICTIONAL — for projects under
+                                  Article 6.2 / 6.4 the LoA SHA-256
+                                  would be sealed here, and a missing
+                                  LoA would be a refusal-gate trigger
+                                  under R8 in FACT 07)
+
+RETIREMENT RECORDS (where applicable, this attestation cycle)
+
+  Credits retired this cycle:    0 (issuance + retirement are typically
+                                  separate attestations; if a project
+                                  is sealing a retirement event,
+                                  populate this block instead of the
+                                  issuance block)
+
+  For a retirement attestation, this block would record:
+    - Serial range retired
+    - Retirement reason category (compliance / voluntary / cancellation)
+    - Retirement beneficiary (the entity claiming the offset, e.g. an
+      airline, a corporate net-zero claim, a carbon-neutral product)
+    - Retirement timestamp
+    - Whether the retirement is final or whether the credits remain in
+      a "pending" / "claims-period" state that allows reversal
+
+REGISTRY-STATE HASHES
+
+  Registry public ledger snapshot
+    (project page HTML/JSON for this vintage):
+    SHA-256:                     e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a
+    Snapshot timestamp:          2026-01-15T10:30:00Z
+    Snapshot tool:                Standard browser print-to-PDF +
+                                  archive.org capture timestamp
+
+  Registry-issued attestation document (the registry's own PDF
+  recording the issuance decision, if applicable):
+    SHA-256:                     f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b
+    Document type:                Registry issuance certificate
+                                  (or — for retirement attestations —
+                                  registry retirement certificate)
+
+This fact asserts only the credit-lifecycle state as recorded on the
+registry at the moment of attestation. It does not assert that the
+registry's recording is correct, that the credits are not also being
+counted toward some other claim on some other ledger, that the buffer
+pool will compensate for actual future reversals, or that any
+retirement beneficiary's net-zero / carbon-neutral claim is supported
+by the credits they retired.

@@ -1,0 +1,149 @@
+FACT 07 — COMPANION DISCLOSURES AND REFUSAL RECORD (FICTIONAL)
+
+Per the MYRIAM kit's "constraint-first" design principle, this fact
+records what the kit explicitly refused to seal and any companion
+disclosures the acquiring agency is obliged to publish alongside the
+acquisition record so that selective omission is detectable. The
+disclosures here are not optional — leaving any of them blank without
+explicit "none at acquisition time" attestation is itself a public
+red flag.
+
+COMPANION DISCLOSURES (sealed alongside the acquisition record so the
+acquisition cannot be read in isolation)
+
+  C1. PARALLEL INVESTIGATIONS
+      The acquiring agency, at acquisition time, was aware of no
+      parallel investigation by another agency targeting the same
+      premises or devices. (FICTIONAL — if a parallel federal,
+      state, or interagency investigation existed, a real
+      attestation would disclose its existence — though not
+      necessarily its contents — so a defense or appellate review
+      can detect non-coordination problems.)
+
+  C2. PENDING CHALLENGES TO WARRANT OR SCOPE
+      At the moment of acquisition, no motion to quash or suppress
+      had been filed against warrant FICT-SW-2026-0188. (FICTIONAL
+      — a real attestation would record any filed motion's docket
+      number, even pending, so that later litigation cannot claim
+      the agency was unaware of the challenge at acquisition time.)
+
+  C3. SUPPRESSED-EVIDENCE MOTIONS, IF KNOWN
+      No suppressed-evidence ruling against the acquiring agency in
+      any related case in the prior 12 months. (FICTIONAL — a real
+      attestation lists any prior suppression rulings against the
+      same agency in related cases, since those rulings may bear on
+      the same agency's later acquisitions in the same investigation.)
+
+  C4. PRIVILEGED MATERIAL FILTER
+      The acquisition included devices that may contain attorney-
+      client privileged communications, work-product privileged
+      material, clergy-penitent privileged material, or other
+      privileged categories. A taint-team / filter-team protocol
+      is in effect per agency SOP; the protocol is sealed
+      separately and hashed below. (FICTIONAL — a real attestation
+      MUST disclose whether a privilege-filter protocol is in
+      effect, because acquisition of privileged material without
+      filtering raises distinct legal and constitutional issues.)
+      Taint-team protocol SHA-256:
+        a304a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f6071829304a1b2c3d
+
+  C5. PRIOR ACQUISITION ATTEMPTS ON THESE DEVICES
+      No prior attempted acquisitions on the same source devices.
+      (FICTIONAL — if a prior attempt failed, abandoned, or was
+      partial, a real attestation discloses it, because a defense
+      expert may need to evaluate whether prior attempts altered
+      the source.)
+
+  C6. KNOWN BUGS / OPEN ISSUES IN THE TOOLS USED
+      The vendor bug-tracker advisories for FTK Imager v4.7.1 and
+      GrayKey v2.18.3 current as of acquisition date were reviewed;
+      none of the open issues were assessed by the examiner as
+      affecting the integrity of the acquisitions performed.
+      (FICTIONAL — a real attestation includes the URL or hash of
+      the vendor advisory list reviewed.)
+      Reviewed-advisories list SHA-256:
+        b1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f6071829304a1b2c3d4e5f6
+
+REFUSAL RECORD — patterns the kit refused to seal
+
+The kit does NOT seal the following types of facts, even if requested
+by the acquiring agency or a co-equal authority:
+
+  R1. INDIVIDUAL IDENTIFICATION OF SUSPECTS, DEFENDANTS, VICTIMS,
+      WITNESSES, OR THIRD PARTIES
+      No fact published here may name, or include any identifier
+      reducible to, any individual who is a subject of, victim of,
+      or witness to the investigation. The case docket reference in
+      FACT 02 is the appropriate handle for parties with standing
+      to locate the case in court records; this public seal is not
+      a re-identification index.
+
+  R2. PERSONAL NAMES OF FORENSIC EXAMINERS OR OTHER AGENCY STAFF
+      Per FACT 06, roles are published; personal names are sealed
+      separately under agency CMS access. This refusal protects
+      examiner-personal-safety; agencies that find this refusal
+      operationally incompatible should publish role-only at this
+      layer and bind names through normal discovery.
+
+  R3. ANY HASH OR FINGERPRINT OF SUSPECTED CHILD SEXUAL ABUSE
+      MATERIAL, BIOMETRIC TEMPLATE, OR OTHER VULNERABLE-PERSON-
+      RE-IDENTIFYING DATA
+      Even by hash. Even by file-level fingerprint. The reason: an
+      individual file's SHA-256 is a permanent searchable
+      identifier; publishing it on a public ledger can re-victimize
+      subjects via correlation with private databases held by other
+      parties. Image-level (forensic-image-level) hashes are
+      acceptable because the forensic-image binary is not itself a
+      re-victimizing artifact in the same way; file-level hashes of
+      such material are NEVER acceptable in a public seal.
+
+  R4. EXAMINATION FINDINGS, INTERPRETATIONS, OR OPINIONS
+      The kit anchors WHAT BYTES were acquired and WHEN. It does
+      NOT anchor what the examiner concluded the bytes mean. The
+      examiner's report is appropriately sealed and discovered
+      under normal court process; pre-publishing a forensic
+      interpretation as a tamper-evident "fact" gives the
+      interpretation a misleading veneer of cryptographic
+      certainty.
+
+  R5. CLAIMS OF ADMISSIBILITY OR LEGAL CONCLUSION
+      The kit will not seal a fact body that claims the evidence
+      is "admissible," that the warrant was "lawful," that the
+      chain-of-custody was "proper under [statute X]," or any
+      other legal conclusion. Admissibility is a court function;
+      the kit anchors bytes and timestamps only.
+
+  R6. SEALING BY ANYONE OTHER THAN THE ACQUIRING AGENCY'S
+      AUTHORIZED PRINCIPAL
+      A defense expert, court-appointed neutral, or third party
+      may use the same kit to seal THEIR OWN independent
+      verification of the manifest; but they may not seal the
+      ORIGINAL acquisition under the acquiring agency's name. The
+      principal in FACT 08 is the only valid signer for that.
+
+  R7. ROLE-TO-INDIVIDUAL BINDINGS IN THE PUBLIC SEAL
+      As described in FACT 06, the role-to-individual binding is
+      sealed separately and discoverable under court process. The
+      kit refuses to publish that binding here.
+
+  R8. PRE-SEIZURE OR PRE-WARRANT FACT PATTERNS
+      The kit refuses to seal facts about the investigation that
+      pre-date the warrant cited in FACT 02 (informant
+      statements, pre-warrant surveillance, parallel-construction
+      inputs, etc.). The seal is scoped to the acquisition event;
+      pre-acquisition investigative facts have their own
+      evidentiary regime and do not belong on this seal.
+
+If during acquisition any request matching R1-R8 was made and refused,
+that refusal would be documented as a sealed fact:
+  "Refusal #N: party X requested sealing of [pattern]; the kit
+  refused per refusal-rule R[m]."
+
+  Refusals this acquisition: NONE. (FICTIONAL)
+
+This fact asserts only the companion-disclosure status and any
+refusal record at the moment of acquisition. It does not assert that
+the refusal-rule list is exhaustive of all PII or admissibility
+patterns, that all companion disclosures have been identified by the
+acquiring agency, or that the disclosures listed are themselves
+non-contestable.

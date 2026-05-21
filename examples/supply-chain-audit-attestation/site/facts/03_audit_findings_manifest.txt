@@ -1,0 +1,82 @@
+FACT 03 — AUDIT FINDINGS MANIFEST (FICTIONAL)
+
+This fact is the LOAD-BEARING content of the seal. It is the audit body's
+manifest of findings against the audit standard (FACT 02), as those
+findings stood at the moment of report sign-off (FACT 02 audit report date).
+
+Each finding is referenced by category, severity, and the SHA-256 of the
+full finding write-up in the auditor's report. The raw write-ups are NOT
+included in the public publication (worker quotes, room photographs,
+document scans, and translator notes can re-identify individuals); only
+their content hashes are sealed.
+
+FINDINGS BY SA8000 ELEMENT — SUMMARY (FICTIONAL)
+
+  ELEM  CRITERION                       STATUS         SEVERITY   FINDING HASH
+  ----  ------------------------------  -------------  ---------  -------------------------------
+   1    Child labor                     CONFORMANT     —          cbb671235d5bb13d9f81a91a8661fa648e59e84f6ba0fb126356993066f065a0
+   2    Forced or compulsory labor      MINOR_NC       MINOR      89a72e41fa212f6520115739df2d79f366e132c4714c0d60ae87540555195893
+                                        (deposit-of-ID practice at one dorm;
+                                         3 workers affected per interview sample)
+   3    Health and safety               MAJOR_NC       MAJOR      03c23f853b396b0df96070f20cd904ec27881e3f6390c55aedc9550c8a2d79f2
+                                        (emergency-exit blockage on 3rd floor;
+                                         fire-drill records absent for 14 months)
+   4    Freedom of association          MINOR_NC       MINOR      0a22e596cc4e1e2992e14f8749de4bce304c1190a820337d17e29fea0e6f4d9d
+                                        (no documented worker-representative
+                                         election process; informal liaison only)
+   5    Discrimination                  CONFORMANT     —          5c4821d81b2aa72015f6f85235317c7092ab509e164cbdb3933f54769444bfd3
+   6    Disciplinary practices          CONFORMANT     —          ac67969651fbafe91c1e54fc16c92277879c3900da799f658e5c5bdd9a6e1db3
+   7    Working hours                   MAJOR_NC       MAJOR      bcc0dd54e33e6fd1a0a5f05a97f1e452c37148c267872451f29c98102324593b
+                                        (overtime records show 68-hr weeks
+                                         in 3 of last 6 months; standard
+                                         limit 60-hr; voluntary-overtime
+                                         documentation incomplete)
+   8    Remuneration                    MINOR_NC       MINOR      ee62d0d20f3a36ed1c6989e4b1cd5e1bbaccab2c7cf9b80eafefce0f9b1c1b8e
+                                        (wage slips legally compliant;
+                                         living-wage benchmark in region
+                                         per Anker Methodology NOT met)
+   9    Management system               MAJOR_NC       MAJOR      f1e2d3c4b5a69788c4d3e2f1a0b9c8d7e6f5a4b3c2d1e0f9a8b7c6d5e4f3a2b1c
+                                        (no documented internal-audit
+                                         schedule; no grievance log
+                                         maintained; no corrective-
+                                         action tracking)
+
+  Totals: 4 CONFORMANT · 3 MINOR_NC · 4 MAJOR_NC · 0 CRITICAL_NC
+
+DECISION AT SIGN-OFF (FICTIONAL):
+
+  CERTIFICATION RECOMMENDATION:  WITHHOLD pending closure of MAJOR_NCs
+                                 within 90 days; re-audit required.
+  Re-audit window:               2026-07-22 ± 14 days (semi-announced)
+  Certification body decision:   To be issued by Fictional Certification
+                                 Body after corrective-action verification
+                                 (separate body from audit body; FACT 06).
+
+A regulator, brand, NGO, worker representative, court, or downstream
+investigator can request the full finding write-up for any row above.
+Re-hashing the received write-up with SHA-256 and comparing to the row
+above verifies that the document received is the document that existed
+at sign-off. Any post-sign-off softening, deletion, or recategorization
+of any finding produces a different hash and is publicly detectable.
+
+CRITICAL HONESTY ON FINDINGS:
+
+  - This manifest is the audit-as-issued, NOT the audit-as-correct.
+  - Audits at semi-announced facilities have documented blind spots:
+    (a) coached workers, (b) prepared documents, (c) hidden dormitories
+    or production lines, (d) temporary removal of underage workers,
+    (e) hidden subcontracting to non-audited facilities.
+  - The absence of CRITICAL_NC findings does NOT prove absence of
+    critical violations. It proves only that the audit team did not
+    identify any in the time, language, and access conditions described
+    in FACT 04.
+  - The presence of a CONFORMANT row does NOT prove the element is
+    actually being honored — it asserts only that the auditors did
+    not find evidence to the contrary within their methodology.
+
+This fact asserts only the audit findings as recorded by the auditors
+at sign-off for the fictional audit. It does not assert that the
+findings are accurate, exhaustive, or free of capture; it does not
+assert that closing the listed non-conformances entails substantive
+improvement in worker conditions; and it does not assert that the
+absence of a finding is evidence of conformance.

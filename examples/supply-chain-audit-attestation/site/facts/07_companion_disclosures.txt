@@ -1,0 +1,154 @@
+FACT 07 — COMPANION DISCLOSURES AND REFUSAL RECORD (FICTIONAL)
+
+Per the MYRIAM kit's "constraint-first" design principle, this fact
+records what the kit explicitly refused to seal and any companion
+disclosures that the audit body is obliged to publish alongside the
+findings so that selective omission is detectable.
+
+COMPANION DISCLOSURES (sealed alongside the audit so the findings
+cannot be read in isolation)
+
+  C1. CONFLICTS OF INTEREST
+      The audit was commissioned and paid for by Fictional Brand A
+      (FACT 02). The audit body's pipeline of future Brand-A audits
+      is commercially material (~12% of annual revenue, FICTIONAL).
+      This is a structural conflict of interest that no SA8000
+      procedure resolves; the kit seals the disclosure so that any
+      future dispute about whether findings were softened can be
+      considered against a sealed conflict-of-interest declaration.
+
+  C2. PRIOR AUDIT HISTORY OF THIS SUPPLIER
+      To audit body's knowledge:
+        - Supplier was previously audited by 2 other audit bodies
+          (FICTIONAL — names not sealed; could be obtained by
+          regulator or successor auditor)
+        - Most recent prior audit: 2024-10 (FICTIONAL; BSCI audit
+          with "C" rating — improvement needed)
+        - No critical-finding history reported to commissioning
+          brand by prior audit bodies.
+      The audit body did NOT obtain prior reports before this audit
+      (industry-norm gap — auditors typically do not see prior
+      auditors' findings; this is itself a documented system failure).
+
+  C3. WORKER-VOICE CHANNELS DISCLOSED TO WORKERS
+      During interviews, workers were informed:
+        - Worker grievance hotline (factory): EXISTS but no log
+          maintained (FACT 03 element 9)
+        - Worker hotline (commissioning brand Fictional Brand A):
+          number provided to interviewed workers
+        - Independent NGO worker-rights hotline in this region:
+          number provided to interviewed workers
+        - Worker right to contact ILO Better Work program: stated
+      The audit body did NOT verify workers had access to a phone
+      to use any of these channels.
+
+  C4. PARALLEL OR PENDING INVESTIGATIONS
+      To audit body's knowledge at sign-off:
+        - No pending labor-bureau investigation against supplier.
+        - No pending NGO investigation against supplier.
+        - No pending litigation involving worker conditions at
+          this facility.
+        - One non-confirmed prior public allegation (online forum
+          post, 2025-11, anonymous) referenced "excessive overtime"
+          — the working-hours MAJOR_NC in FACT 03 element 7 is
+          consistent with the forum allegation. The auditor noted
+          the allegation but does not confirm it.
+
+  C5. AUDIT-BODY DISSENT WITHIN TEAM
+      The audit-team aggregate decision was: all 3 auditors agreed
+      on the manifest in FACT 03. No dissenting addendum filed.
+      (FICTIONAL. A real attestation MUST publish dissents — if a
+      junior auditor flagged a violation the lead declined to
+      record, that dissent belongs in this record, not in suppression.)
+
+REFUSAL RECORD — patterns the kit refused to seal
+
+The kit does NOT seal the following types of facts, even if requested
+by the audit body or commissioning brand:
+
+  R1. INDIVIDUAL WORKER IDENTIFICATION
+      No fact may name an interviewed worker, link a quote to a
+      worker, or expose any field that could re-identify a person
+      (badge number, line position, dormitory room, shift, family
+      relation, demographic combination that yields N<5 in this
+      facility, etc.). Worker quotes in the auditor's report use
+      randomized worker tokens; the mapping is NOT sealed.
+
+  R2. WHISTLEBLOWER OR INFORMANT SOURCES
+      If any finding rests on disclosure by a specific individual
+      who took risk to disclose, that individual is NEVER named or
+      identified in the sealed publication. The finding may be
+      sealed; the source may not. A separate sealed publication
+      under a different protocol (e.g. an NGO-side report)
+      handles informant attestations under different threat model.
+
+  R3. PRECISE LOCATING INFORMATION
+      No fact may include the supplier's street address, GPS
+      coordinates, satellite image at resolution >1km, photograph
+      that identifies the building externally, or any combination
+      that yields point-source identification. The country and
+      region (FACT 02) is the maximum resolution sealed.
+      RATIONALE: facility identification can lead to retaliation
+      against workers identified as interview participants.
+
+  R4. CLEAN-AUDIT CERTIFICATION CLAIM
+      The kit refuses to seal any framing of the form "this audit
+      proves the supplier is compliant" or "no violations exist."
+      The seal is of the audit-as-issued. Cleanness claims are
+      epistemically unsupported by audit methodology (FACT 04
+      methodology limitations).
+
+  R5. SEAL-AS-CERTIFICATE SUBSTITUTION
+      The kit refuses to seal a publication that omits FACT 04
+      (methodology), FACT 06 (independence), or FACT 07 (this
+      fact, including refusals). Audit findings without
+      methodology + independence + refusals are not a legitimate
+      MYRIAM publication under this kit.
+
+  R6. PRE-SIGN-OFF / DRAFT AUDIT
+      The kit refuses to seal a draft, preliminary, or
+      management-response-pending audit. Sealing happens at
+      sign-off (FACT 02 audit report date), not before.
+
+  R7. POST-HOC FAVORABLE RESEALING
+      If the audit body wishes to soften a finding after sign-off,
+      the kit refuses to "amend" the seal. A revised audit
+      requires a NEW sealed publication referencing this one by
+      Merkle root. The original sealed audit remains permanently
+      visible as the audit-as-issued.
+
+  R8. SEALING BY ANY PARTY OTHER THAN THE AUDIT BODY
+      The kit refuses to allow the commissioning brand, supplier,
+      certification body, or any third party to seal "the audit"
+      in lieu of the audit body. Only the audit body that signed
+      the report may seal it under their principal (FACT 08).
+
+  Refusals this audit: NONE (FICTIONAL — a real attestation lists
+  any refusal explicitly here).
+
+CRITICAL HONESTY ON ADOPTION
+
+  This kit's adoption depends on auditor cooperation. Audit bodies
+  whose findings are routinely softened by commercial pressure have
+  every incentive NOT to seal under a protocol that makes
+  post-sign-off modifications publicly detectable. The kit is most
+  useful to:
+    - Auditors who want a forensic anchor against pressure to
+      revise findings downstream;
+    - NGOs running their own parallel investigations;
+    - Brands that want a verifiable record of audits they
+      commissioned;
+    - Workers, worker-rights organizations, regulators, courts,
+      and journalists who want to anchor a particular audit's
+      contents at sign-off for later forensic comparison.
+  The kit is structurally LESS useful when the dominant pressure is
+  toward audit capture; in that case, the kit's primary function is
+  to make refusal-to-seal a publicly visible decision (i.e.,
+  refusal-to-seal becomes itself a signal).
+
+This fact asserts only the companion-disclosure status and refusal
+record at the moment of audit sign-off. It does not assert that the
+refusal-rule list is exhaustive of all PII or safety patterns, that
+the conflict-of-interest disclosures are exhaustive, or that
+compliance with the kit's refusal rules entails substantive worker
+protection.

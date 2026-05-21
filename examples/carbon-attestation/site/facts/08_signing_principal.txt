@@ -1,0 +1,86 @@
+FACT 08 — SIGNING PRINCIPAL (FICTIONAL)
+
+A carbon attestation requires THREE distinct signing principals (the
+project developer, the third-party verifier, and the registry of
+record) for the seal to carry its full forensic weight. The kit accepts
+fewer signers, but each missing signer is itself a sealed disclosure
+and weakens the attestation's coverage in a known way.
+
+PRIMARY SIGNATORY — PROJECT DEVELOPER
+
+  Organization:           Fictional Forest Conservation NGO (FICTIONAL)
+  Jurisdiction of
+    incorporation:        FICTIONAL_COUNTRY (e.g. registered NGO)
+  Project role:           Developer + monitoring entity
+  Signing officer:        [Fictional Name], Executive Director
+  Cryptographic key:      (a real attestation would include a PGP
+                          public key fingerprint here; omitted in this
+                          example because no real person exists)
+  Attestation timestamp:  2026-01-15T10:30:00Z (FICTIONAL)
+  Signed scope:           This signatory attests to the truth of the
+                          inputs to FACT 03 and the documentation
+                          hashes in FACT 02, FACT 04, and FACT 07
+                          (FPIC and grievance documentation)
+
+CO-SIGNATORY — THIRD-PARTY VERIFIER
+
+  Organization:           Fictional Verifier Ltd. (FICTIONAL)
+  Accreditation:          ISO 14065 / FICT-VVB-2019-007 (FACT 05)
+  Signing officer:        [Fictional Name], Lead Verifier
+  Cryptographic key:      (PGP fingerprint omitted; example only)
+  Signed scope:           This signatory attests that they performed
+                          the verification activities listed in FACT 05,
+                          that the findings + opinion documents named
+                          by hash in FACT 05 are the documents they
+                          produced, and that the quantification in
+                          FACT 03 is reproducible from the inputs in
+                          FACT 03 + methodology in FACT 02 to within
+                          methodology tolerance
+
+CO-SIGNATORY — REGISTRY OF RECORD
+
+  Organization:           Fictional Carbon Standard, Inc. (FICTIONAL)
+  Role:                   Registry of record for project FCS-0099
+  Signing officer:        [Fictional Name], Registry Operations Manager
+  Cryptographic key:      (PGP fingerprint omitted; example only)
+  Signed scope:           This signatory attests that the registry-state
+                          snapshot in FACT 06 corresponds to the
+                          registry's authoritative record as of the
+                          attestation timestamp, and that no parallel
+                          issuance or retirement on this project exists
+                          on this registry's books beyond what FACT 06
+                          discloses
+
+In a real attestation, the signing principals section should include:
+
+  - Each signatory's legal name + role + organization
+  - Each signatory's cryptographic key fingerprint (PGP or similar)
+  - The scope each signatory is willing to attest to (signers should
+    not be presumed to attest to facts outside their epistemic reach;
+    e.g. the verifier does not attest to FPIC obtained by the
+    developer years before the verifier's engagement)
+  - Disclosure of any prior commercial relationship between developer
+    and verifier within a 5-year lookback (also in FACT 07 C7)
+
+The signing principal section SHOULD NOT include:
+
+  - Personal contact information for individual officers
+  - Home addresses or other locating information
+  - Identifying information about complainants or grievance-process
+    participants (those go in FACT 07 only as aggregate hashes)
+  - Identifying information about indigenous community members
+    individually (only the community / authority that gave FPIC, as
+    such authority is empowered to act in public capacity)
+
+If any of the three required signing principals is missing or refuses
+to sign, the kit can still produce a seal — but the seal must
+explicitly note the missing signer as a companion disclosure. A
+"developer-only" seal of issuance, for example, is forensically much
+weaker than a developer + verifier + registry seal, and the kit
+refuses to let that distinction be hidden.
+
+This fact asserts only the signing principal identification fields for
+the fictional attestation as declared. It does not assert any of
+those fields about any real project developer, verifier, registry, or
+officer, nor that the signing principals' attested scope is
+itself sufficient to make the project's carbon claims true.

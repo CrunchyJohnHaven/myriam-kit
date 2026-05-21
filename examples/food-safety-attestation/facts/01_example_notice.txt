@@ -1,0 +1,31 @@
+FACT 01 — EXAMPLE NOTICE
+
+This publication is an EXAMPLE demonstration of how a food manufacturer,
+a food-safety inspector, or a regulatory authority can use myriam-kit
+to seal a food-safety attestation at the moment of batch release or
+at sign-off of an inspection report. The manufacturer name, facility
+identifiers, lot numbers, testing laboratories, methods, numerical
+results, and all personnel are FICTIONAL.
+
+The purpose: show the SHAPE of a real food-safety release seal. A real
+attestation would replace each fact body with the actual batch's
+release-testing records, methodology, and release decision — under the
+constraints documented in the README (PII refusals, supply-chain
+confidentiality boundaries, etc.).
+
+This kit is intended to compose with — not replace — existing food-
+safety regulatory frameworks (FDA FSMA, USDA FSIS, EU Regulation
+(EC) 178/2002 and the Hygiene Package, Codex Alimentarius / HACCP,
+ISO 22000, FSSC 22000, BRCGS, SQF). The MYRIAM seal provides Bitcoin-
+anchored tamper-evidence on top of whatever HACCP plan, inspection
+record, or release decision already exists under that regulatory
+framework.
+
+The seal does NOT certify that the released batch is safe. It commits
+that the testing-and-decision record had THIS exact byte content at
+the moment of release. The distinction is load-bearing and is
+elaborated in the README and in FACT 03's closing disclaimer.
+
+This fact asserts only that the publication is an example, not a real
+batch release. No real batch is hereby released. No real manufacturer,
+facility, laboratory, inspector, or food product is hereby named.

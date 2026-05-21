@@ -1,0 +1,53 @@
+FACT 02 — PROJECT IDENTIFICATION (FICTIONAL)
+
+  Project name:           Fictional Tropical Forest Conservation Project
+                          (FICTIONAL)
+  Project type:           REDD+ avoided deforestation (Category 14:
+                          AFOLU — Agriculture, Forestry, Other Land Use)
+  Registry of record:     Fictional Carbon Standard, Inc. (FICTIONAL —
+                          a real attestation would name e.g. Verra/VCS,
+                          Gold Standard, ACR, CAR, or the Article 6.4
+                          Supervisory Body mechanism)
+  Registry project ID:    FCS-0099 (FICTIONAL — for Verra projects this
+                          would be e.g. VCS-1234)
+  Methodology:            FCS-METH-REDD-001 v3.2 (FICTIONAL — for a real
+                          REDD+ project this would be e.g. VM0007 v1.6
+                          or the most recent applicable VCS methodology)
+  Methodology document SHA-256:
+                          7d3e91b25c8a4d6f0e1b2c3d4e5f60718293a4b5c6d7e8f90123456789abcdef
+                          (canonical PDF of methodology as of attestation
+                          moment; a methodology update post-issuance is
+                          publicly diffable)
+  Geographic boundary:    Fictional administrative region, FICTIONAL_COUNTRY
+                          (latitude/longitude polygon hash sealed in
+                          FACT 04 to avoid PII risk for forest-edge
+                          inhabitants; aggregate hash here:)
+                          a1f4c8e2b9d6357f0c8a4e1b7d3f6c9a2e5b8d1c4f7a0e3b6d9c2f5a8e1d4c7f0
+  Project area:           48,217 hectares (FICTIONAL)
+  Project start date:     2018-01-01 (FICTIONAL — start of crediting period)
+  Crediting period:       2018-01-01 to 2027-12-31 (10 years, FICTIONAL)
+  Vintage covered by this
+    attestation:          Calendar year 2025 (the period for which
+                          credits are being issued, FICTIONAL)
+  Project developer:      Fictional Forest Conservation NGO (FICTIONAL)
+  Co-benefits claim:      SD-VISta v1.0 community + biodiversity benefits
+                          (FICTIONAL — full SD-VISta report hashed in
+                          FACT 04)
+  Indigenous / community
+    free-prior-informed
+    consent (FPIC) status: FPIC documentation hash sealed in FACT 07;
+                          status: obtained, ongoing review (FICTIONAL)
+
+This fact binds the entire sealed publication to a named, traceable
+project on a named registry. Anchoring the project identifier and the
+methodology hash at attestation time prevents post-hoc claims that
+"the methodology was always different" or "the project boundary was
+always different."
+
+This fact asserts only the identity of the project, its registry
+record, methodology citation + hash, geographic scope, vintage, and
+co-benefits claim status at attestation time. It does not assert that
+the project is additional (would not have happened without carbon
+finance), permanent (carbon will remain sequestered over the relevant
+time horizon), free of leakage (emissions are not displaced rather
+than avoided), or that the methodology itself is scientifically valid.

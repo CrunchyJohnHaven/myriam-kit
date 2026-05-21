@@ -1,0 +1,30 @@
+FACT 01 — EXAMPLE NOTICE
+
+This publication is an EXAMPLE demonstration of how a carbon-credit
+project developer, third-party verifier, or registry can use myriam-kit
+to seal a carbon-attestation publication at the moment of issuance,
+removal verification, or emissions certification. The project name,
+registry ID, location, methodology, sensor readings, verifier identity,
+issued serial numbers, and signing principals are ALL FICTIONAL.
+
+The purpose: show the SHAPE of a real carbon attestation seal. A real
+attestation would replace each fact body with the actual elements of
+the actual project and verification cycle.
+
+This kit is intended to compose with — not replace — existing carbon
+infrastructure (Verra/VCS, Gold Standard, Climate Action Reserve,
+American Carbon Registry, Article 6.4 mechanism, CDP, EU ETS MRV
+processes, ISO 14064/14065 verification). The MYRIAM seal provides
+Bitcoin-anchored tamper-evidence on top of whatever registry workflow
+the project already follows.
+
+Carbon credits are politically and scientifically contested. This kit
+makes no claim about whether any sealed credit represents real,
+additional, permanent, or non-leakage-prone climate benefit. The seal
+records what was attested at a moment in time, in the exact byte form
+it was attested. Nothing more.
+
+This fact asserts only that the publication is an example, not a real
+carbon attestation. No real carbon credit is hereby issued, no real
+removal is hereby verified, and no real emissions claim is hereby
+certified.

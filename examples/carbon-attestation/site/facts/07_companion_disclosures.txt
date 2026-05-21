@@ -1,0 +1,119 @@
+FACT 07 — COMPANION DISCLOSURES AND REFUSAL RECORD (FICTIONAL)
+
+Per the MYRIAM kit's "constraint-first" design principle, this fact
+records what the kit explicitly refused to seal and any companion
+disclosures the project developer + verifier are obliged to publish
+along with the quantification so that selective omission is detectable.
+
+COMPANION DISCLOSURES (sealed alongside FACT 03 so the quantification
+cannot be read in isolation)
+
+  C1. PENDING METHODOLOGY DISPUTES
+      Methodology FCS-METH-REDD-001 v3.2 (FACT 02) is subject to
+      ongoing academic critique regarding reference-region selection
+      bias in REDD+ baselines (see e.g. West et al. 2020 Science,
+      Coffield et al. 2022, Guizar-Coutiño et al. 2022). The
+      project's chosen reference-region selection is internally
+      consistent with the methodology but not independently
+      adjudicated. (FICTIONAL framing of a real ongoing debate.)
+
+  C2. NON-PERMANENCE RISK
+      The buffer-pool contribution (FACT 03, 20% per VCS AFOLU
+      Buffer Tool) is the methodology's defense against reversal.
+      Recent literature (Badgley et al. 2022 GCB on California
+      forest offsets; Patterson et al. 2022 PNAS) shows that buffer
+      pools have been substantively depleted by real reversal events,
+      including wildfires. The 20% buffer reserved here may be
+      insufficient against future climate-driven reversal risk in
+      this project area. The project SHOULD NOT be cited as
+      "permanent" without an additional century-scale reversal
+      mechanism.
+
+  C3. LEAKAGE
+      The 10% leakage deduction (FACT 03) is methodology-default and
+      does not reflect activity-specific leakage measurement. Real
+      project-specific leakage to neighboring forest areas is not
+      directly measured for this project type. The deduction is a
+      regulatory placeholder, not a measurement.
+
+  C4. ADDITIONALITY
+      The project's additionality argument (the claim that avoided
+      emissions would not have occurred without carbon finance) is
+      methodology-compliant but rests on counterfactual modeling
+      that no methodology can verify directly. The project asserts
+      additionality; the methodology accepts the assertion under
+      its rules; neither constitutes proof.
+
+  C5. INDIGENOUS / COMMUNITY CONSENT (FPIC)
+      Free-Prior-and-Informed-Consent documentation:
+        Documentation SHA-256:
+          a8b9c0d1e2f3a4b5c6d7e8f90a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b
+        Status:                     Obtained; reaffirmation cycle 2025-Q4
+        Independent community-grievance log SHA-256:
+          b9c0d1e2f3a4b5c6d7e8f90a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c
+        Open grievances at attestation moment: 2 (FICTIONAL —
+          a real attestation would name the categories of grievance,
+          e.g. "access restriction to traditional gathering area" or
+          "benefit-sharing dispute," WITHOUT naming individual
+          complainants. Pattern, not person.)
+      Carbon projects in indigenous territory have a documented
+      history of FPIC failure modes including coerced consent,
+      consent obtained from non-representative bodies, and post-hoc
+      "consent" through compensation. The seal records FPIC
+      documentation, not its sufficiency.
+
+  C6. CO-BENEFITS CLAIMS
+      SD-VISta v1.0 community + biodiversity benefits document
+        SHA-256: c0d1e2f3a4b5c6d7e8f90a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d
+      Co-benefits are self-asserted by the project and reviewed by
+      the verifier; they are not independently audited at the depth
+      of the carbon quantification. Treat with appropriate skepticism.
+
+  C7. VERIFIER PRIOR ENGAGEMENT
+      None for this developer (FACT 05). A real attestation should
+      list ALL prior verifier-developer engagements over a 5-year
+      lookback, even informal, to enable independence assessment.
+
+REFUSAL RECORD — patterns the kit refused to seal
+
+The kit does NOT seal the following fact patterns, even if requested by
+the project developer, verifier, or registry:
+
+  R1. Claims of "additionality" stated as fact rather than as a
+      methodology-compliant counterfactual assertion (additionality
+      cannot be empirically verified for the project alone, and
+      sealing it as fact creates a misleading record)
+  R2. Claims of "permanence" without explicit time-horizon and
+      buffer-pool / insurance mechanism disclosure
+  R3. Claims of "no leakage" without project-specific measurement
+      (methodology-default leakage deductions are NOT measurement)
+  R4. Quantifications generated before the verifier's site visit
+      and document review are complete
+  R5. Issuance records for credits also issued or claimed on a
+      different registry without explicit cross-registry disclosure
+  R6. Retirement records that fail to name the retirement
+      beneficiary (anonymous retirement undermines the public-good
+      function of retirement)
+  R7. FPIC claims unsupported by attestable documentation hashes
+  R8. Article 6.2 / 6.4 issuance without a host-country letter of
+      authorization (LoA) hash sealed in FACT 06
+  R9. Sealing at request of any party other than the project
+      developer + verifier jointly for that project
+  R10. Co-benefits claims sealed as "certified" when only
+       "self-asserted + verifier-reviewed"
+
+If during attestation any request matching R1–R10 was made and
+refused, that refusal would be documented as a sealed fact:
+  "Refusal #N: party X requested sealing of [pattern]; the kit
+  refused per refusal-rule R[m]."
+
+  Refusals this attestation: NONE explicit. The refusal-mode demo in
+  FACT 03 (deductions exceeding gross claim → negative net result →
+  no issuance proceeds) is structural, not a request-refusal.
+  (FICTIONAL)
+
+This fact asserts only the companion-disclosure status and any
+refusal record at the moment of attestation. It does not assert that
+the refusal-rule list is exhaustive of all integrity-relevant patterns
+or that all companion disclosures have been identified by the
+attesting parties.

@@ -1,0 +1,62 @@
+FACT 02 — PRODUCT AND BATCH IDENTIFICATION (FICTIONAL)
+
+  Product name:           FICT-RTE-CHKN ready-to-eat sliced cooked
+                          chicken breast, vacuum-pack 200g retail SKU
+                          (FICTIONAL)
+  Product category:       Ready-to-eat (RTE) cooked meat — high-risk
+                          category for Listeria monocytogenes per
+                          FSIS RTE classification
+  Manufacturer:           Fictional Foods Manufacturing, Inc.
+                          (FICTIONAL)
+  Manufacturer license:   (none — fictional; a real attestation would
+                          list FDA Food Facility Registration FFRM ID
+                          or USDA FSIS Establishment Number, plus the
+                          equivalent registration / approval number
+                          for any non-US jurisdiction in which the
+                          batch will be distributed)
+  Facility (region only): South-central US region (FICTIONAL; precise
+                          street address deliberately withheld — see
+                          refusal-rule R2 below and in the README)
+  HACCP-plan identifier:  HCP-RTE-CHKN-v6.2 (FICTIONAL)
+                          HACCP-plan SHA-256:
+                          a1b2c3d4e5f6789abcdef0123456789abcdef0123456789abcdef0123456789ab
+  Lot ID:                 FFM-2026-W19-L042 (FICTIONAL)
+  Sub-lot range:          pallet positions P-001 through P-064
+  Production date:        2026-05-08 (Week 19, 2026)
+  Production shift:       Day shift (06:00 to 14:00 local; precise
+                          shift-personnel identification deliberately
+                          withheld — see refusal-rule R3)
+  Pack date:              2026-05-08
+  Use-by date:            2026-06-21 (44 days; vacuum-pack RTE chilled)
+  Storage requirement:    0 to 4 degrees C; do not freeze; protect
+                          from light
+  Number of consumer
+    units in lot:         84,288 retail packs (200 g each)
+  Approximate weight:     16,857.6 kg total finished product
+  Cook step (CCP-1):      Target internal temperature 71.1 degrees C
+                          held for 36 seconds minimum (per FSIS
+                          Appendix A lethality table 2021 revision)
+                          Logged process record SHA-256:
+                          c2d3e4f5a1b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2
+  Cooling step (CCP-2):   Cooled per FSIS Appendix B stabilization
+                          schedule (54.4 to 26.7 degrees C within
+                          1.5 h; 26.7 to 4.4 degrees C within
+                          additional 5 h). Logged cooling-record
+                          SHA-256:
+                          e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4
+  Slicing / packing
+    environment (CCP-3):  Post-lethality exposed RTE environment;
+                          Listeria-control sampling program per FSIS
+                          Compliance Guideline (food-contact and non-
+                          food-contact surface sponge sampling on a
+                          rolling 5-shift schedule). Environmental-
+                          program SHA-256:
+                          a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5
+
+This fact asserts only the batch identification and process-control
+fields above for the fictional lot. It does not assert anything about
+a real lot, manufacturer, facility, supplier, or personnel; it does
+not assert that the HACCP plan referenced is adequate for any specific
+hazard profile; and it does not name precise facility location,
+suppliers, or individual production-shift personnel — those are
+withheld per refusal rules R2, R3, and R4 in the README.

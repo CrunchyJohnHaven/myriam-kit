@@ -1,0 +1,52 @@
+FACT 02 — ACQUISITION CONTEXT (FICTIONAL)
+
+  Case identifier:        FICT-CR-2026-00471 (FICTIONAL)
+  Internal exhibit set:   Exhibit Set "F" (FICTIONAL — six items, see
+                          FACT 03)
+  Acquiring agency:       Fictional County Sheriff's Office, Digital
+                          Forensics Unit (FICTIONAL)
+  Requesting authority:   Fictional County District Attorney's Office,
+                          Major Crimes Division (FICTIONAL)
+  Legal basis for seizure:
+                          Search warrant, Fictional Superior Court,
+                          Department 12, signed by the Honorable
+                          [Fictional Judicial Officer], 2026-05-18 at
+                          14:07 PDT (FICTIONAL). Warrant authorizes
+                          forensic imaging of devices and accounts
+                          enumerated in the warrant rider.
+  Warrant docket reference:
+                          FICT-SW-2026-0188 (FICTIONAL)
+  Date/time of seizure:   2026-05-19, 06:42 PDT (initial seizure at
+                          premises; FICTIONAL)
+  Date/time of acquisition:
+                          2026-05-19, 11:14 PDT (start of forensic
+                          imaging in lab) through 2026-05-19, 22:30
+                          PDT (last image completed; FICTIONAL)
+  Location of seizure:    [Address redacted at this layer; recorded in
+                          the sealed-separately custody log hashed in
+                          FACT 05. The redaction prevents this public
+                          publication from re-identifying the premises
+                          or its lawful occupant.]
+  Location of acquisition:
+                          Fictional County Sheriff's Office, Digital
+                          Forensics Lab, Room 3 (FICTIONAL)
+  Examiner role on duty:  Lead Digital Forensics Examiner (one role-
+                          level individual; see FACT 06). Personal
+                          name omitted from this public seal; sealed
+                          separately in the role-to-individual binding
+                          record hashed in FACT 06.
+
+This fact binds the sealed publication to a named, accountable agency
+acting under a specific, dated, docketed legal authorization. It does
+NOT name suspects, defendants, occupants of the premises, victims,
+witnesses, or any other private individual. The legal-basis citation
+is included so the seal can be located within the court record by any
+party with standing to request it.
+
+This fact asserts only the agency, legal-basis citation, and temporal
+context for the fictional acquisition. It does not assert:
+  - that the warrant was correctly issued under applicable law,
+  - that the seizure was lawful,
+  - that the scope of acquisition was within warrant scope,
+  - that any person at the premises was a suspect or defendant,
+  - that evidence acquired is incriminating.

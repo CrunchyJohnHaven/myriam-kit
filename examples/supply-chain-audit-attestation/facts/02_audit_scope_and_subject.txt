@@ -1,0 +1,62 @@
+FACT 02 — AUDIT SCOPE AND SUBJECT (FICTIONAL)
+
+  Audit standard applied:    SA8000:2014 (FICTIONAL — example only)
+                             cross-referenced against ILO Core Conventions
+                             29, 87, 98, 100, 105, 111, 138, 182
+  Audit type:                Initial certification audit (Stage 2)
+                             Not: surveillance, re-cert, or
+                             investigation-triggered audit
+  Audit body:                Fictional Compliance Auditors Ltd. (FICTIONAL)
+                             Accreditation: SAAS-FICT-9999 (FICTIONAL)
+  Lead auditor:              Fictional Lead Auditor (qualifications in
+                             FACT 06; assigned by audit body)
+  Audit-team size:           3 auditors + 1 local-language interpreter
+                             (interpreter from independent translation
+                             agency, not supplier-provided)
+
+  Audit subject (supplier):  Supplier ID FACA-2026-1184 (FICTIONAL)
+                             — Tier-1 finished-goods supplier
+                             — Sector: cut-make-trim apparel (FICTIONAL)
+                             — Approximate workforce range: 800–1,200 workers
+                               (precise headcount sealed in confidential
+                               regulator-only annex; aggregated here to
+                               prevent re-identification of a real factory)
+
+  Site location:             COUNTRY: Fictional Country (region-level only)
+                             FACILITY ADDRESS NOT SEALED — see FACT 07
+                             refusal-rule R3 (locating-information PII)
+
+  Audit window:              On-site: 2026-04-12 through 2026-04-15
+                             (4 calendar days, 3 working days)
+  Audit announcement:        Semi-announced (window communicated to
+                             supplier 14 days prior; exact start day
+                             not disclosed)
+                             NOTE: announced and semi-announced audits
+                             have documented limitations vs. unannounced
+                             audits at detecting coaching, document
+                             preparation, and removal of non-conforming
+                             practices for the audit window
+  Audit report date:         2026-04-22 (sign-off, the moment this
+                             attestation is sealed)
+  Audit report version:      1.0 (initial; any revision = NEW sealed pub)
+
+  Brands / customers in scope of this audit (per audit body's contract):
+                             - Fictional Brand A (commissioned this audit)
+                             - Fictional Brand B (named recipient)
+                             - Fictional Brand C (named recipient)
+                             Commissioning party: Fictional Brand A
+                             (see FACT 07 for conflicts-of-interest
+                             implications of brand-commissioned audits)
+
+This fact binds the entire sealed publication to a named audit body
+acting in a defined professional capacity, against a specific standard,
+on a specific subject, over a specific window. Naming the audit body
+and lead auditor is appropriate (these are professional acts in a
+regulated profession). Naming the supplier is at facility-ID granularity
+only; precise locating information is refused per FACT 07.
+
+This fact asserts only the audit-scope-and-subject identification
+fields above for the fictional audit. It does not assert that the audit
+standard applied is itself adequate, that semi-announced audits are
+appropriate methodology for the conditions being audited, or that the
+named audit body operates free of capture by its commercial clients.

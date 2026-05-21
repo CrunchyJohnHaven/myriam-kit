@@ -1,0 +1,112 @@
+FACT 05 — CORRECTIVE ACTIONS COMMITTED (FICTIONAL)
+
+In the spirit of MYRIAM's "minimize preventable harm over time" objective,
+this fact records the corrective-action plan (CAP) committed to by the
+supplier and accepted by the audit body at sign-off. Sealing the CAP at
+sign-off prevents later silent narrowing, deadline-extension, or recat-
+egorization of major non-conformances into "closed" status without
+remediation.
+
+CAP FOR EACH MAJOR_NC IN FACT 03 (FICTIONAL)
+
+  ELEMENT 3 — HEALTH AND SAFETY (emergency-exit blockage; fire-drill gaps)
+    Root cause stated by supplier:    inventory storage practices in
+                                      stairwell; H&S coordinator role
+                                      vacant for 9 months
+    Corrective action committed:
+      1. Clear stairwell within 7 days; photograph and submit to audit
+         body for verification (deadline: 2026-04-29)
+      2. Hire qualified H&S coordinator within 60 days
+         (deadline: 2026-06-21)
+      3. Resume monthly fire drills, all shifts; submit log to audit
+         body monthly until next surveillance audit
+         (first log due: 2026-06-22)
+      4. Verification at re-audit 2026-07-22 ± 14 days
+
+  ELEMENT 7 — WORKING HOURS (68-hr weeks; voluntary OT documentation)
+    Root cause stated by supplier:    seasonal order surge from
+                                      Fictional Brand A in Q1 2026
+    Corrective action committed:
+      1. Cease all weeks >60 hours within 30 days
+         (deadline: 2026-05-22)
+      2. Implement signed-voluntary-OT documentation for any OT
+         beyond statutory limit; sample reviewed at re-audit
+      3. Engage commissioning Brand A on order-planning practices
+         that drive excess OT (a structural fix the auditor flags as
+         outside supplier-only control — see CRITICAL HONESTY below)
+      4. Verification at re-audit 2026-07-22 ± 14 days
+
+  ELEMENT 9 — MANAGEMENT SYSTEM (no grievance log; no internal audits)
+    Root cause stated by supplier:    no documented management
+                                      system; informal practices only
+    Corrective action committed:
+      1. Establish written grievance procedure with anonymous channel
+         within 45 days (deadline: 2026-06-06)
+      2. Maintain grievance log with date, category, resolution status
+         (running log; sample reviewed at re-audit)
+      3. Internal-audit schedule established with quarterly cadence
+         (first internal audit by 2026-07-22)
+      4. Verification at re-audit 2026-07-22 ± 14 days
+
+CAP FOR EACH MINOR_NC
+
+  ELEMENT 2 (deposit-of-ID at one dormitory):
+    Return all retained IDs within 14 days; written policy prohibiting
+    ID retention; verification at re-audit.
+
+  ELEMENT 4 (no documented worker-representative process):
+    Establish documented election process within 90 days; first
+    election conducted before next surveillance audit.
+
+  ELEMENT 8 (living-wage gap):
+    Supplier committed to "review" living-wage benchmarks; NO specific
+    wage-increase commitment made. Auditor flagged this as an
+    inadequate CAP for the underlying gap; downstream brands notified.
+    Status will be re-examined at re-audit but is not closeable solely
+    by supplier action.
+
+ESCALATION COMMITMENTS
+
+  - If any MAJOR_NC is not closed within 90 days, the audit body
+    commits to issuing a written ESCALATION notice to:
+      - Supplier executive management
+      - Commissioning brand (Fictional Brand A)
+      - All named recipient brands (Fictional Brands B, C)
+      - Accreditation body (SAAS, fictional)
+    Each escalation notice will be sealed as a NEW MYRIAM publication
+    referencing this one by Merkle root.
+
+  - If a CRITICAL_NC is discovered between sign-off and re-audit
+    (e.g. via worker hotline, NGO investigation, regulatory action,
+    or whistleblower disclosure), the audit body commits to issuing
+    a SUSPENSION notice within 5 business days of corroboration.
+
+NO SILENT CAP-RELAXATION COMMITMENT
+
+  If the CAP above is materially relaxed, deadlines extended, or
+  non-conformances reclassified between sign-off and re-audit, that
+  change will be sealed as a NEW MYRIAM publication. Replacement of a
+  sealed MAJOR_NC with an unsealed "closed" status is not a legitimate
+  amendment.
+
+CRITICAL HONESTY ON CORRECTIVE ACTIONS:
+
+  - Some root causes are outside the supplier's unilateral control.
+    Excess overtime driven by brand-side order-planning practices, or
+    living-wage gaps driven by brand-side price pressure, cannot be
+    closed by supplier action alone. CAPs that put 100% of remediation
+    burden on the supplier while the brand continues to issue order
+    patterns that necessitate the violation are a documented failure
+    pattern of the audit-and-remediate industry.
+  - "Closed" status on a CAP item means "the auditor verified the
+    document or photograph requested," not "the worker conditions
+    underlying the finding have substantively improved."
+  - Reaudit-without-resampling can produce false closures: if the
+    re-audit reviews only the items on the CAP and not a fresh
+    cross-section of the operation, regression can go undetected.
+
+This fact asserts only the corrective-action commitments as recorded
+at sign-off for the fictional audit. It does not assert that the
+commitments will be honored, that honoring them will substantively
+improve worker conditions, or that the audit-and-remediate model is
+adequate to the harms it nominally addresses.

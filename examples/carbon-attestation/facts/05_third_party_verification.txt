@@ -1,0 +1,89 @@
+FACT 05 — THIRD-PARTY VERIFICATION (FICTIONAL)
+
+THIRD-PARTY VERIFIER IDENTITY
+
+  Verifier organization:  Fictional Verifier Ltd. (FICTIONAL — a real
+                          attestation would name an actual accredited
+                          VVB, e.g. SCS Global Services, TÜV NORD,
+                          DNV, RINA, Aenor, EPIC Sustainability)
+  Accreditation body:     ISO 14065 / IAF MLA member (FICTIONAL)
+  Accreditation number:   FICT-VVB-2019-007 (FICTIONAL)
+  Accreditation scope:    AFOLU Category 14, ISO 14064-2 / ISO 14064-3
+  Accreditation expiry:   2027-04-15 (FICTIONAL — verifier was within
+                          accreditation period at moment of attestation)
+
+ENGAGEMENT INDEPENDENCE
+
+  Engagement type:        Full validation + verification (combined)
+  Contracted by:          Project developer (FACT 02), per registry rules
+  Verifier independence
+    declaration hash:     a5f3e91b25c8a4d6f0e1b2c3d4e5f60718293a4b5c6d7e8f90123456789abcdef
+                          (declaration that verifier has no financial
+                          interest in project beyond standard
+                          professional fees; that verifier did not
+                          author project documentation; that verifier
+                          has not provided consulting to this developer
+                          on this or related projects within 3 years)
+  Prior verifications of
+    same project:         None (first verification cycle, FICTIONAL —
+                          real attestations would list prior cycles)
+  Total prior contracts
+    with this developer:  None (FICTIONAL — real attestations would
+                          honestly disclose volume of prior business
+                          to enable independence assessment)
+
+VERIFICATION ACTIVITIES PERFORMED
+
+  Site visits:             1 (2025-08-12 through 2025-08-19; field team
+                           of 4 verifiers + 2 local guides)
+  Site-visit photo archive
+    SHA-256 (32.4 GB):     b6e7a8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b
+  Plot re-measurement
+    sub-sample:            12 of 78 plots re-measured by verifier,
+                           independent of project field team
+  Document review:         Methodology compliance, baseline justification,
+                           project description, monitoring report
+                           (4 documents, hashes in FACT 02 / FACT 04)
+  Stakeholder consultation
+    review:                FPIC documentation review + 14 verifier-led
+                           community interviews (FPIC hashes in FACT 07)
+  Data audit:              Quantification spreadsheet re-run by verifier
+                           on verifier hardware; result reproduced to
+                           ±0.3% (within methodology tolerance)
+
+VERIFICATION FINDINGS
+
+  Findings raised:         11 (8 informational, 2 minor non-conformance,
+                           1 major non-conformance)
+  Findings resolution
+    status at attestation: All 11 closed; closure documentation hash:
+                           c7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a
+  Material findings
+    requiring re-baseline: 1 (the major non-conformance triggered a
+                           reference-region re-calibration; revised
+                           baseline reflected in FACT 03)
+
+VERIFICATION OPINION
+
+  Final opinion:           UNQUALIFIED (the verifier states that, on the
+                           basis of evidence reviewed, the quantification
+                           in FACT 03 represents a fair and reasonable
+                           estimate per the cited methodology)
+  Opinion document
+    SHA-256:               d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f
+  Material limitations
+    in opinion:            Noted; FACT 07 contains the explicit limitation
+                           list copied from the verifier's opinion
+  Verification cycle
+    timestamp:             2025-12-22T16:00:00Z (FICTIONAL — moment the
+                           verifier signed the opinion)
+
+This fact asserts only the identity of the third-party verifier, the
+verifier's accreditation status at attestation time, the activities
+performed, findings raised + resolved, and the final verification
+opinion. It does not assert that the verifier is in fact independent
+in any deeper sense, that the verification activities were sufficient
+to detect material misstatement, or that the verifier's opinion is
+correct. Carbon verifier independence is structurally compromised in
+many cases (developer pays verifier); the seal records the disclosure
+chain, not its sufficiency.

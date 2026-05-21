@@ -1,0 +1,28 @@
+FACT 01 — EXAMPLE NOTICE
+
+This publication is an EXAMPLE demonstration of how a forensic
+acquisition team — computer forensics examiner, mobile-device
+extraction technician, body-cam evidence custodian, etc. — can use
+myriam-kit to seal a chain-of-custody anchor at the moment of digital
+evidence acquisition. The case identifier, warrant citation, acquiring
+agency, examiner role, exhibit hashes, custody-event timeline, and all
+other particulars in subsequent facts are ALL FICTIONAL.
+
+The purpose of this publication is to show the SHAPE of a real
+forensic-acquisition seal. A real attestation would replace each fact
+body with the actual artifacts of the actual acquisition.
+
+This kit is intended to compose with — not replace — the existing
+chain-of-custody, evidence-handling, and admissibility procedures of
+the jurisdiction running the case (Federal Rules of Evidence, Daubert
+standards under FRE 702, agency forensic SOPs, defense-discovery
+obligations, etc.). The MYRIAM seal provides Bitcoin-anchored
+tamper-evidence on top of whatever paper-and-signature chain-of-custody
+record the agency already maintains. It does NOT itself satisfy any
+court's admissibility test; admissibility is a legal-procedure
+question, not a cryptographic one.
+
+This fact asserts only that the publication is an example, not a real
+forensic-acquisition record. No real case is hereby investigated. No
+real suspect, defendant, victim, witness, or third party is hereby
+identified.

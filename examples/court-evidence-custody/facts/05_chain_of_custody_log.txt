@@ -1,0 +1,116 @@
+FACT 05 — CHAIN-OF-CUSTODY LOG (FICTIONAL)
+
+This fact records the custody events from initial seizure through the
+completion of forensic imaging. Custodians are identified by ROLE,
+NOT by personal name. A separately-sealed companion record (hashed
+below) binds role labels to the specific individuals on duty; that
+companion record is held by the agency under standard discovery
+procedures, not published in this public seal. The role-only
+publication is the kit's default refusal-rule R7 (see FACT 07) — it
+prevents the public seal from creating a permanent searchable
+identifier of every officer and forensic-staff member involved in
+every case.
+
+CUSTODY EVENT TIMELINE — Exhibit Set "F"
+
+  EVT  TIMESTAMP (FICT)         ROLE OF CUSTODIAN                EVENT
+  ---  -----------------------  -------------------------------- ----------------------------------------
+  E01  2026-05-19 06:42 PDT     Lead Detective on warrant team    Items 1, 2, 3, 4, 6 seized at premises
+                                                                  per warrant FICT-SW-2026-0188; sealed
+                                                                  into evidence bags F-001 through F-006
+                                                                  (excluding F-005, see E03)
+  E02  2026-05-19 08:15 PDT     Evidence transport officer        Sealed bags transferred from premises
+                                                                  to Sheriff's Office Evidence Intake
+                                                                  via marked vehicle; transport route
+                                                                  recorded on vehicle GPS (hashed in
+                                                                  GPS-log record below)
+  E03  2026-05-19 08:48 PDT     BWC docking-station custodian     Item 5 body-camera footage from
+                                                                  on-duty officers at the warrant
+                                                                  service was extracted from the BWC
+                                                                  docking system into evidence package
+                                                                  F-005; chain begins with the BWC
+                                                                  system's own provenance log, hashed
+                                                                  separately below
+  E04  2026-05-19 09:22 PDT     Evidence Intake clerk             Items checked into evidence locker;
+                                                                  per-item barcodes scanned; intake
+                                                                  manifest entered into agency CMS
+  E05  2026-05-19 10:55 PDT     Lead Digital Forensics Examiner   Items 1, 2, 3, 4, 6 checked out of
+                                                                  evidence locker to Digital Forensics
+                                                                  Lab Room 3 for imaging
+  E06  2026-05-19 11:14 PDT     Lead Digital Forensics Examiner   Imaging began on Item 1
+  E07  2026-05-19 12:28 PDT     Lead Digital Forensics Examiner   Item 1 image verification complete
+                                                                  (see FACT 04 procedure)
+  E08  2026-05-19 12:35 PDT     Lead Digital Forensics Examiner   Imaging began on Item 4 (parallel
+                                                                  workstation; small device)
+  E09  2026-05-19 13:01 PDT     Lead Digital Forensics Examiner   Item 4 image verification complete
+  E10  2026-05-19 13:07 PDT     Lead Digital Forensics Examiner   Imaging began on Item 3 via GrayKey
+  E11  2026-05-19 15:52 PDT     Lead Digital Forensics Examiner   Item 3 extraction complete
+  E12  2026-05-19 16:00 PDT     Lead Digital Forensics Examiner   Imaging began on Item 2 (large; ran
+                                                                  to E14)
+  E13  2026-05-19 16:18 PDT     Secondary Examiner (same lab)     Item 5 (Item 5 BWC archive) verified
+                                                                  upon receipt from BWC docking
+                                                                  custodian; hashed
+  E14  2026-05-19 21:47 PDT     Lead Digital Forensics Examiner   Item 2 image verification complete
+  E15  2026-05-19 21:55 PDT     Lead Digital Forensics Examiner   Imaging began on Item 6 (largest;
+                                                                  ran to completion)
+  E16  2026-05-19 22:30 PDT     Lead Digital Forensics Examiner   Item 6 image verification complete;
+                                                                  all imaging concluded
+  E17  2026-05-19 22:38 PDT     Lead Digital Forensics Examiner   All six forensic images written to
+                                                                  forensic storage array; hashes
+                                                                  recorded in FACT 03 above; original
+                                                                  source devices returned to evidence
+                                                                  locker with continued tamper-seal
+  E18  2026-05-19 22:55 PDT     Evidence Intake clerk             Items 1-6 source devices checked
+                                                                  back into evidence locker; this seal
+                                                                  publication being prepared
+
+SEPARATELY-SEALED COMPANION RECORDS (referenced by hash; not
+themselves published in this public seal)
+
+  Role-to-individual binding record (binds each event above to the
+  specific on-duty individual; held under agency CMS access control;
+  discoverable under defense-discovery procedures):
+    SHA-256: 5f6071829304a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f607182930
+
+  Pre-acquisition write-blocker NIST CFTT verification log (referenced
+  in FACT 04):
+    SHA-256: 4d5e6f70819203a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c
+
+  Transport vehicle GPS log (E02 transport route):
+    SHA-256: 6071829304a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f6071829304
+
+  Body-worn-camera docking-system provenance log (predecessor chain
+  for Item 5):
+    SHA-256: 71829304a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f6071829304a1
+
+  Source-device tamper-seal photographs (before and after imaging,
+  for each item):
+    SHA-256: 829304a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f6071829304a1b2
+
+  Evidence locker access log (for events E04, E05, E18):
+    SHA-256: 9304a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f6071829304a1b2c3
+
+WHAT THIS LOG IS AND IS NOT
+
+  This log is the agency's own contemporaneous custody record, with
+  the role/name redaction applied for public publication. It is not
+  a court's finding that the custody chain was procedurally correct
+  under applicable law. The log is the agency's claim; whether the
+  claim satisfies a state's chain-of-custody admissibility
+  requirement is a matter for the court.
+
+  Any post-sealing modification of the custody log — adding a custody
+  event after the fact, removing one, or changing the timestamp on
+  one — produces a different SHA-256 over this fact body and is
+  publicly detectable. The hash anchor freezes the agency's
+  contemporaneous custody claim at the moment of acquisition.
+
+This fact asserts only the custody-event timeline above and the hashes
+of the separately-sealed companion records, as the agency
+contemporaneously recorded them at the moment of sealing. It does not
+assert:
+  - that the chain-of-custody was procedurally correct under
+    applicable law,
+  - that the role-to-individual binding is correct in the companion
+    record (that is a separate evidentiary question),
+  - that no custody events occurred that were not logged.

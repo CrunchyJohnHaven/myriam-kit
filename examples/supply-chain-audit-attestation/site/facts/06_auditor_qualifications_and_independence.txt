@@ -1,0 +1,106 @@
+FACT 06 — AUDITOR QUALIFICATIONS AND INDEPENDENCE (FICTIONAL)
+
+This fact records the qualifications, credentials, and independence
+relationships of the audit body and audit team. Sealing this at sign-off
+prevents later disputes about "the auditors were qualified" or "the
+auditors were independent" — the answer is part of the public record.
+
+AUDIT BODY (FICTIONAL)
+
+  Legal name:                   Fictional Compliance Auditors Ltd.
+  Country of incorporation:     Fictional Country (FICTIONAL)
+  Accreditation:                SAAS-FICT-9999 (FICTIONAL — example only)
+  Accreditation scope:          SA8000:2014, all sectors
+                                NOT accredited for FSC, RBA VAP, BSCI,
+                                or B Corp impact-assessment work
+                                (separate accreditations required)
+  Years operating:              7 years (FICTIONAL)
+  Annual audit volume:          ~480 audits/year (FICTIONAL)
+  Customer concentration risk:  Top-3 commissioning brands account for
+                                ~38% of audit revenue (FICTIONAL)
+                                Industry-wide flag: brand-customer
+                                concentration is a well-documented
+                                source of soft findings; this kit seals
+                                the disclosure so it is reviewable.
+
+LEAD AUDITOR (FICTIONAL)
+
+  Name:                         Fictional Lead Auditor (real name;
+                                public professional role)
+  Lead-auditor credentials:     SA8000 Lead Auditor course completed
+                                2021-03 (FICTIONAL credential ID)
+  Years in audit profession:    9 years (FICTIONAL)
+  Language competence:          Fluent in Audit-Working-Language (FICTIONAL)
+                                NOT fluent in workers' first language at
+                                this facility — interpreter used (FACT 04)
+  Sector experience:            6 prior audits in apparel cut-make-trim
+                                3 prior audits in this fictional country
+                                0 prior audits at this specific supplier
+
+AUDIT-TEAM AUDITORS (FICTIONAL)
+
+  Auditor 2: 4 years experience, 12 prior apparel audits
+  Auditor 3: 2 years experience (junior; under lead's supervision per
+             SA8000 trainee protocol)
+
+INDEPENDENCE DECLARATIONS
+
+  Audit body — supplier relationships:
+    - Has audit body audited this supplier previously?     NO (initial)
+    - Does audit body have any contract with supplier
+      for non-audit services (training, consulting, CAP
+      remediation, gap analysis)?                          NO
+    - Is supplier a beneficial owner / shareholder of
+      audit body or any affiliate?                         NO
+
+  Audit body — brand relationships:
+    - Commissioning brand: Fictional Brand A (paid for this audit)
+    - Brand pays audit body PER AUDIT, not per finding or per pass.
+      However: audit body's pipeline of future audits with Brand A
+      is contingent on continued commercial relationship. This is
+      the structural conflict of interest at the core of the
+      brand-commissioned audit model.
+      (See FACT 07 for explicit conflict-of-interest disclosure.)
+
+  Individual auditor — supplier relationships:
+    - Lead auditor: no current or prior employment, contract,
+      gifts, or family relationship with supplier or its
+      ownership.
+    - Auditor 2: same declaration.
+    - Auditor 3: same declaration.
+    - Interpreter: independent agency, no financial relationship
+      with supplier; selected by audit body, not supplier.
+
+  Individual auditor — brand relationships:
+    - No team member has employment or contract relationship
+      with any named recipient brand (FACT 02).
+
+CERTIFICATION-BODY SEPARATION
+
+  Per SA8000 procedure (and analogous separation in other audit
+  regimes), the body that issues a certificate must be separate from
+  the body that conducts the audit.
+    Audit body (this audit):       Fictional Compliance Auditors Ltd.
+    Certification body (downstream): Fictional Certification Body Inc.
+    Common ownership?              NO (FICTIONAL)
+    Common board members?          NO (FICTIONAL)
+
+QUALIFICATION HONESTY
+
+  - "Qualified" means the auditors hold credentials issued by training
+    bodies whose curricula are themselves of contested adequacy. A
+    credentialed auditor can still miss severe abuses (Rana Plaza was
+    audited by credentialed auditors). The seal anchors credentials,
+    not competence.
+  - "Independent" under standard industry definitions does NOT mean
+    "free of structural pressure to soften findings." Brand-paid audit
+    bodies face a documented pipeline-incentive to deliver findings
+    that retain commissioning-brand relationships. This kit seals the
+    disclosure; the seal does not solve the conflict.
+
+This fact asserts only the qualifications and independence declarations
+as recorded for the fictional audit. It does not assert that the
+declarations are exhaustive of structural conflicts of interest, that
+the audit body's accreditation entails detection of all violations the
+standard targets, or that brand-commissioned audits are an adequate
+governance model for the harms in scope.
