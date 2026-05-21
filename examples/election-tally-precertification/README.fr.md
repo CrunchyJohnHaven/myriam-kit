@@ -188,6 +188,17 @@ politique du vote par correspondance, ni aucune élection dont la
 question centrale concernait un fait contesté plutôt qu'un registre
 contesté.
 
+Dans les contextes électoraux d'Afrique francophone — RDC, Sénégal,
+Côte d'Ivoire et autres — où les totaux annoncés par la commission
+électorale font fréquemment l'objet de contestations entre proclamation
+provisoire et validation par la juridiction constitutionnelle, un sceau
+au moment de la certification fournit un point de référence fixe
+auquel chaque observateur, national ou international, peut se
+référer ultérieurement, sans dépendre d'un récit contesté de l'une
+ou l'autre partie. Le sceau, comme indiqué plus haut, n'atteste
+toutefois pas de la régularité du scrutin lui-même, ni ne protège
+contre la coercition de l'autorité certifiante.
+
 ## Quand utiliser cette trousse
 
 - Votre juridiction dispose d'un processus de certification stable et

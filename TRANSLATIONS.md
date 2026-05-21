@@ -48,12 +48,54 @@ Approximate speakers: ~33M (Myanmar).
 
 - [README in Burmese](README.my.md)
 
+## Catalan — Català (ca)
+
+Approximate speakers: ~9M (Catalonia, Valencia, Balearic Islands, Andorra).
+
+- [README in Catalan](README.ca.md)
+- Example kit: [Supply Chain Audit Attestation — Català](examples/supply-chain-audit-attestation/README.ca.md)
+
 ## Chinese (Simplified) — 中文 (zh)
 
 Approximate speakers: ~1.1B (Mainland China, Singapore).
 
 - [README in Chinese](README.zh.md)
 - Example kit: [Scientific Reproducibility — 中文](examples/scientific-reproducibility/README.zh.md)
+
+## Czech — Čeština (cs)
+
+Approximate speakers: ~10M (Czech Republic).
+
+- [README in Czech](README.cs.md)
+- Example kit: [Food Safety Attestation — Čeština](examples/food-safety-attestation/README.cs.md)
+
+## Danish — Dansk (da)
+
+Approximate speakers: ~6M (Denmark, Greenland, Faroe Islands).
+
+- [README in Danish](README.da.md)
+- Example kit: [Public Spending Attestation — Dansk](examples/public-spending-attestation/README.da.md)
+
+## Dutch — Nederlands (nl)
+
+Approximate speakers: ~24M (Netherlands, Belgium, Suriname).
+
+- [README in Dutch](README.nl.md)
+- Example kit: [Carbon Attestation — Nederlands](examples/carbon-attestation/README.nl.md)
+
+## Filipino — Filipino (fil)
+
+Approximate speakers: ~45M (Philippines).
+
+- [README in Filipino](README.fil.md)
+- Example kit: [Whistleblower Manifest — Filipino](examples/whistleblower-manifest/README.fil.md)
+
+## Finnish — Suomi (fi)
+
+Approximate speakers: ~5M (Finland).
+
+- [README in Finnish](README.fi.md)
+- Example kit: [Vaccine Batch Attestation — Suomi](examples/vaccine-batch-attestation/README.fi.md)
 
 ## French — Français (fr)
 
@@ -69,6 +111,13 @@ Approximate speakers: ~135M (Germany, Austria, Switzerland).
 - [README in German](README.de.md)
 - Example kit: [Scientific Reproducibility — Deutsch](examples/scientific-reproducibility/README.de.md)
 
+## Greek — Ελληνικά (el)
+
+Approximate speakers: ~13M (Greece, Cyprus).
+
+- [README in Greek](README.el.md)
+- Example kit: [Scientific Reproducibility — Ελληνικά](examples/scientific-reproducibility/README.el.md)
+
 ## Gujarati — ગુજરાતી (gu)
 
 Approximate speakers: ~56M (Gujarat, India).
@@ -82,12 +131,26 @@ Approximate speakers: ~70M (Nigeria, Niger, West Africa).
 - [README in Hausa](README.ha.md)
 - Example kit: [Public Spending Attestation — Hausa](examples/public-spending-attestation/README.ha.md)
 
+## Hebrew — עברית (he)
+
+Approximate speakers: ~9M (Israel).
+
+- [README in Hebrew](README.he.md)
+- Example kit: [Supply Chain Audit Attestation — עברית](examples/supply-chain-audit-attestation/README.he.md)
+
 ## Hindi — हिन्दी (hi)
 
 Approximate speakers: ~600M (India).
 
 - [README in Hindi](README.hi.md)
 - Example kit: [Vaccine Batch Attestation — हिन्दी](examples/vaccine-batch-attestation/README.hi.md)
+
+## Hungarian — Magyar (hu)
+
+Approximate speakers: ~13M (Hungary and diaspora).
+
+- [README in Hungarian](README.hu.md)
+- Example kit: [Food Safety Attestation — Magyar](examples/food-safety-attestation/README.hu.md)
 
 ## Igbo — Igbo (ig)
 
@@ -165,12 +228,32 @@ Approximate speakers: ~83M (Maharashtra, India).
 - [README in Marathi](README.mr.md)
 - Example kit: [Food Safety Attestation — मराठी](examples/food-safety-attestation/README.mr.md)
 
+## Norwegian — Norsk (no)
+
+Approximate speakers: ~5M (Norway).
+
+- [README in Norwegian](README.no.md)
+- Example kit: [Vaccine Batch Attestation — Norsk](examples/vaccine-batch-attestation/README.no.md)
+
+## Oromo — Afaan Oromoo (om)
+
+Approximate speakers: ~37M (Ethiopia, Kenya).
+
+- [README in Oromo](README.om.md)
+
 ## Pashto — پښتو (ps)
 
 Approximate speakers: ~60M (Afghanistan, Pakistan).
 
 - [README in Pashto](README.ps.md)
 - Example kit: [Whistleblower Manifest — پښتو](examples/whistleblower-manifest/README.ps.md)
+
+## Persian — فارسی (fa)
+
+Approximate speakers: ~110M (Iran, Afghanistan, Tajikistan).
+
+- [README in Persian](README.fa.md)
+- Example kit: [Scientific Reproducibility — فارسی](examples/scientific-reproducibility/README.fa.md)
 
 ## Polish — Polski (pl)
 
@@ -193,6 +276,13 @@ Approximate speakers: ~113M (Punjab region of India and Pakistan; diaspora).
 - [README in Punjabi](README.pa.md)
 - Example kit: [Supply Chain Audit Attestation — ਪੰਜਾਬੀ](examples/supply-chain-audit-attestation/README.pa.md)
 
+## Romanian — Română (ro)
+
+Approximate speakers: ~24M (Romania, Moldova).
+
+- [README in Romanian](README.ro.md)
+- Example kit: [AI Model Behavior Lock — Română](examples/ai-model-card/README.ro.md)
+
 ## Russian — Русский (ru)
 
 Approximate speakers: ~260M (Russia, post-Soviet states).
@@ -214,6 +304,20 @@ Approximate speakers: ~200M (East Africa: Tanzania, Kenya, Uganda, DRC).
 - [README in Swahili](README.sw.md)
 - Example kit: [Vaccine Batch Attestation — Kiswahili](examples/vaccine-batch-attestation/README.sw.md)
 
+## Swedish — Svenska (sv)
+
+Approximate speakers: ~10M (Sweden, Finland).
+
+- [README in Swedish](README.sv.md)
+- Example kit: [Scientific Reproducibility — Svenska](examples/scientific-reproducibility/README.sv.md)
+
+## Tamil — தமிழ் (ta)
+
+Approximate speakers: ~75M (Tamil Nadu, Sri Lanka, Singapore; diaspora).
+
+- [README in Tamil](README.ta.md)
+- Example kit: [Drug Trial Pre-registration — தமிழ்](examples/drug-trial-preregistration/README.ta.md)
+
 ## Telugu — తెలుగు (te)
 
 Approximate speakers: ~96M (Andhra Pradesh, Telangana, India).
@@ -221,12 +325,40 @@ Approximate speakers: ~96M (Andhra Pradesh, Telangana, India).
 - [README in Telugu](README.te.md)
 - Example kit: [Election Tally Pre-Certification — తెలుగు](examples/election-tally-precertification/README.te.md)
 
+## Thai — ไทย (th)
+
+Approximate speakers: ~60M (Thailand).
+
+- [README in Thai](README.th.md)
+- Example kit: [Carbon Attestation — ไทย](examples/carbon-attestation/README.th.md)
+
 ## Turkish — Türkçe (tr)
 
 Approximate speakers: ~85M (Turkey, Cyprus).
 
 - [README in Turkish](README.tr.md)
 - Example kit: [Whistleblower Manifest — Türkçe](examples/whistleblower-manifest/README.tr.md)
+
+## Ukrainian — Українська (uk)
+
+Approximate speakers: ~33M (Ukraine and diaspora).
+
+- [README in Ukrainian](README.uk.md)
+- Example kit: [Court Evidence Chain-of-Custody — Українська](examples/court-evidence-custody/README.uk.md)
+
+## Urdu — اردو (ur)
+
+Approximate speakers: ~70M (Pakistan, India).
+
+- [README in Urdu](README.ur.md)
+- Example kit: [Drug Trial Pre-registration — اردو](examples/drug-trial-preregistration/README.ur.md)
+
+## Uzbek — Oʻzbek (uz)
+
+Approximate speakers: ~35M (Uzbekistan, Central Asia).
+
+- [README in Uzbek](README.uz.md)
+- Example kit: [Whistleblower Manifest — Oʻzbek](examples/whistleblower-manifest/README.uz.md)
 
 ## Vietnamese — Tiếng Việt (vi)
 
