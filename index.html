@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>myriam-kit — CC0 cryptographic publishing toolkit</title>
+<meta name="description" content="Public-domain (CC0) toolkit to seal a small set of facts to Bitcoin (via OpenTimestamps) and IPFS. Whistleblower, AI safety, clinical trial pre-registration use cases included.">
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: ui-monospace, "SFMono-Regular", "Menlo", "Monaco", monospace; max-width: 720px; margin: 0 auto; padding: 2rem 1rem 6rem; line-height: 1.55; font-size: 15px; }
+  h1 { font-size: 1.4rem; margin-bottom: 0.2rem; }
+  h2 { font-size: 1.05rem; margin-top: 2rem; border-bottom: 1px solid currentColor; padding-bottom: 0.2rem; }
+  a { color: inherit; }
+  .badge { display: inline-block; border: 1px solid currentColor; padding: 0.1rem 0.5rem; font-size: 0.7rem; letter-spacing: 0.1em; margin-right: 0.4rem; }
+  pre { background: rgba(127,127,127,0.1); padding: 0.6rem; overflow-x: auto; }
+  code { background: rgba(127,127,127,0.1); padding: 0.05em 0.3em; border-radius: 2px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1rem 0; }
+  .grid > div { border: 1px solid currentColor; padding: 0.6rem; }
+  footer { margin-top: 4rem; font-size: 0.8rem; opacity: 0.7; }
+</style>
+</head>
+<body>
+
+<h1>myriam-kit</h1>
+<p>
+  <span class="badge">CC0</span>
+  <span class="badge">v0.2.0</span>
+  <span class="badge">5 example kits</span>
+</p>
+
+<p>A small CC0 toolkit for publishing a small set of facts such that:</p>
+<ul>
+  <li>Any change to any fact is publicly detectable (Merkle tree)</li>
+  <li>The state at publication is verifiable against the Bitcoin blockchain (OpenTimestamps)</li>
+  <li>The content survives takedown of any single hosting provider (IPFS)</li>
+  <li>The whole thing weighs under 100 KB and is verifiable with ~50 lines of Python</li>
+</ul>
+
+<p>
+Not a blockchain. No token. No DAO. No consensus mechanism to participate in.
+The tool is <code>sha256sum</code> + <code>ots</code> + <code>ipfs</code>,
+glued together with good naming conventions.
+</p>
+
+<h2>Get started</h2>
+
+<pre>git clone https://github.com/CrunchyJohnHaven/myriam-kit
+cd myriam-kit
+bash lib/myriam-init.sh my-publication
+cd my-publication
+$EDITOR facts/*.txt
+bash ../lib/seal.sh
+</pre>
+
+<p>See <a href="https://github.com/CrunchyJohnHaven/myriam-kit/blob/main/docs/QUICKSTART.md">QUICKSTART.md</a> for the full 5-minute walkthrough.</p>
+
+<h2>Five worked example kits</h2>
+
+<div class="grid">
+  <div>
+    <strong>Whistleblower Manifest Seal Kit</strong><br>
+    For evidence-buried-by-intermediaries cases (Boeing 737 MAX, Theranos).<br>
+    <a href="https://github.com/CrunchyJohnHaven/myriam-kit/tree/main/examples/whistleblower-manifest">examples/whistleblower-manifest/</a>
+  </div>
+  <div>
+    <strong>AI Model Behavior Lock Kit</strong><br>
+    Pre-deployment commitments become mechanically detectable.<br>
+    <a href="https://github.com/CrunchyJohnHaven/myriam-kit/tree/main/examples/ai-model-card">examples/ai-model-card/</a>
+  </div>
+  <div>
+    <strong>Drug Trial Pre-registration Kit</strong><br>
+    Endpoint switching by sponsors becomes publicly diffable.<br>
+    <a href="https://github.com/CrunchyJohnHaven/myriam-kit/tree/main/examples/drug-trial-preregistration">examples/drug-trial-preregistration/</a>
+  </div>
+  <div>
+    <strong>Vaccine Batch Attestation Kit</strong><br>
+    Release-test results + recall commitments anchored.<br>
+    <a href="https://github.com/CrunchyJohnHaven/myriam-kit/tree/main/examples/vaccine-batch-attestation">examples/vaccine-batch-attestation/</a>
+  </div>
+  <div>
+    <strong>Scientific Reproducibility Kit</strong><br>
+    p-hacking and HARKing become publicly detectable.<br>
+    <a href="https://github.com/CrunchyJohnHaven/myriam-kit/tree/main/examples/scientific-reproducibility">examples/scientific-reproducibility/</a>
+  </div>
+  <div>
+    <strong>Verify a publication in your browser</strong><br>
+    No install. Web Crypto + Merkle reconstruction client-side.<br>
+    <a href="lib/verify.html">lib/verify.html</a>
+  </div>
+</div>
+
+<h2>Docs</h2>
+
+<ul>
+  <li><a href="https://github.com/CrunchyJohnHaven/myriam-kit#readme">README</a> — entry point</li>
+  <li><a href="https://github.com/CrunchyJohnHaven/myriam-kit/blob/main/docs/SPEC.md">SPEC.md</a> — protocol specification with normative test vectors</li>
+  <li><a href="https://github.com/CrunchyJohnHaven/myriam-kit/blob/main/docs/QUICKSTART.md">QUICKSTART.md</a> — five-minute walkthrough</li>
+  <li><a href="https://github.com/CrunchyJohnHaven/myriam-kit/blob/main/docs/USE_CASES.md">USE_CASES.md</a> — domain-specific applications</li>
+  <li><a href="https://github.com/CrunchyJohnHaven/myriam-kit/blob/main/docs/THREAT_MODEL.md">THREAT_MODEL.md</a> — what's covered, what isn't</li>
+  <li><a href="https://github.com/CrunchyJohnHaven/myriam-kit/blob/main/docs/COMPARISON.md">COMPARISON.md</a> — vs Sigstore, Sigsum, CT, OTS, IPFS, OSF, Arweave</li>
+  <li><a href="https://github.com/CrunchyJohnHaven/myriam-kit/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a> — high-leverage contribution types</li>
+</ul>
+
+<h2>License</h2>
+
+<p>Public domain (<a href="https://github.com/CrunchyJohnHaven/myriam-kit/blob/main/LICENSE">CC0 1.0 Universal</a>). Fork it. No attribution required.</p>
+
+<footer>
+myriam-kit · v0.2.0 · <a href="https://github.com/CrunchyJohnHaven/myriam-kit">GitHub</a> · <a href="https://github.com/CrunchyJohnHaven/myriam-kit/releases">Releases</a> · <a href="https://github.com/CrunchyJohnHaven/myriam-kit/issues">Issues</a>
+</footer>
+
+</body>
+</html>
