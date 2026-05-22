@@ -1,0 +1,41 @@
+FACT 01 — EXAMPLE NOTICE
+
+This publication is an EXAMPLE demonstration of how a U.S. law-
+enforcement agency — municipal police department, county sheriff's
+office, state police, transit police, or other agency operating body-
+worn cameras (BWCs), in-car dashboard cameras (dashcams), and
+interview-room recording systems — can use myriam-kit to seal a
+chain-of-custody anchor on body-camera footage at the moment of
+evidence-management-system ingest completion. The incident identifier,
+agency identification, ORI, device serial numbers, firmware versions,
+file hashes, custody-event timeline, redaction events, and all other
+particulars in subsequent facts are ALL FICTIONAL.
+
+The purpose of this publication is to show the SHAPE of a real body-
+camera footage seal. A real attestation would replace each fact body
+with the actual artifacts of the actual incident's recordings.
+
+This kit is intended to compose with — not replace — the existing
+chain-of-custody, evidence-management, public-records, victim-rights,
+and discovery procedures of the jurisdiction running the case (state
+public-records laws, federal civil-rights statutes, DOJ pattern-or-
+practice oversight where applicable, agency BWC policy, prosecutorial
+Brady/Giglio obligations, etc.). The MYRIAM seal provides Bitcoin-
+anchored tamper-evidence on top of whatever chain-of-custody record
+the agency's digital-evidence-management system already maintains. It
+does NOT itself satisfy any court's admissibility test, compel public
+release of footage, or substitute for any oversight process;
+admissibility, release, and oversight are legal and policy questions,
+not cryptographic ones.
+
+This kit uses a TWO-SIGNER MINIMUM (supervising sergeant + internal-
+affairs officer) for sealing, mirroring the hospital readmission kit's
+Chief Medical Officer + Quality Officer pattern. Two-signer is non-
+negotiable in this kit; the gaming vectors that body-camera footage
+chain-of-custody historically faces are exactly the kind that single-
+signer agency fraud has concealed in past cases.
+
+This fact asserts only that the publication is an example, not a real
+body-camera footage record. No real incident is hereby investigated.
+No real officer, suspect, complainant, victim, witness, bystander,
+informant, or third party is hereby identified.

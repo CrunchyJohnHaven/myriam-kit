@@ -1,0 +1,156 @@
+FACT 04 — FOOTAGE MANIFEST (FICTIONAL)
+
+The following table lists the per-file SHA-256 hashes of every video
+segment, audio-only segment, and metadata sidecar file ingested into
+the agency's digital evidence-management system (DEMS) for the
+incident defined in FACT 02. The actual file contents are NOT
+included in this MYRIAM publication — only their cryptographic
+hashes. This is the core chain-of-custody property of the seal: the
+manifest anchors WHICH BYTES the agency holds, WITHOUT exposing the
+contents of the footage to the public.
+
+WHY PER-FILE HASHES (NOT JUST ONE WRAPPER HASH)
+
+The seal lists per-segment hashes rather than a single combined-
+archive hash because the operational gaming pattern this seal
+defends against is the silent removal of individual segments
+(individual BWC angles, individual short clips within a longer
+recording, individual audio tracks) from a later production. A
+combined-archive hash would catch deletion of the whole archive but
+not silent removal of one segment within the archive. Per-segment
+hashing makes individual-segment removal cryptographically
+detectable.
+
+VIDEO SEGMENTS — BWC FOOTAGE
+
+  IDX  DEVICE   FILENAME (FICTIONAL)                              SIZE       DURATION   SHA-256
+  ---  -------  ------------------------------------------------  ---------  ---------  ----------------------------------------------------------------
+   1   BWC-A1   F-INC04771_BWC-A1_seg01_22-11-48.mp4              1.84 GB    34:12      46e9c5a4b1c5e8c7d9f0b1a2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60
+   2   BWC-A1   F-INC04771_BWC-A1_seg02_22-46-00.mp4              1.36 GB    25:02      7a8f9e0d1c2b3a4958675849392a1b0c2d3e4f5061728394a5b6c7d8e9f00112
+   3   BWC-A2   F-INC04771_BWC-A2_seg01_22-11-55.mp4              1.79 GB    33:45      b1c2d3e4f50617283940a1b2c3d4e5f6071829304a1b2c3d4e5f6071829304a1b
+   4   BWC-A2   F-INC04771_BWC-A2_seg02_22-45-40.mp4              1.32 GB    25:08      0c1d2e3f405162738495a6b7c8d9e0f102132435465768798a9bacbdcedfe0f10
+   5   BWC-A3   F-INC04771_BWC-A3_seg01_22-14-02.mp4              1.27 GB    24:12      f0e1d2c3b4a5968778695a4b3c2d1e0f01928374655463728190abcdef012345
+   6   BWC-A4   F-INC04771_BWC-A4_seg01_22-15-18.mp4              1.65 GB    31:08      8273645a4b3c2d1e0f9876543210abcdef0123456789abcdef0123456789abcd
+   7   BWC-A4   F-INC04771_BWC-A4_seg02_22-46-26.mp4              1.18 GB    22:29      0011223344556677889900112233445566778899001122334455667788990011
+
+VIDEO SEGMENTS — DASHCAM FOOTAGE
+
+  IDX  DEVICE   FILENAME (FICTIONAL)                              SIZE       DURATION   SHA-256
+  ---  -------  ------------------------------------------------  ---------  ---------  ----------------------------------------------------------------
+   8   DC-V12   F-INC04771_DC-V12_FRONT_22-10-00.mp4              2.41 GB    65:00      1122334455667788990011223344556677889900112233445566778899001122
+   9   DC-V12-R F-INC04771_DC-V12_REAR_22-10-00.mp4               2.38 GB    65:00      2233445566778899001122334455667788990011223344556677889900112233
+  10   DC-V18   F-INC04771_DC-V18_FRONT_22-13-22.mp4              2.10 GB    56:18      3344556677889900112233445566778899001122334455667788990011223344
+
+AUDIO-ONLY SEGMENTS — IN-VEHICLE MICROPHONE
+
+  IDX  DEVICE       FILENAME (FICTIONAL)                          SIZE       DURATION   SHA-256
+  ---  -----------  --------------------------------------------  ---------  ---------  ----------------------------------------------------------------
+  11   DC-V12-MIC1  F-INC04771_DC-V12_MIC1_OFFICER_22-10-00.wav   720 MB     65:00      4455667788990011223344556677889900112233445566778899001122334455
+  12   DC-V12-MIC2  F-INC04771_DC-V12_MIC2_PASSENGER_22-10-00.wav 720 MB     65:00      5566778899001122334455667788990011223344556677889900112233445566
+
+METADATA SIDECAR FILES (per-recording machine-readable annotations
+including GPS tracks, accelerometer/orientation logs, device-state
+event logs, and vendor activation manifests)
+
+  IDX  TYPE                              FILENAME (FICTIONAL)                        SIZE     SHA-256
+  ---  --------------------------------  -----------------------------------------   -------  ----------------------------------------------------------------
+  13   BWC-A1 activation manifest JSON   F-INC04771_BWC-A1_manifest.json              48 KB    6677889900112233445566778899001122334455667788990011223344556677
+  14   BWC-A2 activation manifest JSON   F-INC04771_BWC-A2_manifest.json              46 KB    7788990011223344556677889900112233445566778899001122334455667788
+  15   BWC-A3 activation manifest JSON   F-INC04771_BWC-A3_manifest.json              22 KB    8899001122334455667788990011223344556677889900112233445566778899
+  16   BWC-A4 activation manifest JSON   F-INC04771_BWC-A4_manifest.json              44 KB    9900112233445566778899001122334455667788990011223344556677889900
+  17   DC-V12 GPS track GPX              F-INC04771_DC-V12_track.gpx                  88 KB    aabbccddeeff00112233445566778899aabbccddeeff00112233445566778899
+  18   DC-V12 accelerometer log JSON     F-INC04771_DC-V12_accel.json                 19 KB    bbccddeeff00112233445566778899aabbccddeeff00112233445566778899aa
+  19   DC-V12-R GPS track GPX            F-INC04771_DC-V12_REAR_track.gpx             88 KB    ccddeeff00112233445566778899aabbccddeeff00112233445566778899aabb
+  20   DC-V18 GPS track GPX              F-INC04771_DC-V18_track.gpx                  82 KB    ddeeff00112233445566778899aabbccddeeff00112233445566778899aabbcc
+  21   DC-V18 accelerometer log JSON     F-INC04771_DC-V18_accel.json                 18 KB    eeff00112233445566778899aabbccddeeff00112233445566778899aabbccdd
+  22   DEMS ingest manifest JSON         F-INC04771_DEMS_ingest_manifest.json         126 KB   ff00112233445566778899aabbccddeeff00112233445566778899aabbccddee
+                                          (single agency-side document binding all
+                                          of the above segments and metadata files
+                                          to incident FICT-PD-2026-04771; this is the
+                                          DEMS's own audit-trail entry for the
+                                          ingest event)
+
+  Total files in manifest: 22
+  Total bytes:             ~19.7 GB
+
+REDACTED-BYSTANDER VERSIONS (referenced in this manifest at the
+redacted hash; the unredacted versions are NOT in the public seal
+per refusal rule R3 — see FACT 06 for the redaction event log)
+
+For any segment in the manifest above that contains visible
+bystander faces (per refusal rule R3, bystanders are anyone NOT
+party to the incident — e.g. uninvolved pedestrians, residents
+behind windows, drivers of passing vehicles), a redacted version is
+the canonical PUBLIC-FACING file. The unredacted source remains in
+the agency's DEMS under the agency's retention policy. The redacted
+hash appears in the manifest above; the unredacted hash is sealed
+SEPARATELY in the redaction log (FACT 06) for chain-of-custody
+purposes (so that the redaction event itself is tamper-evident) but
+is not part of this public manifest.
+
+In this fictional example, segments 1, 3, and 8 contain bystander
+faces and are listed with their REDACTED hashes; the unredacted
+hashes appear in FACT 06.
+
+WHAT IS INTENTIONALLY ABSENT FROM THIS MANIFEST
+
+  - Per-frame hashes inside any video segment. The seal anchors
+    file-level integrity; frame-level integrity is part of any
+    forensic-video examination report and is sealed separately if
+    needed.
+  - Hashes of any privately-recorded video (e.g. cellphone footage
+    of the incident captured by a bystander or by a non-agency
+    party). Privately-recorded footage is not in agency custody
+    and is not the agency's to seal; a complainant or other party
+    may seal their own footage in a separate myriam-kit publication.
+  - Hashes of recordings made by other agencies' devices that may
+    have been present (e.g. another agency's officers responding
+    as backup). Other-agency footage is sealed by the other
+    agency in their own myriam-kit publication if they choose to;
+    FACT 05's custody log records any inter-agency hand-offs.
+  - Personally-identifying metadata in filenames. The filename
+    convention above uses anonymized device IDs and the incident
+    number only; the filename is not a re-identifying string.
+
+VERIFICATION PROCEDURE
+
+  Any party — defense counsel, civil-rights plaintiff's counsel, IA
+  investigator, civilian-oversight board member, federal monitor,
+  court-appointed neutral, journalist with proper legal access —
+  receiving any of the above files through a lawful release
+  mechanism (FOIA, court order, oversight subpoena, etc.) may re-
+  hash the file they receive with SHA-256 and compare to the row
+  above. If the hashes match, the recipient holds the exact bytes
+  that were sealed at the moment of ingest. If the hashes do not
+  match, the file has been altered (intentionally or accidentally)
+  since ingest; the recipient should raise this immediately with
+  the issuing agency, opposing counsel where applicable, and any
+  oversight authority with jurisdiction.
+
+  A produced manifest that contains FEWER files than the sealed
+  manifest is publicly detectable: the absent file is enumerable by
+  its row above. A produced manifest that contains MORE files
+  raises a separate question (where did the additional footage
+  come from, and why wasn't it sealed) that the agency must
+  account for; the seal does not foreclose the additional footage
+  being legitimate, only requires that its provenance be
+  explained.
+
+In this fictional example, the hashes above are deterministic
+placeholders. A real intake would replace these with hashes of the
+actual files ingested.
+
+This fact asserts only the manifest of file-level SHA-256 hashes,
+filenames, sizes, and durations as ingested into the DEMS at the
+intake-completion moment for the incident in FACT 02. It does not
+assert:
+  - that the footage contents depict any specific event,
+  - whether any officer or other party's conduct in the footage
+    was lawful, proper, within policy, criminal, or actionable,
+  - that the manifest is complete with respect to all recordings
+    that existed of the incident (other-party recordings are out
+    of scope; the seal commits only to agency-custody recordings),
+  - that any individual file is admissible under any specific
+    court's evidentiary standard,
+  - that any redaction applied to a segment was appropriate
+    (covered separately in FACT 06).

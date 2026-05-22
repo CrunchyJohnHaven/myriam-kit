@@ -1,0 +1,151 @@
+FACT 02 — INCIDENT IDENTIFICATION (FICTIONAL)
+
+  Case / incident number:  FICT-PD-2026-04771 (FICTIONAL — the
+                           agency's primary case-management identifier
+                           for this incident; cross-walks to the
+                           agency's CAD/RMS systems and to any
+                           subsequent district-attorney or U.S.-
+                           attorney case docket)
+  Incident date / time:    2026-05-19, 22:14 PDT through
+                           2026-05-19, 23:08 PDT (FICTIONAL — the
+                           incident window for which footage was
+                           ingested in this seal; see FACT 03 for
+                           per-device recording start/stop times
+                           which may extend slightly beyond the
+                           incident window itself, e.g. travel to
+                           and from the scene)
+  Incident classification
+    at intake:             Type 2 — Use of Force, Non-Lethal
+                           (FICTIONAL — the agency's contemporaneous
+                           classification of the incident AT the time
+                           of evidence-management intake. Any later
+                           re-classification triggers a new seal that
+                           references this seal's Merkle root per
+                           refusal rule R8.)
+  Incident location:       [Address redacted at this layer; precise
+                           location recorded in the sealed-separately
+                           CAD/RMS record hashed in FACT 05. The
+                           redaction prevents this public publication
+                           from re-identifying bystanders, victims,
+                           or premises occupants.]
+                           Public-safe handle: South District, Beat
+                           42 (FICTIONAL — beat-level location is
+                           released because BWC public-disclosure
+                           policy in the FICTIONAL jurisdiction
+                           treats beat-level as sufficiently
+                           generalized.)
+
+AGENCY IDENTIFICATION
+
+  Agency legal name:       Fictional Municipal Police Department
+                           (FICTIONAL — a real attestation would name
+                           the agency as it appears on its DOJ Civil
+                           Rights Division correspondence record and
+                           its state POST commission registration)
+  ORI (Originating
+    Agency Identifier):    FICT0123400 (FICTIONAL — FBI-assigned 9-
+                           character identifier used in NCIC, NIBRS,
+                           and inter-agency information sharing)
+  POST certification:      State POST Commission certified agency,
+                           FICTIONAL_STATE (the body that certifies
+                           sworn officer training and continued
+                           eligibility to exercise law-enforcement
+                           authority)
+  Agency type:             Municipal police department (FICTIONAL —
+                           other valid values: county sheriff,
+                           state police, transit police, school
+                           district police, university police,
+                           tribal police, federal law-enforcement
+                           agency)
+  Jurisdictional
+    authority:             The City of [FICTIONAL CITY], by municipal
+                           charter; concurrent jurisdiction with
+                           county sheriff's office and state police
+                           per state law
+  Federal monitoring
+    status:                Active DOJ pattern-or-practice
+                           investigation (FICTIONAL — disclosed here
+                           because federal monitoring status is a
+                           companion-disclosure item per FACT 07; a
+                           real attestation honestly records this
+                           field as one of: "none," "preliminary DOJ
+                           inquiry," "active pattern-or-practice
+                           investigation," "under consent decree," or
+                           "decree concluded within prior 24 months."
+                           The disclosure is load-bearing because it
+                           affects how the kit's two-signer model
+                           should be augmented; see refusal rule R4.)
+  BWC policy version:      Department Policy 8.40 (BWC Activation,
+                           Storage, and Release), revision 2024-11
+                           (FICTIONAL — the BWC policy in effect at
+                           the time of the incident. Policy versions
+                           change; freezing the version at intake
+                           prevents later "we have always required
+                           activation in those circumstances" or "we
+                           never required activation in those
+                           circumstances" arguments.)
+
+CERTIFYING OFFICERS (two-signer minimum per refusal rule R4; see
+FACT 08 for cryptographic key bindings)
+
+  SUPERVISING SERGEANT (role-level signatory; primary attester)
+    Role:                  Sergeant in command of involved officers
+                           for the shift in which the incident
+                           occurred (FICTIONAL — typically the watch
+                           sergeant or unit sergeant; the role is the
+                           direct first-line supervisor of the
+                           officers whose BWC footage is being
+                           sealed)
+    Statutory basis for
+    sign-off authority:    Agency General Order 1.10 (Supervisory
+                           Sign-Off on Evidence Intake); state POST
+                           supervisor-certification requirements
+    Recusal status:        Not recused. (FICTIONAL — if the
+                           supervisor was personally present at the
+                           incident, or has prior IA history with any
+                           involved officer, or has personal
+                           relationship to any party, the recusal
+                           must be declared in FACT 07; an
+                           undisclosed recusal that later surfaces
+                           is publicly refutable.)
+
+  INTERNAL AFFAIRS OFFICER (role-level co-signatory; required by
+  refusal rule R4)
+    Role:                  IA Case Officer assigned to oversee
+                           evidence integrity for Type 2 incidents
+                           (FICTIONAL — typically a sergeant or
+                           lieutenant in the IA bureau, distinct from
+                           the chain of command of the involved
+                           officers, with sign-off authority on
+                           evidence-management integrity)
+    Statutory basis for
+    sign-off authority:    Agency General Order 3.20 (Internal
+                           Affairs Authority over Evidence Integrity
+                           for Use-of-Force Incidents); state POST
+                           IA-certification requirements
+    Recusal status:        Not recused. (FICTIONAL — see above
+                           recusal-disclosure rule)
+
+This fact binds the entire sealed publication to a named, accountable
+agency, a named incident, and two role-level offices responsible for
+the attestation. Naming the agency and the offices is not a violation
+of the refusal gates (the agency is a public body and the offices are
+public roles, not private third parties); the seal makes the agency's
+attestation publicly verifiable against the agency and the two
+offices, not against any individual officer's personal name.
+
+This fact asserts only the agency identification, incident
+identification at intake-time classification, federal-monitoring
+status at intake, BWC policy version in effect, and the role-level
+identification of the two certifying officers. It does not assert:
+  - that the incident was correctly classified (later re-
+    classification would trigger an amendment seal per refusal rule
+    R8),
+  - that any officer's conduct was lawful, proper, within policy, or
+    otherwise endorsed by the agency,
+  - that the federal-monitoring status will remain unchanged,
+  - that the BWC policy version in effect was followed in this
+    incident (compliance with policy is a separate IA-review
+    question),
+  - that any named or unnamed individual is or is not a suspect,
+    complainant, victim, witness, or third party.

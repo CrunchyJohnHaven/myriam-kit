@@ -1,0 +1,122 @@
+FACT 03 — CAPTURE DEVICES (FICTIONAL)
+
+This fact freezes, at the moment of evidence-management intake, the
+identification and self-reported state of every recording device
+known to have been active during the incident window defined in FACT
+02. Per refusal rule R5, ALL devices known to have been recording
+must be enumerated, including devices whose footage is NOT included
+in the seal — the latter listed explicitly as gap entries with the
+reason. A seal that omits a known device is the paradigmatic gaming
+pattern this fact prevents.
+
+DEVICES INCLUDED IN THIS SEAL (footage hashed in FACT 04)
+
+  IDX  DEVICE TYPE       DEVICE ID (anonymized)       FIRMWARE     RECORDING START      RECORDING END        ACTIVATION TRIGGER     BATTERY (START / END)   FAULT FLAGS AT INGEST
+  ---  ----------------  ---------------------------  -----------  -------------------  -------------------  ---------------------  ----------------------  -----------------------------------------
+   1   BWC (chest-mount) BWC-A1 (FICT, badge last-2)  Axon-7.12.3  2026-05-19 22:11:48  2026-05-19 23:11:02  manual + holster-draw   91% / 47%               none
+   2   BWC (chest-mount) BWC-A2 (FICT, badge last-2)  Axon-7.12.3  2026-05-19 22:11:55  2026-05-19 23:10:48  manual + light-bar      88% / 41%               none
+   3   BWC (chest-mount) BWC-A3 (FICT, badge last-2)  Axon-7.11.0  2026-05-19 22:14:02  2026-05-19 22:38:14  light-bar               94% / 88%               clipped-audio briefly at 22:31 (logged)
+   4   BWC (chest-mount) BWC-A4 (FICT, badge last-2)  Axon-7.12.3  2026-05-19 22:15:18  2026-05-19 23:08:55  manual                  76% / 30%               none
+   5   Dashcam (front)   DC-V12 (FICT vehicle 12)     Motorola-4.8 2026-05-19 22:10:00  2026-05-19 23:15:00  light-bar               vehicle-bus N/A         none; loop-recording window included pre-event 30s buffer
+   6   Dashcam (rear)    DC-V12-R                     Motorola-4.8 2026-05-19 22:10:00  2026-05-19 23:15:00  light-bar               vehicle-bus N/A         none
+   7   Dashcam (front)   DC-V18 (FICT vehicle 18)     Motorola-4.8 2026-05-19 22:13:22  2026-05-19 23:09:40  light-bar               vehicle-bus N/A         none
+   8   In-vehicle audio  DC-V12-MIC1 (officer mic)    Motorola-4.8 2026-05-19 22:10:00  2026-05-19 23:15:00  paired with DC-V12      vehicle-bus N/A         none
+   9   In-vehicle audio  DC-V12-MIC2 (passenger mic)  Motorola-4.8 2026-05-19 22:10:00  2026-05-19 23:15:00  paired with DC-V12      vehicle-bus N/A         none
+
+  Total devices included: 9
+  Recording span (earliest to latest):
+                          2026-05-19 22:10:00 — 2026-05-19 23:15:00
+                          (65 minutes of multi-angle coverage)
+
+DEVICES KNOWN TO HAVE BEEN PRESENT BUT NOT INCLUDED IN THIS SEAL
+(per refusal rule R5; gaps must be explicit, not silent)
+
+  IDX  DEVICE TYPE       DEVICE ID (anonymized)       REASON FOR EXCLUSION
+  ---  ----------------  ---------------------------  --------------------------------------------------------------------
+   E1  BWC (chest-mount) BWC-A5 (FICT, badge last-2)  Device offline; not activated during incident window; FACT 03 entry
+                                                       below documents the gap. Officer-self-reported reason: "device
+                                                       battery indicator failed pre-shift inspection; spare not available
+                                                       at start of shift." This reason is sealed here so that any later
+                                                       "the device was on" claim is publicly refutable, and any later
+                                                       contrary "the device was off for a different reason" claim is
+                                                       likewise refutable against this contemporaneous record.
+   E2  Interview-room    IR-3 (FICT room 3)           Incident did not enter Room 3; the interview-room recording for
+                          camera                       this incident, if any, is sealed in a SEPARATE myriam-kit
+                                                       publication keyed to the subsequent custodial-interview event
+                                                       (FICTIONAL future incident #FICT-PD-2026-04772), not in this
+                                                       seal.
+
+DEVICE-LEVEL SELF-REPORTED ACTIVATION LOG SHA-256
+
+  Each BWC and dashcam device produces an internal activation log
+  recording every power-on / activation / deactivation / fault event
+  during a shift. These logs are part of the evidence-management
+  ingest and are hashed below; the per-event detail is sealed
+  separately in the agency record and made available under standard
+  discovery or oversight process.
+
+  BWC-A1 activation log: c7d8e9f0a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f6071829304a1b
+  BWC-A2 activation log: d8e9f0a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f6071829304a1b2c
+  BWC-A3 activation log: e9f0a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f6071829304a1b2c3d
+  BWC-A4 activation log: f0a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f6071829304a1b2c3d4e
+  BWC-A5 activation log: a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f6071829304a1b2c3d4e5f
+                         (the A5 log shows no activations during the
+                          incident window, consistent with the E1
+                          exclusion entry above)
+  DC-V12 dashcam log:    b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f6071829304a1b2c3d4e5f60
+  DC-V18 dashcam log:    c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f6071829304a1b2c3d4e5f6071
+
+WHAT FAULT FLAGS MEAN AND DO NOT MEAN
+
+  Each device's firmware self-reports a small set of operational
+  fault flags during recording: clipped audio, dropped frames,
+  occlusion warning (BWC-side; some firmware versions detect lens
+  occlusion via brightness pattern), low-battery warning, storage-
+  near-full warning, GPS-lock-lost (for devices with GPS metadata).
+  These flags are sealed at intake. The flags are the device's own
+  contemporaneous self-report; they do NOT certify the absence of
+  faults the firmware did not detect (e.g. a firmware bug that
+  produces silently corrupted video might not raise a fault flag),
+  and they do NOT certify the presence of faults that did appear
+  (the flags are accurate to the firmware's detection logic, which
+  has known limits).
+
+  The reason for sealing the fault flags AT INTAKE is to prevent
+  the "the camera malfunctioned" post-hoc framing that arises only
+  after public interest in the incident. If a device's contemporary
+  fault log shows clean operation, a later "the camera had a known
+  bug at that time" claim is publicly refutable against this record.
+  If a device's contemporary log DOES show faults, those faults
+  are anchored in the seal; the agency cannot later silently
+  upgrade them or silently disappear them.
+
+WHAT THIS FACT DOES NOT CERTIFY
+
+  - That every device produced usable footage (a device can be on,
+    recording, with no fault flags, and still produce occluded,
+    low-light, or otherwise non-useful video; see "DOES NOT do"
+    item 1 in the README).
+  - That the device firmware was bug-free at the version listed
+    (vendor firmware versions have had documented bugs; the
+    sealed version-and-firmware-hash record allows later parties
+    to cross-reference vendor advisories).
+  - That the activation triggers were correctly configured for the
+    incident type (activation policy is a separate FACT 02 BWC
+    policy item; whether the policy was followed is a separate IA
+    question).
+  - That the officer-self-reported reason for the BWC-A5 exclusion
+    (E1) is accurate — only that it is what was self-reported at
+    intake and is anchored here so that any later contradiction
+    is publicly visible.
+
+This fact asserts only the per-device identification, firmware
+version, recording window, activation trigger, battery state, and
+self-reported fault flags as recorded at evidence-management intake.
+It does not assert:
+  - that the captured footage is a complete or representative
+    record of the incident,
+  - that the officer-self-reported reasons for any exclusion are
+    accurate,
+  - that the device-firmware self-report is exhaustive of all
+    faults that occurred,
+  - any conclusion about the conduct depicted in the footage.

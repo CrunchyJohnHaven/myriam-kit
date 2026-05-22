@@ -1,0 +1,187 @@
+FACT 08 — SIGNING PRINCIPAL (FICTIONAL)
+
+  Insurer entity:         Fictional Health Insurance Company
+                          (FICTIONAL — same as carrier in FACT 02)
+  Insurer NAIC code:      99999 (FICTIONAL — same as FACT 02)
+  Insurer state of
+    domicile:             [Fictional U.S. state] (FICTIONAL —
+                          same as FACT 02; recorded again here
+                          because the signing principal's
+                          authority is tied to the carrier's
+                          state-licensed UM program in that
+                          state)
+
+  PRIMARY SIGNING PRINCIPAL — LICENSED CLINICAL REVIEWER
+
+    Name:                 Dr. [Fictional Name], MD (FICTIONAL —
+                          a real attestation names the licensed
+                          physician who substantively reviewed
+                          the clinical record and rendered the
+                          decision; per refusal rule R3 the
+                          default is a licensed physician
+                          (MD/DO) with an active state medical
+                          license; per refusal rule R4 the
+                          signer must be the substantive
+                          decisionmaker, not a rubber-stamp on
+                          an AI recommendation)
+    Credentials:          MD, board-certified in [Specialty]
+                          (FICTIONAL example specialty: Internal
+                          Medicine; a real attestation cites the
+                          board certification because the
+                          state-mandated UR statutes typically
+                          require same-or-similar-specialty
+                          review for adverse determinations on
+                          specialty services)
+    State medical
+      license number:     [License number as issued by the
+                          state medical board]
+                          (FICTIONAL example: STATE-MD-99999)
+    State of licensure:   [State of licensure; recorded because
+                          UR-decision authority must be tied to
+                          a current, active state license in a
+                          state that satisfies the carrier's
+                          UM-program reviewer-credentialing
+                          requirement]
+                          (FICTIONAL example: [Fictional U.S.
+                          state])
+    License status:       Active and unrestricted as of date of
+                          decision (FICTIONAL; a real
+                          attestation includes the licensure
+                          status because review by a
+                          restricted-license clinician is a
+                          regulator-reportable defect)
+    Subspecialty
+      certification:      [if applicable — e.g.
+                          board-certification in the
+                          subspecialty most relevant to the
+                          authorization request]
+                          (FICTIONAL example: not applicable for
+                          this outpatient advanced-imaging
+                          request)
+    Role within carrier
+      UM program:         Medical Director, Utilization
+                          Management — [region or service line]
+                          (FICTIONAL example: Medical Director,
+                          Outpatient Advanced Imaging Review,
+                          [Fictional U.S. region])
+    Cryptographic key:    (a real attestation attaches a PGP
+                          public-key fingerprint for the signing
+                          physician, so future statements
+                          claimed to be from the same medical
+                          director — appeal decisions, related
+                          authorization decisions, amendments —
+                          can be cryptographically verified
+                          against the signer of this initial
+                          determination)
+
+  SECONDARY SIGNATORY — UM PROGRAM ADMINISTRATIVE LEAD
+
+    Role:                 [Carrier's UM program administrative
+                          lead — typically the Chief Medical
+                          Officer or VP of Medical Affairs of
+                          the carrier; the secondary signature
+                          attests that the primary signing
+                          physician was empowered under the UM
+                          program to render the decision and
+                          that the decisionmaking environment
+                          met the carrier's stated UM-program
+                          standards]
+                          (FICTIONAL example: Chief Medical
+                          Officer, Fictional Health Insurance
+                          Company)
+    Cryptographic key:    (a real attestation attaches a
+                          SEPARATE PGP public-key fingerprint
+                          for this role-level office, so that
+                          the carrier-level attestation can be
+                          cryptographically verified
+                          independently of the
+                          individual-clinician attestation)
+
+  SUBSTANTIVE-REVIEW ATTESTATION (PER R4)
+
+    The primary signing physician attests that:
+
+      - The signer substantively reviewed the clinical record
+        hashed in FACT 04 against the criteria cited in FACT 03
+        prior to rendering the decision in FACT 05.
+      - The signer is the substantive decisionmaker; any AI
+        / algorithmic / automated system in the pre-decision
+        pipeline (disclosed in FACT 07) acted in a
+        recommendation / triage / screening role only and the
+        signer is empowered, in carrier policy and in
+        practice, to override that system's recommendation
+        in either direction without institutional penalty.
+      - The signer's licensure (state, license number, status,
+        specialty) is accurately recorded above.
+      - To the signer's knowledge, no on-record concerns or
+        recusals relevant to this decision are missing from
+        FACT 07.
+
+  RATIONALE FOR INDIVIDUAL-LEVEL (NOT ROLE-LEVEL) PUBLICATION
+
+    Per refusal rules R3 and R4, the signing principal of a
+    prior-authorization decision must be a credentialed
+    licensed clinician (default: a licensed physician), and
+    the seal records the individual signer's name, license
+    number, and licensure state. Unlike the hospital-readmission
+    attestation kit (which uses role-level publication for the
+    CMO and Quality VP because per-physician readmission rates
+    create retaliation surfaces against clinicians who advocate
+    for sicker patients), the prior-auth kit uses
+    individual-level publication for the signing physician
+    because:
+
+      - The licensed signer is the legally accountable
+        decisionmaker for the determination,
+      - Per-signer decisioning volume (decisions per day,
+        median time per decision, override rate against AI
+        recommendation) is the load-bearing metric for
+        detecting the AI-rubber-stamp failure mode that R4
+        prevents and that is the subject of major recent
+        litigation against carriers (see README "Historical
+        context"),
+      - The signing physician's individual NPI, state
+        medical license, and board certification are already
+        public information via NPPES and state medical board
+        registries — the seal aggregates them with the
+        decision content but does not newly expose private
+        information.
+
+    Where the signing principal is a non-physician licensed
+    clinical reviewer under a carrier UR policy that the state
+    UR statute permits (e.g. RN reviewers for initial-screen
+    determinations in some states), the same individual-level
+    publication standard applies — the signer's professional
+    license type, license number, and state are published.
+
+    Per refusal rule R3, the kit refuses to seal a decision
+    where the named signer is not a credentialed clinical
+    reviewer (i.e. clerical staff, intake personnel, or an AI
+    system named as the signer).
+
+  THE SIGNING PRINCIPAL SHOULD NOT INCLUDE IN THIS FACT:
+
+    - Personal phone numbers, home addresses, or personal
+      email of the signing physician
+    - Family member names or other personal context
+    - Trade secrets about the carrier's UM decisionmaking
+      systems beyond what FACT 07 discloses for the
+      AI-system transparency requirement
+    - Detailed compensation or productivity-quota terms of
+      the signing physician's employment with the carrier
+      (the existence of productivity quotas and their
+      relationship to override authority is disclosable in
+      FACT 07 per R4 attestation; the specific dollar
+      compensation is not)
+
+This fact asserts only the signing-principal identification,
+licensure, role, substantive-review attestation, and the
+rationale for individual-level publication, for the fictional
+decision. It does NOT assert any of those fields about any
+real medical director, licensed clinical reviewer, carrier
+employee, or carrier organization. It does not assert that
+the signing principal is free of all institutional
+decisionmaking pressure (refusal rule R8 in the README
+addresses disclosure of coercion-amplification context where
+present); the substantive-review attestation is the signer's
+representation, not an independent verification.

@@ -1,0 +1,166 @@
+FACT 05 — CHAIN OF CUSTODY (FICTIONAL)
+
+This fact records the custody events from device-side capture
+completion through the completion of evidence-management-system
+(DEMS) ingest. Custodians are identified by ROLE, NOT by personal
+name. A separately-sealed companion record (hashed below) binds role
+labels to the specific individuals on duty; that companion record is
+held by the agency under standard discovery, oversight, and IA
+process — not published in this public seal. The role-only
+publication is the kit's default refusal rule R7 (see FACT 07) — it
+prevents the public seal from creating a permanent searchable
+identifier of every officer involved in every incident, which has in
+past cases been used as a vector for harassment, retaliation against
+whistleblower-prone officers, and doxxing.
+
+PER REFUSAL RULE R6, any unexplained access gap in this log would
+have triggered refusal-to-seal. The log below is presented as the
+agency's contemporaneous record at intake-completion, with all
+custody events accounted for. If an actual incident shows a custody
+gap, the gap must be explicitly listed below with start/end
+timestamps and known facts about who had access; silent smoothing-
+over of gaps is the failure mode R6 catches.
+
+CUSTODY EVENT TIMELINE — INCIDENT FICT-PD-2026-04771
+
+  EVT  TIMESTAMP (FICT)         ROLE OF CUSTODIAN                       EVENT
+  ---  -----------------------  --------------------------------------- ----------------------------------------
+  E01  2026-05-19 23:11:02 PDT  Officer wearing BWC-A1                  BWC-A1 recording ended; device remained
+                                                                        on officer's person; bytes resident on
+                                                                        device internal storage
+  E02  2026-05-19 23:15:00 PDT  Officer in vehicle DC-V12               DC-V12 dashcam loop-recording ended on
+                                                                        ignition-off at end of incident response;
+                                                                        bytes resident on vehicle storage
+  E03  2026-05-19 23:42:18 PDT  Watch sergeant on-scene                 All four BWCs from involved officers
+                                                                        (BWC-A1, A2, A3, A4) verified powered on /
+                                                                        end-of-incident state; officers instructed
+                                                                        not to delete or transfer footage prior to
+                                                                        end-of-shift dock per agency policy 8.40
+  E04  2026-05-19 23:55:00 PDT  Watch sergeant                          BWC-A3 device flagged for swap (battery
+                                                                        depleted to 12% during shift); device
+                                                                        placed in sealed evidence-bag-marked-for-
+                                                                        ingest pending end-of-shift dock; chain-
+                                                                        of-custody bag tag #FICT-BAG-04771-A3
+  E05  2026-05-20 00:14:00 PDT  Officer-of-BWC-A1                       BWC-A1 docked at precinct dock station 2,
+                                                                        normal end-of-shift docking
+  E06  2026-05-20 00:18:00 PDT  Officer-of-BWC-A2                       BWC-A2 docked at precinct dock station 2
+  E07  2026-05-20 00:20:00 PDT  Officer-of-BWC-A4                       BWC-A4 docked at precinct dock station 2
+  E08  2026-05-20 00:32:00 PDT  Evidence-room sergeant                  BWC-A3 in evidence bag #FICT-BAG-04771-A3
+                                                                        checked into evidence-room secure dock
+                                                                        station; manual intake (not normal-shift
+                                                                        dock) due to mid-shift swap
+  E09  2026-05-20 00:35:00 PDT  Vehicle fleet officer                   DC-V12 vehicle storage transferred to
+                                                                        precinct via wireless upload during
+                                                                        vehicle's docked-charging cycle at
+                                                                        precinct lot; DC-V18 likewise; transfer
+                                                                        logs hashed below
+  E10  2026-05-20 00:48:00 PDT  Axon Evidence.com server (automated)    Auto-upload of BWC-A1, A2, A4 from docks
+                                                                        to Axon Evidence.com cloud; vendor-
+                                                                        produced upload-completion manifest
+                                                                        (hashed below)
+  E11  2026-05-20 00:51:00 PDT  Axon Evidence.com server (automated)    Auto-upload of BWC-A3 from evidence-room
+                                                                        dock
+  E12  2026-05-20 01:06:00 PDT  DEMS ingest service (automated)         Agency DEMS ingest job triggered for
+                                                                        incident FICT-PD-2026-04771; all 9 device
+                                                                        sources enumerated; manifest assembled
+  E13  2026-05-20 01:14:00 PDT  DEMS ingest service (automated)         Per-file SHA-256 computed during ingest;
+                                                                        hashes match the per-device upload
+                                                                        manifests from Axon and Motorola; no
+                                                                        integrity discrepancy at this stage
+  E14  2026-05-20 01:22:00 PDT  Supervising sergeant (FACT 02 signer)   Sergeant logged into DEMS, reviewed
+                                                                        manifest of 22 files (FACT 04); confirmed
+                                                                        all known-present devices accounted for
+                                                                        (with BWC-A5 explicitly flagged as gap per
+                                                                        FACT 03 entry E1); no anomalies noted
+  E15  2026-05-20 01:48:00 PDT  IA officer (FACT 02 co-signer)          IA officer assigned to use-of-force
+                                                                        incidents independently logged into DEMS,
+                                                                        independently reviewed manifest, confirmed
+                                                                        the gap entry for BWC-A5 was consistent
+                                                                        with the device's contemporary fault log,
+                                                                        confirmed no IA-flagged custody anomalies
+  E16  2026-05-20 02:12:00 PDT  Redaction-review officer                Bystander-face redaction pass applied to
+                                                                        segments 1, 3, 8 per refusal rule R3 / FACT
+                                                                        06; unredacted and redacted hashes both
+                                                                        recorded (FACT 06)
+  E17  2026-05-20 02:36:00 PDT  Supervising sergeant + IA officer       Joint sign-off; this seal publication
+                                                                        being prepared; manifest frozen at this
+                                                                        moment
+
+SEPARATELY-SEALED COMPANION RECORDS (referenced by hash; not
+themselves published in this public seal)
+
+  Role-to-individual binding record (binds each event above to the
+  specific on-duty individual; held under agency CMS access control;
+  discoverable under IA, court, and oversight processes):
+    SHA-256: 5f6071829304a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f607182930
+
+  Axon Evidence.com per-device upload-completion manifests (vendor-
+  signed; the vendor-side cryptographic receipts for E10-E11):
+    SHA-256: 4d5e6f70819203a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c
+
+  DC-V12 / DC-V18 vehicle-to-precinct wireless transfer logs (E09):
+    SHA-256: 6071829304a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f6071829304
+
+  Dock-station per-device access log for stations 2 and the
+  evidence-room dock (covering E05-E08):
+    SHA-256: 71829304a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f6071829304a1
+
+  Evidence-bag chain-of-custody tag history for BWC-A3 swap
+  (tag #FICT-BAG-04771-A3, covering E04-E08):
+    SHA-256: 829304a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f6071829304a1b2
+
+  DEMS access log (every login to and action within the incident-
+  scoped DEMS folder from intake through seal moment):
+    SHA-256: 9304a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f6071829304a1b2c3
+
+  CAD/RMS record for incident FICT-PD-2026-04771 (the agency's
+  primary incident record from which the precise location and
+  involved-officer roster are derived; location-redacted in this
+  public seal per FACT 02 but anchored here by hash):
+    SHA-256: a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60718293
+
+NON-CASE-PERSONNEL ACCESS EVENTS (zero in this fictional example;
+listed explicitly as the kit requires the field to be filled even
+when empty so that silent gaps are visually detectable)
+
+  Non-case-personnel access events between E12 (ingest) and E17
+  (seal): NONE. (FICTIONAL — a real attestation must enumerate any
+  access by personnel not assigned to the case during this window;
+  e.g. IT-personnel access during a system migration, vendor-
+  technician access for support, federal-monitor-office personnel
+  access under consent decree. Each such access creates a
+  custody-integrity question that must be addressed; if access
+  occurred and was not logged, refusal rule R6 fires.)
+
+WHAT THIS LOG IS AND IS NOT
+
+  This log is the agency's own contemporaneous custody record, with
+  the role/name redaction applied for public publication. It is not
+  a court's finding that the custody chain was procedurally correct
+  under applicable law, nor an IA's finding of compliance with
+  agency policy. The log is the agency's claim; whether the claim
+  satisfies any specific evidentiary standard, oversight process,
+  or accreditation review is a matter for those processes.
+
+  Any post-sealing modification of the custody log — adding a
+  custody event after the fact, removing one, or changing the
+  timestamp on one — produces a different SHA-256 over this fact
+  body and is publicly detectable. The hash anchor freezes the
+  agency's contemporaneous custody claim at the moment of seal.
+
+This fact asserts only the custody-event timeline above, the
+existence of zero non-case-personnel access events in the
+intake-to-seal window, and the hashes of the separately-sealed
+companion records, as the agency contemporaneously recorded them at
+the moment of sealing. It does not assert:
+  - that the chain-of-custody was procedurally correct under
+    applicable law or agency policy,
+  - that the role-to-individual binding is correct in the
+    companion record (that is a separate evidentiary question),
+  - that no custody events occurred that were not logged (the
+    seal commits to the log as recorded; an undisclosed access
+    by an authorized custodian who failed to log it would be a
+    policy violation independent of the seal),
+  - that the BWC-A3 mid-shift battery-swap was handled correctly
+    under policy (compliance with policy is a separate IA-review
+    question).

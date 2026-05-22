@@ -1,0 +1,136 @@
+FACT 06 — REDACTION LOG (FICTIONAL)
+
+This fact records every redaction event applied to the footage in
+FACT 04 between evidence-management-system ingest (FACT 05 event
+E12) and seal moment (FACT 05 event E17). Each redaction event
+records: the source file, the type of redaction (face blur, audio
+bleep, license-plate blur, etc.), the reason category, the
+reviewer's role, and the SHA-256 hashes of BOTH the unredacted
+source and the redacted output.
+
+WHY THIS FACT IS LOAD-BEARING
+
+Redaction is the most common vector for silent post-incident change
+to body-camera footage. A department under pressure to release
+footage may apply an initial redaction set, then under further
+pressure quietly expand the redaction (blurring more faces, bleeping
+more audio, blurring license plates that initially weren't blurred)
+and re-release the "same" footage with a different content profile.
+Sealing the redaction events AT INTAKE prevents this. Any post-seal
+expansion of redaction:
+  - changes the redacted-output hash (so the released file no
+    longer matches what would have been released by the sealed
+    redaction set), AND
+  - if introduced as a new redaction event, requires either a new
+    sealed amendment (referencing this seal's Merkle root) or a
+    publicly-detectable departure from the sealed redaction
+    profile.
+
+The kit makes silent redaction expansion cryptographically visible.
+Legitimate redaction expansion (e.g. a court order to redact
+additional material discovered during litigation) is handled via
+amendment seal; silent expansion is the failure mode.
+
+REDACTION EVENTS APPLIED AT INTAKE
+
+  EVT   SOURCE FILE (FACT 04 row)          REDACTION TYPE            REASON CATEGORY                              REVIEWER ROLE              UNREDACTED SHA-256                                                  REDACTED SHA-256
+  ----  ---------------------------------  ------------------------  -------------------------------------------- -------------------------- ------------------------------------------------------------------  ------------------------------------------------------------------
+  R01   Row 1 (BWC-A1 seg01)               face blur, 3 bystanders   R3 refusal: bystander faces visible          Redaction-Review Officer   ufe891011223344556677889900aabbccddeeff112233445566778899aabbccd    46e9c5a4b1c5e8c7d9f0b1a2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f60
+  R02   Row 1 (BWC-A1 seg01)               license-plate blur,       agency policy: uninvolved-vehicle plate      Redaction-Review Officer   (same as R01 unredacted; blurs combined)                            (final redacted hash in R01 is post-both-blurs)
+                                            2 uninvolved vehicles     readability not required for public seal
+  R03   Row 3 (BWC-A2 seg01)               face blur, 2 bystanders   R3 refusal: bystander faces visible          Redaction-Review Officer   utw902112233445566778899aabbccddeeff112233445566778899aabbccdee    b1c2d3e4f50617283940a1b2c3d4e5f6071829304a1b2c3d4e5f6071829304a1b
+  R04   Row 8 (DC-V12 FRONT)               face blur, 5 bystanders   R3 refusal: bystander faces visible          Redaction-Review Officer   uvx013223344556677889900aabbccddeeff112233445566778899aabbccdef    1122334455667788990011223344556677889900112233445566778899001122
+  R05   Row 8 (DC-V12 FRONT)               license-plate blur,       agency policy                                Redaction-Review Officer   (same as R04 unredacted; blurs combined)                            (final redacted hash in R04 is post-both-blurs)
+                                            8 uninvolved vehicles
+  R06   Row 11 (DC-V12-MIC1 OFFICER)       audio bleep, 1 segment    statutorily protected: officer mentioned     Redaction-Review Officer   uwy124334455667788990011aabbccddeeff112233445566778899aabbccdff    4455667788990011223344556677889900112233445566778899001122334455
+                                            (00:18 of audio)          a confidential informant's first name in
+                                                                      a single utterance during the response;
+                                                                      bleeped per refusal rule R1
+  R07   Row 12 (DC-V12-MIC2 PASSENGER)     audio bleep, 2 segments   statutorily protected: passenger officer     Redaction-Review Officer   uxz235445566778899001122aabbccddeeff112233445566778899aabbccdf0    5566778899001122334455667788990011223344556677889900112233445566
+                                            (00:09 + 00:14)           mentioned a minor's first name (the minor
+                                                                      was a bystander witness, not a party to
+                                                                      the incident); bleeped per refusal rule R2
+
+  Total redaction events applied:           7
+  Source segments affected:                 5 of 22 (segments 1, 3, 8, 11, 12)
+  Source segments unredacted at intake:     17 of 22 (released to public seal manifest with no redaction
+                                            because no bystander/protected-category content was visible
+                                            or audible per the reviewer's contemporaneous determination)
+
+REDACTION-METHOD TECHNICAL NOTE
+
+  - Face blur applied via the DEMS's vendor-provided face-detection
+    plus gaussian-blur pipeline at vendor-default strength; the
+    blur is not reversible without the unredacted source.
+  - License-plate blur applied via the same pipeline with vendor's
+    plate-detection model; same non-reversibility.
+  - Audio bleep applied via vendor tool overlaying a 1 kHz tone of
+    duration equal to the bleeped segment; bleeped segment is not
+    recoverable from the released file.
+
+WHY UNREDACTED HASHES ARE LISTED HERE BUT THE UNREDACTED FILES ARE
+NOT PUBLISHED
+
+The unredacted hashes are listed for two reasons:
+  1. Forensic integrity. A future agency claim that "we applied no
+     redactions to this segment" or "we applied a different
+     redaction pass" is publicly refutable: the unredacted hash
+     and the redacted hash are both committed; the gap between
+     them is exactly the redaction event listed above.
+  2. Chain-of-custody continuity. The unredacted source remains in
+     the agency's DEMS under retention policy. Any lawful release
+     of the unredacted source (e.g. under court-ordered discovery
+     to defense counsel under a protective order) can be re-hashed
+     against the unredacted hash above to confirm integrity of the
+     unredacted source.
+
+The unredacted FILES themselves are NOT in this public manifest per
+refusal rule R3 (bystander faces) and R1/R2 (protected-category
+identifiers). The HASH being public does not re-identify any
+bystander or protected-category individual; the hash is opaque to
+the content. A hash alone of a video file containing a bystander's
+face is not a re-identification vector.
+
+NO REDACTIONS APPLIED TO METADATA SIDECARS
+
+The metadata sidecar files (FACT 04 rows 13-22) are byte-identical
+between the agency's internal copy and the publicly-hashed copy.
+Activation logs, GPS tracks, accelerometer data, and the DEMS
+ingest manifest do not contain bystander or protected-category
+content and are not redacted. Their public hashes match their
+internal hashes.
+
+POST-SEAL REDACTION POLICY
+
+After this seal moment, any additional redaction (in response to
+victim-rights statute compliance, court order, settlement
+agreement, or any other lawful trigger) requires either:
+  - publication of an AMENDMENT SEAL that references this seal's
+    Merkle root in FACT 02 and lists the new redaction events in
+    FACT 06 with the trigger reason, OR
+  - documentation in the agency's DEMS audit trail in a manner
+    that allows oversight authorities to compare the released
+    file against the sealed redacted hash and verify the
+    additional redaction was lawful.
+
+Silent post-seal redaction expansion that does not produce an
+amendment seal is publicly detectable (the released file's hash
+will not match the sealed redacted hash) and is the exact failure
+mode this fact prevents.
+
+This fact asserts only the redaction events listed above, the
+reviewer-role identification, the unredacted and redacted SHA-256
+hashes of the affected files, and the no-redactions-applied-to-
+metadata-sidecars statement, as recorded at intake-completion. It
+does not assert:
+  - that the redaction reasons are exhaustive of all redactions
+    that might be legally required under any specific jurisdiction's
+    public-records, victim-rights, or court-ordered redaction
+    regime,
+  - that the redactions applied were sufficient to comply with all
+    such regimes (a court or oversight authority may later order
+    additional redactions, which would trigger an amendment seal),
+  - that the vendor face-detection and plate-detection models are
+    100% accurate (some bystander faces or plates may not have
+    been detected; legitimate post-seal redaction of missed items
+    follows the amendment-seal protocol above).
