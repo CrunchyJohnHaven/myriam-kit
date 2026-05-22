@@ -1,0 +1,242 @@
+FACT 07 — COMPANION DISCLOSURES AND REFUSAL RECORD (FICTIONAL)
+
+Per the MYRIAM kit's "constraint-first" design principle, this fact
+records what the kit explicitly refused to seal and any companion
+disclosures the agency is obliged to publish alongside the footage
+record so that selective omission is detectable. The disclosures here
+are not optional — leaving any of them blank without explicit "none at
+intake time" attestation is itself a public red flag.
+
+COMPANION DISCLOSURES (sealed alongside the footage record so the
+seal cannot be read in isolation)
+
+  C1. PENDING IA INVESTIGATIONS ON INVOLVED OFFICERS
+      As of intake-completion (FACT 05 event E17), the involved
+      officers (those wearing BWC-A1, A2, A3, A4 and operating
+      vehicles DC-V12 and DC-V18 during the incident) are subjects of
+      the following pending IA investigations not directly related to
+      this incident:
+
+        Officer-of-BWC-A1: 1 pending IA investigation (allegation
+          category: discourtesy; status: under investigation; filed
+          2026-02-14)
+        Officer-of-BWC-A2: 0 pending
+        Officer-of-BWC-A3: 2 pending IA investigations (allegation
+          categories: improper search; failure to activate BWC at
+          required moment; both under investigation; filed
+          2026-01-09 and 2026-04-22 respectively)
+        Officer-of-BWC-A4: 0 pending
+
+      (FICTIONAL — a real attestation discloses this because the
+      Giglio doctrine and the receiving prosecutor's office may have
+      a duty to know about pending IA when assessing the credibility
+      of an involved officer; transparency about the existence of
+      pending IA at intake-time prevents a later "we didn't realize
+      this officer was already under investigation" deflection. Note
+      that the kit lists CATEGORIES and STATUSES, not personal names
+      or detailed allegations — per refusal rules R1 and R7.)
+
+  C2. PENDING CIVIL SUITS NAMING INVOLVED OFFICERS OR THE
+      DEPARTMENT
+      As of intake-completion, the following pending civil-rights
+      lawsuits are filed naming any of the involved officers or the
+      department itself:
+
+        Suit #FICT-CV-2025-1180 (federal court, alleged §1983
+          excessive-force claim arising from unrelated 2025 incident;
+          one of the four officers above is a named defendant; case
+          in discovery)
+        Suit #FICT-CV-2025-1842 (state court, alleged Monell-type
+          claim against department for pattern of inadequate BWC
+          activation enforcement; department is sole defendant; case
+          in pretrial motions)
+
+      (FICTIONAL — a real attestation lists pending civil suits even
+      where the present incident is not the subject of the suit,
+      because the litigation context may affect Giglio analysis and
+      because plaintiffs' counsel may have an interest in this
+      incident's sealed manifest.)
+
+  C3. FEDERAL MONITORING STATUS
+      The department is currently subject to an ACTIVE DOJ
+      pattern-or-practice investigation under 34 U.S.C. §12601
+      (FICTIONAL — opened FICTIONAL_DATE; investigation phase, NOT
+      yet at the consent-decree stage). The DOJ Civil Rights
+      Division's Special Litigation Section is the investigating
+      authority.
+
+      Because federal monitoring is active, the kit RECOMMENDS (does
+      not yet require) a third signer from the DOJ monitor's office
+      or a court-appointed monitoring authority. In this fictional
+      example, the department has elected to proceed with the
+      two-signer minimum; the recommendation for a third monitor
+      signer is recorded here so that any later question of "why
+      wasn't the federal monitor involved in this seal" is answered
+      by the contemporaneous record.
+
+      Companion DOJ correspondence file SHA-256 (the most recent
+      DOJ communication received by the department concerning this
+      investigation, sealed separately):
+        SHA-256: a304a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f6071829304a1b2c3d
+
+  C4. RECUSALS BY EITHER SIGNER
+      Supervising sergeant: NO RECUSAL. The sergeant was not
+        personally on-scene during the incident, has no documented
+        prior IA history with any of the four involved officers in
+        the prior 24 months, and has no personal relationship with
+        any party to the incident. (FICTIONAL — recusal triggers
+        include: signer was on-scene, signer is in same household
+        as an involved officer or party, signer has prior IA
+        history with an involved officer in the prior 24 months,
+        signer has financial relationship to any party, signer is
+        subject of a related complaint.)
+      IA officer: NO RECUSAL. The IA officer assigned to oversee
+        Type 2 incidents has no documented relationship with any of
+        the four involved officers beyond the IA-officer-to-line-
+        officer relationship that is the normal posture for the
+        role.
+
+  C5. PRIOR OFFICER-CAMERA-POLICY VIOLATIONS WITHIN THE PRIOR 12
+      MONTHS (BY ROLE / DEVICE, NOT BY PERSON)
+      In the 12 months prior to this incident, sustained findings
+      of BWC-policy violations have been recorded for the involved
+      officers:
+
+        Officer-of-BWC-A1: 0 sustained
+        Officer-of-BWC-A2: 0 sustained
+        Officer-of-BWC-A3: 1 sustained finding (failure to activate
+          at vehicle-stop initiation, 2025-09 incident; documented
+          in IA-finding case #FICT-IA-2025-2247)
+        Officer-of-BWC-A4: 0 sustained
+
+      (FICTIONAL — disclosed here because per-officer BWC-policy
+      compliance history is relevant to evaluating whether the
+      present incident's BWC activations were policy-compliant; the
+      pattern is sealed at role/device level, not at personal-name
+      level, per refusal rule R7. A future "this officer has always
+      properly activated BWC" claim is publicly refutable against
+      this record.)
+
+  C6. CASE STATUS DISCLOSURES THAT BEAR ON RELEASE TIMING
+      As of intake-completion, this incident is associated with:
+        - Active criminal investigation: YES (the agency's own
+          criminal investigation of conduct depicted in the
+          incident; the specific charges and parties are NOT
+          disclosed here per refusal rules R1 and the agency's
+          policy of not pre-judging investigation outcomes)
+        - Pending district-attorney review for charging decision:
+          NO (DA referral has not yet occurred)
+        - Pending FOIA / state-public-records request for this
+          footage: NO (no public-records request has been filed
+          as of intake-completion)
+        - Pending civilian-oversight-board notification: YES (the
+          agency's BWC policy requires notification to the
+          Civilian Police Advisory Commission for all Type 2
+          incidents; notification was made at FICTIONAL TIME)
+
+  C7. KNOWN ISSUES WITH CAPTURE DEVICES OR DEMS SOFTWARE AT THE
+      TIME OF INTAKE
+      Vendor advisories for Axon BWC firmware versions 7.11.0 and
+      7.12.3 and for Motorola dashcam firmware 4.8 current as of
+      intake date were reviewed; the redaction-review officer
+      assessed that no open issues affect the integrity of the
+      captured footage for this incident. (FICTIONAL — a real
+      attestation includes the URL or hash of the vendor advisory
+      lists reviewed.)
+      Reviewed-advisories list SHA-256:
+        b1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f6071829304a1b2c3d4e5f6
+
+REFUSAL RECORD — patterns the kit refused to seal
+
+The kit does NOT seal the following types of facts, even if requested
+by the agency, a co-equal authority, or any party with apparent
+operational interest:
+
+  R1. CONFIDENTIAL-INFORMANT IDENTIFYING INFORMATION
+      No fact published here may name a confidential informant,
+      include any handle that maps to a specific CI, expose a CI-
+      provided detail that re-identifies them within the local
+      context, or otherwise compromise CI safety. CI handling has
+      its own access-controlled records under the agency's CI
+      protocol; public seal is not a CI re-identification surface.
+
+  R2. VICTIM-IDENTIFYING INFORMATION FOR PROTECTED CATEGORIES
+      No fact may name (or expose any identifier reducible to) a
+      sexual-assault victim, a minor, a victim of intimate-partner
+      violence, a witness covered by victim-rights statutes, or any
+      other protected-category individual whose identity is excluded
+      by statute from public disclosure. State victim-rights
+      statutes, federal statutes (VAWA, juvenile-record sealing
+      analogs), and the agency's victim-rights protocol categorically
+      exclude such data; the seal complies.
+
+  R3. UNREDACTED BYSTANDER FACES OR OTHER UNINVOLVED-PARTY VISUAL
+      IDENTIFIERS
+      Per FACT 06, bystander faces (and uninvolved-vehicle license
+      plates) are redacted from any segment in the public manifest
+      where they were visible. The unredacted hashes are sealed for
+      chain-of-custody integrity (so silent later redaction
+      expansion is detectable), but the unredacted FILES are not
+      published.
+
+  R4. SINGLE-SIGNER SEALING WITHOUT IA CO-SIGNATURE
+      Two-signer minimum: supervising sergeant of the involved
+      unit AND a separate officer from internal affairs. Agencies
+      whose IA function is under federal monitoring or court-
+      appointed receivership are STRONGLY ENCOURAGED to add a
+      third signer from the monitoring authority. The kit refuses
+      to seal under a single signature; refusal is itself sealed.
+
+  R5. PARTIAL-INCIDENT SEALING WITHOUT EXPLICIT GAP DISCLOSURE
+      FACT 03 must enumerate ALL devices known to have been
+      present and recording, including those whose footage is
+      NOT in the seal — the latter as explicit gap entries with
+      reasons. Silent omission of known-present devices is
+      refused. (Applied in this example: BWC-A5 listed as gap E1.)
+
+  R6. SEALING WITH UNEXPLAINED CHAIN-OF-CUSTODY ACCESS GAPS
+      If FACT 05 shows a custody gap (a period during which the
+      footage was accessible without logged custody, or during
+      which the log itself has missing entries), the kit refuses
+      to seal until the gap is explained in the log or explicitly
+      flagged as a "custody-log anomaly." Sealing a smoothed-over
+      gap is the failure mode this rule catches.
+
+  R7. PERSONAL NAMES OF INVOLVED OFFICERS BEYOND ROLE-LEVEL
+      Per FACT 02 / 05 / 08, the signing principals are named at
+      role level; involved officers are identified by anonymized
+      BWC ID (which the agency's separate role-to-individual
+      binding maps to badge numbers and personal names under
+      access control). The reason: officer-personal-name publication
+      on Bitcoin creates a retaliation surface against the officers
+      most likely to honestly attest to problematic numbers
+      (whistleblowers, dissenters, members of historically-targeted
+      demographic groups within the department). Agencies in
+      jurisdictions where statute requires public personal-naming
+      may amend their fork; the default refusal favors signer
+      safety and whistleblower protection.
+
+  R8. RE-CLASSIFICATION WITHOUT A SEALED AMENDMENT CHAIN
+      The intake-time classification in FACT 02 is frozen. A later
+      re-classification (e.g. "Type 2 — Non-lethal Use of Force"
+      becomes "Type 1 — Lethal Use of Force" upon discovery that a
+      previously-unrecognized severe injury occurred) requires a
+      new seal that references this seal's Merkle root with the
+      re-classification reason. The kit refuses to silently swap
+      classifications.
+
+If during intake any request matching R1-R8 was made and refused,
+that refusal would be documented as a sealed fact:
+  "Refusal #N: party X requested sealing of [pattern]; the kit
+  refused per refusal-rule R[m]."
+
+  Refusals this intake: NONE. (FICTIONAL — in a real intake, any
+  refusal events would be enumerated here with the requesting
+  party's role, the requested pattern, and the rule cited.)
+
+This fact asserts only the companion-disclosure status and any
+refusal record at the moment of intake-completion. It does not
+assert that the refusal-rule list is exhaustive of all PII,
+classification, or oversight patterns; that all companion
+disclosures have been identified by the agency; or that the
+disclosures listed are themselves non-contestable.
