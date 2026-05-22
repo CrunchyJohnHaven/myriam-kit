@@ -1,0 +1,240 @@
+FACT 06 — VENDOR PAYMENTS (FICTIONAL)
+
+This fact records the aggregate cash actually paid out to each vendor
+during the attestation quarter, AGGREGATED across all contracts
+(this-quarter awards + prior-quarter awards + prior-year multi-year
+contracts). The vendor-payment aggregate is a different signal than
+the contract-award manifest in FACT 04:
+
+  - A vendor with 6 small contracts under the bid threshold and a
+    payment aggregate of USD 4.2M is a different risk pattern
+    (bid splitting) than a vendor with 1 contract at USD 4.2M.
+  - A vendor with one prior-year contract receiving an unusually
+    large payment in the quarter signals either a milestone close-
+    out or an undisclosed change order; either way it deserves
+    visibility.
+  - A vendor with very high aggregate payments who does not appear
+    in FACT 04 (contracts awarded this quarter) is being paid
+    against prior-year contracts only; the aggregate is the only
+    signal that surfaces them.
+
+Sealing per-vendor payment aggregates makes all three patterns
+publicly diffable in advance of audit. The CFO co-signs this fact
+specifically: the CFO attests that the per-vendor aggregates
+reconcile to the county's general-ledger disbursement records for
+the attestation period.
+
+VENDOR-IDENTIFICATION POLICY
+
+  Same as FACT 04: registered legal entity name + state-of-
+  incorporation registration ID only. No federal EINs of natural
+  persons. No individual employees. No personal financial
+  information.
+
+ITEMIZATION THRESHOLD FOR VENDOR PAYMENTS
+
+  Vendors with quarterly payment aggregate ≥ USD 10,000 are
+  itemized below. Below-threshold vendors are aggregated by
+  spending category at the bottom of this fact.
+
+  This is the same threshold as FACT 04 contract awards, BUT
+  applied to the aggregate of payments across all contracts to
+  the vendor during the quarter — not to individual payment
+  events. A vendor receiving four USD 4,000 payments in the
+  quarter (aggregate USD 16,000) IS itemized here even though
+  no individual payment exceeded the threshold and no contract
+  to that vendor would itself appear in FACT 04. This is the
+  bid-splitting-detection mechanism.
+
+VENDORS WITH QUARTERLY PAYMENT AGGREGATE ≥ USD 10,000
+(FICTIONAL — illustrative set)
+
+  V-2026-Q2-001  Fictional Paving Co. Inc.  (FIC-CORP-99214)
+    Total paid this quarter:    USD 2,105,000
+    Across contracts:           1 (CP-2026-RD-014; THIS-quarter
+                                award; see FACT 04 K-2026-Q2-001)
+    Payment events:             1 (25% mobilization payment)
+    Payment / award ratio:      25.0% of awarded value
+    Notes:                      Routine mobilization payment per
+                                contract schedule.
+
+  V-2026-Q2-002  Fictional Mechanical Contractors Inc.  (FIC-CORP-87655)
+    Total paid this quarter:    USD 1,820,000
+    Across contracts:           1 (CP-2025-JL-022; prior-year jail
+                                HVAC; ONE change order this quarter,
+                                see CO-2026-Q2-001 in FACT 05)
+    Payment events:             3 (progress payments)
+    Notes:                      Routine progress payments + partial
+                                disbursement against this-quarter
+                                change order CO-2026-Q2-001.
+
+  V-2026-Q2-003  Fictional Software Solutions LLC  (FIC-CORP-77108)
+    Total paid this quarter:    USD 2,135,200
+    Across contracts:           2 (CP-2025-IT-018 property tax
+                                system upgrade + CP-2024-SW-005
+                                multi-year SaaS license renewal)
+    Payment events:             4
+    Notes:                      Multi-contract relationship; cross-
+                                reference to FACT 05 CO-2026-Q2-004
+                                (this vendor's prior-year contract
+                                received a 16.25% change order this
+                                quarter).
+
+  V-2026-Q2-004  Fictional Construction Partners LLC  (FIC-CORP-33442)
+    Total paid this quarter:    USD 4,180,000
+    Across contracts:           1 (CP-2024-FAC-007 courthouse
+                                renovation; prior-year, ONE change
+                                order this quarter, see
+                                CO-2026-Q2-003)
+    Payment events:             3 (milestone payments + partial
+                                disbursement against this-quarter
+                                change order CO-2026-Q2-003)
+    Notes:                      Cross-reference to FACT 05
+                                CO-2026-Q2-003 — this vendor's
+                                cumulative-change-creep is now
+                                33.6% of original contract value;
+                                flagged to IG case IG-2026-014.
+
+  V-2026-Q2-005  Fictional Community Food Network  (FIC-NPO-04471)
+    Total paid this quarter:    USD 450,000
+    Across contracts:           1 (CP-2026-SS-007 sole-source food
+                                distribution; THIS-quarter award,
+                                see FACT 04 K-2026-Q2-002)
+    Payment events:             1 (Q1 disbursement of multi-year
+                                grant)
+    Notes:                      Sole-source vendor; cross-reference
+                                to FACT 07 sole-source disclosures.
+
+  V-2026-Q2-006  Fictional Justice Information Systems LLC  (FIC-CORP-77108-J)
+    Total paid this quarter:    USD 325,000
+    Across contracts:           1 (CP-2026-IT-011 jail-management
+                                software replacement; THIS-quarter
+                                RFP award)
+    Payment events:             1 (project initiation payment)
+
+  V-2026-Q2-007  Fictional Medical Devices Group Inc.  (FIC-CORP-66104)
+    Total paid this quarter:    USD 0
+    Across contracts:           1 (CP-2026-PH-019 imaging equipment;
+                                THIS-quarter award, see FACT 04
+                                K-2026-Q2-005)
+    Payment events:             0 (no payments yet; delivery
+                                scheduled Q3)
+    Notes:                      Listed for the cross-reference; no
+                                quarterly aggregate threshold met
+                                from this contract alone, but the
+                                contract itself appears in FACT 04
+                                so the vendor is named here for
+                                completeness. (Future quarters
+                                where payments are made will
+                                threshold-itemize this vendor.)
+
+  V-2026-Q2-008  Fictional Legal Services Group LLP  (FIC-LLP-22117)
+    Total paid this quarter:    USD 380,000
+    Across contracts:           2 (CP-2026-PR-031 class-action
+                                defense + CP-2024-PR-019 ongoing
+                                outside counsel for unrelated
+                                litigation)
+    Payment events:             6 (monthly billing)
+
+  V-2026-Q2-009  Fictional Office Supplies Distributor LLC
+                              (FIC-CORP-55881)
+    Total paid this quarter:    USD 87,400
+    Across contracts:           0 itemized contracts in FACT 04
+                                (all payments under USD 10,000-per-
+                                event purchase orders against a
+                                blanket-purchase-agreement)
+    Payment events:             52 (high-frequency, small-dollar
+                                routine office-supply purchases
+                                across all county departments)
+    Notes:                      Vendor itemized HERE despite no
+                                FACT 04 entry: this is exactly the
+                                bid-splitting-detection mechanism.
+                                52 small purchases aggregate to
+                                USD 87,400. The aggregate is
+                                routine (legitimate blanket-
+                                purchase-agreement consumption);
+                                the sealing of the aggregate makes
+                                it visible nonetheless, so that any
+                                LATER pattern of growth (e.g.,
+                                USD 87,400 → USD 174,800 → USD
+                                347,200 across subsequent quarters
+                                with the same vendor) is publicly
+                                diffable across the chained
+                                quarterly seals.
+
+  V-2026-Q2-010  Fictional Fuel Services Inc.  (FIC-CORP-91003)
+    Total paid this quarter:    USD 124,600
+    Across contracts:           0 itemized in FACT 04 (state-
+                                contract piggyback for fuel
+                                purchases — county participates in
+                                statewide fuel contract managed by
+                                State General Services)
+    Payment events:             12 (monthly fuel deliveries to
+                                county fleet operations)
+    Notes:                      State-contract piggyback is itself
+                                a procurement mode; the aggregate
+                                is sealed even though the
+                                underlying contract is not held
+                                directly by the county.
+
+AGGREGATE PER-VENDOR PAYMENT TOTAL THIS QUARTER
+(itemized vendors above):                        USD 11,607,200
+
+BELOW-THRESHOLD VENDOR-PAYMENT CATEGORIES (aggregated, NOT
+itemized — vendor names refused per kit refusal rule R1)
+
+  Per the kit's refusal rule R1 (vendor names of small-dollar
+  contracts <USD 10,000 are refused due to de-anonymization risk
+  for sole proprietors), vendors below the quarterly payment
+  aggregate of USD 10,000 are aggregated by spending category:
+
+  Category 1 — Routine office consumables, supplies, repairs:
+    Total spend:              USD 142,300  (avg USD 612 per event)
+    Vendor count (distinct):  ~232 vendors
+
+  Category 2 — Professional services <USD 10,000 per vendor
+   (small consulting, training, expert testimony fees):
+    Total spend:              USD 287,500  (avg USD 4,420 per event)
+    Vendor count (distinct):  ~65 vendors
+
+  Category 3 — Small-dollar facilities maintenance and repair:
+    Total spend:              USD 198,400  (avg USD 1,840 per event)
+    Vendor count (distinct):  ~108 vendors
+
+  Category 4 — Local-business micro-purchases under petty-purchase
+   authority (county Procurement Card / P-Card transactions):
+    Total spend:              USD 412,800  (avg USD 142 per event)
+    Vendor count (distinct):  ~1,840 vendors
+
+  TOTAL BELOW-THRESHOLD SPEND THIS QUARTER:    USD 1,041,000
+  TOTAL BELOW-THRESHOLD VENDOR COUNT:          ~2,245 distinct
+                                               vendors
+
+  Per-event aggregates by category are sealed; per-vendor names
+  on below-threshold spending are explicitly REFUSED (see FACT 08
+  refusal R1).
+
+OVERALL DISBURSEMENT TOTAL THIS QUARTER
+
+  Itemized vendor payments (≥USD 10,000 aggregate):  USD 11,607,200
+  Below-threshold category aggregates:               USD  1,041,000
+  TOTAL QUARTERLY DISBURSEMENTS:                     USD 12,648,200
+
+  CFO reconciliation to general ledger:
+    General-ledger disbursement total for Q2 2026
+     procurement accounts:                           USD 12,648,200
+    Variance:                                        USD 0
+    Reconciliation memorandum SHA-256:
+      1d2e3f40516273849506172839405a6b7c8d9e0f1a2b3c4d5e6f70819203a4b5
+
+This fact asserts only the per-vendor payment aggregates as recorded
+in the county's general-ledger disbursement system for the
+attestation period. It does not assert that the work paid for was
+actually performed at the value paid; that the vendors named are
+unrelated to each other or to any undisclosed beneficial owner; that
+the below-threshold category aggregates represent legitimate small-
+dollar consumption rather than a bid-splitting pattern; or that the
+CFO's reconciliation is itself free of misclassification. The seal
+anchors WHAT WAS PAID. Investigation of WHO WAS PAID FOR WHAT IN
+RETURN FOR WHAT is the jurisdiction of the county IG, the state
+auditor, federal grant managers, and prosecutors.

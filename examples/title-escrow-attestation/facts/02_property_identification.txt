@@ -1,0 +1,86 @@
+FACT 02 — PROPERTY IDENTIFICATION (FICTIONAL)
+
+  Assessor's parcel number (APN):
+                           FICT-014-2236-073-0000 (FICTIONAL)
+  County:                  Fictional County (FICTIONAL)
+  State:                   State of Fictionalia, USA (FICTIONAL)
+  Recorder of deeds:       Office of the Fictional County Recorder
+                           (FICTIONAL); recording office of record
+                           for all conveyances and encumbrances
+                           affecting the parcel
+  Tax assessor:            Fictional County Assessor (FICTIONAL)
+  Common street address:   1247 Fictional Avenue, Fictional City,
+                           State of Fictionalia 99999 (FICTIONAL)
+  Property class:          Single-family residential (SFR), one
+                           parcel, no condominium or PUD overlay
+                           (FICTIONAL)
+  Approximate land area:   0.187 acre (8,146 sq ft per the most
+                           recent recorded tax-assessor record;
+                           FICTIONAL)
+
+LEGAL DESCRIPTION
+
+The recorded legal description for APN FICT-014-2236-073-0000 is
+"Lot 14, Block 22, of FICTIONAL HEIGHTS TRACT NO. 73, in the City
+of Fictional City, County of Fictional, State of Fictionalia, as
+per map recorded in Book 312, Pages 47-48 of Maps, in the office
+of the Fictional County Recorder" (FICTIONAL).
+
+The exact bytes of the recorded legal description, as transcribed
+from the recorder's certified copy of the original subdivision
+map, are sealed in a companion record (hashed below). The hash
+below is over the canonical UTF-8 bytes of the legal description
+as transcribed; any later "the legal description was always X"
+dispute can be tested against this hash.
+
+  Legal-description companion-record SHA-256:
+    1a2b3c4d5e6f70819203a4b5c6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9
+
+SEARCH SCOPE AND DATES
+
+  Search type:             Full chain-of-title back to the
+                           original patent / first-recorded
+                           grantor (FICTIONAL — see FACT 05 for
+                           methodology and root-of-title
+                           determination)
+  Search effective date:   2026-05-19 00:00:00 PDT (FICTIONAL —
+                           the moment as-of which the public
+                           record was reviewed; all subsequent
+                           recordings are by definition OUTSIDE
+                           the search and require a gap search)
+  Search completion date:  2026-05-21 16:45:00 PDT (FICTIONAL —
+                           the moment the officer completed
+                           review of the search artifacts)
+  Underwriter case file:   FICT-UW-2026-77441 (FICTIONAL)
+  Internal search-file ID: FICT-TS-2026-9988 (FICTIONAL — the
+                           officer's internal file reference; not
+                           the same as the underwriter case file)
+
+WHY EFFECTIVE DATE AND COMPLETION DATE ARE BOTH RECORDED
+
+The effective date is the as-of date of the search: it is the
+date at which the recorder's index was inspected. The completion
+date is the date at which the officer finished reviewing all the
+returned instruments and certified the file. Any recording made
+between the effective date and the completion date is by
+definition OUTSIDE this search and must be addressed by a "gap
+search" before commitment issuance (see FACT 05 methodology).
+
+The seal commits to the search as of the EFFECTIVE date, not the
+completion date. A subsequent buyer who relies on this seal
+without running a fresh gap search forward from the effective
+date is taking on uninsured gap-period risk; the seal does not
+cover the gap period.
+
+This fact asserts only the parcel identification, legal-
+description hash, search dates, and search scope above, for the
+fictional property as declared. It does not assert:
+  - that the legal description is itself non-ambiguous under
+    the law of the situs state,
+  - that the APN is the unique parcel identifier under the
+    county's current assessment scheme,
+  - that the tax assessor's land-area figure is the result of
+    a recent survey,
+  - that the boundary as described is the boundary as
+    occupied — survey matters are explicitly excepted in
+    FACT 06.

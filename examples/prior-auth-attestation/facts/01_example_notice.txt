@@ -1,0 +1,42 @@
+FACT 01 — EXAMPLE NOTICE
+
+This publication is an EXAMPLE demonstration of how a U.S. health
+insurer (medical director, utilization-review physician, UM program),
+a provider organization (hospital UM team, large practice, IPA), a
+state insurance regulator, or a patient advocacy organization can use
+myriam-kit to seal a prior-authorization decision attestation at the
+moment a coverage-of-services decision is rendered, so that
+post-facto revision of the prior-auth record — by the carrier
+(silent criteria revision, suppression of favorable evidence,
+appeal-window manipulation, post-facto denial of approved
+authorizations), by the provider (silent revision of what was
+submitted), or by either side as to "what was decided when" —
+becomes cryptographically detectable. The payer, carrier NAIC code,
+authorization number, provider organization NPI, member identifier
+handle, clinical guideline citation, evidence hash list, decision,
+appeal window, signing physician and license number, and companion
+disclosures in subsequent facts are ALL FICTIONAL.
+
+The purpose: show the SHAPE of a real prior-authorization decision
+seal. A real attestation would replace each fact body with the
+actual artifacts of the actual decision at the moment of decision.
+
+This kit is intended to compose with — not replace — the existing
+prior-authorization, X12 278 transaction, ERISA §503 internal-claims
+procedure, state utilization-review statute, state external-review
+(IRO) program, CMS Interoperability and Prior Authorization Final
+Rule (CMS-0057-F), NCQA UM accreditation, and provider-agreement
+contractual framework of the carrier and the jurisdictions in which
+the decision is being rendered. The MYRIAM seal provides
+Bitcoin-anchored tamper-evidence on top of whatever prior-auth file,
+EDI transaction record, FHIR API response, or UM-system record the
+carrier already maintains. It does NOT itself decide coverage,
+satisfy any state's UR statute, satisfy ERISA §503 procedural
+requirements, substitute for internal appeal, substitute for
+state-mandated external review, or substitute for the carrier's
+regulatory filings.
+
+This fact asserts only that the publication is an example, not a
+real prior-authorization decision. No real authorization is hereby
+rendered. No real patient, provider, prescriber, or licensed
+clinical reviewer is hereby identified.

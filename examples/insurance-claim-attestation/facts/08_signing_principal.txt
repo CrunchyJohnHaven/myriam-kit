@@ -1,0 +1,131 @@
+FACT 08 — SIGNING PRINCIPAL (FICTIONAL)
+
+  Carrier:                Fictional Mutual Insurance Company
+                          (FICTIONAL)
+  Carrier NAIC code:      99999 (FICTIONAL)
+  Carrier state of
+    domicile:             [Fictional U.S. state] (FICTIONAL)
+  Statutory basis for
+    the seal:             Carrier-internal claims-attestation
+                          program, published voluntarily on top of
+                          the carrier's compliance with [Fictional
+                          state]'s Unfair Claims Settlement Practices
+                          Act and the NAIC model claims-handling
+                          regulations.
+  Decision timestamp:     2026-05-21 (FICTIONAL — see FACT 05)
+  Date sealed:            2026-05-21 (FICTIONAL — the seal is
+                          contemporaneous with the decision; a real
+                          deployment should aim for the same-business-
+                          day or next-business-day seal after the
+                          decision is rendered)
+
+PRIMARY SIGNATORY — ADJUSTER OF RECORD
+
+  Role:                   Senior Claims Adjuster (FICTIONAL)
+  Adjuster legal name:    [Fictional Name] (FICTIONAL — the real
+                          adjuster of record's legal name appears
+                          here in a real deployment, because the
+                          adjuster's license is the load-bearing
+                          accountability layer for the decision and
+                          adjusters' names are matters of public
+                          record on state-DOI licensing rolls)
+  State adjuster license: [Fictional state] independent / company
+                          adjuster license #FICT-ADJ-2018-44721
+                          (FICTIONAL — a real attestation cites the
+                          actual license number so the public seal
+                          contains a pointer to the state DOI's
+                          licensee record; the public can verify
+                          the license is in good standing without
+                          any cooperation from the carrier)
+  License lines:          P&C, Auto (FICTIONAL — the lines the
+                          adjuster is licensed to handle; relevant
+                          because a license that does not cover the
+                          line of business in question is itself a
+                          coverage-integrity flag)
+  Continuing-education
+    status (at decision):  Current per [Fictional state] DOI rules;
+                          most recent CE filing FICTIONAL_DATE.
+  Acting in capacity of:  Adjuster of record on claim FICT-CLM-2026-
+                          447193, rendering the coverage decision in
+                          FACT 05 under the policy in FACT 02 with
+                          the interpretation in FACT 04.
+  Cryptographic key:      (a real attestation would attach the
+                          adjuster's PGP public-key fingerprint or
+                          a carrier-issued X.509 adjuster
+                          certificate, so future amendments or
+                          recall-of-decision actions claimed to come
+                          from the same adjuster can be
+                          cryptographically verified against this
+                          seal; omitted in this example because no
+                          real adjuster exists)
+
+CO-SIGNATORY — IMMEDIATE SUPERVISOR
+
+  Role:                   Claims Team Lead (FICTIONAL)
+  Supervisor legal name:  [Fictional Name] (FICTIONAL)
+  State adjuster license: FICT-ADJ-2014-22107 (FICTIONAL)
+  Acting in capacity of:  Supervisor counter-sign attesting that the
+                          decision in FACT 05 was reviewed and
+                          approved under the carrier's claims SOP
+                          before disbursement was authorized.
+
+ESCALATION CHAIN (for accountability traceability)
+
+  Tier 1:   Senior Claims Adjuster (primary signatory above)
+  Tier 2:   Claims Team Lead (co-signatory above)
+  Tier 3:   Regional Claims Manager — [Fictional Name],
+            FICT-ADJ-2008-11045 (FICTIONAL)
+  Tier 4:   Vice President, Claims — [Fictional Name],
+            FICT-ADJ-2002-04432 (FICTIONAL)
+  Tier 5:   Chief Claims Officer — [Fictional Name],
+            FICT-ADJ-1998-00318 (FICTIONAL)
+
+  Rationale for publishing the full chain: in bad-faith litigation,
+  the question "who up the chain knew and authorized the decision"
+  is often dispositive. Publishing the chain at decision time means
+  later claims of "rogue adjuster acting alone" can be tested
+  against this record.
+
+WHY THIS SECTION NAMES NATURAL PERSONS RATHER THAN ROLES ONLY
+
+The court-evidence-custody kit's default is role-level publication
+because forensic examiners face documented post-hoc harassment risks
+when their personal names are tied to specific cases on a permanent
+public ledger. The insurance-claim-attestation kit's default goes the
+OTHER way — natural-person publication of the licensed adjuster of
+record — for three reasons:
+
+  1. State adjuster licensing is already public. A natural person
+     who chooses to practice as a licensed adjuster has accepted that
+     their name appears on state-DOI public licensee rolls; the seal
+     is not creating new public-name exposure.
+  2. The adjuster's license is the load-bearing accountability layer
+     for the decision. A coverage decision made by an unlicensed
+     person, or by a person whose license does not cover the line,
+     is itself a coverage-integrity flag; the public seal must be
+     able to surface that.
+  3. Insurance bad-faith and unfair-claims-handling statutes
+     contemplate per-claim adjuster accountability; the public seal
+     must support, not undermine, that accountability regime.
+
+In jurisdictions where adjuster personal-naming on a public claim
+seal is itself prohibited or restricted, the kit may be amended to
+publish role-only at this layer, with the adjuster's name held in the
+carrier's claim file under the regulator's existing access controls.
+That is a kit fork, not the default.
+
+The signing principal section SHOULD NOT include:
+
+  - Personal contact information (home address, personal phone) of
+    adjuster or supervisors.
+  - Information about adjusters' family members.
+  - The insured's, claimant's, or any private third party's legal
+    name (see refusal-rules R1 and R3).
+  - Trade secrets about the carrier's reserves, IBNR calculations,
+    or pricing methodologies (these belong in confidential
+    regulatory filings, not public seals).
+
+This fact asserts only the signing principal identification fields
+for the fictional claim decision as declared. It does not assert any
+of those fields about any real carrier, any real adjuster, any real
+supervisor, or any real claim.

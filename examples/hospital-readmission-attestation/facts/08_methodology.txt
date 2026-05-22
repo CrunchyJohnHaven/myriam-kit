@@ -1,0 +1,203 @@
+FACT 08 — METHODOLOGY, CMS SPEC VERSION, AND SIGNING PRINCIPAL (FICTIONAL)
+
+This fact freezes the measurement methodology, CMS specification
+version, exclusion criteria, attribution rules, and signing-
+principal cryptographic information in effect for this attestation.
+PER REFUSAL RULE R5, this fact is structured so that NEXT MONTH'S
+sealed attestation is diffable against this one at the methodology
+level: any change to spec version, exclusion criteria, attribution
+rules, or planned-readmission handling between months is required
+to be disclosed in the next month's FACT 08 with a reference to
+this month's Merkle root.
+
+MEASUREMENT METHODOLOGY
+
+  Measure family:           30-day all-cause unplanned readmission
+                            following inpatient discharge for the
+                            HRRP-eligible condition cohort.
+  CMS HRRP measure year:    FY 2026 (covers performance period
+                            CY 2022 - CY 2024 for risk-adjustment
+                            model calibration; the April 2026
+                            counts in FACTS 04-07 are computed
+                            using the FY2026 spec applied to
+                            April 2026 discharges and
+                            readmissions)
+  Specification document:   "CMS Hospital-Wide Readmission Measure
+                            Specifications, FY 2026"
+  Specification version:    v2026.1 (FICTIONAL — a real attestation
+                            would cite the actual NQF / CMS
+                            specification document and version)
+  Specification document
+  SHA-256:                  bb14c4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3
+                            (FICTIONAL; in a real attestation this
+                            would be the SHA-256 of the specific
+                            CMS spec PDF the hospital used to
+                            compute the rates)
+
+DENOMINATOR INCLUSION CRITERIA (PER CMS SPEC)
+
+  Index admissions are included if:
+    - Inpatient acute-care hospital admission (not observation,
+      not ED-only)
+    - Primary discharge diagnosis matches one of the HRRP
+      condition cohorts (AMI, HF, PN, COPD, CABG, THA/TKA per
+      ICD-10-CM / ICD-10-PCS codes in the spec's value-set tables)
+    - Patient age 18 years or older
+    - Patient enrolled in Medicare FFS Part A for the 12 months
+      prior to the index admission AND for 30 days post-discharge
+      (continuous-enrollment requirement; Medicare Advantage and
+      other coverage types are not in the HRRP denominator)
+    - Discharge alive (in-hospital deaths excluded)
+
+EXCLUSION CRITERIA APPLIED (PER CMS SPEC; ITEMIZED COUNTS FROM
+FACT 05)
+
+  Excluded if:
+    - Patient transferred IN to the index admission from another
+      acute-care facility (transfer-in attribution: the index
+      goes to the SENDING hospital)
+    - Patient discharged Against Medical Advice (LAMA)
+    - Patient died during the index admission (in-hospital death;
+      see "discharge alive" inclusion above)
+    - Patient enrolled in Medicare hospice during the 30-day
+      window
+    - For cohort-specific cases per the spec: certain
+      cohort-specific exclusions (e.g. AMI patients who left
+      against medical advice or were transferred to a more
+      specialized facility)
+
+  Per-cohort exclusion counts: see FACT 05 for the itemized
+  exclusion counts per cohort.
+
+PLANNED-READMISSION EXCLUSION HANDLING
+
+  Per the CMS planned-readmission algorithm (Horwitz et al.;
+  CMS-adopted), readmissions for planned procedures (e.g.
+  scheduled chemotherapy, planned coronary revascularization,
+  planned post-discharge surgical procedures) are EXCLUDED from
+  the numerator of FACT 04. The April 2026 counts in FACT 04
+  reflect the CMS planned-readmission algorithm version v4.0
+  as published in the spec.
+
+  Planned-readmission exclusion count for April 2026:        7
+  (these 7 readmissions WOULD have been counted in the FACT 04
+  numerator absent the planned-readmission exclusion; they are
+  excluded from the numerator per the spec algorithm)
+
+  The planned-readmission algorithm is a known source of inter-
+  hospital methodology variation. The sealed count of planned-
+  excluded readmissions makes it possible for an external
+  analyst to add the planned exclusions back and compute
+  an "all-readmission" rate for cross-comparison.
+
+TRANSFER-OUT ATTRIBUTION RULE
+
+  Per the FY2026 CMS HRRP spec, for patients transferred OUT to
+  another acute-care facility during the index admission:
+    - The index admission is attributed to the LAST acute-care
+      hospital in the transfer chain.
+    - If this hospital is the LAST in the chain, the index
+      admission appears in this hospital's FACT 04 denominator.
+    - If this hospital is NOT the last in the chain (the
+      patient was transferred onward to another acute-care
+      facility), the index admission is attributed to the
+      receiving / final facility, and does NOT appear in this
+      hospital's denominator.
+
+  For the April 2026 period: of the 58 patients transferred OUT
+  (FACT 07), 5 were attributed under this rule to receiving
+  facilities and do NOT appear in FACT 04 denominators or
+  numerators for this hospital; 2 were attributed to this
+  hospital and DO appear (as readmissions within 30 days of
+  this hospital's discharge), per FACT 07.
+
+OBSERVATION-STATUS-AS-INDEX-ADMISSION POLICY
+
+  Per CMS HRRP spec: observation status discharges are NOT
+  index admissions. The 287 observation discharges in FACT 06
+  are NOT counted in FACT 04 or FACT 05 HRRP denominators.
+
+  This policy is unchanged between FY2025 and FY2026; any
+  future CMS change to this policy will be disclosed in the
+  FACT 08 of the first attestation after the change, with a
+  reference to this period's Merkle root.
+
+CHANGES FROM PRIOR MONTH'S METHODOLOGY
+
+  This is month 1 of the attestation program for this hospital;
+  there is no prior month's sealed methodology to diff against.
+  Future months will reference this month's Merkle root in this
+  section and will enumerate any changes from this baseline.
+
+COMPANION 30-DAY MORTALITY ATTESTATION REFERENCE
+
+  Per refusal rule R6, this readmission attestation MUST be
+  accompanied by a 30-day post-discharge mortality attestation
+  for the same period. The companion attestation for April 2026
+  is sealed as a SEPARATE MYRIAM publication and is referenced
+  here by Merkle root:
+
+  Companion mortality attestation Merkle root:
+    a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9
+    (FICTIONAL — in a real attestation this would be the actual
+    Merkle root of the companion mortality publication)
+
+  Without the companion attestation, this readmission
+  publication is INCOMPLETE per refusal rule R6 and should not
+  be cited as a stand-alone quality artifact.
+
+SIGNING PRINCIPALS (cross-reference to FACT 02)
+
+  PRIMARY SIGNATORY
+    Role:                Chief Medical Officer, Fictional Regional MC
+    Cryptographic key:   (a real attestation would include a PGP
+                         public key fingerprint here; the
+                         fingerprint is bound to the office of
+                         CMO and rotates on CMO succession)
+
+  CO-SIGNATORY (required per refusal rule R9)
+    Role:                VP Quality and Patient Safety, Fictional
+                         Regional MC
+    Cryptographic key:   (a real attestation would include a
+                         SEPARATE PGP public key fingerprint
+                         here, bound to the Quality VP office)
+
+  ROLE-TO-INDIVIDUAL BINDING (SEALED SEPARATELY)
+    The individuals holding the CMO and Quality VP roles at the
+    moment of this attestation are recorded in a separately-
+    held internal company record under standard access controls.
+    Regulator, OIG, RAC, QIO, accreditation surveyor, and
+    litigation-discovery requests can compel production of the
+    binding under existing process.
+    Role-binding record SHA-256:
+      d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2
+
+  RATIONALE FOR ROLE-LEVEL PUBLICATION
+    Per FACT 02 rationale section: public attestation of named
+    individuals creates a retaliation surface against the people
+    most likely to honestly attest to unflattering numbers.
+    Role-level publication preserves accountability while
+    leaving person-level binding to a regulator-producible
+    internal record.
+
+REFUSAL RECORD — patterns the kit refused to seal during the
+preparation of this attestation
+
+  Refusals this attestation:                              NONE.
+  (FICTIONAL. A real attestation would document any internal
+  requests to seal patterns matching refusal rules R1-R9 and the
+  kit's refusal of those requests. The empty record above is
+  itself a sealed claim that no such requests were made.)
+
+This fact asserts only the methodology, specification version,
+exclusion criteria, attribution rules, planned-readmission
+handling, companion-attestation reference, signing-principal
+identification, and refusal record as recorded at the moment of
+attestation for the fictional April 2026 period. It does not
+assert that the CMS specification used is the correct or fair
+specification (the specification itself is policy and is
+contestable), that the planned-readmission algorithm is correctly
+specified for all clinical scenarios, that the transfer-attribution
+rule is normatively right, or that the role-to-individual binding
+recorded internally is auditable by the public without regulator
+process.
