@@ -1,0 +1,162 @@
+FACT 08 — SIGNING PRINCIPAL (FICTIONAL)
+
+  Agency:                  Fictional Municipal Police Department
+                           (FICTIONAL — see FACT 02 for ORI and full
+                           agency identification fields)
+  ORI:                     FICT0123400 (FICTIONAL)
+  Statutory basis for
+    agency sealing
+    authority:             Fictional state statute §789.45 governing
+                           law-enforcement evidence custody and the
+                           publication of evidence-integrity
+                           attestations (FICTIONAL — a real
+                           attestation cites the actual statutory
+                           authorities including the state public-
+                           records act, the state BWC statute, the
+                           agency's BWC policy version, and any
+                           applicable federal-monitoring agreement
+                           requirements)
+  Incident timestamp:      2026-05-19T22:14 PDT through
+                           2026-05-19T23:08 PDT (FICTIONAL — see
+                           FACT 02 for incident window)
+  Intake-completion
+    timestamp:             2026-05-20T02:36 PDT (FICTIONAL — FACT 05
+                           event E17, joint sign-off moment when this
+                           seal publication was prepared)
+  Date sealed:             2026-05-21 (FICTIONAL — Merkle root and
+                           OTS timestamp committed at the time
+                           recorded in build/seal_time.txt)
+
+PRIMARY SIGNATORY
+
+  Role:                    Supervising Sergeant — Watch sergeant of
+                           [Patrol Watch designation] for the shift
+                           in which the incident occurred (one role-
+                           level individual; personal name held in
+                           the separately-sealed role-to-individual
+                           binding hashed in FACT 05)
+  Acting in capacity of:   First-line supervisor of the involved
+                           officers, with sign-off authority over
+                           evidence intake for the incident per
+                           Agency General Order 1.10
+  Statutory basis for
+    sign-off authority:    State POST supervisor-certification
+                           requirements; Agency General Order 1.10
+                           (Supervisory Sign-Off on Evidence Intake)
+  Cryptographic key:       (a real attestation would attach the
+                           sergeant's PGP public-key fingerprint, or
+                           an agency-issued staff X.509 certificate
+                           bound to the role-level office of the
+                           involved unit's supervising sergeant, so
+                           that successor sergeants can rotate the
+                           key transparently; omitted in this example
+                           because no real person exists)
+
+CO-SIGNATORY (required by refusal rule R4 — two-signer minimum)
+
+  Role:                    Internal Affairs Officer — IA Case Officer
+                           assigned to oversee evidence integrity for
+                           Type 2 (use-of-force, non-lethal) incidents
+                           in the [Patrol Division designation]
+                           (one role-level individual; personal name
+                           held in the separately-sealed binding)
+  Acting in capacity of:   Independent IA review of evidence intake;
+                           the IA officer is structurally OUTSIDE
+                           the chain of command of the involved
+                           officers, so the co-signature provides a
+                           structural check against the failure mode
+                           in which the involved-unit's own command
+                           structure controls the integrity record
+                           of the footage that may implicate them
+  Statutory basis for
+    sign-off authority:    State POST IA-certification requirements;
+                           Agency General Order 3.20 (Internal
+                           Affairs Authority over Evidence Integrity
+                           for Use-of-Force Incidents)
+  Cryptographic key:       (a real attestation would include a
+                           SEPARATE PGP public-key fingerprint, or
+                           an agency-issued staff X.509 certificate
+                           bound to the role-level office of the
+                           IA case officer, to enforce the two-
+                           signer rule cryptographically; omitted in
+                           this example because no real person
+                           exists)
+
+RECOMMENDED (BUT NOT REQUIRED IN THIS FICTIONAL EXAMPLE) THIRD
+SIGNER
+
+  Per FACT 07 disclosure C3, the department is currently subject to
+  an active DOJ pattern-or-practice investigation. The kit
+  RECOMMENDS — but in this fictional example does not require —
+  that a third signer from the DOJ monitor's office, the federal
+  monitoring authority, or a court-appointed monitor co-sign the
+  seal when federal monitoring is in effect. Agencies under active
+  consent decree should treat this recommendation as a hard
+  requirement. The kit supports a third-signer variant via fork-
+  and-extend.
+
+  In this fictional example, the department has proceeded with the
+  two-signer minimum; the recommendation for a third signer is
+  recorded here so that any later question of "why wasn't the
+  federal monitor involved in this seal" is answered by the
+  contemporaneous record.
+
+WHY THE PRINCIPAL IS ROLE-LEVEL, NOT PERSON-LEVEL
+
+In real-world law-enforcement practice, the binding between an
+agency attestation and the specific persons who produced it is
+established through:
+  - the agency's own personnel records and assignment rosters,
+  - the agency's internal-affairs records of who held which role
+    on which date,
+  - the formal subpoena, discovery, or oversight processes that
+    are equipped to compel role-to-individual binding under
+    access-controlled review,
+  - the live testimony of role-holders at any subsequent
+    proceeding.
+
+A public Bitcoin-anchored seal is not the appropriate venue to bind
+a sergeant's or IA officer's personal identity to a case. That
+binding belongs in the agency record where access is controlled and
+where the binding can be tested through cross-examination, IA
+internal review, civilian-oversight subpoena, or court process. The
+role-level public seal plus the separately-discoverable role-to-
+individual binding (hashed in FACT 05) is the kit's default;
+agencies in jurisdictions where public personal-naming is required
+can amend their fork to include the personal name, but the default
+refusal favors signer safety and whistleblower protection.
+
+In a real attestation, the signing principal section should include:
+
+  - The agency's identity, ORI, and statutory basis.
+  - The role and supervisor-role for each signatory.
+  - A cryptographic key (PGP, X.509, agency-issued) for each
+    signatory so that future statements claimed to be from either
+    signing principal can be cryptographically verified against
+    this seal.
+  - The incident, intake-completion, and sealing timestamps.
+  - The third-signer field if federal monitoring or court-ordered
+    receivership requires it.
+
+The signing principal section SHOULD NOT include:
+
+  - Personal contact information for either signatory.
+  - Home addresses or other locating information.
+  - Identifying information about either signatory's family
+    members.
+  - The personal name of any private party to the incident
+    (suspect, complainant, victim, witness, bystander,
+    informant).
+  - Per-officer personal naming of involved officers beyond the
+    role-level identification in FACT 05.
+
+This fact asserts only the signing principal identification fields
+for the fictional incident as declared, with both required
+signatories (supervising sergeant and IA officer) at the role
+level, and the recommendation-but-not-requirement of a third
+federal-monitor signer. It does not assert any of those fields
+about any real agency, any real officer, or any real incident. It
+does not assert that the two-signer model used in this fictional
+example would be sufficient in any specific real-world incident
+where federal monitoring or other oversight requirements may
+impose a higher signer-count floor.
