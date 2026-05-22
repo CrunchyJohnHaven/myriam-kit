@@ -1,0 +1,78 @@
+FACT 02 — CLAIM IDENTIFICATION (FICTIONAL)
+
+  Claim number:           FICT-CLM-2026-447193 (FICTIONAL)
+  Line of business:       Personal Auto — first-party collision +
+                          third-party bodily injury liability
+                          (FICTIONAL)
+  Carrier:                Fictional Mutual Insurance Company
+                          (FICTIONAL)
+  Carrier NAIC code:      99999 (FICTIONAL — a real attestation cites
+                          the actual NAIC company code for cross-
+                          reference against state insurance department
+                          records)
+  Carrier state of
+    domicile:             [Fictional U.S. state] (FICTIONAL)
+  Policy number:          FICT-POL-AUTO-2025-882144 (FICTIONAL)
+  Policy form filing:     Form FMIC-PA-2024-01, approved by the
+                          [Fictional state] Department of Insurance
+                          (FICTIONAL — a real attestation cites the
+                          policy-form filing number so the public
+                          record contains a pointer to the exact
+                          contract language that governed the claim)
+  Policy effective dates: 2025-08-15 through 2026-08-15 (FICTIONAL)
+  Named insured handle:   Insured-X (FICTIONAL — see refusal-rule R1
+                          in FACT 07; the named insured's legal name,
+                          SSN, DOB, address, and phone number are NOT
+                          in this public seal; the carrier's claim
+                          file binds Insured-X to a specific
+                          policyholder and that binding is
+                          discoverable under normal claim-file
+                          procedures or by court order)
+  Claimant handle:        Claimant-A (first-party, same as Insured-X
+                          for collision portion)
+                          Claimant-B (third-party bodily-injury
+                          claimant; FICTIONAL — handle only)
+  Date of loss:           2026-05-03, approx. 14:22 local time
+                          (FICTIONAL)
+  Date claim reported:    2026-05-03, 15:48 local time, by
+                          telephone to carrier first-notice-of-loss
+                          intake (FICTIONAL)
+  Reporting channel:      Carrier 24-hour FNOL line; call recorded
+                          per carrier SOP; recording held in carrier
+                          claim-file CMS; hash of recording recorded
+                          in FACT 03
+  Loss location:          [Intersection redacted at this layer;
+                          municipality and state recorded in carrier
+                          claim file; redaction prevents this public
+                          publication from re-identifying premises or
+                          third parties via correlation with public
+                          accident records]
+  Coverage at issue:      (1) First-party collision (subject to
+                          deductible); (2) Third-party bodily injury
+                          liability (subject to per-person and per-
+                          accident limits); (3) Medical payments
+                          (first-party, subject to MedPay limit)
+  Date of decision:       2026-05-21 (the date this seal is being
+                          generated — see refusal-rule R4: the kit
+                          will not seal a partial-investigation
+                          decision presented as final)
+
+This fact binds the sealed publication to a named, regulated carrier
+acting under a specific, dated policy form and a specific state's
+insurance code. It does NOT name the insured, the claimant, the
+third-party claimant, witnesses, or any other private individual by
+legal name. The carrier-and-policy-form citation is included so the
+seal can be located within the carrier's claim file and the state
+insurance department's policy-form-filing record by any party with
+standing.
+
+This fact asserts only the claim-identification, policy citation, and
+temporal context for the fictional claim. It does not assert:
+  - that the policy was in force at the date of loss (that is a
+    coverage question — see FACT 04),
+  - that the named insured complied with policy conditions
+    precedent,
+  - that the loss occurred as described by any reporter,
+  - that the loss is covered (coverage determination in FACT 04;
+    payment decision in FACT 05),
+  - that any third-party claimant is legally entitled to recover.

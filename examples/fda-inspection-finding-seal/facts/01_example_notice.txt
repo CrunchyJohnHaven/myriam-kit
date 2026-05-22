@@ -1,0 +1,28 @@
+FACT 01 — EXAMPLE NOTICE
+
+This publication is an EXAMPLE demonstration of how an FDA investigator
+(or an investigator's supervisory chain) can use myriam-kit to seal a
+Form FDA-483 Inspectional Observations attestation at the moment of
+issuance. The establishment, FEI number, inspection dates, investigators,
+observations, evidence hashes, and classification are ALL FICTIONAL.
+
+The purpose: show the SHAPE of a real Form 483 issuance seal. A real
+attestation would replace each fact body with the actual content of an
+actual closing-meeting Form 483.
+
+This kit is intended to compose with — not replace — the FDA's existing
+inspection infrastructure (the Form 483 itself, the Establishment
+Inspection Report (EIR), the FDA district office review chain, the
+Center compliance evaluation, and any subsequent Warning Letter,
+Consent Decree, or Application Integrity Policy invocation). The MYRIAM
+seal provides Bitcoin-anchored tamper-evidence on top of whatever
+internal FDA review the inspection already triggers.
+
+The seal is issued AT THE CLOSING MEETING — the moment the Form 483 is
+formally presented to the firm's most-responsible person. A seal issued
+earlier (during the inspection, before all observations are finalized)
+is refused by the kit per FACT 07.
+
+This fact asserts only that the publication is an example, not a real
+Form 483 issuance. No real inspection is hereby memorialized. No real
+investigator, firm, or product is hereby named.

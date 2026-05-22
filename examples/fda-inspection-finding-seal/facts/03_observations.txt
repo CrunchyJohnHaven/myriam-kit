@@ -1,0 +1,86 @@
+FACT 03 — FORM 483 INSPECTIONAL OBSERVATIONS (FICTIONAL)
+
+This fact records the verbatim text of the Form FDA-483 Inspectional
+Observations issued to the establishment named in FACT 02 at the closing
+meeting on the date and time in FACT 02. Each observation cites the
+specific 21 CFR section the investigator found the establishment to be
+in violation of. Each observation is numbered as issued.
+
+Sealing this fact at the closing-meeting moment prevents the most
+common silent-revision failure mode: an observation that was severe at
+issuance being softened — or deleted entirely — in a later draft of
+the EIR or in a "revised" Form 483 issued after firm pushback.
+
+OBSERVATION 1 (FICTIONAL)
+  Citation: 21 CFR 211.192 (Production record review)
+  Text: "Failure to thoroughly review unexplained discrepancies in
+  batch production. Specifically, batches FBP-2025-Q4-0114,
+  FBP-2025-Q4-0119, and FBP-2026-Q1-0027 of Drug A showed
+  out-of-specification dissolution results during in-process testing
+  that were attributed to 'analyst error' without root-cause
+  investigation. The firm released all three batches to distribution
+  without invoking the deviation procedure required under SOP-QA-014."
+
+OBSERVATION 2 (FICTIONAL)
+  Citation: 21 CFR 211.42(c)(10)(iv) (Sterile manufacturing — environmental
+  monitoring)
+  Text: "Environmental-monitoring data from the Grade A fill suite for the
+  period 2026-01-01 through 2026-03-31 shows 14 excursions above the alert
+  level for non-viable particulate (≥0.5 µm) during active aseptic
+  processing operations, none of which triggered the documented response
+  protocol. The firm's EM trend report dated 2026-04-04 characterizes the
+  excursions as 'monitoring artifact' without supporting investigation."
+
+OBSERVATION 3 (FICTIONAL)
+  Citation: 21 CFR 211.165(a) (Testing and release for distribution)
+  Text: "The firm released to distribution batches of Drug B for which
+  the assay test result was reported as a single replicate value when
+  the approved release method specifies three replicate determinations
+  with reportable result as the mean. Affected batches include
+  FBP-2025-Q3-0204 through FBP-2026-Q1-0048 (32 batches over a
+  nine-month period). The firm's QC director acknowledged the deviation
+  during the inspection on 2026-05-15."
+
+OBSERVATION 4 (FICTIONAL)
+  Citation: 21 CFR 211.198 (Complaint files)
+  Text: "The firm received 47 complaints during the period
+  2025-06-01 through 2026-05-04 alleging foreign particulate matter
+  in oral solid dosage product. Of these, 31 were closed without
+  investigation as 'cannot be confirmed.' The firm's complaint-handling
+  SOP requires sample retention and root-cause investigation for any
+  particulate complaint regardless of returnable sample availability."
+
+OBSERVATION 5 (FICTIONAL)
+  Citation: 21 CFR 211.68(b) (Automatic, mechanical, and electronic
+  equipment — data integrity)
+  Text: "The HPLC system in QC Laboratory 3 (instrument ID FQC-HPLC-007)
+  was operated under a shared user account with administrative privileges
+  during the period 2024-Q1 through 2026-Q2. Audit-trail review during
+  the inspection revealed 18 instances of integration-parameter changes
+  applied to OOS assay runs without a corresponding deviation record or
+  laboratory investigation. The firm could not produce a contemporaneous
+  metadata reconstruction for the affected runs."
+
+TOTAL OBSERVATIONS THIS FORM 483: 5 (FICTIONAL)
+
+EACH OBSERVATION IS HASHED INDIVIDUALLY FOR DIFF-DETECTION
+
+  Obs 1 SHA-256: cbb671235d5bb13d9f81a91a8661fa648e59e84f6ba0fb126356993066f065a0
+  Obs 2 SHA-256: 89a72e41fa212f6520115739df2d79f366e132c4714c0d60ae87540555195893
+  Obs 3 SHA-256: 03c23f853b396b0df96070f20cd904ec27881e3f6390c55aedc9550c8a2d79f2
+  Obs 4 SHA-256: 0a22e596cc4e1e2992e14f8749de4bce304c1190a820337d17e29fea0e6f4d9d
+  Obs 5 SHA-256: 5c4821d81b2aa72015f6f85235317c7092ab509e164cbdb3933f54769444bfd3
+
+(In a real attestation each per-observation SHA-256 is computed over the
+canonical verbatim text of the observation as presented at the closing
+meeting, so silent rewording of any single observation produces a
+detectable hash change without requiring re-hashing of the whole Form 483.)
+
+This fact asserts only the verbatim text and the per-observation hashes
+of the Form FDA-483 issued at the closing meeting for the fictional
+inspection. It does not assert that the firm has admitted to the
+observations, that the citations are themselves correct interpretations
+of 21 CFR, or that the observations exhaust all deficiencies that
+existed at the establishment. It does not preempt the firm's right to
+respond under 21 CFR 10.30 or the FDA's right to amend its inspection
+findings through the formal EIR review process.

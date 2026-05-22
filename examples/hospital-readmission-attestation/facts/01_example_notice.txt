@@ -1,0 +1,42 @@
+FACT 01 — EXAMPLE NOTICE
+
+This publication is an EXAMPLE demonstration of how a hospital, a
+hospital system Chief Medical Officer + Quality officer pair, a state
+hospital association, or a public-health transparency program can use
+myriam-kit to seal a monthly 30-day all-cause readmission attestation
+on top of the existing CMS Hospital Readmissions Reduction Program
+(HRRP) reporting workflow. The hospital name, the CMS Certification
+Number, the certifying officers, the attestation period, the per-
+condition counts and rates, the observation and transfer disclosures,
+and the methodology version are ALL FICTIONAL.
+
+The purpose: show the SHAPE of a real hospital readmission attestation
+seal. A real attestation would replace each fact body with the
+hospital's actual monthly data, under the constraints documented in
+the README (no per-patient identifiers, no per-physician attribution,
+raw rates always alongside risk-adjusted rates, per-condition
+breakdown always alongside any hospital-wide rate, observation status
+and transfer disclosures always present, methodology change from
+prior period always declared).
+
+This kit is intended to compose with — not replace — existing hospital
+quality reporting frameworks (CMS HRRP, CMS HIQR, CMS Hospital
+Compare / Care Compare, state-level hospital reporting programs, the
+Joint Commission accreditation, internal peer review under the
+Healthcare Quality Improvement Act). The MYRIAM seal provides
+Bitcoin-anchored tamper-evidence on top of whatever HRRP submission,
+internal quality committee, and statutory reporting record already
+exists under those frameworks.
+
+The seal does NOT certify that the hospital provides good care. It
+commits that the readmission-record and methodology had THIS exact
+byte content at the moment of monthly attestation. The seal's value
+is in being diffable against the next month's seal: a month-over-
+month change in observation-status counts, transfer patterns, case
+mix, or methodology becomes publicly detectable in a way that single-
+period reporting does not enable.
+
+This fact asserts only that the publication is an example, not a real
+hospital readmission attestation. No real hospital is hereby attested
+to. No real CMO, Quality officer, physician, or patient is hereby
+identified.

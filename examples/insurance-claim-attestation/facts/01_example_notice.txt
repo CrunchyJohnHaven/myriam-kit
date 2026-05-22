@@ -1,0 +1,30 @@
+FACT 01 — EXAMPLE NOTICE
+
+This publication is an EXAMPLE demonstration of how an insurance
+adjuster of record — auto, health, property & casualty, life, or
+specialty lines — can use myriam-kit to seal a claim-decision
+attestation at the moment a coverage decision is rendered, so that
+post-facto revision of the claim record (by either side) becomes
+cryptographically detectable. The carrier, claim number, claimant
+identifier, evidence hashes, coverage interpretation, payment
+decision, and signing adjuster particulars in subsequent facts are
+ALL FICTIONAL.
+
+The purpose: show the SHAPE of a real insurance-claim decision seal.
+A real attestation would replace each fact body with the actual
+artifacts of the actual claim file at the moment of decision.
+
+This kit is intended to compose with — not replace — the existing
+claims-handling, state-insurance-department, ERISA, McCarran-Ferguson,
+and unfair-claims-settlement-practices regulatory frameworks of the
+jurisdiction in which the claim is being adjudicated. The MYRIAM seal
+provides Bitcoin-anchored tamper-evidence on top of whatever claim
+file, EDI transaction record, ACORD form, or carrier claims-management
+system the adjuster already maintains. It does NOT itself decide
+coverage, satisfy any state's bad-faith-claims-handling statute, or
+substitute for the carrier's regulatory filings.
+
+This fact asserts only that the publication is an example, not a real
+insurance-claim decision. No real claim is hereby adjudicated. No real
+insured, claimant, third-party claimant, or witness is hereby
+identified.

@@ -1,0 +1,51 @@
+FACT 01 — EXAMPLE NOTICE
+
+This publication is an EXAMPLE demonstration of how a U.S. county
+procurement office can use myriam-kit to seal a quarterly procurement
+attestation at the moment the quarter formally closes. The county name,
+FIPS code, statutory references, contract identifiers, vendor entity
+names, award amounts, change-order details, sole-source justifications,
+inspector-general case identifiers, and signing officials are ALL
+FICTIONAL.
+
+The purpose: show the SHAPE of a real county procurement attestation
+seal. A real attestation would replace each fact body with the actual
+fields of the actual procurement activity in the named county during
+the named calendar quarter, as recorded by the county procurement
+office at the formal quarterly-close moment.
+
+This kit is intended to compose with — not replace — existing county
+procurement infrastructure (county purchasing ordinances, state
+auditor oversight, county inspector-general offices, county auditor
+offices, state open-records / sunshine law regimes, federal grant
+compliance regimes under 2 CFR Part 200, open-checkbook / open-data
+portals, the Open Contracting Data Standard, and equivalent state-
+level transparency portals). The MYRIAM seal provides Bitcoin-
+anchored tamper-evidence on top of whatever publication regime the
+county already operates.
+
+The seal anchors WHAT WAS REPORTED AT THE QUARTERLY CLOSE. It does
+not anchor whether the underlying procurement activity was lawful,
+free of corruption, priced at market rate, or delivered as
+specified. Those are downstream questions for the county IG, the
+state auditor, federal grant managers, prosecutors, courts,
+journalists, and citizen watchdogs. The seal makes the as-reported
+state of the procurement record permanent and publicly diffable
+against later versions.
+
+DISTINCTION FROM THE BROADER public-spending-attestation/ KIT
+
+  This kit is U.S.-county-specific and scopes to the procurement-
+  cycle signals (award method, change orders, sole-source
+  disclosures, vendor payment aggregates, IG case state) that are
+  the specific failure surfaces in U.S. county procurement. The
+  broader public-spending-attestation/ kit is jurisdiction-agnostic
+  and emphasizes appropriation execution against a budget
+  instrument. A county may run both, anchoring its budget
+  execution under the broader kit and its procurement-cycle
+  activity under this one, with cross-references between the two
+  Merkle roots.
+
+This fact asserts only that the publication is an example, not a real
+county procurement attestation. No real county procurement is hereby
+attested. No real official, vendor, or county is hereby named.

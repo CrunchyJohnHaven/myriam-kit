@@ -1,0 +1,80 @@
+FACT 02 — HOSPITAL IDENTIFICATION (FICTIONAL)
+
+  Hospital legal name:    Fictional Regional Medical Center
+                          (FICTIONAL — a real attestation would name
+                          the hospital as it appears on the CMS
+                          Provider of Services file)
+  CMS Certification
+  Number (CCN):           99-9999 (FICTIONAL — six-digit identifier
+                          assigned by CMS for HRRP / HIQR reporting;
+                          the FIRST TWO DIGITS encode the state, the
+                          REMAINING FOUR encode the facility)
+  Facility region:        FICTIONAL_STATE, Northeast Region
+                          (state and region published; precise street
+                          address withheld per general principle that
+                          a public Bitcoin-anchored facility ID does
+                          not require a publicly-mapped address)
+  Hospital type:          Acute Care Hospital (FICTIONAL)
+  Bed count:               342 staffed acute-care beds (FICTIONAL)
+  Teaching status:        Major teaching (COTH member, FICTIONAL)
+  Safety-net status:      DSH-percentile 78th (FICTIONAL — per CMS
+                          Disproportionate Share Hospital index)
+  HRRP cohort
+  participation:          Active participant; HRRP-eligible conditions
+                          (AMI, HF, PN, COPD, CABG, THA/TKA) all
+                          actively reported
+
+CERTIFYING OFFICERS (two-signer minimum per refusal rule R9)
+
+  CHIEF MEDICAL OFFICER (role-level signatory; primary attester)
+    Role:                Chief Medical Officer, Fictional Regional MC
+    Statutory basis for
+    sign-off authority:  CMS Conditions of Participation §482.12;
+                         hospital medical-staff bylaws; institutional
+                         delegation of authority for HRRP-related
+                         attestations
+    Cryptographic key:   (a real attestation would include a PGP
+                         public key fingerprint here, bound to the
+                         role-level office of CMO so that successor
+                         CMOs can rotate the key transparently;
+                         omitted in this example because no real
+                         person exists)
+
+  QUALITY OFFICER (role-level co-signatory; required by refusal rule R9)
+    Role:                VP Quality and Patient Safety, Fictional
+                         Regional MC
+    Statutory basis for
+    sign-off authority:  hospital quality program charter; CMS
+                         QAPI requirements (§482.21); institutional
+                         delegation
+    Cryptographic key:   (a real attestation would include a SEPARATE
+                         PGP public key fingerprint here, bound to
+                         the role-level office of Quality VP, to
+                         enforce the two-signer rule)
+
+RATIONALE FOR ROLE-LEVEL (NOT PERSON-LEVEL) PUBLICATION
+
+  Public attestation of named individuals creates a retaliation
+  surface against the people most likely to honestly attest to
+  problematic numbers. Role-level publication (CMO, Quality VP)
+  preserves accountability while leaving person-level binding to a
+  separately-held company record producible under regulator
+  subpoena, OIG demand, or accreditation surveyor request. The
+  person-holding-the-role for this attestation period is recorded
+  in an internal record; the SHA-256 of that internal record
+  appears in FACT 08, so the binding is hashable but not publicly
+  re-identifiable.
+
+This fact binds the entire sealed publication to a named, accountable
+hospital and to the two role-level offices responsible for the
+attestation. Naming the offices is not a violation of the refusal
+gates (offices are public roles, not private third parties); the
+seal makes the hospital's attestation publicly verifiable against
+the office, not against any individual.
+
+This fact asserts only the hospital identification and certifying-
+office identification fields for the fictional hospital. It does not
+assert that any real hospital or CMS Certification Number exists, nor
+that the fictional offices reflect any actual institution. It does
+not assert anything about the quality of care delivered at any real
+hospital.

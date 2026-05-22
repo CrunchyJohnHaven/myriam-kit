@@ -1,0 +1,65 @@
+FACT 02 — INSPECTION IDENTIFICATION (FICTIONAL)
+
+  Establishment legal name:    Fictional Generics Manufacturing LLC
+  Establishment d/b/a:         FictGen Pharma
+  Physical address:            123 Fictional Industrial Blvd, Suite 4,
+                               Fictional City, FICTIONAL_STATE 99999
+  FEI number:                  3001999999 (FICTIONAL — 10-digit FDA
+                               Establishment Identifier; a real attestation
+                               would carry the actual FEI assigned by FDA)
+  DUNS number:                 999999999 (FICTIONAL)
+  Operation type:              Drug manufacturing (oral solid dosage,
+                               sterile fill-finish) (FICTIONAL)
+  FDA-regulated products at site:
+                               - ANDA-approved generic Drug A (FICTIONAL)
+                               - ANDA-approved generic Drug B (FICTIONAL)
+                               - one OTC monograph cough product (FICTIONAL)
+
+INSPECTION METADATA
+
+  Inspection type:             GMP surveillance inspection per 21 CFR 211
+                               (FICTIONAL — could alternatively be:
+                                pre-approval, for-cause, follow-up,
+                                bioresearch monitoring, foreign inspection,
+                                or post-warning-letter)
+  FACTS inspection number:     INS-99-9999999 (FICTIONAL — the FDA's
+                               internal FACTS database operation number)
+  Inspection start date:       2026-05-04
+  Inspection end date:         2026-05-21 (this kit sealed at closing
+                               meeting on this date)
+  Number of investigator-days: 14 (lead) + 11 (co-investigator) +
+                               5 (microbiologist consult) = 30
+                               investigator-days on site
+  Most-responsible person
+  receiving the Form 483:      Dr. [Fictional Name], VP Quality
+                               (FICTIONAL — this is the person to whom
+                                the Form 483 is formally issued at the
+                                closing meeting)
+  Closing-meeting timestamp:   2026-05-21T16:45:00 EST (FICTIONAL —
+                               moment this attestation is sealed)
+
+LEAD INVESTIGATOR AND TEAM
+
+  Lead investigator:           Investigator [Fictional Name],
+                               FDA District Office (see FACT 08)
+  Co-investigator:             Investigator [Fictional Name]
+  Subject-matter expert:       Microbiologist [Fictional Name]
+                               (consult on sterile-area observations)
+  Compliance officer (CSO)
+  consulted off-site:          CSO [Fictional Name] (FICTIONAL —
+                               compliance officer not on site but
+                               consulted during inspection)
+
+This fact binds the entire sealed publication to a specific FDA
+inspection of a specific FDA-registered establishment, conducted by
+named federal investigators acting in official capacity. Naming the
+investigators is appropriate and protective: they are public officials
+in their public roles, and the seal makes their inspection finding
+publicly attributable in a way that resists later "the investigator
+must have been confused" reframing.
+
+This fact asserts only the identity of the establishment, the
+inspection metadata, and the investigator team for the fictional
+inspection. It does not assert that any real inspection or
+establishment exists, nor that the fictional Form 483 reflects any
+actual FDA finding.
