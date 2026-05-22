@@ -1,0 +1,169 @@
+FACT 08 — SIGNING PRINCIPAL (FICTIONAL)
+
+  Title Agency:            Fictional Title Agency, LLC (FICTIONAL)
+  Agency address:          (omitted from public seal — held at
+                           agency under standard contact-record
+                           access controls; the agency's licensed
+                           place of business is on file with the
+                           state insurance department)
+  Agency state of
+    domicile:              State of Fictionalia (FICTIONAL)
+  Agency NAIC / state
+    insurance-department
+    identifier:            FICT-AG-77541 (FICTIONAL — a real
+                           attestation would list the agency's
+                           actual state insurance-department
+                           identifier)
+  Search effective date:   2026-05-19 00:00:00 PDT (FICTIONAL —
+                           per FACT 02)
+  Search completion date:  2026-05-21 16:45:00 PDT (FICTIONAL —
+                           per FACT 02)
+  Date sealed:             2026-05-21 17:12:00 PDT (FICTIONAL)
+
+PRIMARY SIGNATORY — LICENSED TITLE OFFICER
+
+  Name as licensed:        [Fictional Title Officer, full legal
+                           name as appears on license]
+                           (FICTIONAL — a real attestation lists
+                           the officer's full legal name as it
+                           appears on the state-issued license,
+                           NOT a nickname, NOT initials)
+  State of license:        State of Fictionalia (FICTIONAL)
+  License number:          FICT-TO-2018-44229 (FICTIONAL — a
+                           real attestation lists the actual
+                           state license number)
+  License issue date:      2018-09-12 (FICTIONAL)
+  License expiration date: 2027-09-30 (FICTIONAL — license is
+                           current as of seal date)
+  Licensing authority:     Fictionalia Department of Insurance,
+                           Title Agent Licensing Division
+                           (FICTIONAL)
+  Cross-jurisdictional
+    authorization:         NONE (FICTIONAL — search is in the
+                           same state as the officer's license,
+                           so no multi-state authorization is
+                           needed under refusal-rule R5)
+  Acting in capacity of:   Licensed title officer of the agency
+                           named above, performing the search
+                           described in FACTS 02-07 under the
+                           agency's appointment with the
+                           underwriter named below
+  Cryptographic key:       (a real attestation would attach
+                           the officer's PGP public-key
+                           fingerprint, an underwriter-issued
+                           officer X.509 certificate, or a
+                           state-issued title-officer
+                           cryptographic credential; omitted in
+                           this example because no real officer
+                           exists)
+
+UNDERWRITER OF APPOINTMENT
+
+  Underwriter:             Fictional Title Underwriter, Inc.
+                           (FICTIONAL)
+  Underwriter NAIC code:   FICT-UW-99127 (FICTIONAL — a real
+                           attestation lists the actual NAIC code)
+  States in which
+    underwriter is
+    licensed:              (omitted; a real attestation lists
+                           applicable states for the search
+                           jurisdiction or links to the
+                           underwriter's NAIC profile)
+  Officer's appointment
+    with this underwriter: Active since 2018-10-01 (FICTIONAL);
+                           appointment is in good standing as of
+                           seal date
+
+CO-SIGNATORY — UNDERWRITER REPRESENTATIVE OR BRANCH MANAGER
+
+  Role:                    Underwriter Regional Counsel
+                           (FICTIONAL — a real attestation may
+                           use a branch manager, regional title
+                           counsel, or other underwriter-
+                           authorized representative depending on
+                           the underwriter's internal procedure)
+  Co-signatory name:       [Fictional Underwriter Representative,
+                           full legal name as appears on bar or
+                           industry-license registration]
+                           (FICTIONAL)
+  Co-signatory license /
+    bar number:            FICT-BAR-2009-33218 (FICTIONAL — a
+                           real attestation lists the actual bar
+                           number or industry-license identifier)
+  Acting in capacity of:   Underwriter counter-sign attesting
+                           that the publication of this sealed
+                           search by the appointed officer is
+                           AUTHORIZED under the underwriter's
+                           appointment program, that the
+                           underwriter has no objection to the
+                           publication of the search artifact,
+                           and that the underwriter understands
+                           the seal is a forensic attestation
+                           of the SEARCH and does NOT modify
+                           the underwriter's commitment or
+                           policy obligations under the
+                           applicable ALTA form
+
+  Cryptographic key:       (a real attestation would attach the
+                           co-signatory's cryptographic
+                           credential here)
+
+WHY BOTH SIGNATORIES ARE PERSON-LEVEL (NOT ROLE-LEVEL)
+
+In contrast to the court-evidence example in this kit family
+(where forensic examiners are role-only-published), the title-
+officer signing principal IS published at person level. The
+reasons are:
+
+  - The title officer's license is a personal license, not an
+    agency license; the public record of the license is
+    already keyed to the officer's name.
+  - The underwriter's appointment is to the named officer, not
+    to an anonymous role.
+  - State insurance departments publish licensee rosters
+    publicly; the officer's name is not private to the
+    transaction in the way a forensic examiner's name is
+    private to the case.
+  - The accountability function of the seal depends on the
+    officer being identifiable; an anonymous title officer is
+    not subject to the licensure regime that backstops the
+    primitive.
+
+Personal contact information (home address, personal cell
+number, family information) is NOT in the public seal even
+though the name is. The agency address on file with the state
+insurance department is the appropriate contact channel.
+
+In a real attestation, the signing principal section MUST
+include:
+
+  - The agency's identity and state insurance-department
+    identifier.
+  - The licensed officer's name as licensed and the state
+    license number (both publicly registrable against the
+    state's licensee roster).
+  - The underwriter of appointment.
+  - A cryptographic key (PGP, X.509, or other) bound to the
+    officer's license so that future statements claimed to
+    be from the officer can be cryptographically verified
+    against this seal.
+  - A co-signatory from the underwriter authorizing the
+    publication.
+  - The search effective date, completion date, and seal
+    date.
+
+The signing principal section SHOULD NOT include:
+
+  - Personal contact information for the officer (home
+    address, personal cell, family information).
+  - Beneficial-owner identification behind any party
+    referenced in the search (protected by R1).
+  - Personal identifiers of any recorded chain-of-title
+    party beyond what is itself recorded (protected by R6).
+  - Any party not authorized to be in the public seal under
+    R1-R8.
+
+This fact asserts only the signing principal identification
+fields for the fictional search as declared. It does not
+assert any of those fields about any real agency, any real
+officer, any real underwriter, or any real property.

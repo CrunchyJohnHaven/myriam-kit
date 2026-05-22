@@ -1,0 +1,212 @@
+FACT 07 — COMPANION DISCLOSURES (FICTIONAL)
+
+This fact discloses the context around the decision in FACT 05
+that is necessary for a regulator, IRO reviewer, plaintiff's
+counsel, state insurance department investigator, or patient
+advocacy organization to assess pattern-level questions about
+the decision. The disclosures here are the "second-order" facts
+that are individually small but collectively load-bearing for
+detecting systematic gaming patterns the README enumerates
+(silent criteria revision, AI-rubber-stamp denial pipelines,
+inconsistent denial-then-approval across substantively identical
+cases, captured-reviewer pressure).
+
+  PENDING APPEALS ON RELATED AUTHORIZATIONS FOR THIS MEMBER
+
+    Member-X has the following pending appeals on related
+    authorizations as of the date of this decision:
+
+    [If none: "None known to the carrier as of 2026-05-21."]
+    [If any: enumerate by authorization number, decision
+     date, decision (deny/partial/approve), appeal-level
+     (1st internal / 2nd internal / external IRO), filing
+     date, expected decision date. The presence of pending
+     appeals on related authorizations is disclosed because
+     a decision on one authorization while a related
+     authorization is on appeal is a regulator-relevant
+     fact pattern — particularly where the current decision
+     could moot, prejudice, or be prejudiced by the pending
+     appeal outcome.]
+
+    (FICTIONAL example: "None known to the carrier as of
+    2026-05-21.")
+
+  PRIOR DENIALS FOR THE SAME CONDITION FOR THIS MEMBER
+
+    Within the rolling 24-month window prior to this decision,
+    Member-X has the following prior carrier decisions on
+    authorization requests in the same ICD-10 category (FACT
+    03) as this request:
+
+    [Enumerate by authorization number, decision date,
+     decision (deny/partial/approve), reason code, criteria
+     citation summary. The prior-decision history is disclosed
+     because repeated denials for the same condition is a
+     known pattern of concern — both because the underlying
+     coverage question may have substantive recurring
+     unaddressed elements, and because the pattern can be
+     consistent with reviewer-fatigue or
+     volume-quota-driven denial.]
+
+    (FICTIONAL example: "1 prior request in same ICD-10
+    category: FICT-PA-2025-882110, decision 2025-09-12,
+    APPROVED, criteria-cited MCG 27th Edition 2024 Q3
+    revision 2024-08-30 — note that the cited edition for
+    THIS decision (FACT 03) is MCG 28th Edition 2026 Q1
+    revision 2026-02-15; the criteria-version change
+    between the prior approval and this decision is
+    disclosed for transparency and because criteria-version
+    drift between substantively similar requests is one of
+    the diffable patterns the seal makes visible across
+    cases)")
+
+  RECUSALS OF THE SIGNING PRINCIPAL IN PRIOR DECISIONS FOR
+  THIS MEMBER
+
+    The signing principal named in FACT 08 has the following
+    recusal history on prior authorization decisions for
+    Member-X:
+
+    [If none: "None — the signing principal has no prior
+     recusals on decisions for this member."]
+    [If any: enumerate by authorization number and recusal
+     reason. Prior recusal of the same reviewer on the
+     same member's decisions is disclosed because it bears
+     on the appearance of impartiality on the current
+     decision; a reviewer who recused from a prior decision
+     on a particular member and then participated in a
+     subsequent decision on the same member should disclose
+     the recusal and the reason it no longer applies.]
+
+    (FICTIONAL example: "None — the signing principal has no
+    prior recusals on decisions for this member.")
+
+  AI DENIAL-RECOMMENDATION SYSTEM DISCLOSURE
+
+    The following AI / algorithmic / automated
+    denial-recommendation system(s) were used in the
+    pre-decision pipeline for this case:
+
+    System used:          [Name of the AI denial-recommendation
+                          system if any was used; e.g. a
+                          carrier-internal model, a vendor
+                          system such as one of the
+                          publicly-named utilization-review
+                          algorithm products, or no system]
+                          (FICTIONAL example: "Carrier-internal
+                          UM-assist model v2.3, deployed
+                          2025-11-01 across outpatient
+                          advanced-imaging requests")
+
+    Role in pipeline:     [recommendation / triage / first-pass
+                          screening / final decision —
+                          carrier-internal description of how
+                          the system contributes to the
+                          decisionmaking pipeline; per refusal
+                          rule R4 the system may NOT be the
+                          substantive decisionmaker]
+                          (FICTIONAL example:
+                          "Recommendation-only; the system
+                          provides a recommended decision and
+                          a criteria-application summary to the
+                          licensed reviewer; the reviewer is
+                          required to substantively review the
+                          clinical record and may override the
+                          recommendation in either direction
+                          (approve when system recommends deny;
+                          deny when system recommends approve)
+                          without any institutional penalty")
+
+    System recommendation
+      for this case:      [the system's recommendation,
+                          recorded for transparency and so
+                          override patterns are computable
+                          across cases]
+                          (FICTIONAL example: "Recommended
+                          PARTIAL APPROVE; system recommendation
+                          matched the licensed reviewer's
+                          determination in FACT 05")
+
+    Override authority
+      attestation:        The licensed reviewer named in FACT
+                          08 attests that they have, in
+                          policy and in practice, the authority
+                          to override the system's
+                          recommendation in either direction
+                          without any institutional penalty
+                          (such as productivity-quota impact,
+                          performance review impact, or
+                          retaliation). Per refusal rule R4, a
+                          carrier whose actual override
+                          authority does not match this
+                          attestation must not seal a decision
+                          under the licensed reviewer's name as
+                          the substantive decisionmaker.
+
+    Aggregate override
+      rate disclosure:    [Optional: the licensed reviewer's
+                          override rate against the AI system's
+                          recommendations across a rolling
+                          window; recorded because reviewer
+                          override rates are the load-bearing
+                          metric for distinguishing substantive
+                          review from rubber-stamp review]
+                          (FICTIONAL example: "Reviewer override
+                          rate over rolling 12 months: 14% of
+                          decisions diverge from system
+                          recommendation; system-recommendation-
+                          followed rate: 86%; the override rate
+                          is disclosed for transparency
+                          regarding the substantive-review
+                          attestation in FACT 05")
+
+  COERCION-AMPLIFICATION DISCLOSURE (PER R8)
+
+    The signing principal in FACT 08 has the following on-record
+    concerns or recusal-history relevant to this decision:
+
+    [If none: "None — the signing principal has no on-record
+     concerns relevant to this decision."]
+    [If any: enumerate by date and nature of the concern
+     (e.g. previously raised concerns about the criteria,
+     the AI system, the volume quota, the decisionmaking
+     environment, or similar). Per refusal rule R8, a
+     decision sealed under a signing principal who has
+     raised concerns about the decisionmaking environment
+     must disclose the concerns; the seal does not amplify
+     a captured signer's name into Bitcoin without
+     disclosing the capture evidence the signer has on
+     record.]
+
+    (FICTIONAL example: "None — the signing principal has no
+    on-record concerns relevant to this decision.")
+
+  REGULATOR / EXTERNAL CONTEXT DISCLOSURE
+
+    The following regulator or external-context facts are
+    disclosed for transparency:
+
+    [Enumerate any: open state insurance department
+     investigation of the carrier's UM practices, open
+     federal investigation, open class-action regarding
+     the relevant service category or criteria source,
+     recent regulator action against the carrier in the
+     relevant state.]
+
+    (FICTIONAL example: "None known to the carrier as of
+    2026-05-21.")
+
+This fact asserts only the companion disclosures above as
+recorded for the fictional decision. It does NOT assert:
+  - that the disclosed prior decisions, pending appeals, or
+    recusals are exhaustive of all such facts that exist
+    (omission is itself a sealable fact if discovered later),
+  - that the AI system disclosure exhausts all algorithmic
+    contributions to the decisionmaking pipeline (the seal
+    relies on the carrier's good-faith disclosure;
+    undisclosed algorithmic systems remain undetectable by
+    the seal alone),
+  - that the override-rate disclosure (if included) is
+    statistically meaningful at the per-reviewer level (the
+    aggregate metric across many seals over time is more
+    meaningful than any single seal's number).
