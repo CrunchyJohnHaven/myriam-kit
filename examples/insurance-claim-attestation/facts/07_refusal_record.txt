@@ -1,0 +1,154 @@
+FACT 07 — REFUSAL RECORD (FICTIONAL)
+
+The kit does NOT seal the following types of facts, even if requested
+by the carrier, by claimant counsel, by a third-party claimant, or by
+a co-equal authority. A refusal itself may be sealed as a fact
+("This party requested sealing of X; the kit refused per refusal-rule
+Y"), creating a public record of attempted misuse.
+
+R1. CLAIMANT SSN, FULL DOB, FULL ADDRESS, OR PHONE NUMBER
+    The carrier knows these from the policy file; the public seal
+    does not need them and must not carry them. The claim number in
+    FACT 02 is the appropriate handle for parties with standing to
+    locate the claim file. The public seal is NOT a re-identification
+    index of insureds or claimants.
+    Identity verification of the insured for purposes of the
+    coverage analysis is performed against the carrier's policy file
+    using the policy-file binding (carrier-internal), NOT against
+    publicly-published claimant identifiers.
+
+R2. DIAGNOSIS NARRATIVES, TREATMENT SPECIFICS, OR PROCEDURE CODES
+    THAT COULD IDENTIFY RARE OR STIGMATIZING CONDITIONS
+    Even by hash. Even by file-level fingerprint. The reason: a
+    medical bill set's hash plus the case context (third-party
+    bodily injury, specific date and location of loss) can be
+    reversed by an interested party — opposing counsel, an
+    employer, an insurer running a separate underwriting decision —
+    to re-identify the claimant's diagnosis. The public seal
+    records CPT/HCPCS billing-code summaries and billed amounts
+    only (item 8, FACT 03); ICD-10 diagnoses, treatment narratives,
+    mental-health detail, HIV status, substance-use treatment
+    records, reproductive-health records, and rare-disease
+    indicators are NEVER in the public seal, even by hash.
+    Medical detail is appropriately discoverable through normal
+    civil-litigation procedures with protective orders, NOT through
+    a permanent public ledger.
+
+R3. WITNESS NAMES (EXCEPT WHERE PUBLIC RECORD)
+    Witnesses are referred to by handle (W-1, W-2, ...) in FACT 03.
+    The carrier's claim file binds handles to specific witness
+    individuals; that binding is discoverable in litigation under
+    normal civil procedure. The public seal does NOT publish
+    witness legal names because witnesses are often unwilling
+    participants in another party's dispute and public-ledger
+    publication exposes them to harassment, retaliation, or
+    discovery they did not consent to.
+    EXCEPTION: where a witness is a public-record actor (a
+    responding police officer named in the police report, item 4 of
+    FACT 03; a public-agency representative; a treating physician
+    only where the physician's identity is already public via a
+    state medical-board complaint or published court ruling), the
+    handle may be cross-referenced to a public-record citation
+    rather than masked. This exception is narrowly construed.
+
+R4. SEALING A PARTIAL-INVESTIGATION DECISION PRESENTED AS FINAL
+    The kit refuses to seal a "decision" that is in fact a
+    pre-investigation pre-decision, an interim payment, a coverage
+    reservation, or any other non-final action presented as if it
+    were a coverage decision. The decision date in FACT 02 must
+    correspond to the actual moment of final coverage
+    determination; interim actions are sealed (if at all) as
+    interim actions with explicit non-final labeling.
+    Rationale: sealing a pre-investigation rejection as if it were
+    a final decision provides false-finality cover for an adjuster
+    who has not yet done the investigation; sealing a token
+    interim payment as if it were the final payment provides cover
+    for later silent denial of the balance. The decision date and
+    the disposition status (FACT 02 + FACT 05) must accurately
+    label whether this is the final coverage decision or an interim
+    action.
+
+R5. SEALING BY ANYONE OTHER THAN THE LICENSED ADJUSTER OF RECORD
+    The seal records the carrier's coverage decision. Only the
+    licensed adjuster of record (or, where the adjuster is acting
+    under a managing general agent / TPA delegation, the
+    appropriately licensed signing principal of that delegated
+    authority) may sign the seal under the carrier's name. The
+    insured, claimant counsel, a state insurance department
+    examiner, a reinsurer, or a third-party reviewer may use the
+    SAME kit to seal THEIR OWN independent analysis of the same
+    claim (e.g., "the insured publishes this hash of the evidence
+    they submitted; the carrier's seal must include this hash, or
+    the carrier is missing evidence"), but they may not seal the
+    CARRIER'S decision under the carrier's name. The signing
+    principal in FACT 08 is the only valid signer for the
+    carrier-side decision seal.
+    Independent counter-seals by the insured or claimant are a
+    feature: they make silent evidence-omission detectable.
+
+R6. CLAIMS OF LEGAL FINALITY OR PRECLUSION
+    The kit will not seal a fact body that claims the decision is
+    "binding," "final and non-appealable," "preclusive," or any
+    other legal conclusion. The decision is the carrier's
+    decision; the insured retains all rights to demand appraisal
+    (where the policy provides), to invoke the policy's appeal
+    procedure, to file a complaint with the state insurance
+    department, and to litigate. Legal finality is a court
+    function; the kit anchors the carrier's contemporaneous
+    decision, not a legal conclusion about its enforceability.
+
+R7. RETROACTIVE COVERAGE INTERPRETATION CHANGES IN A
+    PURPORTED "AMENDMENT" SEAL
+    If after sealing the carrier wishes to revise the coverage
+    interpretation in FACT 04 or the payment amounts in FACT 05,
+    the revision MUST be sealed as a NEW publication referencing
+    this seal by Merkle root. The kit refuses to re-seal a modified
+    version of this seal under the same identifiers. The original
+    sealed decision is permanent; revisions are new publications,
+    transparently linked. This prevents a carrier from claiming
+    "the seal always said X" when X was substituted later.
+
+R8. SEALING UNDER PRESSURE TO DENY A CLAIM THAT IS NOT YET FULLY
+    INVESTIGATED
+    See R4. The kit also refuses, as a matter of design, to seal
+    a denial whose stated reason code is "investigation incomplete
+    but denying for procedural reasons." A denial seal must rest on
+    substantive reason codes tied to specific policy provisions
+    (FACT 04) and specific evidence (FACT 03). A denial that
+    cannot be tied to a specific provision and specific evidence
+    indicates the decision is not yet ripe to be sealed.
+
+R9. SEALING THE EXISTENCE OF A NON-COMPETE OR NON-DISCLOSURE BAR
+    ON THE CLAIMANT
+    No fact body sealed under this kit may include language
+    obligating the claimant to non-disclosure of the decision
+    terms, the existence of the claim, or the seal itself.
+    Coverage decisions made under threat of post-settlement
+    non-disclosure are an established bad-faith pattern; the kit
+    refuses to be the vehicle for that pattern. (The carrier may
+    of course include a non-disclosure clause in a separate
+    settlement agreement under applicable law; the kit just won't
+    seal the existence of the bar inside the public publication.)
+
+R10. SEALING WHILE BAD-FAITH LITIGATION AGAINST THE CARRIER IS
+     PENDING ON THIS CLAIM WITHOUT EXPRESS COURT CONCURRENCE
+    If at decision time the carrier is already in bad-faith
+    litigation regarding this same claim, sealing without express
+    court concurrence is refused. The seal would be entering a
+    contested record on the carrier's terms; that is a court
+    function. Where the court directs sealing as part of a
+    settlement order, the kit may be used; where not, the kit
+    refuses.
+
+REFUSALS THIS CLAIM: NONE. (FICTIONAL)
+
+If during claim handling any request matching R1-R10 was made and
+refused, that refusal would be documented as a sealed fact:
+  "Refusal #N: party X requested sealing of [pattern]; the kit
+  refused per refusal-rule R[m]."
+
+This fact asserts only the refusal-rule list and the refusal record
+at the moment of decision. It does not assert that the refusal-rule
+list is exhaustive of all PII or bad-faith patterns, or that the
+absence of recorded refusals means no improper sealing pressure was
+applied (only that no formal refusal was triggered).

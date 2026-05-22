@@ -1,0 +1,113 @@
+FACT 08 — SIGNING PRINCIPAL (FICTIONAL)
+
+  Issuing authority:           U.S. Food and Drug Administration,
+                               Office of Regulatory Affairs
+  District office:             FDA Fictional District (FICTIONAL —
+                               a real attestation would name the
+                               actual District Office: e.g. New York,
+                               Philadelphia, Atlanta, Dallas, etc.)
+  District office address:     [Fictional District Office address]
+  Closing-meeting date:        2026-05-21 (see FACT 02)
+  Issuance timestamp:          2026-05-21T16:45:00 EST (see FACT 06)
+  Form 483 sequence number:    483-FICT-2026-001 (FICTIONAL)
+  FACTS inspection number:     INS-99-9999999 (matches FACT 02)
+
+LEAD INVESTIGATOR (PRIMARY SIGNATORY)
+
+  Investigator [Fictional Name]
+  Title:                       Consumer Safety Officer / Investigator,
+                               Drug Specialist
+  Employee ID:                 (omitted from public seal; held under
+                               FDA records control)
+  Cryptographic key:           (a real attestation would include the
+                               investigator's PGP public key fingerprint
+                               here; omitted in this example because no
+                               real person exists. The investigator's
+                               key fingerprint is what allows future
+                               sealed publications by the same
+                               investigator — e.g. a follow-up "the
+                               EIR has been silently revised" memo —
+                               to be cryptographically tied to this
+                               same signing principal.)
+  Inspection-team role:        Lead investigator; in-charge of inspection;
+                               author of all 5 observations in FACT 03.
+
+CO-INVESTIGATOR (SECONDARY SIGNATORY)
+
+  Investigator [Fictional Name]
+  Title:                       Consumer Safety Officer / Investigator
+  Inspection-team role:        Co-investigator; concurs with all 5
+                               observations in FACT 03 and the
+                               preliminary OAI classification in FACT 05.
+
+SUBJECT-MATTER EXPERT (ATTESTATION SIGNATORY, OBSERVATIONS 2 ONLY)
+
+  Microbiologist [Fictional Name]
+  Title:                       Microbiologist, FDA Office of
+                               Pharmaceutical Quality (consult)
+  Inspection-team role:        Subject-matter expert for sterile
+                               environmental-monitoring observations;
+                               concurs specifically with Observation 2.
+
+SUPERVISORY CHAIN (declared at issuance, not signatory but accountable)
+
+  Supervisory investigator:    Supervisor [Fictional Name],
+                               Drug Investigation Branch, FDA Fictional
+                               District (FICTIONAL)
+  District compliance officer: CSO [Fictional Name], FDA Fictional
+                               District (FICTIONAL)
+  District director:           Director [Fictional Name], FDA Fictional
+                               District (FICTIONAL)
+
+  Declaration of supervisory chain at issuance is what makes silent
+  post-issuance reclassification by a District officer publicly
+  traceable: any later change to the classification or any silent
+  removal of an observation must — if challenged — pass through one
+  of the named officers above, all of whom are accountable.
+
+In a real attestation, the signing principal section should include:
+
+  - Each investigator's PGP public key fingerprint OR equivalent
+    cryptographic identity (so later sealed publications by the same
+    investigator can be tied to this issuance)
+  - The actual FDA District Office name and address
+  - The actual Form 483 sequence number assigned by the FDA's
+    document-control system
+  - The supervisory chain as it existed at issuance (these officers
+    may rotate; the sealed snapshot anchors who was accountable
+    on issuance day)
+
+The signing principal section SHOULD NOT include:
+
+  - Personal contact information (phone, home address) for
+    investigators or supervisory officers
+  - Identifying information about investigators' family members
+  - FDA employee ID numbers (held under FDA records control;
+    not appropriate for public seal)
+  - Any information that would create a personal-safety risk for
+    federal inspectors, who in some sectors face documented
+    intimidation or retaliation pressure
+
+If an investigator is willing to be named on the public seal,
+naming them is appropriate (federal office, federal role, federal
+inspection act). If an investigator declines to be named — including
+because the inspection touches a sector where personal retaliation
+risk is real — the seal can still be valid with the inspection team
+identified by anonymized investigator ID and the District Office
+named as the institutional signatory.
+
+The PGP key (or equivalent) is the load-bearing element of this fact.
+Without a per-investigator cryptographic identity, the seal proves
+only that "an FDA Form 483 was issued at time T with content X" —
+which is useful — but cannot independently prove that any subsequent
+sealed publication purporting to be from the same investigator is
+genuinely from them. With the key, the investigator retains the
+ability across years and across changes in employment to publish
+new sealed statements ("the EIR for INS-99-9999999 has been
+silently revised; here is what I actually issued") that
+cryptographically chain to this issuance.
+
+This fact asserts only the signing principal identification fields
+for the fictional Form 483 issuance as declared. It does not assert
+any of those fields about any real investigator, supervisory officer,
+or District Office.

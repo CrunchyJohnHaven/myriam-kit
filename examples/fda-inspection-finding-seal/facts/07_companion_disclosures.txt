@@ -1,0 +1,152 @@
+FACT 07 — COMPANION DISCLOSURES AND REFUSAL RECORD (FICTIONAL)
+
+Per the MYRIAM kit's "constraint-first" design principle, this fact
+records what the kit explicitly refused to seal and any companion
+disclosures the issuing investigator is obliged to publish along with
+the Form 483 so that selective omission is detectable.
+
+COMPANION DISCLOSURES (sealed alongside the observations so the
+Form 483 cannot be read in isolation)
+
+  C1. PENDING LITIGATION AGAINST THE ESTABLISHMENT
+      The investigation team is aware, at the moment of issuance, of
+      the following pending federal litigation involving the
+      establishment named in FACT 02:
+        - Civil action ABC v. FictGen Pharma, Case No. 2:24-cv-99999,
+          Fictional District (FICTIONAL — product-liability case
+          related to Drug A, alleging same particulate complaints
+          referenced in Observation 4)
+        - DOJ investigation reference DOJ-FICT-2025-99999 (FICTIONAL —
+          civil False Claims Act investigation; status unknown to
+          investigator)
+      (FICTIONAL — a real attestation would list actual pending matters
+      as known to the inspection team at issuance.)
+
+  C2. PRIOR INSPECTIONS AT THIS FACILITY (last 5 years)
+        - 2025-04-17 through 2025-04-29: GMP surveillance, VAI
+          classification (8 observations, no Warning Letter)
+        - 2024-03-05 through 2024-03-18: GMP surveillance, VAI
+          classification (4 observations, no Warning Letter)
+        - 2022-09-12 through 2022-09-23: pre-approval inspection for
+          ANDA-209999, NAI classification (0 observations, approval
+          recommended)
+        - 2021-06-14 through 2021-06-21: for-cause inspection
+          following consumer complaint cluster, VAI classification
+          (5 observations, no Warning Letter)
+      Each prior inspection's EIR hash is sealed separately (a real
+      attestation would carry per-prior-EIR SHA-256s here so silent
+      revision of prior EIRs to make the current inspection's findings
+      look like a first-occurrence rather than a pattern would also
+      be detectable.)
+
+  C3. RECUSALS FROM THIS INSPECTION
+      Investigator [Fictional Name] (originally assigned as
+      microbiologist consult) recused on 2026-05-06 due to a prior
+      consulting relationship with the establishment from before
+      joining FDA. Replacement microbiologist consult is named in
+      FACT 02. The recusal itself is referenced by memorandum number
+      REC-FICT-2026-014 (FICTIONAL).
+      (FICTIONAL — a real attestation lists actual recusals and the
+      memo references so any later question about conflicts of
+      interest in the inspection team is publicly answerable from the
+      sealed record.)
+
+  C4. KNOWN PARALLEL FDA ACTIVITY AT THE FACILITY
+      The investigation team is aware of the following parallel FDA
+      activity touching this facility during the inspection window:
+        - CDER pharmacovigilance signal review for Drug A (initiated
+          2026-02; ongoing) (FICTIONAL)
+        - OPMA recall coordination for an unrelated 2024 recall;
+          recall closeout pending (FICTIONAL)
+      Awareness of parallel activity does not bias inspection
+      findings; disclosing it here keeps the record honest about
+      what the inspectors knew.
+
+  C5. FIRM'S ON-RECORD STATEMENTS DURING THE INSPECTION
+      The most-responsible person (FACT 02) made the following on-
+      record statements during the inspection that are material to
+      the observations:
+        - On 2026-05-15, the QC director acknowledged the single-
+          replicate release deviation cited in Observation 3.
+        - On 2026-05-18, the VP Quality acknowledged the HPLC shared-
+          account configuration cited in Observation 5 and stated
+          remediation was in progress.
+      (FICTIONAL — sealing these acknowledgments at issuance prevents
+      later "the firm never admitted that" reframing.)
+
+REFUSAL RECORD — patterns the kit refused to seal
+
+The kit does NOT seal the following types of facts, even if requested
+by the inspection team or supervisory chain:
+
+  R1. PATIENT PII OR TRIAL-SUBJECT IDENTIFIERS
+      Adverse-event cases cited in the inspection (e.g. specific
+      complaints in Observation 4) may reference identifiable
+      patients. Patient names, dates of birth, addresses, insurance
+      IDs, and clinical-trial subject IDs MUST NOT be sealed. Only
+      de-identified case references (e.g. "complaint #FICT-2025-1042")
+      are sealable.
+
+  R2. WHISTLEBLOWER IDENTITY
+      The inspection was prompted in part by information from a
+      former employee who requested confidentiality protection. The
+      whistleblower's name, role, dates of employment, identifying
+      pattern of allegations, or anything else that could re-identify
+      them MUST NOT be sealed. (The whistleblower has their own
+      protected channel under 21 USC and OSC regulations.)
+
+  R3. TRADE-SECRET FORMULAS OR MANUFACTURING PROCESSES
+      Quantitative formula details, proprietary process parameters
+      (e.g. precise compression force, granulation endpoint moisture),
+      and validation-batch process recipes MUST NOT be sealed
+      verbatim. The seal references such documents only by SHA-256
+      hash (see FACT 04), which proves the document existed without
+      exposing its content.
+
+  R4. PARTIAL FINDINGS DURING ONGOING INSPECTION
+      The kit refuses to seal a Form 483 mid-inspection. Sealing is
+      permitted ONLY at the closing meeting, when all observations
+      are finalized. (Defeats the failure mode where an inspector
+      under pressure publishes a partial finding that is later
+      withdrawn before the full inspection concludes.)
+
+  R5. SEALING BY ANYONE OTHER THAN THE ACTUAL INVESTIGATOR
+      The kit refuses to seal a Form 483 at the request of any party
+      other than the lead investigator (or, by explicit delegation,
+      a member of the inspection team named in FACT 02). A District
+      Director, Center reviewer, or anyone else seeking to seal an
+      inspection finding must do so as a SEPARATE publication
+      attributed to themselves — not under the investigator's
+      authority.
+
+  R6. CLASSIFICATIONS NOT SUPPORTED BY THE OBSERVATIONS
+      The kit refuses to seal a classification (FACT 05) that is
+      inconsistent with the observations in FACT 03 — e.g. NAI
+      classification when material observations were issued, or OAI
+      classification when no observations were issued. The seal is
+      a record of what was found, not a coercion tool for forcing
+      a particular regulatory outcome.
+
+  R7. COMPELLED ATTESTATIONS
+      The kit refuses to seal under coercion. If the inspector is
+      being pressured (by firm counsel, by FDA superiors, or by any
+      external party) to issue a Form 483 with different language or
+      a different classification than the inspector's own findings
+      support, the kit's correct use is to REFUSE to seal AND to
+      publish a separate sealed refusal-record describing the
+      coercion (without identifying any individual unless that
+      individual is a public official acting in public capacity).
+
+If during issuance any request matching R1-R7 was made and refused,
+that refusal is documented as a sealed fact:
+  "Refusal #N: party X requested sealing of [pattern]; the kit
+  refused per refusal-rule R[m]."
+
+  Refusals this issuance: NONE. (FICTIONAL)
+
+This fact asserts only the companion-disclosure status and any
+refusal record at the moment of Form 483 issuance. It does not
+assert that the refusal-rule list is exhaustive of all PII or
+trade-secret patterns, that the companion-disclosure inventory
+captures every pending legal matter at the establishment, or that
+the inspection team's awareness of parallel FDA activity was complete.

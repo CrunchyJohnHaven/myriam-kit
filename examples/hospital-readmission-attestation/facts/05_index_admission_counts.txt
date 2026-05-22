@@ -1,0 +1,83 @@
+FACT 05 — INDEX ADMISSION COUNTS AND CASE-MIX BREAKDOWN (FICTIONAL)
+
+This fact reports the denominators that feed FACT 04 — the index
+admission counts per condition AND the total inpatient discharge
+count for the period AND the payer-mix breakdown so case-mix shifts
+between months are publicly diffable. PER REFUSAL RULE R4, this
+breakdown is mandatory; a rate without a denominator + payer mix
+hides the most important gaming vector (silent case-mix shift away
+from high-readmission conditions and toward low-readmission
+conditions).
+
+PER-CONDITION INDEX ADMISSION COUNTS — APRIL 2026
+
+  CONDITION COHORT       INDEX ADMISSIONS    EXCLUSIONS APPLIED
+  ---------------------  ------------------  --------------------------------
+  AMI                    41                   3 (transfer-in, in-hospital death,
+                                                LAMA discharge — itemized in FACT 08)
+  Heart Failure (HF)     98                   7
+  Pneumonia (PN)         112                  9
+  COPD                   78                   4
+  CABG                   24                   1
+  THA/TKA                147                  6
+  ---------------------  ------------------  --------------------------------
+  HRRP-cohort subtotal   500                  30
+  Non-HRRP inpatient
+  discharges (all other
+  DRGs combined)         784                  N/A (not subject to HRRP
+                                              measures, included here for
+                                              total-discharge transparency)
+  ---------------------  ------------------  --------------------------------
+  TOTAL INPATIENT
+  DISCHARGES (APRIL)     1,284                30 (across HRRP cohorts only)
+
+PRIMARY PAYER BREAKDOWN — APRIL 2026 (ALL INPATIENT DISCHARGES)
+
+  PRIMARY PAYER                          DISCHARGE COUNT    PERCENT
+  -------------------------------------  -----------------  -------
+  Medicare Fee-for-Service               487                37.9%
+  Medicare Advantage (all MA plans)      241                18.8%
+  Medicaid (FFS + managed Medicaid)      298                23.2%
+  Commercial (employer + exchange)       189                14.7%
+  Self-pay / uninsured                    48                 3.7%
+  Other (TRICARE, workers comp, etc.)     21                 1.6%
+                                         -----------------  -------
+  TOTAL                                  1,284              100.0%
+
+WHY THE PAYER BREAKDOWN MATTERS FOR DIFFING
+
+  HRRP applies to Medicare fee-for-service admissions. Hospitals
+  with declining Medicare FFS share (and growing Medicare
+  Advantage share) can see apparent HRRP-rate improvements that
+  reflect denominator composition change, not care change. A
+  month-over-month silent shift in the Medicare FFS percentage
+  is publicly visible across sealed publications. The seal does
+  not adjudicate whether such a shift reflects market dynamics,
+  hospital admission policy, or anything else; it makes the shift
+  visible.
+
+  Hospitals with growing Medicaid and self-pay share often serve
+  populations with documented higher readmission risk under
+  standard CMS risk adjustment, which contributes to the
+  documented HRRP penalty disparity affecting safety-net
+  hospitals (Khera et al., JAMA 2018, and follow-on literature).
+  A sealed payer mix allows independent researchers and the
+  public to interpret rate changes in context.
+
+INDEX-VS-OBSERVATION ADMISSION BOUNDARY
+
+  Patients discharged from the emergency department, or admitted
+  under "observation status" rather than inpatient status, are
+  NOT counted as index admissions for HRRP-cohort denominators
+  above. Observation-status counts are reported separately in
+  FACT 06 to make the inpatient-vs-observation boundary publicly
+  diffable. Inpatient-status-to-observation-status shifts that
+  silently move patients OUT of the HRRP denominator are exactly
+  the gaming vector FACT 06 is designed to make visible.
+
+This fact asserts only the index admission counts, exclusion counts,
+total inpatient discharge count, and payer-mix breakdown as recorded
+at the April 2026 data freeze. It does not assert that the case mix
+is representative of any other hospital, that the exclusion criteria
+are correctly applied in every individual case (per-case audit is
+out of scope), or that the payer breakdown is normative in any way.

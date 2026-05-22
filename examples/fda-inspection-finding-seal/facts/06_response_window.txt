@@ -1,0 +1,83 @@
+FACT 06 — FIRM RESPONSE WINDOW (FICTIONAL)
+
+This fact establishes — AT THE MOMENT OF FORM 483 ISSUANCE — the
+firm's deadline to respond to the inspection observations. Sealing the
+window at issuance prevents the most common post-issuance dispute:
+"the firm was given X days; the FDA later acted on day Y; what was the
+window?"
+
+ISSUANCE TIMESTAMP (ANCHOR)
+
+  Form 483 formally issued:    2026-05-21T16:45:00 EST (FICTIONAL —
+                               same timestamp as the closing-meeting
+                               timestamp in FACT 02)
+  Receipt acknowledged by:     Dr. [Fictional Name], VP Quality
+                               (most-responsible person in FACT 02)
+  Method of issuance:          Hand-delivered hardcopy at closing
+                               meeting AND emailed electronic copy to
+                               the firm's regulatory affairs distribution
+                               list. SHA-256 of the issued PDF:
+                               5c4821d81b2aa72015f6f85235317c7092ab509e164cbdb3933f54769444bfd3
+
+RESPONSE WINDOW (per FDA guidance and current Compliance Program 7356.002)
+
+  Firm written response due:   2026-06-04 (15 working days from issuance)
+  Statutory anchor:            21 USC 374; FDA Compliance Program
+                               7356.002 (Drug Manufacturing Inspections)
+                               (FICTIONAL citation values; real
+                               attestation would carry actual citation)
+
+  Within the response window, the firm is expected to submit, in
+  writing, for each observation in FACT 03:
+    (a) The firm's response to the observation (concur / partially
+        concur / dispute).
+    (b) Immediate corrective actions taken or planned.
+    (c) Longer-term preventive actions and target completion dates.
+    (d) Supporting documentation (revised SOPs, training records,
+        investigation reports, capa records).
+
+  Failure-to-respond consequence (per FDA guidance):
+    Absence of timely response or substantively inadequate response is
+    a factor the District Office and Center weigh in deciding whether
+    a Warning Letter or other regulatory action is warranted.
+
+WHY SEAL THE WINDOW AT ISSUANCE
+
+The response-window deadline is a specific calendar date computed at
+the moment of issuance. Sealing it prevents two post-hoc disputes:
+
+  D1. SILENT EXTENSION
+      "The FDA gave us 30 days, not 15." — Defeated by the sealed
+      2026-06-04 deadline.
+
+  D2. SILENT TRUNCATION
+      "The FDA acted before our response window closed." — Defeated
+      by the sealed 2026-06-04 deadline being public.
+
+POST-RESPONSE COMMITMENTS
+
+  C1. Once the firm submits its written response, that response is
+      expected to be entered into the inspection record. A NEW sealed
+      MYRIAM publication (referencing this one by Merkle root) is the
+      recommended way for the firm or the investigator to memorialize
+      the response so its contents cannot be silently revised later.
+
+  C2. If the District Office grants the firm an extension of the
+      response window, the extension memorandum should itself be
+      sealed as a NEW publication referencing this one by Merkle root.
+      Silent extensions — granted but not documented — become
+      detectable as deviations from this sealed window.
+
+  C3. If a Warning Letter is issued, the issuance date and the
+      observations cited in the Warning Letter can be compared against
+      the observations in FACT 03 of this seal. Any observation cited
+      in a Warning Letter that does NOT appear in FACT 03 is a deviation
+      from inspection scope and should itself trigger a new sealed
+      publication explaining the basis.
+
+This fact asserts only the response-window dates and the
+issuance-method details for the fictional Form 483. It does not assert
+that 15 working days is the correct response window for every
+inspection (it varies by inspection type and Compliance Program), that
+the firm will respond at all, or that the FDA will adhere to the
+implied 45-day EIR publication target for OAI inspections.

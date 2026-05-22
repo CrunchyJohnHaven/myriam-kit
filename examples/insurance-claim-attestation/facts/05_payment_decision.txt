@@ -1,0 +1,103 @@
+FACT 05 — PAYMENT DECISION (FICTIONAL)
+
+On 2026-05-21, the adjuster of record on claim FICT-CLM-2026-447193
+(see FACT 08 for the role-level signing principal) reviewed all
+evidence in FACT 03 and the coverage interpretation in FACT 04 and
+rendered the following payment decision:
+
+OVERALL DISPOSITION
+
+  Claim status:           PARTIALLY APPROVED (FICTIONAL)
+  Disposition date:       2026-05-21
+  Coverage decision:      First-party collision: APPROVED, paid
+                          per appraisal less deductible.
+                          Third-party bodily injury liability:
+                          APPROVED, settlement reached with
+                          Claimant-B's counsel, paid into
+                          settlement trust.
+                          Medical payments: NO PAYMENT (no first-
+                          party injury claim made; coverage remains
+                          available within policy time period).
+                          Rental reimbursement: APPROVED for 12
+                          days at policy rate.
+
+PAYMENT BREAKDOWN
+
+  ITEM                                             AMOUNT (USD)    REASON CODE
+  ----------------------------------------------- ---------------  -------------------------
+  First-party collision — vehicle ACV               $18,475.00    R-COLL-01 (covered loss)
+  Less first-party collision deductible             ($1,000.00)    R-DED-01 (per dec page)
+  First-party collision — net payment to insured    $17,475.00    [paid 2026-05-21]
+
+  Third-party BI settlement to Claimant-B           $42,500.00    R-BI-SETTLE-01
+                                                                  (within per-person limit;
+                                                                  releases all claims arising
+                                                                  from accident)
+  Third-party BI defense costs (outside limits)      $3,820.00    R-BI-DEF-01
+
+  Rental reimbursement (12 days @ $42/day)             $504.00    R-RENTAL-01 (within
+                                                                  endorsement cap)
+
+  Medical payments                                       $0.00    R-MEDPAY-NONE
+                                                                  (no claim made; coverage
+                                                                  remains available)
+
+  TOTAL CARRIER OUTLAY ON THIS CLAIM                $64,299.00
+
+  Total within policy aggregate limits.
+
+REASON CODES — KEY
+
+  R-COLL-01      Loss is a covered collision under Part D; ACV is
+                 supported by the independent appraisal (item 5,
+                 FACT 03) and the repair-shop estimate (item 6,
+                 FACT 03); appraisal method used was [method]
+                 per state regulation.
+  R-DED-01       Deductible applied per declarations page in force
+                 at date of loss.
+  R-BI-SETTLE-01 Settlement of third-party bodily injury claim
+                 reached within per-person limit of $100,000 on a
+                 full-release basis; settlement does not constitute
+                 admission of liability; release filed per state
+                 procedure.
+  R-BI-DEF-01    Outside-limits defense costs paid under the
+                 carrier's duty to defend; no defense reservation.
+  R-RENTAL-01    Rental reimbursement paid within endorsement cap;
+                 supported by rental receipts in claim file.
+  R-MEDPAY-NONE  No first-party medical expense claim made; coverage
+                 remains available for the policy's stated time
+                 period; no carrier action required.
+
+RESERVATIONS, IF ANY
+
+  None at this decision. If post-decision information triggers a
+  reformation, recoupment, or subrogation action, that action would
+  be processed as a NEW decision and sealed under a NEW MYRIAM
+  publication referencing this seal by Merkle root. The original
+  payment decision sealed here remains the basis on which payment
+  was approved and disbursed.
+
+POST-DECISION OBLIGATIONS
+
+  - The carrier will issue payment per the breakdown above within
+    the statutorily required time period under [Fictional state]'s
+    prompt-payment-of-claims statute.
+  - The settlement release with Claimant-B is filed in the state
+    court of competent jurisdiction (or settled out of court with
+    full release on file in the claim file).
+  - Any subrogation rights of the carrier are noted in the claim
+    file and pursued under separate procedure.
+  - Any later upward or downward adjustment of any amount in this
+    decision requires a NEW sealed publication (see commitment in
+    refusal-rule R5 of FACT 07).
+
+This fact asserts only the payment decision as rendered for the
+fictional claim on the date stated. It does not assert:
+  - that the payment amounts are clinically or legally optimal,
+  - that the third-party settlement is the only possible resolution,
+  - that the insured or claimant agrees with the decision (right of
+    appeal / right to demand appraisal / right to litigate is
+    preserved under the policy and applicable law),
+  - that no future evidence will change the picture (post-decision
+    discovery is handled per the reservations clause above and
+    under refusal-rule R5 of FACT 07).

@@ -1,0 +1,91 @@
+FACT 04 — 30-DAY READMISSION RATES (FICTIONAL)
+
+This fact reports the hospital's 30-day all-cause readmission rates
+for the April 2026 attestation period (FACT 03), broken out by the
+six HRRP-eligible conditions plus a hospital-wide (HWR) line. PER
+REFUSAL RULE R3, raw rates appear alongside risk-adjusted rates;
+risk-adjusted-only reporting is not permitted by this kit. PER
+REFUSAL RULE R4, per-condition breakdown is the load-bearing
+content; the hospital-wide line is presented only IN ADDITION to
+the per-condition lines.
+
+METHODOLOGY VERSION (defined in FACT 08; reproduced here for
+context only — FACT 08 is the canonical methodology declaration):
+  CMS HRRP measure year:    FY 2026 (covers performance period
+                            CY 2022 - CY 2024 for risk-adjustment
+                            model calibration)
+  Specification version:    CMS-readmission-spec-v2026.1
+  Specification document
+  SHA-256:                  bb14c4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3
+
+PER-CONDITION 30-DAY ALL-CAUSE READMISSION RATES — APRIL 2026
+
+  CONDITION           RAW NUMERATOR   RAW DENOMINATOR   RAW RATE    95% CI (raw)    RISK-ADJUSTED RATE
+  ------------------  --------------  ----------------  ----------  --------------  ------------------
+  AMI                 6               41                14.6%       (5.6, 29.2)%    13.9% (12.1, 15.8)
+  Heart Failure (HF)  18              98                18.4%       (11.3, 27.5)%   17.8% (16.4, 19.3)
+  Pneumonia (PN)      15              112               13.4%       (7.7, 21.1)%    14.1% (12.9, 15.4)
+  COPD                12              78                15.4%       (8.2, 25.3)%    16.2% (14.7, 17.8)
+  CABG                3               24                12.5%       (2.7, 32.4)%    11.7% (9.8, 13.9)
+  THA/TKA             5               147               3.4%        (1.1, 7.8)%     3.6% (2.9, 4.4)
+  ------------------  --------------  ----------------  ----------  --------------  ------------------
+  Hospital-wide (HWR) 89              624               14.3%       (11.6, 17.2)%   14.8% (13.9, 15.7)
+
+NOTES ON THE TABLE
+
+  - "Raw numerator" is the count of unique index admissions in the
+    condition cohort that had at least one all-cause inpatient
+    readmission to ANY hospital within 30 days of discharge from
+    the index admission. (Readmissions to other hospitals are
+    captured per the CMS spec's master-beneficiary-summary linkage;
+    a hospital-internal-only count would be biased low.)
+  - "Raw denominator" is the count of index admissions for the
+    condition cohort during the period, after applying the standard
+    HRRP exclusion criteria enumerated in FACT 08.
+  - "Raw rate" is numerator / denominator. The 95% confidence
+    interval is computed by the Wilson score interval method (not
+    Wald), which is more reliable than Wald for small denominators
+    common at the per-condition per-month level.
+  - "Risk-adjusted rate" is the CMS hierarchical-logistic-regression
+    estimate per the FY2026 specification, with 95% CI from the
+    spec's standard estimator. The risk-adjusted rate uses the
+    multi-year calibration window from the specification, NOT a
+    single-month estimate; reading month-to-month variation in the
+    risk-adjusted column should be interpreted with the multi-year
+    calibration in mind. Raw rates (left columns) are the
+    appropriate signal for month-over-month diffing.
+
+INTERPRETATION CAUTION
+
+  Per the README "what this kit DOES NOT do" section: a high or
+  low rate above does not by itself indicate good or bad quality
+  of care. The rate reflects the joint outcome of admission case
+  mix, discharge planning, post-discharge community resources,
+  patient adherence, and many other factors. The seal anchors the
+  RECORD of the rates; it does not adjudicate their causes. The
+  seal also does not capture 30-day post-discharge mortality
+  (which is sealed in a separate companion attestation per
+  refusal rule R6 — that companion's Merkle root is referenced
+  in FACT 08).
+
+CONFIDENCE-INTERVAL READING GUIDANCE
+
+  Per-condition per-month CIs are wide, especially for AMI and
+  CABG, because the per-month per-condition denominators at a
+  single hospital are small. A single-month CI substantially
+  overlapping another hospital's single-month CI does NOT
+  indicate the hospitals are different in their underlying rates.
+  Multi-month rolling rates (computed by the consumer of the seal
+  by averaging across sealed monthly publications, NOT by the
+  hospital) are the appropriate unit for cross-hospital
+  comparison.
+
+This fact asserts only the readmission counts and rates as recorded
+at the April 2026 data freeze. It does not assert that the
+readmissions were avoidable, that the rates reflect care quality,
+that the risk-adjustment model is correctly specified for this
+hospital's case mix, that any single-month rate is comparable to
+any other hospital's single-month rate, or that the absence of a
+readmission count in any cell means a patient was not in need of
+re-admission (some unmet need is invisible to the readmission
+measure entirely).

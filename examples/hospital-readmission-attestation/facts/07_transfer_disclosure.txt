@@ -1,0 +1,139 @@
+FACT 07 — TRANSFER DISCLOSURE (FICTIONAL)
+
+This fact freezes the hospital's patient transfer counts for April
+2026, broken out by (a) direction (transfers OUT vs. transfers IN),
+(b) within-system vs. independent receiving / sending facility, and
+(c) primary reason category. PER REFUSAL RULE R8, the within-system
+flag is mandatory; a transfer count without the within-system
+breakdown obscures the within-system care-shifting pattern
+documented in multi-facility health systems.
+
+WHY THIS FACT IS LOAD-BEARING
+
+Under CMS HRRP specifications, a patient transferred OUT of an
+acute-care hospital to another acute-care facility may, depending
+on the specific spec version, have the index-admission attribution
+moved to the RECEIVING hospital — removing the originating
+hospital from the readmission denominator for that case. The
+specifics vary by HRRP measure year and by transfer-direction
+clinical rationale. Per FACT 08, the planned-readmission and
+transfer-handling rules in effect for this period are declared.
+Per FACT 07, the actual transfer counts and patterns are sealed
+so that the joint reading (spec + counts) is publicly diffable.
+
+A separate concern: within-system transfers (to a sister facility
+in the same health system) can functionally route a patient's
+post-acute care to a related entity in ways that do not appear
+as a readmission while still constituting continued care at the
+system level. The within-system flag (mandatory per refusal rule
+R8) makes this pattern publicly visible.
+
+TRANSFERS OUT — APRIL 2026
+
+  TOTAL TRANSFERS OUT (patients sent to another inpatient
+  facility):                                            58
+
+  BREAKDOWN BY RECEIVING FACILITY TYPE
+
+    RECEIVING FACILITY TYPE                            COUNT   PERCENT
+    -----------------------------------------------    -----   -------
+    Within-system acute-care hospital                   19      32.8%
+    Within-system long-term acute-care (LTAC)            8      13.8%
+    Within-system inpatient rehab facility               6      10.3%
+    Independent acute-care hospital                     11      19.0%
+    Independent LTAC                                     4       6.9%
+    Independent inpatient rehab facility                 7      12.1%
+    Skilled nursing facility (SNF) — note: SNF
+    transfer is NOT counted as an acute-to-acute
+    transfer under HRRP; reported here for
+    completeness                                         3       5.2%
+                                                       -----   -------
+    TOTAL                                               58     100.0%
+
+  Within-system subtotal (all destination types):     33 (56.9%)
+  Independent subtotal (all destination types):       25 (43.1%)
+
+  The within-system proportion is itself a month-over-month
+  diffable signal. A growing within-system proportion combined
+  with stable or improving readmission rate (FACT 04) is a flag
+  pattern: post-discharge care is shifting within-system in ways
+  that may suppress readmission counts.
+
+  BREAKDOWN BY PRIMARY REASON
+
+    REASON CATEGORY                                    COUNT   PERCENT
+    -----------------------------------------------    -----   -------
+    Level-of-care escalation (need for service this
+    facility does not offer — e.g. transplant,
+    interventional radiology, burn unit)               14      24.1%
+    Level-of-care de-escalation (rehab / LTAC for
+    post-acute care continuation)                      21      36.2%
+    Patient or family request (preference, proximity
+    to home, second opinion)                            8      13.8%
+    Hospital capacity / bed availability                4       6.9%
+    Insurance / network requirement                     7      12.1%
+    Other / mixed                                       4       6.9%
+                                                       -----   -------
+    TOTAL                                               58     100.0%
+
+TRANSFERS IN — APRIL 2026
+
+  TOTAL TRANSFERS IN (patients received from another
+  inpatient facility):                                  42
+
+  BREAKDOWN BY SENDING FACILITY TYPE
+
+    SENDING FACILITY TYPE                              COUNT   PERCENT
+    -----------------------------------------------    -----   -------
+    Within-system acute-care hospital                    9      21.4%
+    Within-system LTAC / rehab                           2       4.8%
+    Independent acute-care hospital                     27      64.3%
+    Independent LTAC / rehab                             4       9.5%
+                                                       -----   -------
+    TOTAL                                               42     100.0%
+
+  Transfers in are reported so that NET TRANSFER FLOW is
+  publicly computable:
+    Net transfer flow (out - in):                       +16
+    Net within-system flow (out within-sys minus in
+    within-sys):                                        +22
+    Net independent flow (out independent minus in
+    independent):                                        -6
+
+  A persistently positive within-system net flow indicates the
+  hospital is consistently routing patients to within-system
+  receivers. This is not by itself improper, but it is exactly
+  the pattern that makes the within-system flag (refusal rule
+  R8) publicly diffable.
+
+30-DAY READMISSION ATTRIBUTION FOR TRANSFERS
+
+  Of the 58 patients transferred OUT in April 2026:
+    Number subsequently re-admitted within 30 days of original
+    index admission discharge (to ANY hospital, including the
+    receiving transfer facility):                       7
+
+  Per the FACT 08 spec, the readmission attribution for these
+  cases is governed by the CMS transfer-handling rule: in this
+  example we assume the standard FY2026 rule that attributes
+  the index admission to the LAST acute-care hospital in the
+  transfer chain (so 5 of these 7 are attributed to the
+  receiving facility, NOT this hospital). 2 of the 7 are
+  attributed to this hospital and ARE counted in FACT 04's
+  numerator.
+
+  This attribution rule is the kind of methodology detail that
+  silently changes between HRRP measure years. By sealing both
+  the rule (FACT 08) and the counts (FACT 07), a future
+  attribution-rule change is publicly diffable: the analyst
+  can re-apply the new rule to the sealed counts and see what
+  the rate WOULD have been under the prior rule.
+
+This fact asserts only the transfer counts, within-system flags,
+reason categories, and 30-day attribution counts as recorded at
+the April 2026 data freeze. It does not assert that any specific
+transfer was clinically appropriate or inappropriate (per-case
+clinical review is out of scope), that the within-system flag is
+a flag for impropriety (it is not — many within-system transfers
+are appropriate care), or that the CMS attribution rule applied
+is the right rule (the rule itself is policy and contestable).

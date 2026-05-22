@@ -1,0 +1,180 @@
+FACT 05 — CHANGE ORDERS (FICTIONAL)
+
+This is the second of the two load-bearing content facts of the seal.
+Change orders are the dominant unit of post-award price inflation in
+county procurement: a contract may be cleanly awarded under
+competitive bid and then silently inflated 30–60% through post-award
+change orders that never see competitive scrutiny. Anchoring each
+change order at the moment of issuance — with reason code, cost
+impact, and cumulative-change-as-percent-of-original — makes change-
+order creep publicly diffable in advance of audit.
+
+Any later silent revision to any change-order amount, reason, or
+date below would produce a different SHA-256 of this fact file, a
+different Merkle root for this publication, and would fail
+verification against the Bitcoin-committed root.
+
+CHANGE ORDERS ISSUED THIS QUARTER (FICTIONAL — illustrative set)
+
+  CO-2026-Q2-001
+    Date issued:             2026-04-18
+    Change-order ID:         CP-2025-JL-022.CO3 (FICTIONAL)
+    Against contract:        CP-2025-JL-022 (prior-year — County
+                             Jail HVAC Replacement; Fictional
+                             Mechanical Contractors Inc.)
+    Original contract value: USD 6,800,000 (awarded 2025-09-15)
+    Prior change orders:     CO1 (+USD 240,000), CO2 (+USD 185,000)
+    This change order:       +USD 412,000
+    Cumulative changes:      +USD 837,000 (+12.3% of original)
+    Reason code:             ENG-SUBGRADE (engineering — discovery
+                             of asbestos-containing insulation
+                             requiring abatement)
+    Reason narrative:        On 2026-04-02 the demolition contractor
+                             encountered ACM in the ductwork
+                             insulation. Independent industrial-
+                             hygiene test confirmed; abatement
+                             added to scope.
+    Independent justification
+     SHA-256:                03c23f853b396b0df96070f20cd904ec27881e3f6390c55aedc9550c8a2d79f2
+    Approving authority:     Procurement Director per Fictional
+                             County Purchasing Ordinance §1.42 on
+                             change orders ≤15% cumulative
+
+  CO-2026-Q2-002
+    Date issued:             2026-05-09
+    Change-order ID:         CP-2026-RD-014.CO1 (FICTIONAL)
+    Against contract:        CP-2026-RD-014 (THIS QUARTER — County
+                             Route 7 resurfacing; Fictional Paving
+                             Co. Inc.; awarded 2026-04-08, see
+                             FACT 04 K-2026-Q2-001)
+    Original contract value: USD 8,420,000
+    Prior change orders:     None (this is the first)
+    This change order:       +USD 1,250,000
+    Cumulative changes:      +USD 1,250,000 (+14.8% of original)
+    Reason code:             ENG-SUBGRADE (engineering — discovery
+                             of unstable subgrade requiring
+                             excavation and sub-base replacement)
+    Reason narrative:        On 1.4 miles of the 14.2-mile
+                             resurfacing route, the contractor
+                             encountered unstable subgrade
+                             requiring additional excavation and
+                             sub-base replacement before
+                             resurfacing.
+    Independent justification
+     SHA-256:                88c4d4ee218a4f9001e6f4b3c5d7e6f5a4b3c2d1e0f9876543210fedcba98765
+    Approving authority:     Procurement Director per §1.42 on
+                             change orders ≤15% cumulative
+    Note:                    The change order is at 14.8% of
+                             original, immediately below the 15%
+                             threshold above which County
+                             Commission approval is required. The
+                             proximity to threshold is publicly
+                             diffable — a documented pattern of
+                             concern in change-order analytics
+                             ("right-at-threshold clustering").
+
+  CO-2026-Q2-003
+    Date issued:             2026-05-22
+    Change-order ID:         CP-2024-FAC-007.CO5 (FICTIONAL)
+    Against contract:        CP-2024-FAC-007 (prior-year — County
+                             Courthouse Renovation; Fictional
+                             Construction Partners LLC)
+    Original contract value: USD 14,200,000 (awarded 2024-08-10)
+    Prior change orders:     CO1 (+USD 320,000), CO2 (+USD 1,100,000),
+                             CO3 (+USD 480,000), CO4 (+USD 720,000)
+    This change order:       +USD 2,150,000
+    Cumulative changes:      +USD 4,770,000 (+33.6% of original)
+                             *** EXCEEDS 25% THRESHOLD ***
+    Reason code:             SCOPE-EXPANSION (owner-directed scope
+                             addition — additional accessibility
+                             modifications mandated by 2025 ADA
+                             settlement)
+    Reason narrative:        Settlement of Doe v. County (jail-
+                             conditions litigation) required
+                             additional ADA modifications in the
+                             courthouse holding cells beyond
+                             original contract scope.
+    Independent justification
+     SHA-256:                9a0b1c2d3e4f50617283940a1b2c3d4e5f60718293a4b5c6d7e8f9012345678a
+    Approving authority:     County Commission resolution 2026-094,
+                             2026-05-20 (required per §1.42 on
+                             change orders >25% cumulative);
+                             documented in IG's case file
+                             IG-2026-014 as "monitored, not
+                             adverse"
+    Note:                    Cumulative change has now reached
+                             33.6% of original — past the threshold
+                             above which county purchasing policy
+                             recommends termination and re-bid
+                             rather than further amendment. Reason
+                             documented as legitimate (legal
+                             settlement); the seal anchors the
+                             cumulative-change record so any later
+                             claim of "we caught the creep earlier"
+                             can be diffed against the sealed
+                             quarterly state.
+
+  CO-2026-Q2-004
+    Date issued:             2026-06-12
+    Change-order ID:         CP-2025-IT-018.CO2 (FICTIONAL)
+    Against contract:        CP-2025-IT-018 (prior-year — County
+                             Property Tax System Upgrade;
+                             Fictional Software Solutions LLC)
+    Original contract value: USD 4,800,000 (awarded 2025-11-03)
+    Prior change orders:     CO1 (+USD 240,000)
+    This change order:       +USD 540,000
+    Cumulative changes:      +USD 780,000 (+16.25% of original)
+                             *** EXCEEDS 15% THRESHOLD ***
+    Reason code:             SCOPE-CLARIFY (scope clarification —
+                             additional integration with state
+                             property-tax database not specified in
+                             original RFP)
+    Reason narrative:        State property-tax-database API
+                             changes published 2026-04-15 required
+                             integration work not contemplated in
+                             the original RFP scope.
+    Independent justification
+     SHA-256:                25c4e0b86f1a3d7e92c8b4f5a6d7e8f90a1b2c3d4e5f60718293a4b5c6d7e8f9
+    Approving authority:     County Commission resolution 2026-108,
+                             2026-06-10 (required per §1.42 on
+                             change orders >15% cumulative)
+
+AGGREGATE CHANGE-ORDER METRICS THIS QUARTER
+
+  Total change orders issued this quarter:         4
+  Total dollar value of change orders this quarter: USD 4,352,000
+  Change orders against THIS-quarter awards:       1 (CO-2026-Q2-002)
+  Change orders against prior-quarter / prior-year
+   contracts:                                      3 (CO-2026-Q2-001,
+                                                    CO-2026-Q2-003,
+                                                    CO-2026-Q2-004)
+  Change orders pushing cumulative changes above
+   15% of original contract value:                 3 (002, 003, 004)
+  Change orders pushing cumulative changes above
+   25% of original contract value:                 1 (003)
+
+  CHANGE-ORDER REASON-CODE BREAKDOWN (counts)
+    ENG-SUBGRADE (engineering — subsurface discovery):    2
+    SCOPE-EXPANSION (owner-directed scope addition):       1
+    SCOPE-CLARIFY (scope clarification post-award):       1
+
+  CONTRACTS WITH CUMULATIVE-CHANGE-CREEP FLAGGED
+  (cumulative changes >25% of original — high audit-attention)
+    CP-2024-FAC-007: +33.6% cumulative (5 change orders); flagged
+    to IG (case IG-2026-014, "monitored, not adverse"); see
+    FACT 08 companion disclosure C2
+
+This fact asserts only the change-order events as recorded by the
+county procurement office at the moment of issuance, with the
+contemporaneous reason codes, cost impacts, cumulative-change
+percentages, and approving authorities as they appeared on the
+issuance date. It does not assert that any change order was
+substantively justified by the conditions cited; that any cumulative-
+change-creep pattern is or is not the result of an underlying
+corruption pattern (such as low-balling the initial bid and recouping
+through change orders); that the recorded reason codes accurately
+characterize the underlying engineering or scope facts; or that the
+change-order approval process was free of conflict of interest. The
+seal anchors WHAT WAS REPORTED on the day of issuance; whether the
+underlying scope changes were legitimate is an audit and IG matter,
+not a sealing matter.

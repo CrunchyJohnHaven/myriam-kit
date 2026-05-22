@@ -1,0 +1,119 @@
+FACT 06 — OBSERVATION-STATUS DISCLOSURE (FICTIONAL)
+
+This fact freezes the hospital's observation-status discharge counts,
+the justification category distribution, the duration distribution,
+and the inpatient-to-observation conversion count for April 2026.
+PER REFUSAL RULE R7, all these breakdowns are mandatory; an
+observation count without category and duration breakdown is
+exactly the gaming-permissive aggregate the seal is designed to
+prevent.
+
+WHY THIS FACT IS LOAD-BEARING
+
+The HRRP measure counts INPATIENT readmissions of INPATIENT index
+admissions. An admission decision to use OBSERVATION STATUS instead
+of INPATIENT STATUS removes the encounter from the HRRP denominator
+entirely. The peer-reviewed literature (Sheehy et al., JAMA Internal
+Medicine 2013; Zuckerman et al., NEJM 2016 and 2017 follow-ups;
+Wadhera et al., JAMA 2018) documents substantial national growth in
+observation-status discharges across the HRRP era. Some of that
+growth is appropriate clinical practice (the "two-midnight rule" was
+intended to clarify the inpatient-vs-observation boundary); some is
+documented to be HRRP-incentive-driven. Per-hospital monthly sealed
+observation counts make each individual hospital's contribution to
+the pattern publicly diffable.
+
+OBSERVATION-STATUS DISCHARGE COUNTS — APRIL 2026
+
+  TOTAL OBSERVATION-STATUS DISCHARGES (APRIL):         287
+
+  BREAKDOWN BY JUSTIFICATION CATEGORY (PRIMARY REASON)
+
+    JUSTIFICATION CATEGORY                            COUNT    PERCENT
+    -----------------------------------------------   -----    -------
+    Chest pain rule-out (ACS r/o)                      78       27.2%
+    Syncope evaluation                                 34       11.8%
+    Dehydration / acute kidney injury                  41       14.3%
+    Asthma / COPD exacerbation (sub-2-midnight)        29       10.1%
+    Cellulitis / soft-tissue infection IV antibiotics  22        7.7%
+    TIA / neurological symptom evaluation              19        6.6%
+    Other / mixed                                      64       22.3%
+                                                      -----    -------
+    TOTAL                                              287      100.0%
+
+  BREAKDOWN BY DURATION (LENGTH OF OBSERVATION STAY)
+
+    DURATION CATEGORY                                 COUNT    PERCENT
+    -----------------------------------------------   -----    -------
+    ≤ 24 hours                                        198       69.0%
+    24 - 48 hours                                      71       24.7%
+    > 48 hours (extended observation)                  18        6.3%
+                                                      -----    -------
+    TOTAL                                              287      100.0%
+
+  The >48-hour bucket is of particular monitoring interest because
+  the "two-midnight rule" generally indicates that observation
+  exceeding two midnights should convert to inpatient. Persistent
+  growth in the >48-hour bucket without corresponding inpatient
+  conversion is a red flag for observation-as-discharge gaming.
+
+INPATIENT-TO-OBSERVATION CONVERSION COUNT — APRIL 2026
+
+  Patients who were initially admitted as inpatient and converted
+  to observation status during the stay:           14
+  Patients who were initially observation and
+  converted to inpatient during the stay:          22
+
+  Net conversion balance (obs ← inpatient minus inpatient ← obs):
+                                                   -8 (more
+                                                   conversions FROM
+                                                   inpatient TO obs
+                                                   than the reverse;
+                                                   the sign of this
+                                                   number is itself a
+                                                   month-over-month
+                                                   signal)
+
+OBSERVATION DISCHARGE AND 30-DAY RE-ENCOUNTER PATTERN
+
+  Of the 287 observation-status discharges in April 2026:
+    Number re-presenting to ED within 30 days:           38 (13.2%)
+    Number subsequently admitted as inpatient within 30
+    days of observation discharge:                       21 ( 7.3%)
+    Number admitted as inpatient at this hospital within
+    30 days of observation discharge:                    17 ( 5.9%)
+    Number admitted as inpatient at any hospital
+    within 30 days of observation discharge:             21 ( 7.3%)
+
+  These are NOT counted as readmissions in the FACT 04 measure,
+  because the observation-status discharge is not an index
+  admission under HRRP. The numbers are reported here so that
+  the post-observation-discharge re-encounter pattern is
+  publicly diffable across months. A growing post-observation
+  inpatient-admission rate while the HRRP readmission rate
+  (FACT 04) is flat or declining is a flag pattern.
+
+CROSS-WALK NOTE FOR DIFFING ACROSS MONTHS
+
+When the next month's FACT 06 is sealed, the consumer of the
+seals can compare:
+
+  - Total observation count (April 287 → May ?)
+  - Justification category mix (chest pain r/o proportion, etc.)
+  - Duration distribution (especially the >48-hour bucket)
+  - Inpatient-to-observation conversion direction and magnitude
+  - Post-observation 30-day re-encounter rate
+
+Any anomalous month-over-month movement in these is publicly
+visible. The kit does NOT adjudicate whether the movement is
+gaming or genuine practice change; it makes the movement
+visible.
+
+This fact asserts only the observation-status discharge counts and
+breakdowns as recorded at the April 2026 data freeze. It does not
+assert that any specific observation classification was clinically
+appropriate or inappropriate (per-case clinical review is out of
+scope), that the justification category labels are exhaustive of
+all clinical scenarios, or that observation-vs-inpatient
+classification follows a single bright line in every case (the
+two-midnight rule has known interpretation gray areas).

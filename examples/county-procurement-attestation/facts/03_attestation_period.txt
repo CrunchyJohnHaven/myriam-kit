@@ -1,0 +1,106 @@
+FACT 03 — ATTESTATION PERIOD (FICTIONAL)
+
+This fact defines the temporal scope of the attestation: the exact
+calendar quarter being sealed, the moment the quarterly procurement
+books were formally closed by the Procurement Director, and the
+moment the seal was created. Sealing the temporal scope at the
+moment of sealing prevents post-facto reattribution of an attestation
+to a different quarter or framing of partial-quarter data as a full-
+quarter close — both of which are documented failure modes in county
+procurement transparency.
+
+CALENDAR QUARTER COVERED
+
+  Calendar quarter:        2026-Q2 (FICTIONAL)
+  Period start (00:00):    2026-04-01 00:00:00 UTC (FICTIONAL)
+  Period end (23:59):      2026-06-30 23:59:59 UTC (FICTIONAL)
+  Calendar basis:          Calendar-year quarters (most counties
+                           operate on calendar-year quarterly close;
+                           counties on fiscal-year quarters
+                           (commonly July–June in some states)
+                           should substitute the fiscal-quarter dates
+                           and note the fiscal-year basis here)
+
+FORMAL QUARTERLY-CLOSE MOMENT
+
+  Quarter-close memorandum signed (Procurement Director):
+                           2026-07-14T16:30:00 UTC (FICTIONAL)
+  Quarter-close memorandum co-signed (CFO):
+                           2026-07-14T17:15:00 UTC (FICTIONAL)
+  Quarter-close memorandum SHA-256:
+    a1b2c3d4e5f6789abcdef0123456789abcdef0123456789abcdef0123456789ab
+
+  The quarter-close memorandum is the procurement office's internal
+  declaration that all procurement activity issued during the quarter
+  has been entered into the procurement system of record, that the
+  general-ledger reconciliation has been performed by the CFO's
+  office, and that the quarterly procurement record is now closed
+  for editing. Any later edit to the closed quarterly record is
+  itself a procurement event that must be sealed under a SEPARATE
+  attestation (a "post-close amendment" attestation), not silently
+  absorbed into the closed quarter's record.
+
+ATTESTATION SEALING TIMESTAMP
+
+  Sealing timestamp:       2026-07-15T10:00:00 UTC (FICTIONAL —
+                           moment this attestation Merkle root is
+                           computed and submitted to OpenTimestamps
+                           calendars; should be after quarterly close
+                           but before the IG's quarterly review
+                           cycle reaches the period)
+  Time between formal
+   close and sealing:      ~17 hours 30 minutes (FICTIONAL — the
+                           narrower this gap, the stronger the
+                           forensic anchor; longer gaps create a
+                           window in which the closed record could
+                           have been silently modified before
+                           sealing)
+  Maximum gap permitted
+   under this kit:         72 hours (sealing more than 72 hours
+                           after formal close requires explicit
+                           disclosure of the gap and its reason in
+                           FACT 08)
+
+ATTESTATION SCOPE CONSTRAINTS
+
+  This attestation covers procurement activity ISSUED during the
+  named calendar quarter, defined as activity with a notice-to-
+  proceed date, change-order issuance date, or disbursement date
+  falling within 2026-04-01 through 2026-06-30 inclusive.
+
+  Procurement activity recorded after the close date but with an
+  issuance date within the quarter (e.g., a 2026-06-29 notice-to-
+  proceed entered into the system on 2026-07-08) IS included.
+
+  Procurement activity with an issuance date outside the quarter
+  but recorded into the system during the quarter (e.g., a backdated
+  contract issued in March but entered in April) is NOT included
+  under the issuance-date scope, but IS disclosed in FACT 08 as a
+  separate item ("transactions entered this quarter but issued
+  outside the quarter") so that the bookkeeping discrepancy is on
+  the record.
+
+  Procurement activity routed through joint-powers authorities,
+  county-related public-benefit corporations, special districts,
+  or state pass-through grants is OUT OF SCOPE for this attestation;
+  it should be sealed under separate attestations by the entities
+  that issued it.
+
+REFUSAL: PARTIAL-QUARTER OR ROLLED-FORWARD ATTESTATION
+
+  The kit refuses to seal an attestation framed as a full-quarter
+  close that in fact covers only part of the quarter, OR a previously
+  sealed quarterly attestation re-sealed with new content under the
+  same calendar-quarter label. A re-sealed quarter is itself a
+  procurement event and must be sealed as a NEW attestation with a
+  new attestation type ("quarterly procurement attestation, amended")
+  pointing back to the original attestation's Merkle root.
+
+This fact asserts only the temporal scope of the attestation: which
+calendar quarter is covered, when it was formally closed, and when
+it was sealed. It does not assert that all procurement activity
+issued during the named quarter is fully captured in the
+attestation (only that which was entered into the procurement system
+of record by the close date is captured), that the close was
+performed without irregularity, or that the gap between close and
+sealing was free of modification activity.

@@ -1,0 +1,233 @@
+FACT 04 — CONTRACTS AWARDED (FICTIONAL)
+
+This is one of the two load-bearing content facts of the seal (FACT 04
+contracts + FACT 05 change orders together capture the procurement-
+cycle signal). It records, per contract awarded during the attestation
+quarter, the as-issued contract record: vendor entity, contract amount,
+award method, notice-to-proceed date, and contract document hash.
+
+Any later silent revision to any vendor name, amount, award method,
+date, or document hash below would produce a different SHA-256 of this
+fact file, a different Merkle root for this publication, and would fail
+verification against the Bitcoin-committed root.
+
+VENDOR IDENTIFICATION POLICY (READ FIRST)
+
+  This fact identifies vendors by REGISTERED LEGAL ENTITY NAME and
+  jurisdiction-issued business identifier (state-of-incorporation
+  registration ID, NOT the vendor's federal Employer Identification
+  Number — EINs of small / sole-proprietor vendors can de-anonymize
+  natural persons, and are HASHED in FACT 05 rather than published).
+
+  This fact does NOT identify:
+    - Individual vendor employees, officers, or beneficial owners
+    - Personal phone numbers, email addresses, or home addresses
+    - Vendor bank account numbers, federal tax IDs of natural
+      persons, or other personal financial information
+    - Vendor names on contracts BELOW the USD 10,000 itemization
+      threshold (see FACT 06's aggregate disclosure for below-
+      threshold spending)
+
+  Beneficial-ownership disclosure of vendor entities is a SEPARATE
+  oversight regime (in the U.S., this includes the federal Corporate
+  Transparency Act's beneficial-ownership reporting to FinCEN, plus
+  state-level disclosure regimes where applicable). The seal of
+  beneficial ownership is a parallel attestation and is not included
+  here.
+
+ITEMIZATION THRESHOLD
+
+  Contracts at or above USD 10,000 are itemized in this fact, by
+  vendor name + amount + award method + notice-to-proceed date +
+  contract document hash. Contracts below USD 10,000 are aggregated
+  in FACT 06's below-threshold category totals.
+
+  The USD 10,000 threshold is set above the typical county petty-
+  purchase / micro-purchase authority (which is commonly USD 3,500
+  or USD 10,000 under 2 CFR Part 200 for federally funded counties)
+  precisely so that small-dollar awards to local vendors do not
+  de-anonymize individual sole proprietors.
+
+CONTRACTS AWARDED THIS QUARTER (FICTIONAL — illustrative set)
+
+  K-2026-Q2-001
+    Date notice-to-proceed:  2026-04-08
+    Contract ID:             CP-2026-RD-014 (FICTIONAL)
+    Vendor entity:           Fictional Paving Co. Inc. (FICTIONAL)
+    Vendor registry ID:      FIC-CORP-99214 (state-of-incorporation
+                             ID; NOT a federal EIN)
+    Purpose:                 Resurfacing of 14.2 lane-miles on
+                             County Route 7 (Spring Creek to
+                             Mill Creek)
+    Contract value:          USD 8,420,000 (FICTIONAL)
+    Award method:            Competitive sealed bid (4 responsive
+                             bidders; lowest-responsive-bidder
+                             award)
+    Solicitation period:     2026-02-12 through 2026-03-26 (42
+                             days; meets the state-mandated
+                             minimum 30-day public-notice period)
+    Federal-grant funded:    Yes — partial federal pass-through
+                             from State DOT (~32% of contract
+                             value); 2 CFR Part 200 procurement
+                             standards apply
+    Contract document SHA-256:
+      a1b2c3d4e5f6789abcdef0123456789abcdef0123456789abcdef0123456789ab
+
+  K-2026-Q2-002
+    Date notice-to-proceed:  2026-04-22
+    Contract ID:             CP-2026-SS-007 (FICTIONAL)
+    Vendor entity:           Fictional Community Food Network
+                             (501(c)(3) nonprofit) (FICTIONAL)
+    Vendor registry ID:      FIC-NPO-04471 (state nonprofit
+                             registration)
+    Purpose:                 Food-distribution grants to 47
+                             affiliated community sites in the
+                             county
+    Contract value:          USD 1,800,000 (FICTIONAL)
+    Award method:            Sole-source per Fictional State Local
+                             Government Procurement Code §14.213(d)
+                             — designated nonprofit with prior
+                             multi-year performance record
+    Sole-source justification:
+                             See FACT 07 (sole-source disclosures)
+    IG-notice timestamp:     2026-04-15T09:00:00 UTC (sole-source
+                             noticed to IG 7 days before award per
+                             §14.213(g))
+    Federal-grant funded:    Partial federal pass-through from USDA
+                             (~58% of contract value); 2 CFR Part
+                             200 procurement standards apply with
+                             specific sole-source-justification
+                             documentation required
+    Contract document SHA-256:
+      6f1e3a8b2d5c7e09f12a3b4c5d6e7f80910a1b2c3d4e5f60718293a4b5c6d7e8
+
+  K-2026-Q2-003
+    Date notice-to-proceed:  2026-05-03
+    Contract ID:             CP-2026-IT-011 (FICTIONAL)
+    Vendor entity:           Fictional Justice Information Systems
+                             LLC (FICTIONAL)
+    Vendor registry ID:      FIC-CORP-77108
+    Purpose:                 Replacement of legacy jail-management
+                             software system at the County Jail
+    Contract value:          USD 3,250,000 (FICTIONAL)
+    Award method:            Request for Proposals (RFP); 3
+                             responsive proposers; technical +
+                             cost-weighted scoring
+    Solicitation period:     2026-01-20 through 2026-03-20 (60
+                             days)
+    Federal-grant funded:    No — county general fund
+    Contract document SHA-256:
+      cbb671235d5bb13d9f81a91a8661fa648e59e84f6ba0fb126356993066f065a0
+
+  K-2026-Q2-004
+    Date notice-to-proceed:  2026-05-14
+    Contract ID:             CP-2026-EM-002 (FICTIONAL)
+    Vendor entity:           Fictional Emergency Equipment Supply
+                             Co. (FICTIONAL)
+    Vendor registry ID:      FIC-CORP-12889
+    Purpose:                 Emergency procurement of generators
+                             and emergency-management equipment
+                             following severe-storm declaration
+                             (County Emergency Declaration EM-2026-
+                             07, signed 2026-05-09 by County
+                             Executive)
+    Contract value:          USD 487,200 (FICTIONAL)
+    Award method:            Emergency procurement per Fictional
+                             State Local Government Procurement
+                             Code §14.405 (emergency-condition
+                             exception to competitive-bid
+                             requirement)
+    Emergency declaration
+     SHA-256:                7e8f9a0b1c2d3e4f50617283940a1b2c3d4e5f60718293a4b5c6d7e8f9012345
+    Post-emergency
+     ratification:           County Commission ratification vote
+                             scheduled for 2026-08-12 meeting per
+                             §14.405(d); ratification required
+                             within 90 days of emergency procurement
+    IG-notice timestamp:     2026-05-15T11:00:00 UTC (emergency
+                             procurement noticed to IG within 24
+                             hours per §14.405(g))
+    Contract document SHA-256:
+      4d9e7a91c4b8d2e5f60a1b2c3d4e5f60718293a4b5c6d7e8f9012345678abcde
+
+  K-2026-Q2-005
+    Date notice-to-proceed:  2026-06-02
+    Contract ID:             CP-2026-PH-019 (FICTIONAL)
+    Vendor entity:           Fictional Medical Devices Group Inc.
+                             (FICTIONAL)
+    Vendor registry ID:      FIC-CORP-66104
+    Purpose:                 Diagnostic imaging equipment for the
+                             County Department of Health's
+                             3 community clinics
+    Contract value:          USD 4,250,000 (FICTIONAL)
+    Award method:            Competitive sealed bid; 3 responsive
+                             bidders; technical-scoring + lowest-
+                             cost-weighted formula
+    Solicitation period:     2026-03-04 through 2026-05-08 (65
+                             days)
+    Pending protest:         A losing bidder (Vendor B, registry ID
+                             FIC-CORP-44091) has filed a formal bid
+                             protest with the County Procurement
+                             Review Board. Award proceeded pending
+                             protest per §14.612(j) on time-critical
+                             health expenditures. See FACT 08
+                             companion disclosure C1.
+    Contract document SHA-256:
+      89a72e41fa212f6520115739df2d79f366e132c4714c0d60ae87540555195893
+
+  K-2026-Q2-006
+    Date notice-to-proceed:  2026-06-18
+    Contract ID:             CP-2026-PR-031 (FICTIONAL)
+    Vendor entity:           Fictional Legal Services Group LLP
+                             (FICTIONAL — outside law firm)
+    Vendor registry ID:      FIC-LLP-22117
+    Purpose:                 Outside counsel for a class-action
+                             defense matter (Doe v. County, 2025
+                             jail-conditions litigation)
+    Contract value:          USD 2,400,000 (FICTIONAL — not-to-
+                             exceed; billable per state-court rules
+                             for outside legal counsel)
+    Award method:            Professional-services exemption per
+                             §14.213(c) (legal services are exempt
+                             from competitive bidding in many state
+                             frameworks; the exemption is itself
+                             documented in the FACT 07 sole-source
+                             disclosures because the exemption is
+                             a structural sole-source-equivalent)
+    Conflict-of-interest
+     disclosure SHA-256:     03c23f853b396b0df96070f20cd904ec27881e3f6390c55aedc9550c8a2d79f2
+    Contract document SHA-256:
+      88c4d4ee218a4f9001e6f4b3c5d7e6f5a4b3c2d1e0f9876543210fedcba98765
+
+AGGREGATE FOR THIS QUARTER
+
+  Total contracts awarded ≥ USD 10,000 (itemized above): 6
+  Total dollar value of itemized contracts:              USD 20,607,200
+
+  Award-method breakdown (count, dollar value):
+    Competitive sealed bid:           2  (USD 12,670,000)  61.5%
+    Request for Proposals (RFP):      1  (USD  3,250,000)  15.8%
+    Sole-source (designated nonprofit): 1  (USD  1,800,000)   8.7%
+    Emergency procurement:            1  (USD    487,200)   2.4%
+    Professional-services exemption:  1  (USD  2,400,000)  11.7%
+
+  Federal-grant-funded transactions (count, dollar value):
+                                      2  (USD 10,220,000) — partial
+                                      federal pass-through; 2 CFR
+                                      Part 200 procurement standards
+                                      apply
+
+  Aggregate for contracts BELOW USD 10,000 (itemized in FACT 06
+  rather than here): see FACT 06 below-threshold category totals
+
+This fact asserts only the contract-award events as recorded by the
+county procurement office at the moment of issuance. It does not
+assert that any contract was awarded to the most qualified bidder;
+that any sole-source justification was substantively valid; that any
+emergency procurement was preceded by an actual emergency; that
+vendor entities are not shell companies or fronts for undisclosed
+beneficial owners; that pricing was at fair market value; or that
+any underlying procurement was free of corruption, collusion, bid-
+rigging, or kickbacks. The seal anchors WHAT WAS REPORTED.
+Investigation of WHAT WAS TRUE is the jurisdiction of the county IG,
+the state auditor, federal grant managers, prosecutors, and courts.

@@ -1,0 +1,130 @@
+FACT 06 — COMPANION DISCLOSURES (FICTIONAL)
+
+Per the MYRIAM kit's "constraint-first" design principle, this fact
+records the companion disclosures the carrier is obliged to publish
+alongside the decision record so that selective omission is publicly
+detectable. The disclosures here are not optional — leaving any of
+them blank without explicit "none at decision time" attestation is
+itself a public red flag.
+
+C1. PENDING COVERAGE LITIGATION INVOLVING THIS POLICY FORM
+
+   At decision date, the following actions involving Form FMIC-PA-
+   2024-01 (the policy form governing this claim — see FACT 04) were
+   pending in courts of competent jurisdiction:
+     - FICT v. Fictional Mutual, [Fictional county] Sup. Ct. case
+       no. FICT-CV-2025-3304, addressing the scope of the
+       intentional-acts exclusion in the same form (FICTIONAL).
+     - In re Fictional Mutual UM Coverage Litigation, [Fictional
+       state] Court of Appeals, addressing stacking of UM limits
+       under similar endorsements (FICTIONAL).
+   Disclosure rationale: the policy form's meaning is being actively
+   litigated; the carrier's interpretation in FACT 04 was rendered
+   with knowledge of these pending matters and may be revisited if
+   they are decided adversely. The public seal records what the
+   carrier knew at decision time.
+
+C2. PRIOR CLAIMS BY SAME INSURED UNDER THIS POLICY (last 3 years)
+
+   The named insured (Insured-X) has the following prior claim
+   history under this and the immediately predecessor policy:
+     - One prior collision claim (FICT-CLM-2024-118372),
+       closed-paid, no SIU referral, no rescission action (FICTIONAL).
+     - No prior bodily-injury liability claims (FICTIONAL).
+     - No prior comprehensive claims (FICTIONAL).
+     - No rescission or non-renewal actions taken or pending
+       (FICTIONAL).
+   Disclosure rationale: a clean prior-claims history bears on
+   credibility analysis; selective omission of a problematic prior-
+   claim history is a documented pattern in bad-faith litigation and
+   the public seal makes such omission detectable.
+
+C3. ADJUSTER RECUSALS / CONFLICT-OF-INTEREST DISCLOSURES
+
+   The adjuster of record (see FACT 08) discloses, at decision time:
+     - No prior or current personal or financial relationship with
+       the insured, the third-party claimant, the insured's chosen
+       repair shop, or counsel for any party.
+     - No prior adjustment of a claim by or against the insured by
+       this adjuster.
+     - No incentive-compensation structure tying this adjuster's
+       compensation to the amount paid on this specific claim
+       beyond ordinary salaried adjuster compensation. (See note
+       below on aggregate-pool compensation structures.)
+   Disclosure rationale: incentive structures tied to claim-cost
+   reduction have produced documented adjuster-bias problems in
+   prior bad-faith cases; the disclosure here establishes the
+   contemporaneous baseline.
+
+   AGGREGATE-COMPENSATION NOTE: the carrier's adjuster-corps
+   incentive structure (department-level metrics, e.g., loss-ratio
+   targets, cycle-time targets, customer-satisfaction scores) is
+   disclosed at the carrier-policy level rather than the per-claim
+   level. The current adjuster-corps incentive policy in force is
+   sealed in the separately-published carrier governance disclosure
+   referenced by hash below.
+     Carrier adjuster-incentive policy SHA-256:
+       a304a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f6071829304a1b2c3d
+
+C4. SUPERVISORY OVERRIDE / REVIEW HISTORY
+
+   This decision was reviewed by the adjuster's supervisor (see FACT
+   08) prior to disbursement. The supervisor's review did not modify
+   any reason code or payment amount in FACT 05. (FICTIONAL — if a
+   supervisor had modified the decision, the modification would be
+   recorded here, and the prior-version reason codes would be
+   sealed in the carrier's claim file so the modification is
+   traceable.)
+
+C5. STATE INSURANCE DEPARTMENT COMPLAINT HISTORY ON THIS POLICY
+
+   At decision date, no complaint had been filed with the
+   [Fictional state] Department of Insurance regarding this policy
+   or this claim. (FICTIONAL — a real attestation discloses any
+   pending DOI complaint by the insured or any third party so a
+   later "we didn't know there was a complaint" defense is publicly
+   refutable.)
+
+C6. REINSURER / EXCESS-CARRIER NOTIFICATIONS
+
+   Loss is below the carrier's reinsurance attachment point and the
+   policy is not subject to excess coverage; no reinsurer or excess
+   carrier was notified or consulted. (FICTIONAL — a real
+   attestation discloses any reinsurer involvement so coverage
+   interpretations driven by reinsurer pressure rather than policy
+   language are detectable.)
+
+C7. KNOWN VENDOR / SOFTWARE ISSUES IN EVALUATION TOOLS USED
+
+   The carrier's vehicle-valuation software (FICTIONAL vendor
+   reference, version FICTIONAL) used to compute the ACV in FACT 05
+   has the following open vendor-disclosed issues at decision date:
+     - Issue tracker entries reviewed; no known issue assessed as
+       affecting the valuation methodology applied to this loss.
+     (FICTIONAL — a real attestation includes the URL or hash of
+     the vendor advisory list reviewed.)
+     Reviewed-advisories list SHA-256:
+       b1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f6071829304a1b2c3d4e5f6
+
+C8. STATUTORY / REGULATORY REGIMES UNDER WHICH THIS DECISION
+    OPERATES
+
+   - [Fictional state] Insurance Code, Title [X], governing claims
+     handling and prompt payment.
+   - [Fictional state] Unfair Claims Settlement Practices Act
+     (state version of NAIC model).
+   - National Association of Insurance Commissioners (NAIC) Model
+     Unfair Trade Practices Act, as adopted by [Fictional state].
+   - For health-related portions: state mini-COBRA and any
+     applicable network-adequacy regulations (NOT APPLICABLE TO
+     THIS AUTO-LINE CLAIM).
+   - For ERISA-governed health claims: 29 U.S.C. § 1133 and 29
+     C.F.R. § 2560.503-1 (NOT APPLICABLE TO THIS AUTO-LINE CLAIM —
+     listed only to demonstrate the kit can carry the citation when
+     used for ERISA health claims).
+
+This fact asserts only the companion-disclosure status at the moment
+of decision. It does not assert that the disclosure-rule list is
+exhaustive of all bias or conflict patterns, that all companion
+disclosures have been identified by the carrier, or that the
+disclosures listed are themselves non-contestable.

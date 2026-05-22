@@ -1,0 +1,95 @@
+FACT 05 — PRELIMINARY INSPECTION CLASSIFICATION (FICTIONAL)
+
+This fact records the lead investigator's PRELIMINARY classification of
+the inspection at the moment of closing-meeting issuance. The FDA's
+final classification is determined later by the District Office and the
+Center compliance evaluation; that final classification may agree with
+or differ from the preliminary one. Sealing the preliminary classification
+makes any later silent downgrade — for example, an "OAI" finding at
+closing being silently reclassified to "VAI" before EIR publication —
+publicly detectable.
+
+THREE FDA INSPECTION CLASSIFICATIONS
+
+  NAI — "No Action Indicated":      No objectionable conditions or
+                                    practices were found during the
+                                    inspection (or the conditions are
+                                    de minimis).
+  VAI — "Voluntary Action Indicated": Objectionable conditions were
+                                    found, but they do not meet the
+                                    threshold for regulatory or
+                                    administrative action; firm is
+                                    expected to correct voluntarily.
+  OAI — "Official Action Indicated":  Conditions warrant regulatory or
+                                    administrative action — Warning
+                                    Letter, Consent Decree, Application
+                                    Integrity Policy invocation, recall
+                                    request, seizure, or injunction.
+
+PRELIMINARY CLASSIFICATION (FICTIONAL)
+
+  Classification at closing:    OAI
+  Basis for classification:     Observations 1 (failure to investigate
+                                OOS), 3 (release without method-compliant
+                                testing — 32 batches over 9 months), and
+                                5 (HPLC data-integrity gap) collectively
+                                indicate systemic failures in the firm's
+                                quality system that warrant Center
+                                compliance evaluation for Warning Letter
+                                consideration.
+  Investigator confidence:      HIGH — observations 1, 3, and 5 are
+                                document-based and were acknowledged by
+                                the firm's QC director during the
+                                inspection. Observations 2 and 4 are
+                                supported by photographic and complaint-
+                                log evidence.
+
+WHY SEAL THIS AT CLOSING (NOT AT EIR PUBLICATION)
+
+In ordinary FDA process, the District Office and Center reviewers
+evaluate the inspection findings between the closing meeting and EIR
+publication. That review is legitimate and necessary — investigators
+sometimes miscite, miscount, or misclassify; the review catches that.
+
+The failure mode this seal defends against is NOT legitimate
+post-inspection review. It is: silent reclassification that no
+investigator endorsed, made AFTER the closing meeting, that is
+attributed to "the inspection team's final determination" when in fact
+the investigators were not consulted on the change.
+
+A sealed preliminary classification gives the investigator forensic
+recourse if their classification is later silently changed without
+their knowledge. The investigator can publish a follow-up sealed fact
+saying "the published EIR classifies this inspection as VAI; my
+preliminary classification at the closing meeting on 2026-05-21 was
+OAI; I was not consulted on the change."
+
+POST-ISSUANCE COMMITMENTS BY THE INVESTIGATOR (declared at issuance)
+
+  1. If the District Office or Center compliance reviewer changes the
+     classification, the lead investigator commits to documenting the
+     change in a memo to the file referencing this sealed preliminary
+     classification by Merkle root.
+
+  2. If the EIR-published version of any observation in FACT 03 differs
+     from the verbatim text sealed in FACT 03 by anything other than
+     spelling, formatting, or pagination, the lead investigator commits
+     to noting the discrepancy in a memo to the file referencing the
+     sealed fact by Merkle root.
+
+  3. If the EIR is silently delayed beyond the FDA's internal target of
+     45 days for OAI inspections, the lead investigator commits to
+     filing a memo noting the delay.
+
+These commitments do not bind the District Office, the Center, or the
+Agency — only the individual investigator, who retains the right at
+any later moment to file a NEW sealed publication describing what was
+changed in their inspection finding and by whom.
+
+This fact asserts only the preliminary classification as it stood at
+the moment of closing-meeting issuance and the investigator's
+post-issuance commitments. It does not assert that this classification
+is the FDA's final determination, that the firm cannot rebut it, or
+that a NAI classification of any inspection is in error simply because
+some observation existed. It defers all final adjudication to the
+formal EIR process and any subsequent enforcement action.

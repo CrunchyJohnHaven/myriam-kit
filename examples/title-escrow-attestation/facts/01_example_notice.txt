@@ -1,0 +1,34 @@
+FACT 01 — EXAMPLE NOTICE
+
+This publication is an EXAMPLE demonstration of how a licensed
+title officer, escrow agent, abstractor, or underwriter
+representative can use myriam-kit to seal a point-in-time chain-of-
+title attestation for a specific real-property parcel. The parcel
+identifier, county, chain of recorded conveyances, encumbrances,
+search methodology, exceptions, companion disclosures, and signing-
+principal license details in subsequent facts are ALL FICTIONAL.
+
+The purpose of this publication is to show the SHAPE of a real
+title / escrow search seal. A real attestation would replace each
+fact body with the actual artifacts of the actual search for the
+actual property.
+
+This kit is intended to compose with — not replace — the existing
+title-insurance, escrow, and real-property recording regimes of
+the jurisdiction in which the property sits (the ALTA commitment
+and policy forms, the state insurance department's underwriter
+regulation, the state real-estate-commission's licensee
+regulation, the county recorder of deeds as the system of record,
+applicable surveyor and environmental disclosure obligations,
+etc.). The MYRIAM seal provides Bitcoin-anchored tamper-evidence
+on top of the underwriter's commitment and the recorder's index.
+It does NOT itself insure against loss; it does NOT detect
+upstream recording fraud; it does NOT substitute for the
+underwriter's indemnity. See README.md for the full set of
+failure modes the seal does NOT defend against, and refusal-rules
+the kit enforces.
+
+This fact asserts only that the publication is an example, not a
+real title or escrow attestation. No real property is hereby
+encumbered or quieted. No real owner, lien beneficiary, or
+licensee is hereby identified.
