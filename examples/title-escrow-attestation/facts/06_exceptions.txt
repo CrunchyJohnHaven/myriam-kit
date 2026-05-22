@@ -1,0 +1,168 @@
+FACT 06 — EXCEPTIONS (FICTIONAL)
+
+This fact records the items the title officer could NOT verify
+from the search, and the items that fall outside the search's
+coverage. The exceptions list is load-bearing: a buyer or
+lender reading only the chain (FACT 03) and the encumbrances
+(FACT 04) without reading the exceptions risks treating the
+search as more complete than it is. The exceptions here
+parallel — but do NOT replace — the standard exceptions in an
+ALTA commitment; the underwriter's commitment is the
+contractual document that determines what is INSURED versus
+EXCEPTED.
+
+STANDARD EXCEPTIONS (matters customarily excepted from any
+title commitment)
+
+  X1. SURVEY MATTERS
+      Any encroachment, overlap, boundary-line dispute, party-
+      wall agreement, shortage in area, or other matter that
+      would be disclosed by an accurate survey or physical
+      inspection of the parcel and that is NOT shown by the
+      public records. This search did not include a survey;
+      the FACT 02 legal description is the recorded
+      description, which may differ from the occupied
+      boundary.
+
+  X2. UNRECORDED RIGHTS OF PERSONS IN POSSESSION
+      Any right, claim, or interest of any party in
+      possession of the parcel that is NOT shown by the
+      public records. Tenancy claims, sub-tenancy claims,
+      adverse-possession claims, prescriptive-easement
+      claims, and similar matters that depend on facts
+      outside the recorder's index are not addressed by
+      this search.
+
+  X3. UNRECORDED EASEMENTS, INCLUDING EASEMENTS BY IMPLICATION,
+      NECESSITY, OR PRESCRIPTION
+      Easements established by long use, by necessity at
+      severance of common ownership, or by other non-recording
+      means do not appear in the recorder's index and are
+      outside the scope of this search.
+
+  X4. MECHANIC'S LIENS THAT MAY ATTACH BUT ARE NOT YET
+      RECORDED
+      Under the law of the situs state, a contractor who has
+      furnished labor or materials in the recent past may
+      have a mechanic's-lien right that has not yet been
+      perfected by recording. The search effective date
+      shows what was RECORDED; any unperfected-but-still-
+      timely lien right is outside the scope.
+
+  X5. WATER RIGHTS, RIPARIAN RIGHTS, AND PRIOR-APPROPRIATION
+      CLAIMS
+      Water rights in the situs state are governed by a
+      separate regime (riparian, prior-appropriation, or
+      hybrid depending on the state and the type of water).
+      This search does not address water rights; a separate
+      water-rights search is required if water rights are
+      material to the transaction.
+
+  X6. MINERAL, OIL, AND GAS RIGHTS SEVERED BEFORE THE ROOT
+      OF TITLE
+      The chain in FACT 03 begins at 1923. Any mineral,
+      oil, or gas severance occurring before that date is
+      outside the scope of this search; a separate pre-
+      root mineral-search is required if subsurface rights
+      are material.
+
+SEARCH-SPECIFIC EXCEPTIONS
+
+  X7. PRE-1923 PREDECESSOR CHAIN
+      The Fictional Land Co. predecessor chain (any
+      conveyances prior to the 1923 root of title in FACT 03
+      Idx 1) was NOT searched. Marketable-record-title-act
+      statutes in some states cut off claims based on pre-
+      root recordings after a statutory period; whether
+      such cutoff applies in the situs state is a legal
+      determination not made here.
+
+  X8. FAMILY-COURT-SEALED MATTERS
+      The family-court search in FACT 05 was limited to
+      publicly accessible docket entries. Any sealed
+      family-court matter affecting the property (sealed
+      domestic-violence protection orders, sealed
+      paternity actions, sealed mediation outcomes) is
+      not visible to the officer and is outside the
+      scope. The current owner's marital-status disclosure
+      at the time of any future conveyance is a separate
+      due-diligence step.
+
+  X9. BANKRUPTCY-COURT MATTERS PRECEDING THE OWNER'S CURRENT
+      ACQUISITION
+      The bankruptcy-court search in FACT 05 was for the
+      RECORDED CURRENT OWNER as a debtor. Prior owners'
+      bankruptcies, where they affected title at a prior
+      point in the chain, were not separately searched at
+      this layer; any such prior bankruptcy is a legal
+      determination based on the recorded chain only.
+
+  X10. FEDERAL TAX LIEN PRIORITY
+       Federal tax liens follow federal-law priority rules
+       under 26 U.S.C. § 6323 that depend on factors
+       (notice, knowledge, perfection of competing
+       interests) outside the recorder's index. No federal
+       tax lien was returned for this owner in this search
+       (see FACT 04 L2); priority of any later-filed
+       federal tax lien against any current encumbrance is
+       not determined by this search.
+
+  X11. RACIAL COVENANT IN CC1 IS UNENFORCEABLE
+       The 1924 declaration in FACT 04 CC1 contains a
+       racial covenant that is UNENFORCEABLE under federal
+       law (42 U.S.C. § 3604; Shelley v. Kraemer, 334 U.S.
+       1 (1948)) and may be independently void under the
+       law of the situs state. This seal records the
+       covenant's existence in the public record as a
+       matter of historical fact; the covenant has no
+       current legal effect. Whether the current owner has
+       filed a state-specific "unlawful restrictive
+       covenant" notice to formally repudiate the
+       historical covenant is noted in FACT 07 if
+       applicable.
+
+  X12. SUBDIVISION-MAP AMBIGUITY (BOOK 312 PAGES 47-48)
+       The recorder's certified copy of the 1923
+       subdivision map shows minor degradation at the
+       Lot 14 northeast corner pin notation. The officer's
+       transcription in FACT 02 follows the assessor's
+       current interpretation of the lot dimensions; a
+       definitive answer to the corner-pin location would
+       require a licensed surveyor's field verification
+       and is excepted under X1.
+
+  X13. PLANT-INDEX LAG WINDOW
+       The plant-index cutoff was 1 minute behind the
+       search effective date; the gap-search protocol in
+       FACT 05 covered the 1-minute window. The officer
+       relied on the direct recorder-index lookup for the
+       gap window. The seal's effective date is the
+       direct-recorder-index date, not the plant date.
+
+WHAT EXCEPTIONS DO AND DO NOT MEAN
+
+An exception is a matter that this search does NOT determine
+either way. Some exceptions identify matters likely to be
+benign in a specific transaction (e.g., X1 survey matters
+when no construction is contemplated); others identify
+matters that may be material and should be separately
+addressed (e.g., X5 water rights when irrigation is
+contemplated, X6 mineral rights when subsurface use is
+contemplated). The officer makes no judgment about which
+exceptions are material to which downstream use; that
+judgment is the buyer's, the lender's, and the underwriter's.
+
+The exceptions list above is NOT a checklist of all possible
+defects. It is the officer's good-faith enumeration of the
+known categories of out-of-scope matters as of the search
+effective date. Categories may exist that the officer did
+not enumerate; a category not listed here is not by that
+fact insured.
+
+This fact asserts only the exceptions enumerated above as
+applicable to this fictional search. It does not assert
+that the list is exhaustive of all possible out-of-scope
+matters, that any specific exception will or will not be
+material to any specific transaction, or that any specific
+exception has any specific legal effect under the law of
+the situs state.

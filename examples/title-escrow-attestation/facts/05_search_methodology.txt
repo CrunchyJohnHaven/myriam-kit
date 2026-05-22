@@ -1,0 +1,185 @@
+FACT 05 — SEARCH METHODOLOGY (FICTIONAL)
+
+This fact freezes, at the moment of sealing, the methodology used
+to produce the chain of title in FACT 03 and the encumbrance list
+in FACT 04. Any post-sealing claim that "a different methodology
+was used" or "the searcher omitted records they should have
+checked" is publicly refutable against this record.
+
+METHODOLOGY VERSION
+
+  Methodology name:        Fictional Standard Full-Search v3.2
+                           (FICTIONAL — the officer's underwriter-
+                           approved standard for a "full" search;
+                           see FACT 02 for search-type declaration)
+  Methodology effective
+    publication date:      2025-01-15 (FICTIONAL — the date the
+                           current methodology version was approved
+                           by the underwriter's audit office)
+  Underwriter sign-off:    Fictional Title Underwriter, Inc.
+                           (FICTIONAL — see FACT 08); the
+                           methodology has been approved for
+                           appointed officers under the
+                           underwriter's appointment program
+
+RECORDS COVERED
+
+  Primary recorder of deeds:
+                           Office of the Fictional County
+                           Recorder, electronic-index and paper-
+                           backup systems, both reviewed
+                           (FICTIONAL).
+  Recorder index date range searched:
+                           1923-01-01 (earliest indexed entry for
+                           the original subdivision) through
+                           2026-05-19 00:00:00 PDT (search
+                           effective date in FACT 02).
+  Recorder index types searched:
+                           - Grantor-grantee index (forward and
+                             reverse, full date range)
+                           - Numerical instrument index (full
+                             date range)
+                           - Tract index (where maintained by
+                             the recorder; FICTIONAL)
+  Federal court records:   PACER search of the U.S. District
+                           Court for the Fictional District for
+                           the recorded current owner's name as
+                           a party in any case bearing a real-
+                           property docketed claim, date range
+                           last 10 years (FICTIONAL).
+  Federal bankruptcy
+    court records:         PACER search of the U.S. Bankruptcy
+                           Court for the Fictional District for
+                           the recorded current owner's name as
+                           a debtor in any active case as of the
+                           search effective date (FICTIONAL).
+  State court records:     State court online docket search for
+                           the recorded current owner's name as
+                           a party in any case bearing a
+                           recorded lis pendens or quiet-title
+                           filing, date range last 10 years
+                           (FICTIONAL).
+  Tax assessor records:    Tax-status verification with the
+                           Fictional County Assessor as of the
+                           search effective date; FICTIONAL.
+  Probate court records:   Probate court docket search for any
+                           recorded estate-affidavit, will-
+                           probate, or letters-of-administration
+                           bearing the recorded chain-of-title
+                           owner names, full date range
+                           (FICTIONAL — relevant for the 2014
+                           and 2024 transfers in FACT 03 Idx 6
+                           and Idx 8).
+  Divorce / family court
+    records:               Family court docket search for the
+                           recorded current owner and the
+                           immediate prior owner of record,
+                           limited to the extent that the docket
+                           is publicly accessible and that the
+                           inquiry returns RECORDED real-
+                           property dispositions only (FICTIONAL
+                           — sealed family-court matters not
+                           visible to public search are out of
+                           scope by court order).
+
+TITLE-PLANT DATA SOURCES USED
+
+  Plant name:              Fictional Title Plant Co., Fictional
+                           County coverage (FICTIONAL)
+  Plant version / index
+    cutoff:                Plant index current to 2026-05-18
+                           23:59 PDT (FICTIONAL — note: the plant
+                           index is one calendar day behind the
+                           recorder's electronic index; gap-search
+                           protocol below addresses this lag)
+  Plant SOC report
+    reference:             Most recent SOC 2 Type II report
+                           reviewed by the underwriter
+                           (FICTIONAL); plant operator is in
+                           good standing with the underwriter's
+                           plant-approval program
+  Cross-check method:      For each instrument identified by
+                           plant search, a parallel direct
+                           recorder-index lookup was performed
+                           to confirm the plant's representation
+                           of the instrument. No discrepancies
+                           were found between plant and recorder
+                           in this search. (FICTIONAL)
+
+GAP-SEARCH PROTOCOL
+
+  Gap-search window:       From plant index cutoff (2026-05-18
+                           23:59 PDT) to search effective date
+                           (2026-05-19 00:00:00 PDT). Window:
+                           1 minute.
+  Gap-search method:       Direct query of the recorder's
+                           electronic index for any recording
+                           in the 1-minute window matching the
+                           recorded current owner's name or APN
+                           FICT-014-2236-073-0000. Returned: no
+                           recordings in the gap window.
+                           (FICTIONAL)
+
+POST-COMPLETION GAP NOTE
+
+The seal commits to the search as of the EFFECTIVE date
+(2026-05-19 00:00:00 PDT). Any recording in the interval from
+the effective date through closing on the contemplated
+transaction is OUTSIDE the search and must be covered by a
+fresh gap search immediately before closing. This is standard
+practice and is not a defect of this kit; the kit makes the
+boundary EXPLICIT so a fresh-search obligation cannot be
+quietly omitted.
+
+WHAT THIS METHODOLOGY DOES NOT COVER
+
+  - Survey matters (boundary location, encroachments visible
+    on the land, fence-line discrepancies, party-wall
+    conditions). Survey-matter exception is in FACT 06.
+  - Mineral, oil, and gas estates if severed from the
+    surface estate prior to the root of title (1923 in this
+    chain). Pre-root mineral severances are explicitly
+    outside the search.
+  - Water rights, riparian rights, and prior-appropriation
+    claims under state water law. Water-rights exception is
+    in FACT 06.
+  - Native American tribal-trust or restricted-land claims,
+    where applicable to the situs (FICTIONAL — for this
+    fictional parcel, no such claim has been recorded; the
+    issue is jurisdiction-specific).
+  - Aboriginal title and other pre-statehood claims not
+    addressed by the federal patent system.
+  - Off-record matters generally (unrecorded easements,
+    boundary-line agreements, prescriptive easements,
+    adverse possession, parol gifts of land). Off-record
+    exception is in FACT 06.
+  - Federal-tax-lien priority determinations (these depend
+    on facts outside the recorder's index, including
+    federal notices of lien with their 26 U.S.C. § 6323
+    priority rules). The federal-tax-lien exception is in
+    FACT 06.
+  - Anything that requires personal knowledge of the
+    grantor or grantee parties beyond what the recorder's
+    index shows (capacity, marital status as of the date of
+    conveyance, undisclosed beneficial ownership, etc.).
+
+PHYSICAL INSPECTION
+
+This is a record search only. The officer did not physically
+visit the property and is not asserting anything about the
+physical condition of the parcel, the presence of
+improvements, the occupancy status, or any matter visible on
+inspection that is not also recorded.
+
+This fact asserts only the search methodology declared above,
+the records covered, the date ranges searched, the title-plant
+data sources used, and the gap-search protocol applied at the
+search effective date. It does not assert:
+  - that the methodology is the best methodology available,
+  - that it complies with any particular state's title-
+    examination standards (those are addressed by underwriter
+    audit and licensing-board oversight),
+  - that no record was missed (search is bounded by the
+    indexes available to the searcher),
+  - that the underlying recorder's index is itself complete
+    or non-corrupted.

@@ -1,0 +1,143 @@
+FACT 03 — CLINICAL CRITERIA APPLIED (FICTIONAL)
+
+For authorization request FICT-PA-2026-447193, the following
+clinical criteria were applied by the carrier's licensed UR
+reviewer as the basis for the decision in FACT 05. The exact
+guideline source, version, edition, and revision date are
+captured because silent retroactive criteria revision —
+specifically the pattern of a carrier asserting after the
+fact that "we used the updated criteria" when in fact the
+original decision was made against a different version — is
+one of the load-bearing failure modes this seal is designed
+to make publicly detectable.
+
+  PRIMARY CRITERIA SOURCE (FICTIONAL)
+
+    Source:               Milliman Care Guidelines (MCG) —
+                          fictional citation for example purposes
+    Edition:              28th Edition (FICTIONAL — the MCG
+                          edition number)
+    Version year:         2025 (FICTIONAL — the calendar year
+                          of the edition as released)
+    Quarterly update:     2026 Q1 (FICTIONAL — MCG publishes
+                          quarterly updates that can revise
+                          specific criteria within an edition;
+                          the specific quarterly update applied
+                          is recorded because revisions between
+                          quarters are non-trivial and have been
+                          a source of dispute in actual cases)
+    Revision date:        2026-02-15 (FICTIONAL — the publisher's
+                          revision date for the specific
+                          subsection cited)
+    Subsection cited:     [example: A-0123 / Outpatient Advanced
+                          Imaging / MRI / Lumbar Spine — for the
+                          fictional service category in FACT 02]
+                          (FICTIONAL — the specific MCG identifier;
+                          a real attestation cites the actual
+                          guideline identifier so that a regulator,
+                          IRO reviewer, or court can locate the
+                          exact criterion text against the
+                          publisher's licensed database)
+    Subsections applied:  [enumerate exactly which subsections of
+                          the cited guideline were applied to
+                          this case — e.g.
+                          "indications: applied;
+                          conservative-treatment-trial: applied;
+                          imaging-history exclusions: applied;
+                          documentation requirements: applied"]
+    Subsections NOT
+      applied:            [enumerate exactly which subsections
+                          of the cited guideline were NOT applied
+                          to this case, with reason — e.g.
+                          "concurrent-imaging exclusions: not
+                          applied (no concurrent imaging
+                          requested)";
+                          per refusal rule R5, a partial-criteria
+                          review must be marked partial and may
+                          NOT be sealed as full-criteria review]
+    Coverage status:      Full criteria review (per R5: this
+                          attestation is sealed as full-criteria
+                          only if all relevant subsections of the
+                          cited guideline were applied; if not,
+                          the decision must be marked partial in
+                          FACT 05)
+
+  SECONDARY / OVERLAY CRITERIA (FICTIONAL)
+
+    Carrier internal
+      medical policy:     MP-12345 Revision 7 (FICTIONAL — many
+                          carriers maintain internal medical
+                          policies that overlay or modify the
+                          base MCG/InterQual criteria; the
+                          specific policy ID and revision are
+                          cited because internal policies are
+                          frequently the operative determinant
+                          of the decision in cases where carrier
+                          policy differs from base criteria)
+    Policy revision date: 2025-11-30 (FICTIONAL)
+    Policy publication
+      status:             Published on carrier provider portal
+                          (FICTIONAL — the policy text is
+                          available to participating providers;
+                          a carrier that applies an unpublished
+                          internal policy and cites a plausibly-
+                          related published policy in this seal
+                          produces an internally consistent but
+                          substantively misleading attestation;
+                          the README "DOES NOT do" section item
+                          8 addresses this failure mode
+                          explicitly)
+
+  DIAGNOSIS CATEGORY (PER R2)
+
+    ICD-10 category:      [category level only — e.g. M54 / dorsalgia
+                          — when category-level is required for the
+                          criteria-match disclosure above]
+                          (FICTIONAL example: M54)
+    Specific ICD-10
+      code(s):            [NOT in this public seal where the
+                          combination of specific code + carrier +
+                          region + date would produce a small-cell
+                          HIPAA re-identification risk; the
+                          specific code is held in the carrier's
+                          prior-auth file and disclosable to the
+                          patient, the provider, and regulators
+                          per R1-R2]
+
+  CRITERIA-VERSION NON-REVISION COMMITMENT
+
+The certifying licensed signing principal (FACT 08) attests that:
+
+  - The criteria-source, edition, version year, quarterly
+    update, revision date, subsection, and subsections-applied
+    list above are the EXACT criteria that were applied to this
+    case at the moment of the decision in FACT 05.
+  - No subsequent revision of the cited criteria has been
+    silently applied to this decision. If the publisher
+    (Milliman/InterQual/carrier) issues a revision of the cited
+    criteria after the date of this seal, the revision applies
+    only to NEW decisions rendered against the revised version
+    and does NOT retroactively become the basis for this
+    decision.
+  - If this decision is subsequently amended (e.g. on appeal,
+    on external review, on regulator demand), the amendment is
+    a NEW myriam-kit publication that references this one by
+    Merkle root, with FACT 03 of the amendment disclosing the
+    criteria applied to the amended decision (which may be a
+    different version than the original).
+
+This fact asserts only the criteria-source citation, the
+subsection-applied enumeration, the secondary-policy citation,
+the category-level diagnosis disclosure, and the non-revision
+commitment as recorded for the fictional decision. It does
+NOT assert:
+  - that the cited criteria are medically correct,
+  - that the cited criteria reflect current standard of care,
+  - that the cited criteria were appropriate for this
+    specific patient's clinical presentation,
+  - that the criteria-development process was unbiased,
+  - that the carrier substantively applied the cited criteria
+    (the seal records what was CITED; detecting a gap between
+    cited and actually-applied criteria requires audit of the
+    decisionmaking record, which is upstream of the seal per
+    the README "DOES NOT do" section item 8).

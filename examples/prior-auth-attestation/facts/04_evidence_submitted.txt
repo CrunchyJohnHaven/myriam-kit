@@ -1,0 +1,142 @@
+FACT 04 — EVIDENCE SUBMITTED (FICTIONAL)
+
+For authorization request FICT-PA-2026-447193, the following
+clinical documents, lab results, imaging reports, and physician
+attestations were submitted by the provider with the prior-auth
+request and were available to the carrier's licensed UR reviewer
+at the moment the decision in FACT 05 was rendered. Each document
+is hashed with SHA-256; the raw documents are NOT included in
+this publication (only their hashes), so this attestation is
+durable even after the underlying documents are archived to the
+carrier's UM-system cold storage or to the provider's EHR archive.
+
+Per refusal rule R6, this evidence-hash list is REQUIRED to be
+cross-attested by the provider — either by signed acknowledgment
+that the list matches the provider's submission record, or by a
+separate provider-side myriam-kit seal of the submission that
+references this attestation. The carrier-side unilateral curation
+failure mode ("we never received those records") is exactly what
+the cross-attestation prevents.
+
+  IDX  DOCUMENT TYPE                       SUBMITTED BY  SHA-256 OF FULL DOCUMENT
+  ---  ----------------------------------  ------------  -------------------------------
+   1   X12 278 Health Care Services        Provider      a1b2c3d4e5f6789abcdef0123456789abcdef0123456789abcdef0123456789ab
+       Review transaction (the prior-auth                (FICTIONAL — the canonical
+       submission itself, including                       transaction record; both sides
+       requested CPT/HCPCS code,                          should agree on this hash)
+       requested service date(s),
+       requested units/days, ordering
+       clinician NPI, member identifier
+       binding)
+
+   2   Clinical encounter note —           Provider      b2c3d4e5f6789abcdef0123456789abcdef0123456789abcdef0123456789abcd
+       most recent visit relevant to                     (FICTIONAL)
+       requested service
+
+   3   Conservative-treatment trial        Provider      c3d4e5f6789abcdef0123456789abcdef0123456789abcdef0123456789abcdef
+       documentation (per cited MCG                      (FICTIONAL — required by the
+       subsection that mandates                          MCG criteria cited in FACT 03)
+       documented conservative trial
+       before advanced imaging or
+       elective surgical authorization)
+
+   4   Prior imaging or lab results        Provider      d4e5f6789abcdef0123456789abcdef0123456789abcdef0123456789abcdef01
+       relevant to the requested                         (FICTIONAL)
+       service (e.g. prior MRI report,
+       prior X-ray, prior labs)
+
+   5   Prescribing-clinician written       Provider      e5f6789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123
+       attestation of medical necessity                  (FICTIONAL)
+       per cited criteria
+
+   6   Peer-to-peer consultation           Provider /    f6789abcdef0123456789abcdef0123456789abcdef0123456789abcdef012345
+       summary (if peer-to-peer was        Carrier       (FICTIONAL — submitted only if
+       conducted before the decision)      (joint        a peer-to-peer was conducted; the
+                                           record)       summary itself is a joint record
+                                                         and should be cross-attested by
+                                                         both reviewers)
+
+   7   Member benefit-design summary       Carrier       6789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456
+       extract used in the coverage                      (FICTIONAL — the benefit-design
+       determination (in-network /                       extract is sealed because
+       out-of-network, deductible                        post-decision disputes about
+       remaining, benefit-period                         "what benefit was applied" are
+       limits, prior authorization                       a known dispute category)
+       requirement applicability)
+
+  Total: 7 documents (4 provider-only, 1 jointly-recorded,
+  1 carrier-side, 1 transaction record).
+
+PROVIDER CROSS-ATTESTATION (REQUIRED PER R6)
+
+The following acknowledgment from the provider organization (per
+R6) is incorporated by reference:
+
+  Provider acknowledgment
+    SHA-256:              [SHA-256 of the provider's signed
+                          acknowledgment that the documents
+                          listed above (IDX 1-5) are exactly
+                          what the provider submitted with the
+                          authorization request, with no
+                          omissions known to the provider]
+                          (FICTIONAL placeholder hash:
+                          789abcdef0123456789abcdef0123456789abcdef0123456789abcdef01234567)
+  Acknowledgment
+    custody:              Provider's UM-team record; producible
+                          on regulator, IRO, or counsel demand;
+                          re-hashing the produced acknowledgment
+                          against the SHA-256 above verifies
+                          integrity
+  Alternative
+    cross-attestation:    A separate provider-side myriam-kit
+                          publication of the prior-auth
+                          submission (with its own Merkle root
+                          referencing this one) is an
+                          alternative form of cross-attestation
+                          per R6 and is the preferred form where
+                          the provider has its own
+                          myriam-kit deployment
+
+A regulator, IRO reviewer, auditor, plaintiff's counsel, or
+state insurance commissioner who has the prior-auth file from
+either side can request any individual document by hash.
+Re-hashing the received document with SHA-256 and comparing to
+the row above verifies that the document received matches the
+document that existed at the moment of decision. Any
+post-decision modification of any document — by either side —
+produces a different hash than the sealed one.
+
+EVIDENCE THE CARRIER DOES NOT CLAIM TO HAVE RECEIVED
+
+A carrier reviewer who renders a decision without having
+received a document the provider believes was submitted should
+NOT list that document in the manifest above. Instead, list it
+in the dispute fact below:
+
+  Documents claimed by
+    provider as submitted
+    but NOT in carrier
+    record:               [enumerate if any; FICTIONAL example:
+                          "None known at decision time. If the
+                          provider's cross-attestation per R6
+                          identifies any document on the
+                          provider side not in this carrier
+                          record, the dispute is recorded in a
+                          NEW myriam-kit publication referencing
+                          this one"]
+
+This fact asserts only the evidence-submission hash list and
+the cross-attestation requirement as recorded for the fictional
+authorization. It does NOT assert:
+  - that the listed documents are clinically sufficient to
+    support the requested service,
+  - that the listed documents are clinically sufficient to
+    meet the cited criteria,
+  - that the carrier's reviewer substantively read each
+    listed document before rendering the decision,
+  - that no additional documents should have been requested
+    by the carrier as part of pre-decision additional-info
+    requests,
+  - that the provider organization has no other documents in
+    its possession relevant to the authorization that were
+    not submitted.

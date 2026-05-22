@@ -1,0 +1,314 @@
+FACT 08 — REFUSAL RECORD AND SIGNING PRINCIPALS (FICTIONAL)
+
+Per the MYRIAM kit's "constraint-first" design principle, this fact
+records what the kit explicitly refused to seal during the attestation
+period, the companion disclosures that the issuing authority is
+obliged to publish alongside the procurement record so that selective
+omission is detectable, and the named signing principals with
+explicit scope of what each is and is not personally attesting to.
+
+In county procurement the dominant attack on the integrity of
+disclosure is NOT outright fabrication — it is selective publication:
+posting the clean awards, omitting the messy ones, omitting the
+ongoing investigations, omitting the pending protests, redacting the
+vendor names on awards that "happen to be politically inconvenient."
+Sealing the refusal record alongside the procurement activity makes
+selective omission detectable as a deviation from the as-sealed
+record.
+
+COMPANION DISCLOSURES (sealed alongside the activity so the activity
+cannot be read in isolation)
+
+  C1. PENDING PROCUREMENT PROTEST
+      Vendor B (registered legal entity FIC-CORP-44091, a losing
+      bidder on K-2026-Q2-005, the diagnostic-imaging award) has
+      filed a formal bid protest with the County Procurement
+      Review Board. The protest is under review; the contract has
+      nonetheless been awarded pending resolution (consistent with
+      §14.612(j) on time-critical health expenditures).
+      Protest filing SHA-256:
+        7e8f9a0b1c2d3e4f50617283940a1b2c3d4e5f60718293a4b5c6d7e8f9012345
+      Decision expected: 2026-08-30
+
+  C2. ACTIVE IG MONITORING (NOT ADVERSE)
+      The County Inspector General has open monitoring case
+      IG-2026-014 against contract CP-2024-FAC-007 (courthouse
+      renovation) due to the cumulative-change-creep pattern that
+      has now reached 33.6% of original contract value (cross-ref
+      FACT 05 CO-2026-Q2-003). The IG's classification is
+      "monitored, not adverse" — the IG is tracking the pattern
+      without yet concluding that the change orders are
+      illegitimate. The disclosure is included so that any future
+      adverse finding cannot be claimed to have come "out of
+      nowhere" — the monitoring was already underway and publicly
+      recorded as of this sealing.
+
+  C3. OUTSTANDING OPEN-RECORDS REQUESTS
+      Three discrete open-records requests under Fictional State
+      Open Records Act, Chapter 11, are pending against
+      procurement records covered by this attestation:
+        - 2026-OR-0411: copy of executed contract CP-2026-PH-019
+          (diagnostic imaging), requested 2026-06-22 by a
+          member of the public; statutory 15-business-day
+          response window expires 2026-07-14 (responded
+          2026-07-12, within window)
+        - 2026-OR-0517: list of all sole-source justifications
+          FY2026 to date, requested 2026-07-01 by a local
+          investigative-journalism outlet; response not yet due
+        - 2026-OR-0524: communications between the County
+          Procurement Director and Fictional Community Food
+          Network dated 2025-09 through 2026-04, requested
+          2026-07-08 by an open-government nonprofit; response
+          not yet due
+
+  C4. POST-CLOSE TRANSACTIONS ENTERED THIS QUARTER BUT ISSUED
+      OUTSIDE THE QUARTER
+      Two contracts were entered into the procurement system of
+      record during 2026-Q2 with notice-to-proceed dates that
+      fall OUTSIDE the quarter (one in March, one in October —
+      the October date is a future-effective contract).
+      Disclosure here per FACT 03's scope-discipline requirement;
+      these contracts will be itemized in the attestation for
+      the quarter in which they take effect, not this one.
+        - CP-2026-CONS-009 (Fictional Engineering Consultants
+          Inc.; NTP 2026-03-22; USD 240,000; entered into system
+          2026-04-04 due to clerical delay): will appear in
+          2026-Q1 attestation when sealed retrospectively as
+          amended, or in an amendment to the present quarter
+          (decision pending the Procurement Director's review
+          of the clerical delay)
+        - CP-2026-IT-021 (Fictional Cybersecurity Services LLC;
+          NTP 2026-10-01; USD 880,000; future-effective contract
+          executed in Q2 for Q4 commencement): will appear in
+          2026-Q4 attestation
+
+  C5. KNOWN MATERIAL FACTS NOT OTHERWISE SURFACED
+      As of attestation timestamp, the Procurement Director and
+      CFO are aware of NO additional material facts about Q2
+      procurement activity that have not been surfaced in
+      FACT 04 through FACT 07. The IG is aware of NO whistleblower
+      complaint or other material fact that the IG believes
+      should have been disclosed in this attestation and was not.
+
+REFUSAL RECORD — patterns the kit refused to seal during the period
+
+The kit does NOT seal the following types of facts, even if requested
+by the procurement office, the CFO, the IG, or any external party:
+
+  R1. VENDOR NAMES OF CONTRACTS BELOW USD 10,000
+      The kit refuses to itemize vendor names on contracts below
+      the USD 10,000 itemization threshold. Vendors below threshold
+      are aggregated by category in FACT 06's below-threshold
+      section. This refusal protects sole proprietors and small
+      local vendors (the local locksmith, the local towing
+      service, individual professional consultants) from
+      de-anonymization without serving an anti-corruption
+      purpose. (The bid-splitting detection signal is preserved
+      via FACT 06's per-vendor aggregate across all contracts.)
+
+  R2. PERSONAL FINANCIAL INFORMATION OF VENDORS
+      The kit refuses to seal vendor bank account numbers,
+      federal tax IDs of natural persons, individual vendor-
+      employee names, vendor home addresses, supplier internal
+      cost structures, or any commercial-PII field whose
+      publication harms vendor interests without serving anti-
+      corruption. Such information may be HASHED (FACT 04 contract
+      document hash includes the full executed contract including
+      these fields) but not published.
+
+  R3. IDENTITIES OF WHISTLEBLOWER IG COMPLAINANTS
+      The kit refuses to identify any individual who has filed
+      a complaint with the County Inspector General under
+      whistleblower-protection statutes. The IG's case state
+      is recorded in FACT 06 by case number and category only.
+      This refusal is ABSOLUTE: even if the IG itself has
+      lawfully unsealed a complainant identity in connection
+      with a specific case, this kit's quarterly attestation
+      does not include such identification.
+
+  R4. SEALING BY ANYONE NOT THE ACTUAL PROCUREMENT OFFICER
+      A contractor, vendor, county commissioner, citizen
+      watchdog, journalist, or observer cannot seal "the
+      county's procurement record" in lieu of the Procurement
+      Director who is statutorily responsible for the quarterly
+      attestation. (Such third parties may seal their OWN
+      observations under their own principal, with their own
+      refusal record, in a separate publication.)
+
+  R5. PARTIAL-QUARTER DATA PRESENTED AS COMPLETE
+      The kit refuses to seal a publication framed as a full-
+      quarter close that in fact covers only part of the
+      quarter, or that omits transactions issued before the
+      close date but recorded after. The attestation must
+      reflect all procurement activity issued during the full
+      quarter as recorded at the moment of close.
+
+  R6. CLAIMS THAT THE PROCUREMENT WAS LAWFUL, FAIR, OR
+      CORRUPTION-FREE
+      The kit refuses to seal any framing of the form "this
+      quarter's procurement was lawful and free of corruption"
+      or "all sole-source justifications were demonstrably
+      valid." Such claims are epistemically beyond the kit's
+      domain. The kit anchors WHAT WAS RECORDED; it does not
+      vouch for the underlying procurement.
+
+  R7. PUBLICATION OMITTING THIS FACT 08 REFUSAL RECORD
+      The kit refuses to seal a publication that includes
+      FACT 04 through FACT 07 but omits FACT 08. A publication
+      without the refusal record is not a legitimate MYRIAM
+      publication under this kit. The refusal record is the
+      structural defense against selective sealing.
+
+ACTUAL REFUSALS RECORDED THIS QUARTER
+
+If during the attestation period any request matching R1–R7 was made
+and refused, that refusal is documented here as a sealed sub-fact:
+
+  Refusal #1 (2026-05-22):
+    The Office of the County Executive's external-affairs staff
+    requested that contract CP-2024-FAC-007 (courthouse
+    renovation, 33.6% cumulative change-order creep) be omitted
+    from FACT 05 on grounds that "the cumulative number
+    misrepresents the underlying scope-expansion legitimacy."
+    The kit refused per R5 (cannot omit issued transactions) and
+    per the underlying publication-integrity principle that
+    selective omission of issued transactions is precisely the
+    failure mode the kit exists to prevent. The cumulative
+    change-order record is included in FACT 05; the underlying
+    scope-expansion legitimacy is separately disclosed in FACT 07
+    SS-2026-Q2 cross-references and in IG case IG-2026-014. This
+    refusal is recorded.
+
+  Refusal #2 (2026-06-03):
+    A staff member in the County Procurement office requested
+    that vendor V-2026-Q2-009 (the office-supplies vendor with
+    52 small purchases aggregating to USD 87,400) be omitted
+    from FACT 06's itemized list on grounds that "no individual
+    payment exceeded the USD 10,000 threshold." The kit refused
+    per the bid-splitting-detection principle: per-vendor
+    aggregates across all contracts to the vendor IS the
+    threshold for FACT 06 itemization, regardless of individual
+    payment-event amounts. The vendor is itemized; this refusal
+    is recorded.
+
+SIGNING PRINCIPALS
+
+  Issuing Authority:       Office of County Procurement, Fictional
+                           County (FICTIONAL)
+  Attestation timestamp:   2026-07-15T10:00:00 UTC (FICTIONAL —
+                           moment this attestation Merkle root is
+                           computed and committed)
+  Attestation type:        County Quarterly Procurement Attestation
+                           (FY2026 Q2, calendar-quarter basis)
+
+PRIMARY SIGNATORY
+
+  [Fictional Name], County Procurement Director, Fictional County
+  Statutory role:          Designated under Fictional County
+                           Purchasing Ordinance §1.04 as the
+                           responsible principal for quarterly
+                           procurement attestation
+  Statutory accountability: Subject to Fictional County Code of
+                           Ethics §4.12 (conflict-of-interest
+                           disclosure obligations) and to
+                           criminal-misstatement provisions of
+                           Fictional State Local Government
+                           Procurement Code §14.812 (knowingly
+                           false certification is a criminal
+                           offense carrying personal liability)
+  Cryptographic key:       (a real attestation would include a
+                           PGP public-key fingerprint or
+                           government-issued digital signature
+                           certificate fingerprint here; omitted
+                           in this fictional example)
+
+CO-SIGNATORY (DUAL CONTROL)
+
+  [Fictional Name], County Chief Financial Officer, Fictional
+  County
+  Statutory role:          Co-signature required under §1.18 (dual-
+                           control attestation for any quarterly
+                           procurement report submitted to the
+                           County Commission)
+  What the CFO attests:    That the per-vendor payment aggregates
+                           in FACT 06 reconcile to the county's
+                           general-ledger disbursement records
+                           for the attestation period; that the
+                           total disbursement reconciliation
+                           matches with zero variance
+  Cryptographic key:       (omitted — fictional example)
+
+INDEPENDENT-ATTESTING SIGNATORY
+
+  [Fictional Name], County Inspector General, Office of the County
+  Inspector General, Fictional County
+  Statutory role:          Independent of the County Executive and
+                           the County Procurement Director;
+                           appointed under Fictional County Charter
+                           §7.02 with statutory tenure protection
+  What the IG attests:     (a) The IG-case-state field (FACT 06
+                           IG cross-reference + FACT 07 IG-notice
+                           timestamps) was not edited under
+                           pressure from the Procurement Director
+                           or CFO between the IG's submission and
+                           the moment of sealing.
+                           (b) No whistleblower complaint received
+                           under whistleblower-protection statutes
+                           has had its identifying information
+                           sealed in this publication (R3
+                           compliance attestation).
+                           (c) The IG is aware of NO material
+                           fact about Q2 procurement that the IG
+                           believes should have been disclosed
+                           in this attestation and was not.
+  Cryptographic key:       (omitted — fictional example)
+
+WHAT NO SIGNATORY IS ATTESTING TO
+
+  NONE of the three signatures above attest to:
+    - The lawfulness, fairness, or non-corrupt nature of any
+      underlying contract award in FACT 04
+    - The substantive validity of any sole-source justification
+      in FACT 07
+    - The substantive justification of any change order in
+      FACT 05
+    - The accuracy of the supporting documents whose hashes
+      appear throughout FACT 04 / FACT 05 / FACT 07 (those
+      hashes only attest to bytewise identity, not to content
+      truthfulness)
+    - The completeness of the companion disclosures C1–C5
+      beyond what was known to the signatories at the
+      attestation timestamp
+    - Any judgment about value-for-money, market-price
+      reasonableness, or qualitative outcome of any procurement
+      activity sealed here
+
+WHAT IS NOT INCLUDED IN ANY SIGNATORY FIELD (and is not, here)
+
+  - Personal contact information for any signatory
+  - Home addresses or other locating information
+  - Information about signatories' family members or private
+    finances
+  - Information about signatories' personal banking, beneficial
+    ownership of any entity, or private investments
+
+Public officials in named public-office roles ARE properly identified
+in this fact (it is the load-bearing accountability hook of the
+seal), but private information about those officials in their
+private capacities is NOT.
+
+This fact asserts only the companion-disclosure status, refusal
+record, and signing-principal identification fields for the
+attestation as declared at the moment of sealing. It does not assert
+that the disclosure list is exhaustive of all material companion
+facts that SHOULD have been disclosed, that the refusal list is
+exhaustive of all attempted misuses of the kit, that absence of a
+disclosure implies absence of the underlying condition, or that the
+named signatories' independent-attestation declarations are
+themselves immune to coercion. A more honest seal discloses more;
+the seal cannot compel honesty about what is not disclosed.
+
+The criminal-misstatement provisions referenced in this fact apply
+ONLY in a real attestation by a real official under real statutory
+authority; this fictional example imposes no such accountability
+on any real person.

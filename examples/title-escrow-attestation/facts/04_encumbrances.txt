@@ -1,0 +1,178 @@
+FACT 04 — ENCUMBRANCES AS OF SEARCH EFFECTIVE DATE (FICTIONAL)
+
+The following recorded encumbrances, liens, easements, restrictive
+covenants, and other matters of record affect APN FICT-014-2236-
+073-0000 as of the search effective date specified in FACT 02
+(2026-05-19 00:00:00 PDT).
+
+Each item is identified by its recording reference. Per refusal-
+rule R1 in FACT 07, beneficial-owner identification beyond the
+recorded beneficiary is NOT published; many liens are recorded to
+LLCs, trusts, or other privacy-preserving custodians for legitimate
+reasons (estranged-family judgments, support-arrears, abused-
+spouse-protected creditors, sealed-court matters), and the kit
+does not pierce that privacy layer.
+
+The per-instrument SHA-256 is computed over the canonical UTF-8
+transcription of the recorded instrument as obtained from the
+recorder's certified-copy service. Any later "the lien said
+something different" or "the easement allowed something different"
+dispute can be tested against these hashes.
+
+MORTGAGES / DEEDS OF TRUST
+
+  M1. Deed of trust recorded 2024-04-30 as Document 2024-0098713
+      (FICTIONAL), 1 minute after the trustee's deed in FACT 03
+      Idx 8. Original principal amount $487,500. Beneficiary of
+      record: Fictional Lender Trust 2024-A (FICT). Trustee of
+      record: Fictional Title Trustee Co. (FICT). Original
+      borrower: Fictional Owner of Record. Maturity stated as
+      30-year amortization from origination.
+      Instrument SHA-256:
+        6071829304a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f6071829304
+
+  M2. Assignment of deed of trust recorded 2024-09-15 as
+      Document 2024-0211988 (FICTIONAL). Assignor of record:
+      Fictional Lender Trust 2024-A. Assignee of record:
+      Fictional Servicing LLC (FICT) as servicer for an
+      undisclosed beneficial holder (the beneficial holder
+      identity is NOT published per refusal-rule R1).
+      Instrument SHA-256:
+        71829304a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f6071829304a1
+
+OTHER LIENS
+
+  L1. No mechanic's liens of record as of the search effective
+      date. (FICTIONAL — if a mechanic's lien were recorded,
+      it would be listed here with its 90-day-perfection
+      deadline annotated.)
+
+  L2. No federal tax liens of record as of the search
+      effective date. (FICTIONAL — if a federal tax lien
+      were recorded, it would be listed with its 26 U.S.C.
+      § 6323 priority status annotated, and refusal-rule R1
+      would be applied to the underlying taxpayer's PII;
+      the lien itself is public record.)
+
+  L3. No state tax liens of record. (FICTIONAL)
+
+  L4. No judgment liens of record. (FICTIONAL — judgment liens
+      would be listed with the recording reference, the case
+      name as docketed in the public record, and the recorded
+      principal amount. The judgment creditor's identifying
+      information beyond the case name and recorded beneficiary
+      is governed by R1 — particularly important for support-
+      arrears liens, abuse-protection-order liens, and other
+      privacy-sensitive judgment categories.)
+
+  L5. No support liens of record. (FICTIONAL — support liens,
+      where they exist, are recorded but with strict R1
+      treatment: the lien is publicly disclosed, but the
+      supported party's identifying information is NOT
+      published beyond what the recorded lien itself contains,
+      to protect the supported party.)
+
+EASEMENTS
+
+  E1. Public utility easement, 10 feet wide along the rear
+      property line, recorded 1923-08-14 as part of the
+      original subdivision map (Book 312, Pages 47-48 of Maps,
+      referenced in FACT 02 legal description). Beneficiary:
+      "the public utilities providing service to the
+      subdivision," as recorded — current beneficiary
+      identification is governed by the state utility-
+      jurisdiction regime, not by the recorded instrument.
+      Instrument SHA-256 (subdivision map fragment):
+        829304a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f6071829304a1b2
+
+  E2. Drainage easement, 5 feet along the southern property
+      line, recorded 1954-03-22 as a covenant in the deed at
+      FACT 03 Idx 2 (Bk 1844 / Pg 217). Beneficiary: adjoining
+      parcel APN FICT-014-2236-074-0000 (the neighbor to the
+      south, FICTIONAL).
+      Instrument SHA-256:
+        9304a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f6071829304a1b2c3
+
+RESTRICTIVE COVENANTS
+
+  CC1. Declaration of Covenants, Conditions & Restrictions
+       recorded 1924-02-11 as Book 21 / Pg 88 of Restrictions
+       (FICTIONAL), running with the land for the entire
+       FICTIONAL HEIGHTS TRACT NO. 73. The 1924 declaration
+       includes setback, height, and use restrictions. A
+       portion of the 1924 declaration includes a racial
+       covenant. UNDER FEDERAL LAW (Fair Housing Act, 42
+       U.S.C. § 3604; Shelley v. Kraemer, 334 U.S. 1 (1948)),
+       any racial covenant is UNENFORCEABLE; in many states
+       it is independently void as against public policy.
+       This seal records the existence of the covenant in
+       the public record as a matter of historical fact;
+       it does NOT enforce, validate, or give legal effect
+       to the racial covenant, which is and remains a dead
+       letter. Several states permit homeowners to file an
+       "unlawful restrictive covenant" notice to formally
+       repudiate the historical covenant; whether the
+       current owner has done so is noted in companion
+       disclosures (FACT 07) if applicable.
+       Instrument SHA-256:
+         a304a1b2c3d4e5f60718293a4b5c6d7e8f90a1b2c3d4e5f6071829304a1b2c3d
+
+LEASES OF RECORD
+
+  LR1. No recorded leases as of the search effective date.
+       (FICTIONAL — unrecorded leases under one year are
+       generally not subject to the recording acts and are
+       excepted in FACT 06.)
+
+OPTIONS / RIGHTS OF FIRST REFUSAL OF RECORD
+
+  OP1. No recorded options or rights of first refusal as of
+       the search effective date. (FICTIONAL)
+
+NOTICES OF PENDENCY (LIS PENDENS)
+
+  LP1. No lis pendens of record. (FICTIONAL — lis pendens
+       affecting the property would be listed here with the
+       case docket reference; under R1, identifying
+       information about parties beyond the docket would not
+       be published.)
+
+ENVIRONMENTAL / HAZARD NOTICES
+
+  EN1. No recorded environmental cleanup liens. (FICTIONAL)
+
+  EN2. No recorded special-flood-hazard or special-fire-
+       hazard notices specific to this parcel beyond
+       generally applicable mapped designations. (FICTIONAL
+       — the parcel's FEMA flood-zone designation as of the
+       search effective date is recorded in FACT 07 as a
+       companion disclosure rather than as an encumbrance.)
+
+BANKRUPTCY ADJUNCT MATTERS
+
+  BK1. The federal bankruptcy-court search performed as part
+       of the methodology (see FACT 05) returned no active
+       case for the recorded current owner. (FICTIONAL — if
+       an active bankruptcy case were returned, it would be
+       listed here with the case docket reference, governed
+       by R1 for any beyond-docket information.)
+
+This fact asserts only the recorded encumbrances above, as
+they appeared in the Fictional County Recorder's index at the
+search effective date specified in FACT 02. It does not
+assert:
+  - the priority order of the encumbrances under the law of
+    the situs state (priority is a legal determination that
+    depends on factors including recording-act type, knowledge,
+    and federal-tax-lien override rules),
+  - that any encumbrance is currently enforceable (some
+    encumbrances may be barred by statutes of limitations,
+    waived, satisfied without release-recording, or otherwise
+    unenforceable),
+  - that any encumbrance has been satisfied if no release is
+    of record (a paid mortgage that has not been released
+    appears here as still recorded; satisfaction is a
+    contractual matter between borrower and lender that may
+    require curative recording),
+  - that no off-record encumbrance exists (off-record
+    matters are excepted in FACT 06).

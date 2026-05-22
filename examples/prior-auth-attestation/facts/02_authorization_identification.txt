@@ -1,0 +1,148 @@
+FACT 02 — AUTHORIZATION IDENTIFICATION (FICTIONAL)
+
+  Authorization request
+    number:               FICT-PA-2026-447193 (FICTIONAL — the
+                          carrier's prior-auth tracking number as
+                          assigned at intake; cross-walks to the
+                          X12 278 transaction reference number
+                          and to the carrier's UM-system case ID)
+  Carrier:                Fictional Health Insurance Company
+                          (FICTIONAL)
+  Carrier NAIC code:      99999 (FICTIONAL — a real attestation
+                          cites the actual NAIC company code for
+                          cross-reference against state insurance
+                          department records)
+  Carrier state of
+    domicile:             [Fictional U.S. state] (FICTIONAL)
+  Plan identifier:        FICT-PLAN-COMM-LG-2025 (FICTIONAL —
+                          large-group fully-insured commercial;
+                          the plan-type categorization
+                          (commercial fully-insured / commercial
+                          self-funded ERISA / Medicare Advantage
+                          / Medicaid managed care / CHIP /
+                          federally-facilitated Marketplace QHP)
+                          governs which appeal pathway applies in
+                          FACT 06 and which statutory framework
+                          governs the substantive determination)
+  Plan group number:      FICT-GRP-882144 (FICTIONAL — the
+                          employer's plan group number; the
+                          minimum-necessary plan identifier for
+                          policy lookup without exposing patient
+                          identifiers)
+
+  Provider organization:  Fictional Regional Medical Group
+                          (FICTIONAL)
+  Provider NPI:           9999999999 (FICTIONAL — the 10-digit
+                          National Provider Identifier for the
+                          requesting organization; a real
+                          attestation cites the actual NPI for
+                          cross-reference against the NPPES
+                          public registry)
+  Provider tax ID:        [omitted from public seal per general
+                          principle that the provider's EIN is
+                          not necessary for the public artifact;
+                          the carrier's UM-system case file binds
+                          NPI to EIN and that binding is
+                          discoverable under normal claim-file
+                          procedures]
+  Requesting clinician
+    NPI:                  9999999998 (FICTIONAL — individual NPI
+                          of the prescribing/ordering clinician;
+                          the individual NPI is published because
+                          it is the operative requester for the
+                          authorization and is already public via
+                          NPPES; the clinician's medical license
+                          number, DEA number, and personal
+                          contact information are NOT in this
+                          public seal)
+
+  Member identifier
+    handle:               Member-X (FICTIONAL — see refusal-rule
+                          R1 in README; the member's legal name,
+                          SSN, DOB, address, phone number, email,
+                          and full medical record number are NOT
+                          in this public seal; the carrier's
+                          prior-auth file binds Member-X to a
+                          specific subscriber/dependent under a
+                          specific policy and that binding is
+                          discoverable under normal carrier file
+                          procedures or by court order)
+  Member relationship:    [self / spouse / dependent — published
+                          at category level only when necessary
+                          for criteria match; otherwise omitted
+                          per R1]
+
+  Requested service
+    category:             [HCPCS/CPT category level — e.g.
+                          "outpatient advanced imaging" or
+                          "inpatient surgical procedure" or
+                          "specialty pharmacy infusion" — NOT the
+                          specific CPT code where the specific
+                          code would be re-identifying in
+                          combination with plan group, region,
+                          and date; the specific CPT/HCPCS code
+                          is in the carrier's prior-auth file and
+                          disclosable to the patient, the
+                          provider, and regulators on request
+                          per R1-R2]
+                          (FICTIONAL example category: "outpatient
+                          advanced diagnostic imaging — MRI
+                          category")
+  Place of service:       [outpatient / inpatient / office /
+                          ambulatory surgical center — published
+                          at category level]
+  Service date(s)
+    requested:            2026-06-15 (FICTIONAL — the date(s) for
+                          which authorization is requested; in
+                          inpatient or extended-treatment cases,
+                          a range)
+
+  Date of authorization
+    request:              2026-05-18, 09:47 local time, submitted
+                          by provider's UM team via carrier's
+                          X12 278 EDI portal (FICTIONAL)
+  Submission channel:     X12 278 Health Care Services Review,
+                          electronic submission; transaction
+                          reference number cross-referenced in
+                          carrier UM-system case file; hash of
+                          the X12 278 transaction recorded as
+                          part of the evidence hash list in
+                          FACT 04
+  Date of decision:       2026-05-21 (the date this seal is being
+                          generated; standard turnaround time of
+                          3 business days for non-urgent
+                          authorization per the carrier's UM
+                          program; for urgent requests, the
+                          turnaround window is shorter per
+                          carrier UR policy and is documented in
+                          FACT 06)
+
+This fact binds the sealed publication to a named, regulated
+carrier acting under a specific, regulated plan type and to a
+named, NPPES-registered provider organization, requesting on
+behalf of a privacy-protected member identifier handle, for a
+category-level service category. It does NOT name the member,
+the member's family, the specific diagnosis (see FACT 03 for
+criteria-match disclosure constraints), the specific CPT/HCPCS
+code where re-identification risk applies, or any other private
+individual by legal name beyond the requesting clinician (whose
+individual NPI is published because it is the operative requester
+and already public). The carrier-and-plan citation is included so
+the seal can be located within the carrier's UM-system case file
+and the state insurance department's UM-program filing by any
+party with standing.
+
+This fact asserts only the authorization-identification, plan
+citation, provider organization citation, member-handle binding,
+service-category framing, and temporal context for the fictional
+authorization. It does not assert:
+  - that the plan was in force on the service date(s)
+    requested (that is a coverage question — see FACTS 03 and 05),
+  - that the requesting clinician's credentialing was current
+    with the carrier (a separate credentialing question),
+  - that the member is eligible for the specific service
+    requested under the plan's benefit design,
+  - that the prior-auth review was substantively correct (see
+    FACT 05 for the decision and the limits on what the seal
+    asserts about substantive correctness),
+  - that the carrier owes coverage for the service.

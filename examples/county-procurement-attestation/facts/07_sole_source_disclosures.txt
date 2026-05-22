@@ -1,0 +1,205 @@
+FACT 07 — SOLE-SOURCE DISCLOSURES (FICTIONAL)
+
+This fact records every sole-source award and every structural sole-
+source-equivalent (professional-services exemption, emergency
+procurement, state-contract piggyback under specific conditions,
+designated-nonprofit-only awards) issued during the attestation
+quarter. Each entry includes the statutory citation, the date the
+sole-source justification was filed, the SHA-256 of the justification
+document, and the timestamp at which the justification was noticed
+to the county Inspector General.
+
+Sole-source procurement is one of the two highest-risk categories in
+county purchasing (change orders being the other). The defense
+against sole-source abuse is NOT prohibition (legitimate sole-source
+situations exist — patented technology, designated nonprofits,
+incumbent IT systems with switching costs that exceed re-bid value)
+but PROCEDURAL DISCIPLINE around the disclosure: justification on
+the record, statutory citation, IG notice, and post-facto audit.
+Sealing the sole-source disclosure at issuance makes the procedural-
+discipline trail permanent.
+
+SOLE-SOURCE AND SOLE-SOURCE-EQUIVALENT AWARDS THIS QUARTER
+
+  SS-2026-Q2-001  STRAIGHT SOLE-SOURCE (designated nonprofit)
+    Award date:              2026-04-22
+    Contract ID:             CP-2026-SS-007 (cross-ref FACT 04
+                             K-2026-Q2-002)
+    Vendor entity:           Fictional Community Food Network
+                             (501(c)(3))
+    Contract value:          USD 1,800,000
+    Statutory authority:     Fictional State Local Government
+                             Procurement Code §14.213(d) (designated
+                             nonprofit with prior multi-year
+                             performance record + categorical
+                             exemption for community-food-network
+                             grants under state social-services
+                             code)
+    Justification filed:     2026-04-12 (10 days before award)
+    Justification SHA-256:
+      4d9e7a91c4b8d2e5f60a1b2c3d4e5f60718293a4b5c6d7e8f9012345678abcd1
+    IG-notice timestamp:     2026-04-15T09:00:00 UTC (7 days before
+                             award per §14.213(g) minimum)
+    Prior-relationship
+     disclosure:             Vendor has held this grant in FY2023,
+                             FY2024, FY2025 under prior sole-source
+                             awards (continuous designation per the
+                             nonprofit's enabling agreement; the
+                             continuity itself is a flag for
+                             periodic review of whether the sole-
+                             source designation remains appropriate
+                             or whether the program should be
+                             competitively re-bid)
+    Periodic-review
+     status:                 Last comprehensive review 2023-Q1; next
+                             scheduled 2027-Q1 (within the 5-year
+                             review cycle for sole-source
+                             nonprofit awards under §14.213(h))
+
+  SS-2026-Q2-002  EMERGENCY PROCUREMENT (sole-source-equivalent
+                  under emergency exception)
+    Award date:              2026-05-14
+    Contract ID:             CP-2026-EM-002 (cross-ref FACT 04
+                             K-2026-Q2-004)
+    Vendor entity:           Fictional Emergency Equipment Supply
+                             Co.
+    Contract value:          USD 487,200
+    Statutory authority:     Fictional State Local Government
+                             Procurement Code §14.405 (emergency
+                             procurement; competitive-bid
+                             requirement waived during declared
+                             emergency)
+    Triggering emergency:    County Emergency Declaration EM-2026-07,
+                             signed 2026-05-09 by County Executive
+                             following severe storm
+    Emergency declaration
+     SHA-256:                7e8f9a0b1c2d3e4f50617283940a1b2c3d4e5f60718293a4b5c6d7e8f9012345
+    Justification filed:     2026-05-14 (at award; emergency
+                             procurement justification is
+                             contemporaneous, not pre-filed)
+    Justification SHA-256:
+      88c4d4ee218a4f9001e6f4b3c5d7e6f5a4b3c2d1e0f9876543210fedcba98765
+    IG-notice timestamp:     2026-05-15T11:00:00 UTC (within 24
+                             hours per §14.405(g))
+    Post-emergency
+     ratification status:    County Commission ratification vote
+                             scheduled 2026-08-12 (within 90 days
+                             per §14.405(d))
+    Competitive re-procurement
+     of similar items:       The procurement office has scheduled
+                             a competitive sealed-bid process for
+                             FY2027 emergency-equipment standing
+                             contracts to reduce reliance on
+                             emergency-exception procurement for
+                             foreseeable replenishment
+
+  SS-2026-Q2-003  PROFESSIONAL-SERVICES EXEMPTION (sole-source-
+                  equivalent — legal services)
+    Award date:              2026-06-18
+    Contract ID:             CP-2026-PR-031 (cross-ref FACT 04
+                             K-2026-Q2-006)
+    Vendor entity:           Fictional Legal Services Group LLP
+    Contract value:          USD 2,400,000 (NTE; billable per
+                             state-court rules)
+    Statutory authority:     Fictional State Local Government
+                             Procurement Code §14.213(c)
+                             (professional services exempt from
+                             competitive bidding)
+    Selection process:       Closed RFI from a list of 4 qualified
+                             firms with relevant federal-court
+                             class-action defense experience; firm
+                             selected on cost + experience criteria
+    Selection memorandum
+     SHA-256:                03c23f853b396b0df96070f20cd904ec27881e3f6390c55aedc9550c8a2d79f2
+    Conflict-of-interest
+     disclosure:             None of the firm's named partners has
+                             any direct or indirect financial
+                             relationship with any County official
+                             or County Commission member (per
+                             standard conflict-disclosure form)
+    Conflict-disclosure
+     SHA-256:                cbb671235d5bb13d9f81a91a8661fa648e59e84f6ba0fb126356993066f065a0
+    IG-notice timestamp:     2026-06-19T14:00:00 UTC (within 24
+                             hours of award per professional-
+                             services notice protocol)
+    Note:                    Professional-services exemption is
+                             specifically itemized here even though
+                             it is statutorily exempt from
+                             "sole-source" framing, because the
+                             exemption is structurally identical
+                             to sole-source (no competitive bid)
+                             and the kit's purpose is to make all
+                             non-competitive procurement publicly
+                             visible regardless of statutory label
+
+  SS-2026-Q2-004  PIGGYBACK PROCUREMENT (sole-source-equivalent
+                  via state-contract reliance)
+    Award date:              2026-05-01 (renewal date for participation)
+    Contract reference:      State General Services fuel contract
+                             STATE-FUEL-2025-014 (the county
+                             participates in the statewide fuel
+                             contract managed by State General
+                             Services rather than competitively
+                             procuring fuel directly)
+    Vendor entity (state-
+     contract holder):       Fictional Fuel Services Inc.
+    County participation
+     value (quarterly):      USD 124,600 (cross-ref FACT 06
+                             V-2026-Q2-010)
+    Statutory authority:     Fictional State Local Government
+                             Procurement Code §14.218
+                             (cooperative-purchasing exemption for
+                             participation in state master
+                             contracts that were themselves
+                             competitively procured at state level)
+    State-master-contract
+     SHA-256:                89a72e41fa212f6520115739df2d79f366e132c4714c0d60ae87540555195893
+    Periodic-review
+     status:                 County reviewed cost comparison against
+                             direct procurement annually; 2025
+                             review found state-contract pricing
+                             ~12% below the county's best
+                             independent quote, justifying continued
+                             participation
+
+AGGREGATE SOLE-SOURCE METRICS THIS QUARTER
+
+  Total sole-source and sole-source-equivalent awards:    4
+  Total dollar value of sole-source awards:               USD 4,811,800
+  Percentage of total quarterly procurement value
+   awarded under non-competitive mechanisms:              ~23.3%
+                                                          (USD 4,811,800 of
+                                                          USD 20,607,200)
+
+  BREAKDOWN BY SOLE-SOURCE STATUTORY MECHANISM
+    Designated-nonprofit sole-source (§14.213(d)):  1   USD 1,800,000
+    Emergency procurement (§14.405):                1   USD   487,200
+    Professional-services exemption (§14.213(c)):   1   USD 2,400,000
+    Cooperative-purchasing piggyback (§14.218):     1   USD   124,600
+
+  ALL sole-source awards this quarter were noticed to the County
+  Inspector General within the statutory timeframe (no late or
+  missing IG notices).
+
+  NO sole-source justification documents were withdrawn or
+  modified between filing and award.
+
+  NO sole-source contracts this quarter were converted from
+  competitive procurement after solicitation was issued (i.e.,
+  no "withdrew RFP, awarded sole-source instead" pattern, which
+  is a documented sole-source-abuse signal).
+
+This fact asserts only the sole-source and sole-source-equivalent
+awards as recorded by the county procurement office, with the
+statutory citations, justification document hashes, IG-notice
+timestamps, and selection-process details as they appeared on the
+issuance date. It does not assert that any sole-source justification
+was substantively valid; that no qualified competitive bidder existed
+for any sole-source award; that the periodic-review cycles are
+adequate to catch outdated sole-source designations; that the
+emergency that triggered the emergency procurement was itself
+genuine and not pretextual; or that the professional-services
+exemption was not used to avoid scrutiny of an otherwise-bid-eligible
+service. The seal anchors WHAT WAS DISCLOSED. Investigation of
+WHETHER THE DISCLOSURE WAS HONEST is the jurisdiction of the IG,
+the state auditor, federal grant managers, and prosecutors.
