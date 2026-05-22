@@ -1,0 +1,209 @@
+FACT 06 — APPEAL WINDOW (FICTIONAL)
+
+The appeal window for the decision in FACT 05 is set at the
+moment of decision and sealed here so that subsequent silent
+shortening of the window — by re-narrating the "notice date,"
+by changing the expedited-review eligibility, by changing the
+external-review pathway, or by missing the carrier's own
+deadlines without disclosure — is publicly refutable. Per
+refusal rule R7, no decision may be sealed without the appeal
+window being calculated and disclosed at the moment of
+decision.
+
+  APPLICABLE STATUTORY FRAMEWORK (governs the substantive
+  appeal rights, the timelines, and the external-review path)
+
+    Plan type
+      classification:     [commercial fully-insured / commercial
+                          self-funded ERISA / Medicare Advantage
+                          / Medicaid managed care / CHIP /
+                          federally-facilitated Marketplace QHP
+                          — from FACT 02]
+                          (FICTIONAL example: commercial
+                          fully-insured, large group)
+    Primary statutory
+      framework:          State insurance code of [carrier state
+                          of domicile, FACT 02] AND state
+                          insurance code of [member's state of
+                          residence, where different] —
+                          state-by-state UR and external-review
+                          statutes apply; for ERISA self-funded
+                          plans, ERISA §503 (29 C.F.R.
+                          §2560.503-1) applies as primary
+    Secondary
+      framework:          Affordable Care Act §2719 (federal
+                          external review minimum standards;
+                          applies to non-grandfathered plans);
+                          for Medicare Advantage, 42 C.F.R.
+                          Part 422 Subpart M; for Medicaid
+                          managed care, 42 C.F.R. §438 Subpart F
+    Mental Health
+      Parity:             If the requested service is a mental
+                          health or substance use disorder
+                          service, the Mental Health Parity and
+                          Addiction Equity Act (MHPAEA) appeal
+                          and disclosure requirements apply in
+                          addition to the above
+
+  INTERNAL APPEAL — FIRST LEVEL
+
+    Deadline for
+      member/provider
+      to file appeal:     180 calendar days from the date of
+                          notice (FICTIONAL example; the
+                          deadline is set as of the date of
+                          decision and may NOT be silently
+                          shortened later)
+    Notice date:          2026-05-21 (same as decision date in
+                          FACT 05; the notice generation is
+                          contemporaneous with the decision)
+    Computed deadline:    2026-11-17 (180 calendar days from
+                          2026-05-21; the computed deadline is
+                          recorded so subsequent disputes about
+                          "what date was the deadline" are
+                          publicly refutable)
+    Carrier deadline to
+      decide first-level
+      appeal:             30 calendar days from receipt of
+                          appeal for pre-service (prior-auth)
+                          determinations under ACA §2719 minimum
+                          standard; state law may impose
+                          shorter deadlines and the carrier is
+                          bound to the SHORTER applicable
+                          deadline
+    Internal-appeal
+      reviewer
+      requirement:        The first-level appeal must be
+                          reviewed by a clinician who was NOT
+                          involved in the initial determination,
+                          is of the same or similar specialty as
+                          typically manages the condition under
+                          review, and meets the state-mandated
+                          UR reviewer credentialing standard
+    Standard of review:   De novo on the record; new evidence
+                          may be submitted by the
+                          member/provider; the appeal reviewer
+                          is NOT bound by the initial
+                          determination
+
+  EXPEDITED REVIEW (URGENT-CARE TRACK)
+
+    Expedited review
+      eligibility:        [yes / no — eligible if the standard
+                          timeline would seriously jeopardize
+                          the life or health of the member or
+                          jeopardize the member's ability to
+                          regain maximum function, or if the
+                          member is undergoing a course of
+                          treatment with the requested service]
+                          (FICTIONAL example: no — this
+                          authorization is for a non-urgent
+                          outpatient service; if the provider
+                          or member asserts urgency, the
+                          expedited-review pathway becomes
+                          available and a separate determination
+                          on urgency is required, with its own
+                          tighter deadlines)
+    Expedited internal
+      appeal deadline:    72 hours from receipt of expedited
+                          appeal under ACA §2719 minimum
+                          standard; some states impose 24-hour
+                          deadlines; the carrier is bound to
+                          the SHORTER applicable deadline
+    Expedited internal
+      appeal +
+      simultaneous
+      external review:    Under ACA §2719 for urgent care
+                          situations, the member may pursue
+                          internal and external review
+                          simultaneously rather than sequentially
+
+  EXTERNAL REVIEW (IRO)
+
+    State IRO program:    [carrier state of domicile and/or
+                          member state of residence — the
+                          state-designated independent review
+                          organization (IRO) program; contact
+                          information must be in the
+                          adverse-determination notice]
+                          (FICTIONAL example: Department of
+                          Insurance of [Fictional State])
+    Federal IRO option:   For non-grandfathered fully-insured
+                          plans in states with state-IRO
+                          programs that meet ACA standards, the
+                          state IRO is the route; for plans in
+                          states without compliant programs and
+                          for self-funded ERISA plans that use
+                          the federal IRO program, the federal
+                          external-review process applies
+    Member cost for
+      external review:    [statutorily limited; in most states
+                          $0 to $25 maximum, with hardship
+                          waivers; the carrier bears the
+                          substantive cost of the IRO]
+                          (FICTIONAL example: $25 maximum;
+                          waived for documented financial
+                          hardship)
+    Standard of review
+      on external
+      review:             De novo on the record; the IRO is
+                          independent of the carrier; the IRO
+                          decision is BINDING on the carrier
+                          (one of the load-bearing
+                          patient-protection features of
+                          external review)
+    IRO deadline:         45 days for standard external review,
+                          72 hours for expedited, under ACA
+                          §2719 minimum standards
+
+  ERISA / STATE PATH SELECTION FOR THIS DECISION
+
+    Path applicable:      [based on plan type classification;
+                          for this fictional commercial
+                          fully-insured plan, the state path
+                          applies; for an ERISA self-funded plan
+                          the ERISA §503 path applies; for a
+                          Medicare Advantage plan the 42 C.F.R.
+                          Part 422 Subpart M path applies; the
+                          carrier is required to disclose the
+                          applicable path in the
+                          adverse-determination notice]
+                          (FICTIONAL example: state path under
+                          [Fictional State] insurance code)
+
+  WINDOW NON-MODIFICATION COMMITMENT
+
+The carrier attests, by sealing this fact, that:
+
+  - The deadlines above are the deadlines as of the date of
+    decision and cannot be silently shortened later. A
+    subsequent assertion by the carrier that a different
+    "notice date" applies (e.g. the date the notice was
+    received by the member, computed from a later USPS
+    delivery date, vs. the date of generation) is publicly
+    refutable against the notice date stated above.
+  - For expedited-review-eligible cases (where this fact says
+    "yes" above), the expedited pathway is committed and
+    cannot be silently downgraded to standard. A subsequent
+    carrier assertion of "we determined the case was not
+    urgent" is itself an adverse determination subject to
+    appeal.
+  - For external-review path-selection: if the carrier asserts
+    a different IRO path on a subsequent communication than
+    the one sealed above, the change is itself an adverse
+    procedural determination subject to challenge.
+
+This fact asserts only the appeal-window deadlines, the
+expedited-review eligibility, the external-review path
+selection, and the window non-modification commitment for the
+fictional decision. It does NOT assert:
+  - that the deadlines are statutorily correct (a separate
+    legal question against the controlling state and federal
+    statutes and the plan document),
+  - that the member or provider will succeed on appeal,
+  - that the IRO will affirm or reverse the carrier's
+    determination,
+  - that the carrier's UM program description on file with
+    the state insurance department is internally consistent
+    with the deadlines stated above (any inconsistency is
+    itself a regulator-reportable issue).

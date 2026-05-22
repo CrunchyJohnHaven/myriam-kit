@@ -1,0 +1,231 @@
+FACT 07 — COMPANION DISCLOSURES AND REFUSAL RECORD (FICTIONAL)
+
+Per the MYRIAM kit's "constraint-first" design principle, this
+fact records what the kit explicitly refused to seal and any
+companion disclosures the title officer is obliged to publish
+alongside the search record so that selective omission is
+detectable. The disclosures here are not optional — leaving any
+of them blank without explicit "none at search effective date"
+attestation is itself a public red flag.
+
+COMPANION DISCLOSURES (sealed alongside the search record so
+the search cannot be read in isolation)
+
+  C1. PENDING LITIGATION AFFECTING THE PROPERTY
+      At the search effective date, no pending litigation
+      affecting APN FICT-014-2236-073-0000 was known to the
+      officer beyond what is recorded as a lis pendens (FACT
+      04 LP1: none). (FICTIONAL — if a quiet-title action, a
+      partition action, an adverse-possession suit, a
+      contested probate affecting the chain, or a contested
+      divorce with property in issue were known to the
+      officer through any channel — even an off-record
+      channel such as a courtesy notice from prior counsel —
+      it would be disclosed here. Failure to disclose a
+      known pending matter is a refusal-rule R4 violation;
+      see R4 below.)
+
+  C2. PRIOR KNOWN TITLE SEARCHES (if disclosed to the officer)
+      The officer was disclosed the existence of a prior
+      title search on this parcel dated 2024-04-25
+      (FICTIONAL — performed in connection with the 2024-04-
+      30 conveyance recorded as Document 2024-0098712, FACT
+      03 Idx 8). The 2024 search was performed by a
+      different title officer (FICTIONAL); the current
+      search was performed independently from the 2024
+      search artifacts and does not depend on them.
+      Disclosing the prior search makes it observable that
+      the current search reaches the same chain of title
+      that the 2024 search did, and any discrepancy between
+      the two is itself a flag for further review.
+
+  C3. OFFICER RECUSALS / CONFLICTS OF INTEREST
+      The officer has no current or prior personal or
+      professional relationship with the recorded current
+      owner, the recorded grantor of any conveyance in the
+      chain, the recorded beneficiary of any encumbrance,
+      or any party to any disclosed pending litigation.
+      (FICTIONAL — any actual or apparent conflict would be
+      disclosed here; common conflict categories include
+      prior representation, family relationship, business
+      relationship, prior fee dispute, prior testimony
+      against the party, and similar. A search performed
+      under an undisclosed conflict is a refusal-rule R3 /
+      R4 / E&O concern even where the search itself was
+      methodologically clean.)
+
+  C4. KNOWN UNRESOLVED DISPUTES (R4 disclosure floor)
+      The officer is contemporaneously aware of NO unresolved
+      dispute affecting the chain of title beyond what is
+      recorded. (FICTIONAL — under refusal-rule R4, if the
+      officer were aware of an unresolved boundary dispute,
+      a contested adverse-possession claim, a contested
+      probate affecting the chain, or any other matter that
+      would render the chain itself the subject of active
+      contestation, the kit would REFUSE to seal until the
+      contestation is disclosed here.)
+
+  C5. TAX-STATUS NOTE
+      Property tax status as of the search effective date,
+      as reported by the Fictional County Assessor:
+      - Most recent assessment year: 2025 (FICTIONAL)
+      - Property tax installment due dates per assessor
+        schedule: current and not delinquent at search
+        effective date (FICTIONAL)
+      - Special assessments of record: none (FICTIONAL)
+      Tax-status is reported as of the search effective
+      date; tax-status verification immediately before
+      closing is a separate due-diligence step.
+
+  C6. HOA / CC&R STATUS NOTE
+      The 1924 declaration in FACT 04 CC1 was not
+      administered by an active homeowners' association at
+      the search effective date (FICTIONAL — for many
+      pre-1970s subdivisions, the originally contemplated
+      HOA has long since lapsed). The currently
+      enforceable CC&Rs (setback, height, use) remain on
+      title; the unenforceable racial covenant is
+      addressed in X11. No "unlawful restrictive covenant"
+      notice has been filed by the current owner as of
+      the search effective date. (FICTIONAL — several
+      states permit such filings; the officer notes the
+      absence here without judging it.)
+
+  C7. ENVIRONMENTAL-LIEN STATUS NOTE
+      No recorded environmental cleanup liens (FACT 04
+      EN1: none). No known notice of contamination affecting
+      the parcel beyond what is recorded. (FICTIONAL — the
+      officer is not asserting that the parcel is free of
+      environmental contamination; environmental
+      contamination is the subject of a separate Phase I /
+      Phase II assessment by environmental professionals.
+      The officer is asserting only that no
+      ENVIRONMENTAL-LIEN RECORDING affects the title as
+      of the search effective date.)
+
+  C8. FLOOD AND FIRE HAZARD NOTE
+      Per FEMA flood-zone map effective at the search
+      effective date, the parcel is in Zone X (minimal
+      flood hazard) (FICTIONAL). State-mapped wildfire
+      hazard zone designation: not in a state-mapped
+      severe-fire-hazard zone as of the search effective
+      date (FICTIONAL). These designations may change;
+      verification at closing is standard.
+
+  C9. RECORDER-SYSTEM STATUS NOTE
+      The Fictional County Recorder's electronic-index
+      system was operating normally during the search
+      window. No known outage, no known data-corruption
+      event, no known retroactive re-indexing affected the
+      search. (FICTIONAL — if any of these were known, it
+      would be disclosed here; one of the kit's defense-
+      against-vanishing-records use cases (see README)
+      depends on this disclosure being made honestly when
+      such an event has occurred.)
+
+  C10. UNDERWRITER COMMUNICATION CHANNEL
+       The underwriter named in FACT 08 has been notified
+       of this publication in advance, has reviewed the
+       publication plan, and has authorized the
+       publication of the sealed search under the
+       officer's appointment. (FICTIONAL — unauthorized
+       publication is grounds for appointment
+       termination; this disclosure documents the
+       authorization channel.)
+
+REFUSAL RECORD — patterns the kit refused to seal
+
+The kit does NOT seal the following types of facts, even if
+requested by the officer, the underwriter, the transacting
+parties, or any other authority:
+
+  R1. IDENTIFYING INFORMATION OF BENEFICIARIES OF LIENS HELD IN
+      TRUST OR OTHERWISE PRIVACY-PRESERVING
+      The kit publishes the recorded beneficiary as
+      recorded. It does NOT pierce through an LLC, trust,
+      undisclosed-assignee servicer arrangement, or other
+      privacy-preserving structure to publish the
+      beneficial owner. Many liens are recorded to
+      privacy-preserving custodians for legitimate reasons
+      (estranged-family judgments, support-arrears,
+      abused-spouse-protected creditors, sealed-court
+      matters); the kit treats these uniformly and does
+      not publish through the privacy layer.
+
+  R2. SEALING WITHOUT THE LICENSED OFFICER'S ACTUAL SIGNATURE
+      A clerk, an assistant, an automated batch process,
+      or any party other than the licensed title officer
+      named in FACT 08 may NOT seal in the officer's
+      name. The officer must be the live signer at the
+      moment of sealing, using a cryptographic key bound
+      to the officer's license.
+
+  R3. SEALING PARTIAL SEARCHES AS COMPLETE
+      A search of limited scope (deed-index only,
+      single-county for a multi-county parcel, forward-
+      only from a prior search) MUST be sealed as
+      limited-scope with the scope clearly stated in
+      FACT 02 (search type) and FACT 05 (methodology).
+      A limited-scope search sealed as a "full" search
+      is refused.
+
+  R4. SEALING CHAIN-OF-TITLE FOR PROPERTIES WHERE THE
+      SEARCHER KNOWS OF UNRESOLVED DISPUTES
+      If the officer is contemporaneously aware of a
+      pending or unresolved dispute affecting the chain
+      (pending quiet-title, contested probate, contested
+      divorce with property in issue, contested adverse
+      possession, contested partition, contested
+      boundary), the kit REFUSES to seal until the
+      dispute is disclosed in FACT 07 C4.
+
+  R5. SEALING IN JURISDICTIONS WHERE THE OFFICER LACKS LEGAL
+      CAPACITY
+      The signing officer's state of license and the
+      property's state of situs MUST match, or the
+      officer must affirmatively cite a multi-state
+      authorization in FACT 08. A search sealed in a
+      jurisdiction where the officer's license does not
+      authorize title work is refused.
+
+  R6. PERSONAL IDENTIFICATION BEYOND THE PUBLIC RECORD
+      The kit publishes owner names as recorded in the
+      conveyance instruments themselves. It does NOT
+      supplement with date of birth, current mailing
+      address, social-security number, current phone
+      number, marital status, or any other personal
+      identifier not in the recorded instrument. Where
+      an owner is an entity, the kit publishes the entity
+      name as recorded and does NOT publish individual
+      members, beneficiaries, or partners beyond what is
+      itself recorded.
+
+  R7. SEALING OF A SEARCH THE OFFICER HAS NOT PERSONALLY
+      REVIEWED
+      The licensed officer must personally review the
+      chain, exceptions, and methodology before sealing.
+      A pass-through seal of unreviewed abstractor output
+      or third-party search-vendor output is refused.
+
+  R8. SEALING AS A SUBSTITUTE FOR THE UNDERWRITER'S
+      COMMITMENT
+      The seal is an attestation of the SEARCH; the
+      underwriter's commitment is a separate contractual
+      indemnity document. Fact bodies claiming the seal
+      IS the commitment or that the seal binds the
+      underwriter are refused.
+
+If during search preparation any request matching R1-R8 was
+made and refused, that refusal would be documented as a sealed
+fact:
+  "Refusal #N: party X requested sealing of [pattern]; the
+   kit refused per refusal-rule R[m]."
+
+  Refusals this search: NONE. (FICTIONAL)
+
+This fact asserts only the companion-disclosure status and any
+refusal record at the search effective date. It does not
+assert that the refusal-rule list is exhaustive of all PII or
+admissibility patterns, that all companion disclosures have
+been identified by the officer, or that the disclosures listed
+are themselves non-contestable.

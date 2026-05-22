@@ -1,0 +1,201 @@
+FACT 05 — DECISION (FICTIONAL)
+
+On 2026-05-21, the licensed clinical reviewer named in FACT 08
+reviewed the criteria cited in FACT 03 against the evidence
+hashed in FACT 04 for authorization request FICT-PA-2026-447193
+and rendered the following decision:
+
+  DECISION:               PARTIAL APPROVAL
+                          (one of: APPROVE / PARTIAL / DENY /
+                          PEND-FOR-ADDITIONAL-INFORMATION)
+                          (FICTIONAL example — a real decision
+                          will be exactly one of the four
+                          categories above; PARTIAL is used when
+                          the carrier authorizes the service but
+                          with modified units, days, or scope
+                          compared to the request)
+
+  DECISION DATE:          2026-05-21
+  DECISION TIME:          14:32 local time of decisionmaker
+                          (recorded because the appeal-window
+                          calculation in FACT 06 depends on the
+                          notice date/time, and the decision
+                          date/time is the upper bound on when
+                          notice can have been generated)
+
+  SCOPE OF AUTHORIZATION (for APPROVE or PARTIAL)
+
+    Service authorized:   [CPT/HCPCS category as in FACT 02;
+                          the specific CPT/HCPCS code is in the
+                          carrier's prior-auth file and
+                          disclosable to the patient and the
+                          provider on request per R1-R2]
+    Units / days /
+      quantity:           [authorized units; for PARTIAL, this
+                          differs from the request and the
+                          difference is recorded]
+                          (FICTIONAL example: 1 outpatient MRI
+                          authorized; provider's request was for
+                          1 MRI and 1 follow-up consultation;
+                          consultation portion of request
+                          PARTIAL-denied — see reason code below)
+    Service date(s)
+      authorized:         2026-06-15 (FICTIONAL — same as
+                          requested in FACT 02 for the approved
+                          portion)
+    Effective date of
+      authorization:      2026-05-21 through 2026-08-21 (90 days
+                          per carrier UR policy for outpatient
+                          authorizations; FICTIONAL)
+    Place of service
+      authorized:         [outpatient / inpatient / office /
+                          ambulatory surgical center]
+
+  DOLLAR VALUE OF AUTHORIZED SERVICES
+
+    Carrier-side
+      allowed amount:     $1,840.00 (FICTIONAL — the carrier's
+                          contracted allowed amount for the
+                          authorized service at the
+                          in-network rate; this is recorded
+                          because post-facto retroactive denial
+                          of approved authorizations frequently
+                          involves disputes about the
+                          dollar-value authorization, and
+                          freezing the allowed amount at the
+                          moment of decision prevents
+                          retroactive downward adjustment)
+    Member cost-share:    $200.00 deductible-applied + $0.00
+                          coinsurance-after-deductible (FICTIONAL
+                          — the member's cost-share at the
+                          moment of authorization; the
+                          deductible-remaining state is point-
+                          in-time and the seal records the
+                          state at decision time)
+    Estimated carrier
+      payment:            $1,640.00 (FICTIONAL — allowed minus
+                          member cost-share; this is an estimate
+                          subject to claim-time adjudication
+                          but is the carrier's contemporaneous
+                          best estimate at authorization)
+
+  REASON CODE
+
+    Carrier reason
+      code:               PARTIAL-APPROVE-CRIT-04 (FICTIONAL —
+                          the carrier's internal reason code
+                          taxonomy; documents the substantive
+                          basis for the decision in a way that
+                          can be cross-walked across cases)
+    X12 277 reason
+      code:               [if applicable, the standardized X12
+                          277 Health Care Claim Status reason
+                          code; or for denials, the X12 835
+                          Claim Adjustment Reason Code (CARC)
+                          and Remittance Advice Remark Code
+                          (RARC) anticipated to be applied at
+                          claim adjudication]
+    Plain-English
+      reason:             "Imaging portion of request meets
+                          MCG criteria for outpatient MRI per
+                          subsection [as cited in FACT 03];
+                          consultation portion of request does
+                          not meet criteria as a separate
+                          billable encounter and is included
+                          in the global imaging-interpretation
+                          payment per carrier internal medical
+                          policy MP-12345" (FICTIONAL example)
+    Reason citation
+      tracing:            Each substantive reason traces back to
+                          a specific subsection of the criteria
+                          cited in FACT 03; the sealed reason
+                          code is a permanent public record of
+                          the specific criteria-subsection
+                          basis for the decision
+
+  PEER-TO-PEER CONSULTATION (IF APPLICABLE)
+
+    Peer-to-peer
+      offered:            [yes / no — many state UR statutes
+                          require offering peer-to-peer for
+                          adverse determinations] (FICTIONAL
+                          example: yes, offered)
+    Peer-to-peer
+      conducted:          [yes / no] (FICTIONAL example: yes,
+                          conducted 2026-05-20)
+    Reviewing peer:       [carrier-side reviewer's specialty
+                          and state of license — same person as
+                          FACT 08, or a different licensed peer]
+    Outcome:              Discussion did not change initial
+                          recommendation; FACT 05 reflects
+                          post-peer-to-peer decision (FICTIONAL)
+
+  REVIEW METADATA
+
+    Type of review:       Initial determination (one of: initial
+                          determination / first-level internal
+                          appeal / second-level internal appeal
+                          / pre-IRO external review preparation
+                          / pre-litigation determination)
+    Substantive-review
+      attestation:        The licensed signing principal in
+                          FACT 08 substantively reviewed the
+                          clinical record (FACT 04) against the
+                          cited criteria (FACT 03) and is the
+                          substantive decisionmaker. Where an
+                          AI denial-recommendation system was
+                          used in the pre-decision pipeline,
+                          its role and the signing principal's
+                          override authority are disclosed in
+                          FACT 07 per refusal rule R4
+    Time-on-decision:     [time the signing principal spent on
+                          substantive review of this case;
+                          recorded because the
+                          per-case-time metric is the
+                          load-bearing signal for the
+                          AI-rubber-stamp failure mode that R4
+                          prevents] (FICTIONAL example:
+                          18 minutes substantive review +
+                          15-minute peer-to-peer)
+
+  RETROACTIVE-DENIAL NON-COMMITMENT
+
+The carrier attests, by sealing this fact, that:
+
+  - For APPROVE and PARTIAL decisions: the authorization
+    granted above is binding on the carrier for the
+    authorized service performed within the authorized
+    service-date window, subject only to claim-adjudication
+    issues that are NOT prior-authorization issues (member
+    eligibility on date of service, in-network status of
+    rendering provider as of date of service, fraud/waste/
+    abuse determinations).
+  - The carrier will not retroactively deny the
+    authorization on the basis of "re-reviewed clinical
+    record and determined criteria not met" or "applied
+    revised criteria to the prior authorization" after the
+    seal date. A subsequent revisitation of this decision
+    is a NEW myriam-kit publication referencing this one,
+    not a silent overwrite.
+  - For DENY decisions: this decision is the
+    initial-determination basis; subsequent internal-appeal
+    or external-review decisions are NEW myriam-kit
+    publications referencing this one. The original sealed
+    denial remains the canonical record of the
+    initial-determination state.
+
+This fact asserts only the decision, the scope and dollar
+value, the reason code, the peer-to-peer outcome if applicable,
+the review metadata, and the retroactive-denial non-commitment
+for the fictional authorization. It does NOT assert:
+  - that the decision is medically correct,
+  - that the criteria were appropriately applied to this
+    specific patient (see FACT 03 limits),
+  - that no appeal will succeed,
+  - that an external reviewer would reach the same
+    determination,
+  - that the carrier has met its substantive coverage
+    obligations under the plan document, ERISA, the
+    applicable state insurance code, or the
+    Mental Health Parity and Addiction Equity Act where
+    applicable.
