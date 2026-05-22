@@ -1,0 +1,124 @@
+FACT 02 — JURISDICTION (FICTIONAL)
+
+  County:                  Fictional County of Anywhere (FICTIONAL)
+  State:                   State of FICTIONAL_STATE (FICTIONAL — a
+                           U.S. state with statutorily defined county
+                           government)
+  Country:                 United States of America
+  FIPS county code:        99-999 (FICTIONAL — real FIPS codes are
+                           formatted as SS-CCC where SS is the state
+                           FIPS and CCC is the county FIPS; example
+                           uses an out-of-range placeholder to avoid
+                           collision with any real county)
+  Population (most recent
+   decennial census):      ~847,000 (FICTIONAL — placed in the middle
+                           of the U.S. county distribution; this kit
+                           applies equally to counties of any size,
+                           from rural counties of a few thousand to
+                           the largest metropolitan counties of
+                           several million)
+  Form of government:      County Commission + County Executive
+                           (FICTIONAL — applies equally to other
+                           forms such as council-manager, county-
+                           administrator, or strong-board models)
+
+PROCUREMENT AUTHORITY
+
+  Issuing office:          Office of County Procurement, Fictional
+                           County (FICTIONAL — the county office with
+                           statutory authority to award contracts on
+                           behalf of the county)
+  Statutory authority:     Fictional County Purchasing Ordinance §1.04
+                           (FICTIONAL — authorizes the County
+                           Procurement Director to award contracts
+                           within thresholds set by the County
+                           Commission and to issue change orders
+                           within the limits of state county-
+                           purchasing law)
+  State-level statutory
+   framework:              Fictional State Local Government
+                           Procurement Code, Chapter 14 (FICTIONAL —
+                           the state-level statute that defines
+                           competitive-bid thresholds, sole-source
+                           conditions, emergency-procurement
+                           authority, and IG-notice obligations for
+                           counties in the state)
+  Federal-grant procurement
+   standards (where
+   applicable):            Uniform Guidance, 2 CFR Part 200,
+                           Subpart D (procurement standards for
+                           federal awards passed through to counties)
+
+CERTIFYING PRINCIPALS (NAMED BY ROLE)
+
+  Procurement Director (primary attesting principal):
+    [Fictional Name], County Procurement Director, Fictional County
+    Statutory accountability:
+      Subject to Fictional County Code of Ethics §4.12 (conflict-of-
+      interest disclosure) and to criminal-misstatement provisions of
+      Fictional State Local Government Procurement Code §14.812
+      (knowingly false certification of a quarterly procurement
+      attestation is a criminal offense under state law carrying
+      personal liability).
+
+  Chief Financial Officer (co-attesting principal):
+    [Fictional Name], County Chief Financial Officer, Fictional
+    County
+    Statutory accountability:
+      Co-signature required under Fictional County Purchasing
+      Ordinance §1.18 (dual-control attestation for any quarterly
+      procurement report submitted to the County Commission); CFO
+      attests that the payment-aggregate column in FACT 06 reconciles
+      to the county's general-ledger disbursement records for the
+      attestation period.
+
+  Inspector General (independent-attesting principal):
+    [Fictional Name], County Inspector General, Office of the County
+    Inspector General, Fictional County
+    Statutory accountability:
+      Independent of the County Executive and the County Procurement
+      Director; appointed under Fictional County Charter §7.02 with
+      statutory tenure protection. The IG's role in this attestation
+      is independent confirmation that the IG-case-state field
+      (FACT 06 / case-state row) was not edited under pressure from
+      the Procurement Director or CFO between the IG's submission and
+      the moment of sealing, AND that no whistleblower complaint
+      received under whistleblower-protection statutes has had its
+      identifying information sealed in this publication.
+
+  Other public officials NOT included in this fact (intentional
+  omission per refusal rule R3 / FACT 08):
+    - Names of individual procurement-office buyers or contract
+      specialists (line-staff names are sealed in FACT 05's internal-
+      controls sign-off-log hash, not published).
+    - Names of individual bid-evaluation panel members.
+    - Names of individual vendor-employees or vendor-representatives
+      who interacted with the procurement office.
+
+INTERNATIONAL AND DOMESTIC FRAMEWORKS THIS ATTESTATION ALIGNS WITH
+
+  - Open Contracting Data Standard (OCDS) v1.1.5 publication points:
+    planning, tender, award, contract, implementation
+  - U.S. federal grant-procurement standards: Uniform Guidance,
+    2 CFR Part 200, Subpart D
+  - State-level open-records / sunshine-law obligations
+    (Fictional State Open Records Act, Chapter 11)
+  - State-level open-checkbook / open-data portal obligations
+    (Fictional State Local Government Transparency Act §3.04)
+
+This fact binds the entire sealed publication to a named, accountable
+county procurement office acting in official capacity under a specific
+state-level statutory mandate. Naming the issuing office, the FIPS
+county code, and the dual-control + independent-IG signing principals
+is the load-bearing referent that lets later truth-finding processes
+(state auditor review, IG investigation, FOI litigation, federal grant
+audits) know which legal regime applies and which named principals are
+accountable.
+
+This fact asserts only the identity of the issuing county procurement
+office, the FIPS county identifier, and the statutory roles of the
+named attesting principals. It does not assert that the underlying
+procurement authority was correctly invoked in any specific transaction,
+that the named officials' attestations were free of error or coercion,
+or that the cited county / state / federal procurement statutes were
+substantively complied with in the underlying procurement activity.

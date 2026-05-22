@@ -1,0 +1,66 @@
+FACT 03 — ATTESTATION PERIOD (FICTIONAL)
+
+  Calendar month covered:  April 2026 (FICTIONAL)
+  Period start:            2026-04-01 00:00:00 local time
+  Period end:              2026-04-30 23:59:59 local time
+  Time zone:               America/New_York (FICTIONAL_STATE local)
+
+  Data freeze date:        2026-05-15 (15 days after period end —
+                           standard CMS HRRP claims-completeness
+                           buffer; allows late-arriving claims and
+                           coding finalization to settle)
+
+  Attestation date:        2026-05-20 (this seal's date stamp; 5
+                           days after data freeze; allows the CMO
+                           and Quality officer to complete review
+                           before sealing)
+
+  Attestation cadence:     Monthly (this is month 1 of the program;
+                           future months will reference the prior
+                           month's Merkle root in FACT 08)
+
+NON-MODIFICATION ATTESTATION
+
+The certifying CMO and Quality officer (FACT 02) attest that, as of
+the data freeze date (2026-05-15) for the period covered (April 2026):
+
+  - No claims for April 2026 admissions or readmissions have been
+    modified, re-coded, voided, or re-billed AFTER 2026-05-15 in
+    a way that would affect the counts in FACTS 04, 05, 06, or 07.
+  - Late-arriving claims for the period (claims arriving between
+    2026-04-30 and 2026-05-15) are included in the counts.
+  - Late-arriving claims arriving AFTER 2026-05-15 are NOT included
+    in this attestation; they will be addressed in a future
+    amendment sealed as a NEW MYRIAM publication (referencing
+    this one by Merkle root) IF the late-arriving volume changes
+    any rate in FACT 04 by more than the pre-declared materiality
+    threshold of 0.1 percentage points absolute or 5 percent
+    relative, whichever is GREATER.
+
+If a late-arriving claim or a correction does require a future
+amendment, this seal is NOT modified — the amendment is a new
+publication that references this one. The original sealed bytes
+remain the canonical record of what the hospital attested to at
+the data-freeze date.
+
+RECORD CUSTODY DURING THE ATTESTATION WINDOW
+
+  - The April 2026 claims dataset used to compute the counts in
+    FACTS 04-07 is held in the hospital's data warehouse under
+    standard CMS-grade access controls.
+  - SHA-256 of the canonical extract used for this attestation:
+    a1b2c3d4e5f6789abcdef0123456789abcdef0123456789abcdef0123456789ab
+    (FICTIONAL hash; in a real attestation this would be the
+    SHA-256 of the actual extract file, computed at data freeze)
+  - The extract is retained per CMS record-retention requirements
+    (10 years from period end). Regulator, OIG, RAC, and QIO
+    requests for the extract during retention can be re-hashed
+    against the SHA-256 above to verify integrity.
+
+This fact asserts only the attestation period, data freeze date,
+attestation date, non-modification commitment, and extract-custody
+fields as recorded for the fictional April 2026 period. It does not
+assert that no errors exist in the underlying claims data, that the
+data-freeze date is a guarantee of count finality (some late-arriving
+claims will inevitably trickle in beyond the 15-day window), or that
+any future amendment will or will not be material.

@@ -1,0 +1,98 @@
+FACT 04 — COVERAGE INTERPRETATION AT MOMENT OF DECISION (FICTIONAL)
+
+This fact freezes, at the moment of decision, the carrier's reading
+of the policy provisions that govern the claim in FACT 02. Any post-
+decision claim that "the policy meant something else" or "we always
+interpreted exclusion X to apply" is publicly refutable against this
+record. A future appellate court, a state insurance department
+examiner, or the insured's coverage counsel may diff the carrier's
+later-stated interpretation against this sealed interpretation.
+
+The full coverage memo (item 11 in FACT 03) is hashed in FACT 03; the
+material interpretive points are reproduced in summary form here so
+that the seal records WHAT the carrier read the contract to mean, not
+just that a memo exists.
+
+POLICY FORM AND ENDORSEMENTS GOVERNING THIS CLAIM
+
+  Base form:              Form FMIC-PA-2024-01 as filed with the
+                          [Fictional state] Department of Insurance,
+                          filing # FICT-DOI-2024-A-447
+                          (FICTIONAL)
+  Endorsements in force
+    at date of loss:      - END-MEDPAY-5K (medical payments, $5,000
+                            per-person limit)
+                          - END-UMUIM-25/50 (uninsured / underinsured
+                            motorist, $25K/$50K limits)
+                          - END-RENTAL-30 (rental reimbursement)
+                          (FICTIONAL endorsement identifiers)
+
+COVERAGE PROVISIONS AT ISSUE
+
+  1. COLLISION COVERAGE (Part D of base form)
+     Interpretation at decision: the loss arises from a covered
+     collision with a non-fixed object; first-party physical
+     damage to the named insured's vehicle is within the grant of
+     coverage; deductible of $1,000 applies per the dec page.
+
+  2. BODILY INJURY LIABILITY (Part A of base form)
+     Interpretation at decision: the loss is alleged to involve
+     bodily injury to Claimant-B (a non-insured); coverage is
+     available subject to the per-person limit of $100,000 and
+     per-accident limit of $300,000 stated on the dec page.
+
+  3. MEDICAL PAYMENTS (Endorsement END-MEDPAY-5K)
+     Interpretation at decision: Insured-X reported no first-
+     party injury at FNOL or in the recorded statement (item 2,
+     FACT 03); no MedPay payment is requested or anticipated; the
+     coverage remains available should a first-party injury claim
+     be made within the policy's medical-payments time period.
+
+  4. EXCLUSIONS REVIEWED AND FOUND NOT TO APPLY
+     The following commonly-litigated exclusions were considered
+     and were determined NOT to apply on the facts known at the
+     date of decision:
+       - Intentional acts exclusion: no evidence of intentional
+         conduct (police report does not allege intent; no
+         criminal charges filed against insured).
+       - Business use exclusion: vehicle was in personal use at
+         time of loss per insured's recorded statement.
+       - Racing / speed contest exclusion: not alleged by any
+         party.
+       - Material misrepresentation in application: application
+         file reviewed; no misrepresentation identified.
+       - Late notice / prejudice: claim was reported within 90
+         minutes of the loss; no late-notice prejudice argument.
+
+  5. EXCLUSIONS NOT YET FULLY ANALYZED (see FACT 06 disclosures)
+     None at the date of this decision. If a later-discovered fact
+     pattern triggers an exclusion analysis (e.g., subsequent
+     discovery that the vehicle was being used for ride-share work
+     at time of loss), that analysis would proceed under the
+     carrier's standard reformation / reservation-of-rights
+     procedure, with the original decision sealed here remaining as
+     the basis on which payment was approved.
+
+GOVERNING LAW
+
+  The policy is governed by the law of [Fictional state]. The
+  carrier's interpretation of the policy is offered as the
+  carrier's reading of the contract; final interpretation, in the
+  event of dispute, rests with a court of competent jurisdiction
+  applying [Fictional state] insurance law.
+
+  In particular, this fact does NOT assert that the carrier's
+  reading would prevail in a coverage dispute. It records what the
+  carrier's reading WAS at the moment the payment decision was
+  rendered, so that a later-revised reading is publicly detectable.
+
+This fact asserts only the policy provisions the carrier identified as
+governing, the endorsement set in force, and the carrier's
+contemporaneous interpretation of those provisions at the moment of
+decision. It does not assert:
+  - that the carrier's interpretation is legally correct,
+  - that no other exclusion could be raised in a coverage dispute,
+  - that the policy was in force at the date of loss (premium-and-
+    cancellation analysis is its own separate review),
+  - that the underlying facts of the loss are as the parties have
+    described them.

@@ -1,0 +1,99 @@
+FACT 04 — EVIDENCE MANIFEST (FICTIONAL)
+
+This fact records the SHA-256 hashes of the photographs, document
+copies, and sample collection records that the inspection team
+gathered during the inspection identified in FACT 02. The raw
+evidence files are NOT included in this publication (the FDA holds
+them under records-control); only their hashes are sealed, so this
+attestation remains durable even after the underlying files are
+archived to FDA cold storage or transferred between FDA offices.
+
+The point of sealing the evidence hashes at issuance: if any
+photograph, document copy, or sample collection record is silently
+altered, replaced, or "lost" during later EIR drafting or any
+post-issuance review, re-hashing the produced file and comparing it
+to the row below will reveal the alteration.
+
+PHOTOGRAPH EVIDENCE
+
+  IDX  DESCRIPTION                                     SHA-256
+  ---  ----------------------------------------------  ----------------------------------------------------------------
+   1   Fill line A, particulate accumulation, 2026-05-08
+                                                       a1b2c3d4e5f6789abcdef0123456789abcdef0123456789abcdef0123456789ab
+   2   QC Lab 3, HPLC FQC-HPLC-007 audit-trail screen
+                                                       db14e2c98d2fdaf9a6dec2c25fcfa7bd14f0c8b9e7e6e4d3c2b1a09876543210f
+   3   Batch record FBP-2025-Q4-0114, p.47, dissolution
+                                                       6f3e91b25c8a4d6f0e1b2c3d4e5f60718293a4b5c6d7e8f90123456789abcdef0
+   4   Environmental monitoring trend chart 2026-Q1, Grade A
+                                                       7e5f60718293a4b5c6d7e8f90123456789abcdef0123456789abcdef01234567
+   5   Complaint sample retention freezer, log book page 23
+                                                       3d4e5f60718293a4b5c6d7e8f90123456789abcdef0123456789abcdef012345
+
+  Total photographs collected: 47 (5 representative hashes shown;
+                                   full per-photograph hash manifest is
+                                   sealed separately under aggregate
+                                   hash below)
+  Aggregate hash of all 47 photographs (canonical concatenation):
+                               2c3d4e5f60718293a4b5c6d7e8f90123456789abcdef0123456789abcdef01234
+
+DOCUMENT EVIDENCE (copies obtained under 21 USC 374 inspection authority)
+
+  IDX  DESCRIPTION                                     SHA-256
+  ---  ----------------------------------------------  ----------------------------------------------------------------
+   1   SOP-QA-014 (Deviation Procedure), revision 7
+                                                       cbb671235d5bb13d9f81a91a8661fa648e59e84f6ba0fb126356993066f065a0
+   2   Complete batch record FBP-2025-Q4-0114 (PDF)
+                                                       89a72e41fa212f6520115739df2d79f366e132c4714c0d60ae87540555195893
+   3   Complete batch record FBP-2025-Q4-0119 (PDF)
+                                                       03c23f853b396b0df96070f20cd904ec27881e3f6390c55aedc9550c8a2d79f2
+   4   Complete batch record FBP-2026-Q1-0027 (PDF)
+                                                       0a22e596cc4e1e2992e14f8749de4bce304c1190a820337d17e29fea0e6f4d9d
+   5   EM trend report 2026-Q1 (firm-generated)
+                                                       5c4821d81b2aa72015f6f85235317c7092ab509e164cbdb3933f54769444bfd3
+   6   Complaint log 2025-06 through 2026-05 (Excel exp)
+                                                       ac67969651fbafe91c1e54fc16c92277879c3900da799f658e5c5bdd9a6e1db3
+   7   HPLC audit-trail extract FQC-HPLC-007 2024-Q1
+                                                       bcc0dd54e33e6fd1a0a5f05a97f1e452c37148c267872451f29c98102324593b
+                                through 2026-Q2 (CSV)
+
+  Total documents copied: 23 (7 representative hashes shown)
+  Aggregate hash of all 23 documents:
+                               ee62d0d20f3a36ed1c6989e4b1cd5e1bbaccab2c7cf9b80eafefce0f9b1c1b8e
+
+SAMPLE COLLECTION RECORDS (FDA Form 484 entries)
+
+  Form 484 reference:          484-FICT-2026-0512-01 (FICTIONAL)
+  Sample receipt SHA-256:      4e5f60718293a4b5c6d7e8f90123456789abcdef0123456789abcdef012345678
+
+  IDX  SAMPLE DESCRIPTION                              SHA-256 OF COLLECTION RECORD
+  ---  ----------------------------------------------  ----------------------------------------------------------------
+   1   Drug A finished product, batch FBP-2025-Q4-0114, 6 bottles
+                                                       5f60718293a4b5c6d7e8f90123456789abcdef0123456789abcdef0123456789
+   2   Drug A retain sample, batch FBP-2025-Q4-0119, 3 bottles
+                                                       60718293a4b5c6d7e8f90123456789abcdef0123456789abcdef0123456789ab
+   3   Drug B in-process sample, batch FBP-2026-Q1-0048, 100 mL
+                                                       0718293a4b5c6d7e8f90123456789abcdef0123456789abcdef0123456789abc
+   4   Environmental monitoring plate, Grade A, 2026-05-10
+                                                       718293a4b5c6d7e8f90123456789abcdef0123456789abcdef0123456789abcd
+
+  Total samples collected:     11 (4 representative hashes shown)
+  Aggregate hash of all 11 sample collection records:
+                               18293a4b5c6d7e8f90123456789abcdef0123456789abcdef0123456789abcde
+
+A regulator, the District Office reviewer, OGC counsel, or a future
+court can request any individual file behind any hash above. Re-hashing
+the produced file with SHA-256 and comparing to the row above verifies
+that the file received matches the file that existed at the closing
+meeting. Any post-issuance substitution of a softened photograph (e.g.
+cropped to remove evidence), a redacted document (e.g. an SOP page
+silently replaced with a "current revision"), or a discarded sample
+record produces a different hash than the sealed one and is publicly
+detectable.
+
+This fact asserts only the SHA-256 hashes of the evidence collected
+during the fictional inspection at the moment of closing-meeting
+issuance. It does not assert that the evidence is exhaustive of what
+should have been collected, that the hashes confer admissibility under
+any specific evidentiary regime, or that production of any underlying
+file is authorized to any party without the appropriate FDA records
+control.
